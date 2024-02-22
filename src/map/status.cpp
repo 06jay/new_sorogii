@@ -14029,34 +14029,13 @@ TIMER_FUNC(status_change_timer){
 										&& skill_check_condition_castbegin(sd, itAutoattackskills.skill_id, itAutoattackskills.skill_lv)
 										&& skill_check_condition_castend(sd, itAutoattackskills.skill_id, itAutoattackskills.skill_lv)){
 										unit_stop_attack(bl);
-										struct block_list* target = map_id2bl(sd->aa.target_id);
-										if (skill_get_inf(itAutoattackskills.skill_id) & INF_ATTACK_SKILL || skill_get_inf(itAutoattackskills.skill_id) & INF_GROUND_SKILL) {
-											if (!check_distance_bl(&sd->bl, target, skill_get_range(itAutoattackskills.skill_id, itAutoattackskills.skill_lv))) {
-												unit_walktobl(&sd->bl, target, 2, 1);
-												continue;
-											}
-
-											if (skill_get_inf(itAutoattackskills.skill_id) & INF_ATTACK_SKILL) {
-												if (!unit_skilluse_id(&sd->bl, sd->aa.target_id, itAutoattackskills.skill_id, itAutoattackskills.skill_lv))
-													continue;
-											}
-											else if (skill_get_inf(itAutoattackskills.skill_id) & INF_GROUND_SKILL) {
-												if (!unit_skilluse_pos(bl, target->x, target->y, itAutoattackskills.skill_id, itAutoattackskills.skill_lv))
-													continue;
-											}
-										}
-										else if (skill_get_inf(itAutoattackskills.skill_id) & INF_SELF_SKILL) {
-											if (check_distance_bl(&sd->bl, target, 2)) {
-												if (!unit_skilluse_id(&sd->bl, sd->bl.id, itAutoattackskills.skill_id, itAutoattackskills.skill_lv))
-													continue;
-											}
-											else {
-												unit_walktobl(&sd->bl, target, 2, 1);
-												continue;
-											}
-										}
-										sd->idletime = last_time;
-										skill_consume_requirement(sd,itAutoattackskills.skill_id,itAutoattackskills.skill_lv,2);
+										if(skill_get_inf(itAutoattackskills.skill_id) & INF_ATTACK_SKILL)
+											unit_skilluse_id(bl, sd->aa.target_id, itAutoattackskills.skill_id, itAutoattackskills.skill_lv);
+										else if(skill_get_inf(itAutoattackskills.skill_id) & INF_GROUND_SKILL){
+											struct block_list* target = map_id2bl(sd->aa.target_id);
+											unit_skilluse_pos(bl, target->x, target->y, itAutoattackskills.skill_id, itAutoattackskills.skill_lv);
+										} else if(skill_get_inf(itAutoattackskills.skill_id) & INF_SELF_SKILL)
+											unit_skilluse_id(&sd->bl, sd->bl.id, itAutoattackskills.skill_id, itAutoattackskills.skill_lv);
 										itAutoattackskills.last_use = last_tick + skill_get_cooldown( itAutoattackskills.skill_id, itAutoattackskills.skill_lv );
 									}
 									if(itAutoattackskills.last_use > sd->aa.skill_cd)
