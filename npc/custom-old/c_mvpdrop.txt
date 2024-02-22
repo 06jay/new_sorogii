@@ -1,0 +1,28 @@
+prontera,178,212,4	script	custom_itemdrops	-1,{
+function dropitem;
+OnNPCKillEvent:
+if (killedrid == 20570) {
+	// dropitem <item_id>,<chance>;
+	dropitem 14003, 10000; // 1000.00% chance
+	dropitem 911,  500; //  50.00% chance
+	dropitem 911,   100; //   1.00% chance
+	dropitem 911,	 1; //	.01% chance
+}
+end;
+
+function dropitem {
+set .@item_id, getarg(0);
+set .@drop_per, getarg(1);
+
+if (rand(10000) < .@drop_per) {
+	if (checkweight(.@item_id,1)) {
+		getitem .@item_id,100;
+	} else {
+		getmapxy(.@map$,.@x,.@y,0);
+		makeitem .@item_id,1, .@map$,.@x,.@y;
+	}
+	announce "'"+strcharinfo(0)+"' got "+getmonsterinfo(killedrid,MOB_NAME)+"'s "+getitemname(.@item_id)+" (chance: "+ (getarg(1)/100 + "." + getarg(1)%100) +"%)", bc_all;
+}
+return;
+}
+}

@@ -1,0 +1,15 @@
+geffen,173,100,4	script	Main Town#101	852,{	
+	warp "geffen",120,66;
+	end;
+OnInit:
+	while(1) {
+		showscript "Main Town", getnpcid(0);
+		sleep 1000;
+	}
+	end;
+
+OnPCLoadMapEvent:
+if( strcharinfo(3) == strnpcinfo(4) )
+	showevent 2,3;
+end;
+}

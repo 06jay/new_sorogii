@@ -1,0 +1,7 @@
+
+-	script	kfsdkfhsf	1,{
+OnInit:
+setitemscript 32082, "{ { setoption Option_Dragon1; } changebase 4060; }", 1;
+setitemscript 32082, "{ changebase Class; } ", 2;
+end;
+}

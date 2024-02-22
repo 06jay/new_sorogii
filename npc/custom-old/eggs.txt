@@ -1,0 +1,32 @@
+function	script	F_RBox	{
+
+	// change Item ID here
+	setarray @i1[0],607,608; // Common Items 
+	setarray @i2[0],20100,31249; // Rare Items
+	setarray @i3[0],45101; // Super Rare Items
+
+	set @i1rand,rand( getarraysize(@i1) ); // Randomize Common Items; just change max amount if you add items
+	set @i2rand,rand( getarraysize(@i2) ); // Randomize Rare Items; just change max amount if you add items
+	set @i3rand,rand( getarraysize(@i3) ); //Randomize Super Rare Items; just change max amount if you add items
+
+	.chance = rand(100);
+
+		// Super Rare Item 1%
+		if (.chance == 1) {
+			getitem @i3[@i3rand],1;
+			announce "Attention Slayers!!! "+strcharinfo(0)+" Won a Very Rare Costume ["+getitemname(@i3[@i3rand])+"] from Devil Egg Scroll!~.",0;
+			end;
+		} 
+
+		// Rare Item 10%
+		else if (.chance <= 4 && .chance >= 1){
+			getitem @i2[@i2rand],1;
+			announce "Attention Slayers!!! "+strcharinfo(0)+" Won a Rare Costume ["+getitemname(@i2[@i2rand])+"] from Devil Egg Scroll!~.",0;
+			end;
+		} 
+
+		// Common Items
+		else {
+			getitem @i1[@i1rand],1;
+	end; }
+}

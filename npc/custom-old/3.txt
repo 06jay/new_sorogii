@@ -1,0 +1,39 @@
+-	trader	Shop1	FAKE_NPC,{
+
+	OnInit:
+	tradertype(NST_BARTER);
+	sellitem White_Herb, 100, Red_Potion, 2;
+	sellitem Blue_Herb, 200, Orange_Potion, 3;
+	end;
+}
+
+-	trader	Shop2	FAKE_NPC,{
+
+	OnInit:
+	tradertype(NST_BARTER);
+	sellitem Green_Herb, 100, Red_Potion, 4;
+	sellitem White_Herb, 100, Orange_Potion, 1;
+	end;
+}
+
+-	trader	Shop3	FAKE_NPC,{
+
+	OnInit:
+	tradertype(NST_BARTER);
+	sellitem Apple, -1, Orange_Potion, 1;
+	sellitem Praetorian_Shield, 100, Berserk_Potion, 10;
+	end;
+}
+
+
+prontera,157,172,4	trader	BarterShop	651,{
+
+	mes "Select the shop for open!";
+	switch(select("Shop 1:Shop 2:Shop 3"))
+	{
+		case 1: close2; openshop "Shop1"; break;				
+		case 2: close2; openshop "Shop2"; break;
+		case 3: close2; openshop "Shop3"; break;
+	}
+	end;
+}

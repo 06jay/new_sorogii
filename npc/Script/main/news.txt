@@ -1,0 +1,18 @@
+-	script	news_main	-1,{
+	OnInit:
+		// Random Message to be Announced
+		setarray .news_list$,	
+			"Hello and welcome to HYPERO! Please, let's help each other promote a healthy and strong community..",
+			"Developers and GM staff will never ask for your account information. Be vigilant; keep grinding.~",
+			"Reporting bugs and errors will result in immediate compensation.",
+			"Don't forget to claim your daily supplies, guys. Happy grinding!",
+			"Visit our official Facebook page for more updates on [www.facebook.com/Soon].",
+			"Thank you for playing with us. Have a great day ahead.";
+		.news_list_size = getarraysize(.news_list$);
+		initnpctimer;
+		
+	OnTimer800000: // announce every 60 seconds.
+		announce .news_list$[rand(.news_list_size)],bc_all,0xCCFF00;
+		initnpctimer;
+		end;
+}

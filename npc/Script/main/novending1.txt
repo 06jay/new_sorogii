@@ -1,0 +1,284 @@
+-	script	Vending Area	-1,{
+	OnWhisperGlobal:
+	OnInit:
+
+
+
+	setcell "prontera",45,364,268,32,cell_novending,1; // Line 1//restriction
+	setcell "prontera",284,345,32,46,cell_novending,1; // Line 1//restriction
+
+
+
+
+	setcell "prontera",146,159,146,156,cell_novending,0; // line 1
+	setcell "prontera",146,158,146,157,cell_novending,1; // Line 1
+
+	setcell "prontera",143,159,143,156,cell_novending,0; // Line 1
+	setcell "prontera",143,158,143,157,cell_novending,1; // Line 1
+
+	setcell "prontera",140,159,140,156,cell_novending,0; // Line 1
+	setcell "prontera",140,158,140,157,cell_novending,1; // Line 1
+
+	setcell "prontera",137,159,137,156,cell_novending,0; // Line 1
+	setcell "prontera",137,158,137,157,cell_novending,1; // Line 1
+	
+	setcell "prontera",134,159,134,156,cell_novending,0; // Line 1
+	setcell "prontera",134,158,134,157,cell_novending,1; // Line 1
+
+setcell "prontera",131,159,131,156,cell_novending,0; // Line 1
+setcell "prontera",131,158,131,157,cell_novending,1; // Line 1
+
+setcell "prontera",128,159,128,156,cell_novending,0; // Line 1
+setcell "prontera",128,158,128,157,cell_novending,1; // Line 1
+
+setcell "prontera",125,159,125,156,cell_novending,0; // Line 1
+setcell "prontera",125,158,125,157,cell_novending,1; // Line 1
+
+setcell "prontera",122,159,122,156,cell_novending,0; // Line 1
+setcell "prontera",122,158,122,157,cell_novending,1; // Line 1
+
+setcell "prontera",119,159,119,156,cell_novending,0; // Line 1
+setcell "prontera",119,158,119,157,cell_novending,1; // Line 1
+
+setcell "prontera",116,159,116,156,cell_novending,0; // Line 1
+setcell "prontera",116,158,116,157,cell_novending,1; // Line 1
+
+setcell "prontera",112,159,112,156,cell_novending,0; // Line 1
+setcell "prontera",112,158,112,157,cell_novending,1; // Line 1
+
+setcell "prontera",112,162,115,162,cell_novending,0; // Line 1
+setcell "prontera",113,162,114,162,cell_novending,1; // Line 1
+
+setcell "prontera",112,165,115,165,cell_novending,0; // Line 1
+setcell "prontera",113,165,114,165,cell_novending,1; // Line 1
+
+setcell "prontera",112,168,115,168,cell_novending,0; // Line 1
+
+setcell "prontera",113,168,114,168,cell_novending,1; // Line 1
+
+setcell "prontera",112,171,115,171,cell_novending,0; // Line 1
+
+setcell "prontera",113,171,114,171,cell_novending,1; // Line 1
+
+setcell "prontera",112,174,115,174,cell_novending,0; // Line 1
+
+setcell "prontera",113,174,114,174,cell_novending,1; // Line 1
+
+setcell "prontera",112,177,115,177,cell_novending,0; // Line 1
+
+setcell "prontera",113,177,114,177,cell_novending,1; // Line 1
+
+setcell "prontera",112,180,115,180,cell_novending,0; // Line 1
+
+setcell "prontera",113,180,114,180,cell_novending,1; // Line 1
+
+setcell "prontera",112,183,115,183,cell_novending,0; // Line 1
+
+setcell "prontera",113,183,114,183,cell_novending,1; // Line 1
+
+setcell "prontera",112,186,115,186,cell_novending,0; // Line 1
+
+setcell "prontera",113,186,114,186,cell_novending,1; // Line 1
+
+setcell "prontera",112,189,115,189,cell_novending,0; // Line 1
+
+setcell "prontera",113,189,114,189,cell_novending,1; // Line 1// end of vend area 1
+
+
+
+
+//vendarea2=======================
+
+
+setcell "prontera",146,147,146,144,cell_novending,0; // line 1
+setcell "prontera",146,146,146,145,cell_novending,1; // Line 1
+
+setcell "prontera",143,147,143,144,cell_novending,0; // line 1
+setcell "prontera",143,146,143,145,cell_novending,1; // Line 1
+
+setcell "prontera",140,147,140,144,cell_novending,0; // line 1
+setcell "prontera",140,146,140,145,cell_novending,1; // Line 1
+
+setcell "prontera",137,147,137,144,cell_novending,0; // Line 1
+
+setcell "prontera",137,146,137,145,cell_novending,1; // Line 1
+
+setcell "prontera",134,147,134,144,cell_novending,0; // Line 1
+
+setcell "prontera",134,146,134,145,cell_novending,1; // Line 1
+
+setcell "prontera",131,147,131,144,cell_novending,0; // Line 1
+
+setcell "prontera",131,146,131,145,cell_novending,1; // Line 1
+
+
+
+setcell "prontera",128,147,128,144,cell_novending,0; // Line 1
+
+setcell "prontera",128,146,128,145,cell_novending,1; // Line 1
+
+setcell "prontera",125,147,125,144,cell_novending,0; // Line 1
+
+setcell "prontera",125,146,125,145,cell_novending,1; // Line 1
+
+setcell "prontera",122,147,122,144,cell_novending,0; // Line 1
+
+setcell "prontera",122,146,122,145,cell_novending,1; // Line 1
+
+setcell "prontera",119,147,119,144,cell_novending,0; // Line 1
+
+setcell "prontera",119,146,119,145,cell_novending,1; // Line 1
+
+setcell "prontera",116,147,116,144,cell_novending,0; // Line 1
+
+setcell "prontera",116,146,116,145,cell_novending,1; // Line 1
+
+setcell "prontera",113,147,113,144,cell_novending,0; // Line 1
+
+setcell "prontera",113,146,113,145,cell_novending,1; // Line 1
+
+setcell "prontera",110,147,110,144,cell_novending,0; // Line 1
+
+setcell "prontera",110,146,110,145,cell_novending,1; // Line 1
+
+setcell "prontera",107,147,107,144,cell_novending,0; // Line 1
+
+setcell "prontera",107,146,107,145,cell_novending,1; // Line 1
+
+setcell "prontera",104,147,104,144,cell_novending,0; // Line 1
+
+setcell "prontera",104,146,104,145,cell_novending,1; // Line 1
+
+setcell "prontera",100,147,100,144,cell_novending,0; // Line 1//horizontal to
+
+
+
+
+setcell "prontera",103,151,100,151,cell_novending,0; // Line 1
+setcell "prontera",102,151,101,151,cell_novending,1; // Line 1 verticall
+
+
+setcell "prontera",103,156,100,156,cell_novending,0; // Line 1
+setcell "prontera",102,156,101,156,cell_novending,1; // Line 1
+
+setcell "prontera",103,159,100,159,cell_novending,0; // Line 1
+setcell "prontera",102,159,101,159,cell_novending,1; // Line 1
+
+setcell "prontera",103,162,100,162,cell_novending,0; // Line 1
+setcell "prontera",102,162,101,159,cell_novending,1; // Line 1
+
+setcell "prontera",103,165,100,165,cell_novending,0; // Line 1
+
+setcell "prontera",102,165,101,165,cell_novending,1; // Line 1
+
+setcell "prontera",103,168,100,168,cell_novending,0; // Line 1
+
+setcell "prontera",102,168,101,168,cell_novending,1; // Line 1
+
+setcell "prontera",103,171,100,171,cell_novending,0; // Line 1
+
+setcell "prontera",102,171,101,171,cell_novending,1; // Line 1
+
+setcell "prontera",103,174,100,174,cell_novending,0; // Line 1
+
+setcell "prontera",102,174,101,174,cell_novending,1; // Line 1
+
+setcell "prontera",103,177,100,177,cell_novending,0; // Line 1
+
+setcell "prontera",102,177,101,177,cell_novending,1; // Line 1
+
+setcell "prontera",103,180,100,180,cell_novending,0; // Line 1
+
+setcell "prontera",102,180,101,180,cell_novending,1; // Line 1
+
+setcell "prontera",103,183,100,183,cell_novending,0; // Line 1
+
+setcell "prontera",102,183,101,183,cell_novending,1; // Line 1
+
+setcell "prontera",103,186,100,186,cell_novending,0; // Line 1
+
+setcell "prontera",102,186,101,186,cell_novending,1; // Line 1
+
+setcell "prontera",103,189,100,189,cell_novending,0; // Line 1
+setcell "prontera",102,189,101,189,cell_novending,1; // Line 1
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,27 @@
+prontera,106,191,4	script	Main Town#101	852,{
+	    mes "[Main Town]";
+    mes "Hello, adventurer! Would you like to go mid prontera?";
+    next;
+    
+    switch(select("Yes", "No")) {
+        case 1:
+            warp "prontera",156,184; // Replace with the actual coordinates of the market place.
+            break;
+        case 2:
+            mes "[Main Town]";
+            mes "Alright, enjoy shopping!";
+            break;
+    }
+    close2;
+OnInit:
+	while(1) {
+		showscript "Main Town", getnpcid(0);
+		sleep 1000;
+	}
+	end;
+
+OnPCLoadMapEvent:
+if( strcharinfo(3) == strnpcinfo(4) )
+	showevent QTYPE_CLICKME;
+end;
+}

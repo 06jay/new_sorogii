@@ -1,0 +1,83 @@
+geffen,96,68,6	script	Alfonse	813 ,{
+cutin "fey_fun",2;
+	if (checkweight(1201,1) == 0) {
+	mes "[Alfonse]";
+		mes "You carry to much stuff!!";
+close2;
+cutin "", 255;
+end;
+	}
+	mes "[Alfonse]";
+	mes "I can help you to combine those Soul Stones";
+	mes "5x <ITEM>Monster Soul Fragment <INFO>6084 </INFO></ITEM> = 1x Soul Ore.";
+	mes "5x <ITEM>Monster Soul Ore <INFO>6224 </INFO></ITEM> = 1x Soul Stone.";
+	mes "5x <ITEM>Monster Soul Stone <INFO>6151 </INFO></ITEM> = 1x Soul Crystal.";
+
+
+
+	next;
+	switch(select("Make Monster Soul Ore:Make Monster Soul Stone:Make Monster Soul Crystal")) {
+	case 1:
+		if (countitem(6084) > 4) {
+			delitem 6084 ,5;  //soul fragment
+			getitem 6224 ,1; // soul ore
+	mes "[Alfonse]";
+			mes "Here's your Soul Ore.";
+			mes "Come back anytime kiddo!";
+close2;
+cutin "", 255;
+end;
+
+		}
+		else {
+			mes "[Alfonse]";
+			mes "Let me say it again. To make an ^9900CCOre^000000, I need 5 ^9900CCMonster Soul Fragments.^000000";
+close2;
+cutin "", 255;
+end;
+		}
+	case 2:
+		if (countitem(6224 ) > 4) {
+			delitem 6224 ,5;  //soul ore
+			getitem 6151 ,1; // soul stone
+	mes "[Alfonse]";
+			mes "Come back anytime kiddo!";
+close2;
+cutin "", 255;
+end;
+
+		}
+		else {
+	mes "[Alfonse]";
+
+			mes "Let me say it again. To make a ^9900CCStone^000000, I need 5 ^9900CCMonster Soul Ore.^000000";
+close2;
+cutin "", 255;
+end;
+
+		}
+	case 3:
+		if (countitem(6151 ) > 4) {
+			delitem 6151 ,5;  //soul stone
+			getitem 6226 ,1; // soul crystal
+	mes "[Alfonse]";
+			mes "Come back anytime kiddo!";
+close2;
+cutin "", 255;
+end;
+
+		}
+		else {
+	mes "[Alfonse]";
+
+			mes "Let me say it again. To make a ^9900CCCrystal^000000, I need 5 ^9900CCMonster Soul Stone.";
+close2;
+cutin "", 255;
+end;
+
+		}
+}
+}
+
+
+

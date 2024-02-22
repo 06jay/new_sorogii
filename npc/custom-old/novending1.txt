@@ -1,0 +1,259 @@
+-	script	Vending Area	-1,{
+	OnWhisperGlobal:
+	OnInit:
+
+
+
+	setcell "geffen",22,25,23,250,cell_novending,1; // Line 1
+	setcell "geffen",24,25,25,250,cell_novending,1; // Line 1
+	setcell "geffen",26,25,27,250,cell_novending,1; // Line 1
+	setcell "geffen",28,25,29,250,cell_novending,1; // Line 1
+	setcell "geffen",30,25,31,250,cell_novending,1; // Line 1
+
+	setcell "geffen",32,25,33,250,cell_novending,1; // Line 1
+	setcell "geffen",34,25,35,250,cell_novending,1; // Line 1
+	setcell "geffen",36,25,37,250,cell_novending,1; // Line 1
+	setcell "geffen",38,25,39,250,cell_novending,1; // Line 1
+	setcell "geffen",40,25,41,250,cell_novending,1; // Line 1
+	setcell "geffen",42,25,43,250,cell_novending,1; // Line 1
+	setcell "geffen",44,25,45,250,cell_novending,1; // Line 1
+	setcell "geffen",46,25,47,250,cell_novending,1; // Line 1
+	setcell "geffen",48,25,49,250,cell_novending,1; // Line 1
+	setcell "geffen",50,25,51,250,cell_novending,1; // Line 1
+	setcell "geffen",52,25,53,250,cell_novending,1; // Line 1
+	setcell "geffen",54,25,55,250,cell_novending,1; // Line 1
+	setcell "geffen",56,25,57,250,cell_novending,1; // Line 1
+	setcell "geffen",58,25,59,250,cell_novending,1; // Line 1
+
+
+
+	setcell "geffen",60,25,61,250,cell_novending,1; // Line 1
+	setcell "geffen",62,25,63,250,cell_novending,1; // Line 1
+	setcell "geffen",64,25,65,250,cell_novending,1; // Line 1
+	setcell "geffen",66,25,67,250,cell_novending,1; // Line 1
+	setcell "geffen",68,25,69,250,cell_novending,1; // Line 1
+	setcell "geffen",70,25,71,250,cell_novending,1; // Line 1
+	setcell "geffen",72,25,73,250,cell_novending,1; // Line 1
+	setcell "geffen",74,25,75,250,cell_novending,1; // Line 1
+	setcell "geffen",76,25,77,250,cell_novending,1; // Line 1
+	setcell "geffen",78,25,79,250,cell_novending,1; // Line 1
+	setcell "geffen",80,25,81,250,cell_novending,1; // Line 1
+	setcell "geffen",82,25,83,250,cell_novending,1; // Line 1
+	setcell "geffen",84,25,85,250,cell_novending,1; // Line 1
+	setcell "geffen",86,25,87,250,cell_novending,1; // Line 1
+	setcell "geffen",88,25,89,250,cell_novending,1; // Line 1
+	setcell "geffen",90,25,91,250,cell_novending,1; // Line 1
+	setcell "geffen",92,25,93,250,cell_novending,1; // Line 1
+	setcell "geffen",94,25,95,250,cell_novending,1; // Line 1
+	setcell "geffen",96,25,97,250,cell_novending,1; // Line 1
+	setcell "geffen",98,25,99,250,cell_novending,1; // Line 1
+	setcell "geffen",100,25,101,250,cell_novending,1; // Line 1
+	setcell "geffen",102,25,103,250,cell_novending,1; // Line 1
+	setcell "geffen",104,25,105,250,cell_novending,1; // Line 1
+	setcell "geffen",106,25,107,250,cell_novending,1; // Line 1
+	setcell "geffen",108,25,109,250,cell_novending,1; // Line 1
+	setcell "geffen",110,25,111,250,cell_novending,1; // Line 1
+	setcell "geffen",112,25,113,250,cell_novending,1; // Line 1
+	setcell "geffen",114,25,115,250,cell_novending,1; // Line 1
+	setcell "geffen",116,25,117,250,cell_novending,1; // Line 1
+	setcell "geffen",118,25,119,250,cell_novending,1; // Line 1
+	setcell "geffen",120,25,121,250,cell_novending,1; // Line 1
+	setcell "geffen",122,25,123,250,cell_novending,1; // Line 1
+	setcell "geffen",124,25,125,250,cell_novending,1; // Line 1
+	setcell "geffen",126,25,127,250,cell_novending,1; // Line 1
+	setcell "geffen",128,25,129,250,cell_novending,1; // Line 1
+	setcell "geffen",130,25,131,250,cell_novending,1; // Line 1
+	setcell "geffen",132,25,133,250,cell_novending,1; // Line 1
+	setcell "geffen",134,25,135,250,cell_novending,1; // Line 1
+	setcell "geffen",136,25,137,250,cell_novending,1; // Line 1
+	setcell "geffen",138,25,139,250,cell_novending,1; // Line 1
+	setcell "geffen",140,25,141,250,cell_novending,1; // Line 1
+	setcell "geffen",142,25,143,250,cell_novending,1; // Line 1
+	setcell "geffen",144,25,145,250,cell_novending,1; // Line 1
+	setcell "geffen",146,25,147,250,cell_novending,1; // Line 1
+	setcell "geffen",148,25,149,250,cell_novending,1; // Line 1
+	setcell "geffen",150,25,151,250,cell_novending,1; // Line 1
+	setcell "geffen",152,25,153,250,cell_novending,1; // Line 1
+	setcell "geffen",154,25,155,250,cell_novending,1; // Line 1
+	setcell "geffen",156,25,157,250,cell_novending,1; // Line 1
+	setcell "geffen",158,25,159,250,cell_novending,1; // Line 1
+	setcell "geffen",160,25,161,250,cell_novending,1; // Line 1
+	setcell "geffen",162,25,163,250,cell_novending,1; // Line 1
+	setcell "geffen",164,25,165,250,cell_novending,1; // Line 1
+	setcell "geffen",166,25,167,250,cell_novending,1; // Line 1
+	setcell "geffen",168,25,169,250,cell_novending,1; // Line 1
+	setcell "geffen",170,25,171,250,cell_novending,1; // Line 1
+	setcell "geffen",172,25,173,250,cell_novending,1; // Line 1
+	setcell "geffen",174,25,175,250,cell_novending,1; // Line 1
+	setcell "geffen",176,25,177,250,cell_novending,1; // Line 1
+	setcell "geffen",178,25,179,250,cell_novending,1; // Line 1
+	setcell "geffen",180,25,181,250,cell_novending,1; // Line 1
+	setcell "geffen",182,25,183,250,cell_novending,1; // Line 1
+	setcell "geffen",184,25,185,250,cell_novending,1; // Line 1
+	setcell "geffen",186,25,187,250,cell_novending,1; // Line 1
+	setcell "geffen",188,25,189,250,cell_novending,1; // Line 1
+	setcell "geffen",190,25,191,250,cell_novending,1; // Line 1
+	setcell "geffen",192,25,193,250,cell_novending,1; // Line 1
+	setcell "geffen",194,25,195,250,cell_novending,1; // Line 1
+	setcell "geffen",196,25,197,250,cell_novending,1; // Line 1
+	setcell "geffen",198,25,199,250,cell_novending,1; // Line 1
+	setcell "geffen",200,25,201,250,cell_novending,1; // Line 1
+	setcell "geffen",202,25,203,250,cell_novending,1; // Line 1
+	setcell "geffen",204,25,205,250,cell_novending,1; // Line 1
+	setcell "geffen",206,25,207,250,cell_novending,1; // Line 1
+	setcell "geffen",208,25,209,250,cell_novending,1; // Line 1
+	setcell "geffen",210,25,211,250,cell_novending,1; // Line 1
+
+
+
+
+	setcell "geffen",142,74,142,77,cell_novending,0; // line 1
+	setcell "geffen",142,75,142,76,cell_novending,1; // Line 1
+
+	setcell "geffen",144,76,144,79,cell_novending,0; // Line 1
+	setcell "geffen",144,77,144,78,cell_novending,1; // Line 1
+
+	setcell "geffen",146,78,146,81,cell_novending,0; // Line 1
+	setcell "geffen",146,79,146,80,cell_novending,1; // Line 1
+
+	setcell "geffen",148,83,148,80,cell_novending,0; // Line 1
+	setcell "geffen",148,81,148,82,cell_novending,1; // Line 1
+
+	setcell "geffen",150,82,150,85,cell_novending,0; // Line 1
+	setcell "geffen",150,83,150,84,cell_novending,1; // Line 1
+
+	setcell "geffen",152,84,152,87,cell_novending,0; // Line 1
+	setcell "geffen",152,85,152,86,cell_novending,1; // Line 1
+
+	setcell "geffen",154,86,152,89,cell_novending,0; // Line 1
+	setcell "geffen",154,87,152,88,cell_novending,1; // Line 1
+
+	setcell "geffen",156,88,152,91,cell_novending,0; // Line 1
+	setcell "geffen",156,89,152,90,cell_novending,1; // Line 1
+
+	setcell "geffen",158,90,158,93,cell_novending,0; // Line 1
+	setcell "geffen",158,91,158,92,cell_novending,1; // Line 1
+
+	setcell "geffen",160,92,160,95,cell_novending,0; // Line 1
+	setcell "geffen",160,93,160,94,cell_novending,1; // Line 1
+
+	setcell "geffen",162,94,162,97,cell_novending,0; // Line 1
+	setcell "geffen",162,95,162,96,cell_novending,1; // Line 1
+
+	setcell "geffen",164,96,164,99,cell_novending,0; // Line 1
+	setcell "geffen",164,97,164,98,cell_novending,1; // Line 1
+
+	setcell "geffen",166,98,166,101,cell_novending,0; // Line 1
+	setcell "geffen",166,99,166,100,cell_novending,1; // Line 1
+
+
+//=========================================================
+	setcell "geffen",148,68,151,68,cell_novending,0; // Line 1
+	setcell "geffen",149,68,150,68,cell_novending,1; // Line 1
+
+	setcell "geffen",150,70,153,70,cell_novending,0; // Line 1
+	setcell "geffen",151,70,152,70,cell_novending,1; // Line 1//done
+
+	setcell "geffen",152,72,155,72,cell_novending,0; // Line 1
+	setcell "geffen",153,72,154,72,cell_novending,1; // Line 1//done
+
+	setcell "geffen",154,74,157,74,cell_novending,0; // Line 1
+	setcell "geffen",155,74,156,74,cell_novending,1; // Line 1//done
+
+	setcell "geffen",156,76,159,76,cell_novending,0; // Line 1
+	setcell "geffen",157,76,158,76,cell_novending,1; // Line 1
+
+	setcell "geffen",158,78,161,78,cell_novending,0; // Line 1
+	setcell "geffen",159,78,160,78,cell_novending,1; // Line 1
+
+	setcell "geffen",160,80,163,80,cell_novending,0; // Line 1
+	setcell "geffen",161,80,162,80,cell_novending,1; // Line 1//done
+
+//===========================================
+
+	setcell "geffen",162,82,165,82,cell_novending,0; // Line 1
+	setcell "geffen",163,82,164,82,cell_novending,1; // Line 1
+
+	setcell "geffen",164,84,167,84,cell_novending,0; // Line 1
+	setcell "geffen",165,84,166,84,cell_novending,1; // Line 1
+
+	setcell "geffen",166,86,169,86,cell_novending,0; // Line 1
+	setcell "geffen",167,86,168,86,cell_novending,1; // Line 1
+
+	setcell "geffen",168,88,171,88,cell_novending,0; // Line 1
+	setcell "geffen",169,88,170,88,cell_novending,1; // Line 1
+
+	setcell "geffen",170,90,173,90,cell_novending,0; // Line 1
+	setcell "geffen",171,90,172,90,cell_novending,1; // Line 1
+
+	setcell "geffen",172,92,175,92,cell_novending,0; // Line 1
+	setcell "geffen",173,92,174,92,cell_novending,1; // Line 1
+
+	setcell "geffen",174,94,177,94,cell_novending,0; // Line 1
+	setcell "geffen",175,94,176,94,cell_novending,1; // Line 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

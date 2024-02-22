@@ -1,0 +1,140 @@
+function	script	F_MesItemInfo21	{
+	.@item = getarg(0);
+	.@itemname$ = getitemname(.@item);
+	if (.@itemname$ != "null") {
+		.@itemslot = getitemslots(.@item);
+		if (.@itemslot)
+			.@itemname$ = sprintf("%s [%d]", .@itemname$, .@itemslot);
+	}
+	else
+		.@itemname$ = "Unknown Item";
+	if (PACKETVER >= 20150729)
+		return sprintf("<ITEM>%s<INFO>%d</INFO></ITEM>", .@itemname$, .@item);
+	else if (PACKETVER >= 20130130)
+		return sprintf("<ITEMLINK>%s<INFO>%d</INFO></ITEMLINK>", .@itemname$, .@item);
+	else
+		return .@itemname$;
+}
+
+//	Rejoice !! this is my F_ITEML made for rathena
+function	script	F_ITEML	{
+	.@id = getarg(0);
+	.@itemid$ = callsub( S_Base62, .@id );
+	.@itemtype = getiteminfo( .@id, 2 );
+	if ( .@itemtype == IT_WEAPON || .@itemtype == IT_ARMOR )
+		.@show_slot = true;
+	.@equip_loc$ = callsub( S_Base62, getiteminfo( .@id, 5 ), 5 );
+	.@viewid$ = "&"+ callsub( S_Base62, getiteminfo( .@id, 11 ) );
+	if ( .@refine = getarg(1,0) )
+		.@refine$ = "%"+ callsub( S_Base62, .@refine );
+	.@cards$ = sprintf( "(%s(%s(%s(%s", callsub( S_Base62, getarg(2,0) ), callsub( S_Base62, getarg(3,0) ), callsub( S_Base62, getarg(4,0) ), callsub( S_Base62, getarg(5,0) ) );
+	if ( getarg(6,0) ) {
+		copyarray .@opt_id, getarg(6), 5;
+		copyarray .@opt_value, getarg(7), 5;
+		copyarray .@opt_param, getarg(8), 5;
+		.@item_option_size = getarraysize(.@opt_id);
+		for ( .@i = 0; .@i < .@item_option_size; ++.@i )
+			.@item_option$ += sprintf( "*%s+%s,%s", callsub( S_Base62, .@opt_id[.@i] ), callsub( S_Base62, .@opt_param[.@i] ), callsub( S_Base62, .@opt_value[.@i] ) );
+	}
+	return "<ITEML>"+ .@equip_loc$ + .@show_slot + .@itemid$ + .@viewid$ + .@refine$ + .@cards$ + .@item_option$ +"</ITEML>";
+S_Base62:
+	.@num = getarg(0);
+	while ( .@num ) {
+		.@base62_value$ = $@base62$[ .@num % 62 ] + .@base62_value$;
+		.@num /= 62;
+	}
+	.@default_zeroes = getarg(1,2);
+	while ( getstrlen(.@base62_value$) < .@default_zeroes )
+		.@base62_value$ = insertchar( .@base62_value$, "0", 0 );
+	return .@base62_value$;
+}
+-	script	ITEML	FAKE_NPC,{
+OnInit:
+	setarray $@base62$,"0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z";
+	end;
+}
+
+geffen,84,45,6	script	Camilla#01123	667 ,{
+cutin "tnm_lucile01",2;
+//	.@a = 2;
+//	.@b = 10;
+//	.@c = 0;
+//	getitem3 18743, 1, 1, 5, 0, 4001,4002,4003,4009, .@a, .@b, .@c;
+	getinventorylist;
+	for (.@i = 0; .@i < @inventorylist_count; ++.@i) {
+		if ((getiteminfo(@inventorylist_id[.@i], 5) & (EQP_COSTUME_HEAD_TOP|EQP_COSTUME_HEAD_MID|EQP_COSTUME_HEAD_LOW|EQP_COSTUME_GARMENT)) != 0 && @inventorylist_identify[.@i] == true && @inventorylist_attribute[.@i] == false && @inventorylist_expire[.@i] == 0 && @inventorylist_bound[.@i] == 0) {
+			.@costume_id[.@c] = @inventorylist_id[.@i];
+			.@costume_refine[.@c] = @inventorylist_refine[.@i];
+			.@costume_card1[.@c] = @inventorylist_card1[.@i];
+			.@costume_card2[.@c] = @inventorylist_card2[.@i];
+			.@costume_card3[.@c] = @inventorylist_card3[.@i];
+			.@costume_card4[.@c] = @inventorylist_card4[.@i];
+			.@costume_option_id1[.@c] = @inventorylist_option_id1[.@i];
+			.@costume_option_id2[.@c] = @inventorylist_option_id2[.@i];
+			.@costume_option_id3[.@c] = @inventorylist_option_id3[.@i];
+			.@costume_option_id4[.@c] = @inventorylist_option_id4[.@i];
+			.@costume_option_id5[.@c] = @inventorylist_option_id5[.@i];
+			.@costume_option_value1[.@c] = @inventorylist_option_value1[.@i];
+			.@costume_option_value2[.@c] = @inventorylist_option_value2[.@i];
+			.@costume_option_value3[.@c] = @inventorylist_option_value3[.@i];
+			.@costume_option_value4[.@c] = @inventorylist_option_value4[.@i];
+			.@costume_option_value5[.@c] = @inventorylist_option_value5[.@i];
+			.@costume_option_parameter1[.@c] = @inventorylist_option_parameter1[.@i];
+			.@costume_option_parameter2[.@c] = @inventorylist_option_parameter2[.@i];
+			.@costume_option_parameter3[.@c] = @inventorylist_option_parameter3[.@i];
+			.@costume_option_parameter4[.@c] = @inventorylist_option_parameter4[.@i];
+			.@costume_option_parameter5[.@c] = @inventorylist_option_parameter5[.@i];
+			++.@c;
+			// why the fuck your server allow enchantment on costumes ?
+			.@menu$ += getitemname(@inventorylist_id[.@i]) +":";
+		}
+	}
+	if (!.@costume_id) {
+cutin "tnm_lucile03",2;
+	mes "[^0000FFCamilla^000000]";
+		mes "it seems there are no costume in your inventory.";
+		mes "Are you trying to fool me here?!";
+close2;
+cutin "", 255;
+end;
+
+	}
+	mes "[^0000FFCamilla^000000]";
+	mes "Do you want to trade your old Costume to.";
+	mes "<ITEM>Monster Soul Fragment <INFO>6084 </INFO></ITEM> x3?";
+	next;
+	mes "[^0000FFCamilla^000000]";
+	mes "I can change all kinds of costumes from your inventory to your ^FF0000Equipped Costume.^000000";
+	mes "so be careful "+ strcharinfo(0) +" .";
+	next;
+	.@s = select(.@menu$) -1;
+	for (.@i = 0; .@i < 5; ++.@i) {
+		.@opt_id_[.@i] = getd(".@costume_option_id"+(.@i +1)+"["+ .@s +"]");
+		.@opt_value_[.@i] = getd(".@costume_option_value"+(.@i +1)+"["+ .@s +"]");
+		.@opt_param_[.@i] = getd(".@costume_option_parameter"+(.@i +1)+"["+ .@s +"]");
+	}
+//	mes F_MesItemInfo1(.@costume_id[.@s]); // better don't, because <ITEMLINK> doesn't display card and random option fields
+//	mes getitemname(.@costume_id[.@s]);
+	dispbottom F_ITEML(.@costume_id[.@s], .@costume_refine[.@s], .@costume_card1[.@s], .@costume_card2[.@s], .@costume_card3[.@s], .@costume_card4[.@s], .@opt_id_, .@opt_value_, .@opt_param_);
+cutin "tnm_lucile03",2;
+	mes "[^0000FFCamilla^000000]";
+	mes "Are you sure?!";
+
+	next;
+	select "Yes";
+	if (!checkweight(6084 ,1)) {
+		mes "it appears you are overweight.";
+close2;
+cutin "", 255;
+end;
+
+	}
+	delitem3 .@costume_id[.@s], 1, 1, .@costume_refine[.@s], 0, .@costume_card1[.@s], .@costume_card2[.@s], .@costume_card3[.@s], .@costume_card4[.@s], .@opt_id_, .@opt_value_, .@opt_param_;
+	getitem 6084 , 3;
+cutin "tnm_lucile02",2;
+	mes "[^0000FFCamilla^000000]";
+	mes "There you go! Thank you so much! Comeback again.";
+close2;
+cutin "", 255;
+end;
+}

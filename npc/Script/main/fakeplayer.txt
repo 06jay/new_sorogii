@@ -1,0 +1,233 @@
+-	script	FakePlayer	-1,{
+
+OnFKP:
+	if(getgroupid() < 99) end;
+	if(select("Add FakePlayer:Remove FakePlayer")==1)
+	{
+		set .@mn,1;
+		while(.@mn <= 16)
+		{
+			mes "[.::Fake Player Panel::.]";
+			mes " ";
+			switch(.@mn)
+			{
+				case 1:
+					mes "Enter the MOB (AI) ID";
+					query_sql "SELECT `mob_id` FROM `fake_id`",.@mbidrst;
+					if(.@mbidrst)
+					{
+						mes "^8B008B **MOB ID in use:^000000";
+						for(set .@i,0; .@i<getarraysize(.@mbidrst); set .@i,.@i+1)
+						{
+							mes "^0000CD[ "+.@mbidrst[.@i]+" ]^000000";
+							if(.final_fkid == .@mbidrst[.@i]){ mes "^FF0000 You can no longer create fake players all IDs are in use!^000000"; close; }
+						}
+						mes " ";
+					}
+					input .@mobid;
+					if(!.@mobid){ mes "^FF0000 Invalid value!^000000"; break; }
+					for(set .@i,0; .@i<getarraysize(.@mbidrst); set .@i,.@i+1)
+					{ if(.@mobid == .@mbidrst[.@i]){ mes "^FF0000 A fake player is already registered with this MOB ID!^000000"; break; } }			
+					set .@mn,2;
+					break;
+
+				case 2:
+					mes "Enter the name of the FakePlayer: ";
+					input .@name$;
+					query_sql "SELECT `char_id` FROM `char` WHERE `name`='"+.@name$+"'",.@rst;
+					if(.@rst)
+					{ mes "^FF0000 You cannot use an existing player's name!^000000"; set .@rst,0;  break; }
+					else
+					{
+						query_sql "SELECT `id` FROM `fake_id` WHERE `name`='"+.@name$+"'",.@rst;
+						if(.@rst){ mes "^0000FF A FakePlayer with that name is already registered!^000000"; set .@rst,0; break; }
+					}
+					set .@mn,3;
+					break;
+
+				case 3:
+					mes "Choose the class: ";
+					for(set .@i,0; .@i<getarraysize(.JobID); set .@i,.@i+1)
+					{ set .@mnJOB$,.@mnJOB$+jobname(.JobID[.@i])+(.@i < getarraysize(.JobID) ? ":":""); }
+					set .@job_id,.JobID[(select(.@mnJOB$)-1)];	
+					set .@mn,4;
+					break;
+
+				case 4:
+					mes "Enter the map:";
+					input .@map$;
+					if(getmapusers(.@map$) == -1){ mes "^FF0000 This map does not exist!^000000"; break; }
+					set .@mn,5;
+					break;
+
+				case 5:
+					mes "Enter the X coordinate:";
+					input .@x;
+					if(!.@x){ mes "^FF0000 Invalid value!^000000"; break; }
+					set .@mn,6;
+					next;
+
+				case 6:
+					mes "Enter the Y coordinate:";
+					input .@y;
+					if(!.@y){ mes "^FF0000 Invalid value!^000000"; break; }
+					set .@mn,7;
+					break;
+
+				case 7:
+					mes "Choose the gender:";
+					if(select("M:F")==1) set .@sex,1; else set .@sex,2;
+					set .@mn,8;
+					break;
+
+				case 8:
+					mes "Enter the Hair Style ID:";
+					input .@hair_style;
+					if(!.@hair_style){ mes "^FF0000 Invalid value!^000000"; break; }
+					set .@mn,9;
+					break;
+
+				case 9:
+					mes "Enter the Hair Color:";
+					input .@hair_color;
+					if(!.@hair_color){ mes "^FF0000 Invalid value!^000000"; break; }
+					set .@mn,10;
+					break;
+
+				case 10:
+					mes "Enter the Clothing Color:";
+					input .@cloth_color;
+					if(!.@cloth_color){ mes "^FF0000 Invalid value!^000000"; break; }
+					set .@mn,11;
+					break;
+
+				case 11:
+					mes "Enter the View ID of the weapon or 0 if you don't want one.";
+					input .@weapon;
+					set .@mn,12;
+					break;
+
+				case 12:
+					mes "Enter the View ID of the shield or 0 if you don't want one.";
+					input .@shield;
+					set .@mn,13;
+					break;
+
+				case 13:
+					mes "Enter the View ID of the Head Top or 0 if you don't want one.";
+					input .@head_top;
+					set .@mn,14;
+					break;
+
+				case 14:
+					mes "Enter the View ID of the Head Mid or 0 if you don't want one.";
+					input .@head_mid;
+					set .@mn,15;
+					break;
+
+				case 15:
+					mes "Enter the View ID of the Head Bottom or 0 if you don't want one.";
+					input .@head_bottom;
+					set .@mn,16;
+					break;
+
+				case 16:
+					mes "Enter the Option ID or 0 if you don't want one.";
+					input .@option;
+					set .@mn,17;
+					break;	
+			}
+			next;
+		}
+		mes "Nome: "+.@name$+"";
+		mes "Job ID: "+.@job_id;
+		mes "Map: "+.@map$+","+.@x+","+.@y+"";
+		mes "Sex: "+(.@sex == 1 ? "M":"F")+"";
+		mes "Hairstyle: "+.@hair_style;
+		mes "Hair Color: "+.@hair_color;
+		mes "Clothing Color: "+.@cloth_color;
+		mes "Weapon: "+.@weapon;
+		mes "Shield: "+.@shield;
+		mes "Head Top: "+.@head_top;
+		mes "Head Mid: "+.@head_mid;
+		mes "Head Bottom: "+.@head_bottom;
+		mes "Option: "+.@option;
+		mes "Mob ID: "+.@mobid;
+		if(select("Confirm:Cancel")==2){ close; }
+		query_sql "INSERT INTO `fake_id` VALUES (null,'"+.@map$+"',"+.@x+","+.@y+",'"+.@name$+"',"+.@job_id+","+.@sex+","+.@hair_style+","+.@hair_color+","+.@weapon+","+.@shield+","+.@head_top+","+.@head_mid+","+.@head_bottom+","+.@option+","+.@cloth_color+","+.@mobid+")";
+		next;
+		mes "[.::Fake Player Panel::.]";
+		mes " ";
+		mes "I would like to summon this fake player now ?";
+		mes " ";
+		mes "All fake players come back to life whenever they die and when you use reloadscript/reload the emulator!";
+		if(select("Summon:No")==2){ close; }
+		close2;
+		dispbottom "Done!";
+		callsub S_CALLFKP,.@name$;
+		end;
+	}
+	mes "[.::Fake Player Panel::.]";
+	mes "Choose which one you want to remove!";
+	query_sql "SELECT `name`,`job_id`,`mob_id`,`map`,`x`,`y` FROM `fake_id`",.@fk_name$,.@fk_jbid,.@fk_mobid,.@map$,.@x,.@y;
+	dispbottom "Total Encontrado: "+getarraysize(.@fk_jbid);
+	for(set .@i,0; .@i<getarraysize(.@fk_jbid); set .@i,.@i+1)
+	{
+		dispbottom "["+(.@i+1)+"]: "+.@fk_name$[.@i]+" - "+jobname(.@fk_jbid[.@i])+" - "+.@map$[.@i]+","+.@x[.@i]+","+.@y[.@i]+" - "+.@fk_mobid[.@i]+"";
+		mes "["+(.@i+1)+"]: "+.@fk_name$[.@i]+" - "+.@fk_mobid[.@i]+"";
+		set .@fknames$,.@fknames$+.@fk_name$[.@i]+(.@i < getarraysize(.@fk_jbid) ? ":":"");
+	}
+	dispbottom "Index 0: "+.@fk_name$[0]+"";
+	set .@nmslt,select(.@fknames$)-1;
+	explode(.@fkname$, .@fknames$, ":");
+	query_sql "DELETE FROM `fake_id` WHERE `name`='"+.@fkname$[.@nmslt]+"'";
+	next;
+	mes "[.::Fake Player Panel::.]";
+	mes " ";
+	mes "Done!";
+	close;
+
+S_CALLFKP:	
+	query_sql "SELECT * FROM `fake_id` "+(getarg(0) == "none" ? "":"WHERE `name`='"+getarg(0)+"'")+"",.@id,.@map$,.@x,.@y,.@name$,.@job_id,.@sex,.@hair_style,.@hair_color,.@weapon,.@shield,.@head_top,.@head_mid,.@head_bottom,.@option,.@cloth_color,.@mobid;
+	if(!getarraysize(.@id)) end;
+	for(set .@i,0; .@i<getarraysize(.@id); set .@i,.@i+1)
+	{
+		sleep .delay_invoc;
+		fakeplayer(.@map$[.@i],.@x[.@i],.@y[.@i],.@name$[.@i],.@job_id[.@i],.@sex[.@i],.@hair_style[.@i],.@hair_color[.@i],.@weapon[.@i],.@shield[.@i],.@head_top[.@i],.@head_mid[.@i],.@head_bottom[.@i],.@option[.@i],.@cloth_color[.@i],.@mobid[.@i]);
+	}
+	end;
+
+OnNPCKillEvent:
+	query_sql "SELECT `mob_id` FROM `fake_id` WHERE `mob_id`='"+killedrid+"'",.@rst;
+	if(.@rst)
+	{		
+		setarray .fktmpid[(getarraysize(.fktmpid) > 0 ? getarraysize(.fktmpid):0)],killedrid;
+		addtimer .delay_spawn,strnpcinfo(0)+"::OnSpawnFK";
+	}
+	end;
+
+OnSpawnFK:
+	query_sql "SELECT * FROM `fake_id` WHERE `mob_id`='"+.fktmpid[0]+"'",.@id,.@map$,.@x,.@y,.@name$,.@job_id,.@sex,.@hair_style,.@hair_color,.@weapon,.@shield,.@head_top,.@head_mid,.@head_bottom,.@option,.@cloth_color,.@mobid;
+	fakeplayer(.@map$[.@i],.@x[.@i],.@y[.@i],.@name$[.@i],.@job_id[.@i],.@sex[.@i],.@hair_style[.@i],.@hair_color[.@i],.@weapon[.@i],.@shield[.@i],.@head_top[.@i],.@head_mid[.@i],.@head_bottom[.@i],.@option[.@i],.@cloth_color[.@i],.@mobid[.@i]);
+	deletearray .fktmpid[0],1;
+	end;
+
+OnInit:
+	//List of job IDs
+	setarray .JobID[0],4013,4012,4001,4002,4010,4011,4015,4014,4017,4021;
+
+	//The last custom MOB_ID added
+	set .final_fkid,25005;
+
+	//Respawn delay for fake players upon death
+	set .delay_spawn,30000; //(milisegundos)
+
+	//Delay for summoning fake players upon server startup or restart
+	set .delay_invoc,10000; //(milisegundos)
+
+	//Do not change
+	bindatcmd "fakeplayer",strnpcinfo(3)+"::OnFKP";
+	query_sql "CREATE TABLE IF NOT EXISTS `fake_id` (`id` int(9) NOT NULL AUTO_INCREMENT,`map` varchar(18) NOT NULL,`x` smallint(3) NOT NULL,`y` smallint(3) NOT NULL,`name` varchar(28) NOT NULL,`job_id` int(6) NOT NULL,`sex` tinyint(1) NOT NULL,`hair_style` int(3) NOT NULL,`hair_color` int(3) NOT NULL,`weapon` smallint(5) NULL DEFAULT 0,`shield` smallint(5) NULL DEFAULT 0,`head_top` smallint(5) NULL DEFAULT 0,`head_mid` smallint(5) NULL DEFAULT 0,`head_bottom` smallint(5) NULL DEFAULT 0,`option` smallint(4) NULL DEFAULT 0,`cloth_color` int(3) NULL DEFAULT 0,`mob_id` smallint(8) NOT NULL,PRIMARY KEY (`id`));";
+	callsub S_CALLFKP,"none";
+	end;
+}

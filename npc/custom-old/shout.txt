@@ -1,0 +1,18 @@
+function	script	BROADCAST2	{
+if(@Delay < gettimetick(2)){
+	
+input @megaphone$;
+	
+announce "[Streamer] "+strcharinfo(0)+":" + @megaphone$,bc_all,0x00FFFF;
+	
+set @Delay,gettimetick(2) + 180;
+
+}
+
+else if(@Delay > 0){
+
+dispbottom "Sorry, item cooldown for 3 minutes.";
+
+}
+end; 
+}

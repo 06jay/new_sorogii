@@ -1,0 +1,32 @@
+function	script	FR_RBox	{
+
+	// change Item ID here
+	setarray @i1[0],12902,13696,14164,14163,14162,14161,14160,14159,7622,12213,7622,7642; // Common Items 
+	setarray @i2[0],60260,45023,60218,30126,45034; // Rare Items
+	setarray @i3[0],45101,45155; // Super Rare Items
+
+	set @i1rand,rand( getarraysize(@i1) ); // Randomize Common Items; just change max amount if you add items
+	set @i2rand,rand( getarraysize(@i2) ); // Randomize Rare Items; just change max amount if you add items
+	set @i3rand,rand( getarraysize(@i3) ); //Randomize Super Rare Items; just change max amount if you add items
+
+	.chance = rand(100);
+
+		// Super Rare Item 1%
+		if (.chance == .1) {
+			getitem @i3[@i3rand],1;
+			announce "Attention Slayers!!! "+strcharinfo(0)+" Won the GRAND PRIZE ["+getitemname(@i3[@i3rand])+"] from Dragon Egg Scroll!~.",0;
+			end;
+		} 
+
+		// Rare Item 10%
+		else if (.chance <= .5 && .chance >= 1){
+			getitem @i2[@i2rand],1;
+			announce " "+strcharinfo(0)+" got a Rare Item ["+getitemname(@i2[@i2rand])+"] from Dragon Egg Scroll!~.",0,0xFF0099;
+			end;
+		} 
+
+		// Common Items
+		else {
+			getitem @i1[@i1rand],1;
+	end; }
+}

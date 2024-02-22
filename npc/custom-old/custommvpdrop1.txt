@@ -1,0 +1,61 @@
+// https://rathena.org/board/topic/117019-r-mvp-custom-drop/
+ 
+-	script	mvp_drop_main	-1,{
+ 
+	OnNPCKillEvent:
+		if (getmonsterinfo(killedrid, MOB_MVPEXP)) {
+			if (rand(10000) < 10000) { // 0.02%
+				.@party_id = getcharid(1);
+				getmapxy .@map$,.@x,.@y;
+				if (!.@party_id) {
+					.@aid = getcharid(3);
+				}
+				else {
+					getpartymember .@party_id, 2;
+					.@size = $@partymembercount;
+					copyarray .@pt_aid[0], $@partymemberaid[0], .@size;
+					for (.@i = .@size - 1; .@i >= 0; .@i++) {
+						if (attachrid(.@pt_aid[.@i])) {
+							getmapxy(.@pc_map$, .@pc_x, .@pc_y, 0);
+							if (.@pc_map$ != .@map$ || distance(.@x, .@y, .@pc_x, .@pc_y) > 20) {
+								deletearray .@pt_aid[.@i], 1;
+								.@size--;
+							}
+						}
+						detachrid;
+					}
+					.@aid = .@pt_aid[rand(.@size)];
+				}
+				if (.@aid && attachrid(.@aid)) {
+					.@item_id = .item_id[rand(.item_id_size)];
+					.@refine = rand(.refine_rate[0], .refine_rate[1]);
+					.@rand_id = .rand_id[rand(.rand_id_size)];
+					.@rand_value = .rand_value[rand(.rand_value_size)];
+					.@rand_param = .rand_param[rand(.rand_param_size)];
+ 
+					//<RandomIDArray>,<RandomValueArray>,<RandomParamArray>
+ 
+					getitem3 .@item_id, 1, 1, .@refine, 0, 0, 0, 0, 0, .@rand_id, .@rand_value, .@rand_param;
+					mapannounce .@map$, "<MVP Reward> "+strcharinfo(0)+" gained "+getitemname(.@item_id), bc_map;
+				}
+			}
+		}
+		end;
+ 
+	OnInit:
+		// min and max refine
+		setarray .refine_rate, 0, 0;
+		// list of possible items
+		setarray .item_id, 5001, 5002, 5003, 5004;
+		.item_id_size = getarraysize(.item_id);
+ 
+		// list of possible random bonus.
+		// setarray .rand_id,
+		// setarray .rand_value,
+		// setarray .rand_param,
+ 
+		.rand_id_size = getarraysize(.rand_id);
+		.rand_value_size = getarraysize(.rand_value);
+		.rand_param_size = getarraysize(.rand_param);
+		end;
+}

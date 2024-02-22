@@ -1,0 +1,7 @@
+-	script	test_cellpvp	-1,{
+end;
+OnInit:
+
+setcell "prontera",156,174,53,102,cell_pvp,0;
+end;
+}

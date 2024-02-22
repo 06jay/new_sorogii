@@ -1,0 +1,354 @@
+//===== rAthena Script =======================================
+//= Euphy's Quest Shop
+//===== By: ==================================================
+//= Euphy
+//===== Current Version: =====================================
+//= 1.7
+//===== Compatible With: =====================================
+//= rAthena Project
+//===== Description: =========================================
+//= A dynamic quest shop based on Lunar's, with easier config.
+//= Includes support for multiple shops & cashpoints.
+//= Item Preview script by ToastOfDoom.
+//===== Additional Comments: =================================
+//= 1.0 Initial script.
+//= 1.2 Added category support.
+//= 1.3 More options and fixes.
+//= 1.4 Added debug settings.
+//= 1.5 Replaced categories with shop IDs.
+//= 1.6 Added support for purchasing stackables.
+//= 1.6a Added support for previewing costumes and robes.
+//= 1.6b Added 'disable_items' command.
+//= 1.6c Replaced function 'A_An' with "F_InsertArticle".
+//= 1.7 Added Success rates - by Mabuhay
+//============================================================
+
+// Shop NPCs -- supplying no argument displays entire menu.
+//	callfunc "gshop"{,<shop ID>{,<shop ID>{,...}}};
+//  ADD YOUR NPC HERE
+//============================================================
+s_room,45,71,6	script	Loki#102	512	,{ callfunc "gshop"; }
+// prontera,165,203,6	script	Quest Shop#2	998,{ callfunc "qshop",1,2; }	// call the shop 1 and 2 defined below
+// etc.. Add your Shop NPCs 'Quest Shop#XXX' here
+//============================================================
+
+
+// Script Core - DO NOT DUPLICATE THIS NPC !!!!!!!!!!!!!
+//============================================================
+-	script	guest_shop	-1,{
+function Add; function Chk; function Slot;
+OnInit:
+	freeloop(1);
+
+// -----------------------------------------------------------
+//  Basic shop settings.
+// -----------------------------------------------------------
+
+	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,1;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .ShowID,0;  	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,0;	// Show Zeny cost, if any? (1: yes / 0: no)
+	set .MaxStack,100;	// Max number of quest items purchased at one time.
+	set .SuccessRate,1;	// Enable Success Rates? ( 1: yes / 0: no)
+
+// -----------------------------------------------------------
+//  Points variable -- optional quest requirement.
+//	setarray .Points$[0],"<variable name>","<display name>";
+// -----------------------------------------------------------
+
+	setarray .Points$[0],
+		"#CASHPOINTS", "Cash Points";
+
+
+//=====================================================================================
+// ------------------- ADD YOUR SHOPS NAME AND ITEMS SHOPS STARTING HERE --------------
+//=====================================================================================
+
+// -----------------------------------------------------------
+//  Shop IDs -- to add shops, copy dummy data at bottom of file.
+//	setarray .Shops$[1],"<Shop 1>","<Shop 2>"{,...};
+// -----------------------------------------------------------
+
+	setarray .Shops$[1],
+		">Upper Gear",	// Shop Named 1
+		">Mid Gear",		// Shop Named 2
+		">Lower Gear";		// Shop Named 3
+// -----------------------------------------------------------
+//  Quest items -- do NOT use a reward item more than once!
+//	Add(<shop ID>,<reward ID>,<reward amount>,
+//	    <Zeny cost>,<point cost>,<success rate>
+//	    <required item ID>,<required item amount>{,...});
+// -----------------------------------------------------------
+
+// Shop 1
+	Add(1,5359,1,2000000,0,20,985,50,2285,1,7642,10,6081,10,6380,24); //ch
+	Add(1,5376,1,2000000,0,20,985,50,2255,1,7642,10,6081,10,6380,24); //satanic
+	Add(1,5490,1,2000000,0,20,985,50,2229,1,7642,10,6081,10,6380,24); //anub
+	Add(1,5286,1,2000000,0,20,985,50,2227,1,7642,10,6081,10,6380,24);	//peco
+	Add(1,5360,1,2000000,0,20,985,50,2213,1,7642,10,6081,10,6380,24);	//wickebaine
+	Add(1,5388,1,2000000,0,20,985,50,2233,1,7642,10,6081,10,6380,24);	//snajehata
+	Add(1,5224,1,2000000,0,20,985,50,2299,1,7642,10,6081,10,6380,24);	//oeh 5480 
+	Add(1,5379,1,2000000,0,20,985,50,2299,1,7642,10,6081,10,6380,24);	//balloonhat
+
+//	Add(1,5137,1,2000000,0,20,985,50,5141,1,7642,10,6081,10,6380,24,1060,300,7047,100,1039,200,1038,200); //alice doll
+//	Add(1,18613,1,2000000,0,20,985,50,5003,1,7642,10,6081,10,6380,24,526,300,7023,10,1020,200,994,200);	//black mustang
+//	Add(1,18600,1,2000000,0,20,985,50,5120,1,7642,10,6081,10,6380,24,7205,300,7206,10,7161,200,7205,100);	//cat ear
+//	Add(1,5357,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,18509,1,0,0,100,2299,1,1054,450,943,1200);
+//	Add(1,5564,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,5277,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,5286,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,18597,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,5311,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,5423,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,5518,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,5374,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,5653,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,5132,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,5293,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,18539,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,5396,1,0,0,100,2252,1,1054,450,943,1200);
+//	Add(1,5225,1,0,0,50,1059,250,2221,1,2227,1,7063,600);
+//	Add(1,5423,1,0,0,55,7086,1,969,1,999,1,1003,1,984,2);
+//	Add(1,5269,1,2000000,0,20,985,50,2254,1,7642,10,6081,10,6380,24);	//angelwing
+//	Add(1,5481,1,2000000,0,20,985,50,2217,1,7642,10,6081,10,6380,24);	//hermoid
+
+
+
+
+
+
+
+
+// Shop 2
+	Add(2,5389,1,1500000,0,20,999,50,2281,1,7642,10,6081,10,6380,24);	//as
+	Add(2,5401,1,1500000,0,20,999,50,2263,1,7642,10,6081,10,6380,24);	//BF
+	Add(2,5800,1,1500000,0,20,999,50,5040,1,7642,10,6081,10,6380,24);	//BOG
+	Add(2,5421,1,1500000,0,20,999,50,5104,1,7642,10,6081,10,6380,24);	//ear ifrit
+	Add(2,5358,1,1500000,0,20,999,50,2201,1,7642,10,6081,10,6380,24);	//pecoear
+	Add(2,5325,1,1500000,0,20,999,50,2286,1,7642,10,6081,10,6380,24); 	//roboeye
+	Add(2,5397,1,1500000,0,20,999,50,5014,1,7642,10,6081,10,6380,24);	//scuba
+	Add(2,5314,1,1500000,0,20,999,50,2288,1,7642,10,6081,10,6380,24);	//hockey
+
+//	Add(2,18503,1,0,0,50,7292,30,969,10,999,50,714,10);//smallevilhorn
+//	Add(2,5516,1,1500000,0,20,999,50,2271,1,7642,10,6081,10,6380,24);	//hawkeye
+//	Add(2,5664,1,1500000,0,20,999,50,5014,1,7642,10,6081,10,6380,24);	//filir
+//	Add(2,5402,1,1500000,0,20,999,50,2286,1,7642,10,6081,10,6380,24);	//mischebos
+//	Add(2,5135,1,1500000,0,20,999,50,5104,1,7642,10,6081,10,6380,24);	//cyclope
+
+
+
+// Shop 3
+	Add(3,5445,1,1000000,0,20,984,50,2262,1,7642,10,6081,10,6380,24,539,250,722,100,529,100);	//candymouth
+	Add(3,5594,1,1000000,0,20,984,50,2265,1,7642,10,6081,10,6380,24,7097,250,722,100,539,100);	//donut
+	Add(3,5220,1,1000000,0,20,984,50,2267,1,7642,10,6081,10,6380,24,1022,250,7203,100,1019,100);	//e.pipe
+	Add(3,5361,1,1000000,0,20,984,50,5113,1,7642,10,6081,10,6380,24,994,250,7216,100,10019,50);	//gscarf
+	Add(3,5305,1,1000000,0,20,984,50,5113,1,7642,10,6081,10,6380,24,7319,250,7110,100,7121,100);	//dagger
+	Add(3,5463,1,1000000,0,20,984,50,2269,1,7642,10,6081,10,6380,24,1013,250,954,100,1099,100);	//rainbow
+	Add(3,5462,1,1000000,0,20,984,50,2266,1,7642,10,6081,10,6380,24,1027,250,7107,100,941,150);	//spiked
+
+
+
+
+//	Add(3,5362,1,1000000,0,20,984,50,2270,1,7642,10,6081,10,6380,24,1097,7156,967,100,1097,100);	//ninja
+//	Add(3,18670,1,1000000,0,50,984,50,2269,1,7642,10,6081,10,6380,24,1095,300,7053,200);	//hanki
+//	Add(3,5548,1,3,0,50,515,1,713,1);
+//	Add(3,5775,1,3,0,50,513,1,713,1);
+//	Add(3,5597,1,3,0,50,513,1,713,1);
+//	Add(3,5574,1,1000000,0,20,984,50,2269,1,7642,10,6081,10,6380,24,1003,250,1067,100,1019,100);	//welllchew
+//	Add(3,5377,1,1000000,0,20,984,50,2267,1,7642,10,6081,10,6380,24,1095,250,7053,100,1098,100);	//c.pipe
+
+
+
+
+
+
+
+
+// -----------------------------------------------------------
+
+//=====================================================================================
+// ------------------- YOUR SHOPS AND ITEMS SHOPS HAVE BEEN ADDED ---------------------
+//=====================================================================================
+
+	freeloop(0);
+	set .menu$,"";
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1) {
+		set .menu$, .menu$+.Shops$[.@i]+":";
+		npcshopdelitem "gshop"+.@i,909;
+	}
+	end;
+
+OnMenu:
+	set .@size, getarraysize(@i);
+	if (!.@size) set @shop_index, select(.menu$);
+	else if (.@size == 1) set @shop_index, @i[0];
+	else {
+		for(set .@j,0; .@j<.@size; set .@j,.@j+1)
+			set .@menu$, .@menu$+.Shops$[@i[.@j]]+":";
+		set @shop_index, @i[select(.@menu$)-1];
+	}
+	deletearray @i[0],getarraysize(@i);
+	if (.Shops$[@shop_index] == "") {
+		message strcharinfo(0),"An error has occurred.";
+		end;
+	}
+	dispbottom "Select one item at a time.";
+	callshop "gshop"+@shop_index,1;
+	npcshopattach "gshop"+@shop_index;
+	end;
+
+OnBuyItem:
+	// .@q[] : RewardID, BoughtAmt, RewardAmt, BaseAmt, ReqZeny, ReqPts, SuccessRate, { ReqItem, ReqAmt, ... }
+	setarray .@q[0],@bought_nameid[0],((@bought_quantity[0] > .MaxStack)?.MaxStack:@bought_quantity[0]);
+	copyarray .@q[3],getd(".q_"+@shop_index+"_"+.@q[0]+"[0]"),getarraysize(getd(".q_"+@shop_index+"_"+.@q[0]));
+	set .@q[2],.@q[1]*.@q[3];
+	if (!.@q[2] || .@q[2] > 30000) {
+		message strcharinfo(0),"You can't purchase that many "+getitemname(.@q[0])+".";
+		end;
+	}
+	mes "[Loki]";
+	mes "Creating this item has a chance of ^FF0000FAILING.^000000 and all of your materials will be used up.";
+	mes " ";
+	mes "So do you still want to continue?";
+	next;
+	mes "[Loki]";
+	mes "Good luck my Lord!";
+	next;
+	mes "[Loki]";
+	mes "Reward: ^0055FF"+((.@q[2] > 1)?.@q[2]+"x ":"")+Slot(.@q[0])+"^000000";
+	if (.SuccessRate) mes "Success Rate: ^ff0000"+ .@q[6] +"^000000%";
+	mes "Requirements:";
+	disable_items;
+	if (.@q[4]) mes " > "+Chk(Zeny,.@q[4]*.@q[1])+(.@q[4]*.@q[1])+" Zeny^000000";
+	if (.@q[5]) mes " > "+Chk(getd(.Points$[0]),.@q[5]*.@q[1])+(.@q[5]*.@q[1])+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+(.@q[5]*.@q[1])+")^000000";
+	if (.@q[7]) for(set .@i,7; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])+((.ShowID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+(.@q[.@i+1]*.@q[1])+")^000000";
+	next;
+	setarray @qe[1], getiteminfo(.@q[0],5), getiteminfo(.@q[0],11);
+	if (@qe[2] > 0 && ((@qe[1] & EQP_HEAD_LOW) || (@qe[1] & EQP_HEAD_TOP) || (@qe[1] & EQP_HEAD_MID) || (@qe[1] & EQP_COSTUME_HEAD_TOP) || (@qe[1] & EQP_COSTUME_HEAD_MID) || (@qe[1] & EQP_COSTUME_HEAD_LOW) || (@qe[1] & EQP_GARMENT) || (@qe[1] & EQP_COSTUME_GARMENT)))
+		set .@preview,1;
+	addtimer 1000, strnpcinfo(0)+"::OnEnd";
+	while(1) {
+		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000:"+((.@preview && !@qe[7])?" ~ Preview...":"")+": ~ ^777777Cancel^000000")) {
+		case 1:
+			if (@qe[0]) {
+				mes "[Loki]";
+				mes "You're missing one or more quest requirements.";
+				close;
+			}
+			if (!checkweight(.@q[0],.@q[2])) {
+				mes "[Loki]";
+				mes "^FF0000You need "+(((.@q[2]*getiteminfo(.@q[0],6))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
+				close;
+			}
+			if (.@q[4]) set Zeny, Zeny-(.@q[4]*.@q[1]);
+			if (.@q[5]) setd .Points$[0], getd(.Points$[0])-(.@q[5]*.@q[1]);
+			if (.@q[7]) for(set .@i,7; .@i<getarraysize(.@q); set .@i,.@i+2)
+				delitem .@q[.@i],.@q[.@i+1]*.@q[1];
+			// If success rate setting is on, this happens if it fails
+			if ( .SuccessRate && .@q[6] <= rand(100) ) { // on fail
+		progressbar "ffff00",3;
+				mes "[Loki]";
+				mes "You ^FF0000Failed^000000 to create this item. Try again!";
+				close;
+
+			}
+		progressbar "ffff00",3;
+			getitem .@q[0],.@q[2];
+			if (.Announce) announce strcharinfo(0)+" has created "+((.@q[2] > 1)?.@q[2]+"x "+getitemname(.@q[0]):callfunc("F_InsertArticle",getitemname(.@q[0])))+"!",0;
+			specialeffect2 EF_FLOWERLEAF;
+			close;
+		case 2:
+			setarray @qe[3], getlook(LOOK_HEAD_BOTTOM), getlook(LOOK_HEAD_TOP), getlook(LOOK_HEAD_MID), getlook(LOOK_ROBE), 1;
+			if ((@qe[1] & 1) || (@qe[1] & 4096)) changelook LOOK_HEAD_BOTTOM, @qe[2];
+			else if ((@qe[1] & 256) || (@qe[1] & 1024)) changelook LOOK_HEAD_TOP, @qe[2];
+			else if ((@qe[1] & 512) || (@qe[1] & 2048)) changelook LOOK_HEAD_MID, @qe[2];
+			else if ((@qe[1] & 4) || (@qe[1] & 8192)) changelook LOOK_ROBE, @qe[2];
+			break;
+		case 3:
+			close;
+		}
+	}
+
+OnEnd:
+	if (@qe[7]) {
+		changelook LOOK_HEAD_BOTTOM, @qe[3];
+		changelook LOOK_HEAD_TOP, @qe[4];
+		changelook LOOK_HEAD_MID, @qe[5];
+		changelook LOOK_ROBE, @qe[6];
+	}
+	deletearray @qe[0],8;
+	end;
+
+function Add {
+	if (getitemname(getarg(1)) == "null") {
+		debugmes "Quest reward #"+getarg(1)+" invalid (skipped).";
+		return;
+	}
+	setarray .@j[0],getarg(2),getarg(3),getarg(4),getarg(5);
+	for(set .@i,6; .@i<getargcount(); set .@i,.@i+2) {
+		if (getitemname(getarg(.@i)) == "null") {
+			debugmes "Quest requirement #"+getarg(.@i)+" invalid (skipped).";
+			return;
+		} else
+			setarray .@j[.@i-2],getarg(.@i),getarg(.@i+1);
+	}
+	copyarray getd(".q_"+getarg(0)+"_"+getarg(1)+"[0]"),.@j[0],getarraysize(.@j);
+	npcshopadditem "gshop"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return;
+}
+
+function Chk {
+	if (getarg(0) < getarg(1)) {
+		set @qe[0],1;
+		return "^FF0000";
+	} else
+		return "^00CC00";
+}
+
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot) {
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0),2) == 4 || getiteminfo(getarg(0),2) == 5) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$;
+	}
+}
+}
+
+function	script	gshop	{
+	deletearray @i[0],getarraysize(@i);
+	for(set .@i,0; .@i<getargcount(); set .@i,.@i+1)
+		set @i[.@i],getarg(.@i);
+	doevent "guest_shop::OnMenu";
+	end;
+}
+
+
+// Dummy shop data -- copy as needed.
+//============================================================
+-	shop	gshop1	-1,909:-1
+-	shop	gshop2	-1,909:-1
+-	shop	gshop3	-1,909:-1
+-	shop	gshop4	-1,909:-1
+-	shop	gshop5	-1,909:-1
+-	shop	gshop6	-1,909:-1
+-	shop	gshop7	-1,909:-1
+
+
+s_room,45,71,6	script	 #Rental NPC#220122ee3eqwe	111,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Gear Quest");
+	setnpctimer 0;
+	end;
+}
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+geffen,81,45,6	script	Yol	757,{
+
+
+
+set .@rewname$,"[ Yol ]";
+set .rewardid,12744;
+set @rewardamount,1;
+if(gettimetick(2) > #lastTimeTalked) {
+
+mes .@rewname$;
+mes "Hello "+strcharinfo(0)+",I";
+mes "am here to give you a daily";
+mes "Reward. Do you want to claim it now?";
+next;
+switch(select("Yes:No:Cancel")) {
+case 1:
+mes .@rewname$;
+mes "Okay going to give you the supplies!";
+next;
+mes "Welcome...this is the token from our Server.";
+mes "Happy Grinding. And  Remember "+ strcharinfo(0) +" ^FF0000Keep grinding!!!^000000";
+
+getitem 11503,250;
+getitem 11504,125;
+getitem 12210,2;
+set #lastTimeTalked,gettimetick(2)+43200;
+close;
+case 2:
+mes .@rewname$;
+mes "Okay goodbye!";
+close;
+case 3:
+close;
+}
+}
+.@delay = 14*0*12 - (gettimetick(2) - #lastTimeTalked);
+   .@hours = .@delay / 60*60;
+   .@hours = .@delay / (60*60);
+     .@minutes = (.@delay - (.@hours*60*60)) / 60;
+     .@seconds = (.@delay - (.@hours*60*60) - (.@minutes*60));
+     mes "Sorry, you have to wait "+.@hours+" hour"+(.@hours>1?"s":"")+" "+.@minutes+" minute"+(.@minutes>1?"s":"")+" "+.@seconds+" second"+(.@seconds>1?"s":"")+" to claim your free supplies again.";
+close;
+}
+
+// Duplicates
+//============================================================

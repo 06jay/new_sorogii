@@ -1,0 +1,62 @@
+
+prontera,161,185,4	script	PvP-Warper	10298,{
+cutin "se_star03",2;
+set .@room1$,"guild_vs3"; //Insert map name into quotation marks & adjust to your desire
+set .@room2$,"pvp_y_1-2"; //Insert map name into quotation marks & adjust to your desire
+set .@room3$,"pvp_n_7-3"; //Insert map name into quotation marks & adjust to your desire
+set .@name$,"[Luke]"; //NPC Dialogue name
+switch(select("Trans Class Only:For All Class")){
+case 2:
+warp .@room1$,0,0;
+        announce ""+strcharinfo(0)+" entered the PVP Room for All Class",0,0x33FF00;
+end;
+case 1:
+if(Class >= 4000 && Class <= 4022){ //Allows any Trans Class
+warp .@room2$,0,0;
+        announce ""+strcharinfo(0)+" entered the PVP Room Bloody Mode",0,0xFF0066;
+
+end;
+}
+cutin "", 255;
+close;
+//case 3:
+if(Class >= 4054 || Class <= 4087){ 
+warp .@room3$,0,0;
+end;
+}
+close;
+}
+Oninit:
+OnTimer5000:
+	delwaitingroom;
+	switch(rand(1,3)) {
+Case 1:
+	waitingroom getmapusers(.@room1$)+" player"+( getmapusers(.@room1$) > 1 ? "s":"") +" in map", 0;
+	goto Timer;
+	end;
+	break;
+
+Case 2:
+	waitingroom getmapusers(.@room2$)+" player"+( getmapusers(.@room2$) > 1 ? "s":"") +" in map", 0;	
+	goto Timer;
+	end;
+	break;
+
+Case 3:
+	waitingroom getmapusers(.@room3$)+" player"+( getmapusers(.@room3$) > 1 ? "s":"") +" in map", 0;	
+	goto Timer;
+	end;
+	break;
+Timer:
+	initnpctimer;
+}
+while(1) {
+        showscript "PVP MASTER", getnpcid(0);
+        sleep 1000;
+    }
+    end;
+}
+pvp_y_1-2    mapflag    nowarpto
+pvp_y_1-2    mapflag    nowarp
+pvp_y_1-2    mapflag    noreturn
+pvp_y_1-2    mapflag    loadevent 

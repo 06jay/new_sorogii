@@ -1,0 +1,74 @@
+prontera,146,172,4	script	Streamer Supply	4_f_berrytea,{ 
+	if (countitem(12351) < 1) 
+	{
+		mes "[Streamer Supply]";
+		mes "^FF0000Sorry, but this is for Streamer's only.^000000";
+		mes "Want to become a Streamer?,Visit our FB page for more details.";
+		mes "^0033FFwww.facebook.com/ROxChaos^000000";
+		close;
+	} else {
+
+
+	mes "[ Streamer Supplier ]";
+	if(#DSUPPLY==gettime(DT_YYYYMMDD)){
+	mes "^CB59E8Thank you for Streaming with us. More Power!.Please come back again tom for your supplies^_^.^000000";
+	end;
+}
+	mes "^CB59E8Here's your daily Supply. Thank you so much Streaming with us.^000000!";
+	explode(.@items$,.items$[gettime(DT_DAYOFWEEK)],"|");
+	for(.@i=0;.@i<getarraysize(.@items$);.@i+=2)
+		getitem atoi(.@items$[.@i]),atoi(.@items$[.@i+1]);
+	explode(.@bitems$,.bounditems$[gettime(DT_DAYOFWEEK)],"|");
+	for(.@i=0;.@i<getarraysize(.@bitems$);.@i+=2)
+		getitembound atoi(.@bitems$[.@i]),atoi(.@bitems$[.@i+1]),Bound_Account;
+	set #DSUPPLY,gettime(DT_YYYYMMDD);
+
+end;
+
+OnHour00:
+	delwaitingroom strnpcinfo(0);
+	waitingroom callsub(OnCheckDay)+" Streamer Supply",0;
+end;
+OnCheckDay:
+	switch(gettime(DT_DAYOFWEEK)){
+		case 0: return "Sunday";
+		case 1: return "Monday";
+		case 2: return "Tuesday";
+		case 3: return "Wednesday";
+		case 4: return "Thursday";
+		case 5: return "Friday";
+		case 6: return "Saturday";
+		default: return "ERROR!";
+			break;
+	}
+return;
+
+OnInit:
+	waitingroom callsub(OnCheckDay)+" Streamer Supply",0;
+	
+	//You can use Copy | (Vertical Bar) to separate items
+	// Item ID, Amount{,Item ID,Amount}...
+	setarray .items$[0],
+			"11503|350|11504|200|12210|2|7539 |10",	//Sunday
+			"11503|250|11504|120|12210|2", //Monday
+			"11503|250|11504|120|12210|2", //Tuesday
+			"11503|250|11504|120|12210|2", //Wednesday
+			"11503|250|11504|120|12210|2", //Thursday
+			"11503|250|11504|120|12210|2", //Friday
+			"11503|250|11504|120|12210|27539 |10"; //Saturday
+	
+	setarray .bounditems$,
+			"6391|5",	//Sunday
+			"6391|5", //Monday
+			"6391|5", //Tuesday
+			"6391|5", //Wednesday
+			"6391|5", //Thursday
+			"6391|5", //Friday player give away
+			"6391|5"; //Saturday
+end;
+
+}}
+
+
+
+

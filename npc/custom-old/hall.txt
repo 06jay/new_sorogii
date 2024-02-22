@@ -1,0 +1,106 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+izlude,121,155,4	script	Heimdall#mapaker	734 ,{	
+ 
+	if (rentalcountitem(24248) < 1) 
+	{
+		mes "[Heimdall]";
+		mes "Sorry, but selected Slayer can use this Teleport Services.";
+		mes "You must possess <ITEM>Slayer Ring<INFO>24248</INFO></ITEM> to use this.";
+		end;
+		close;
+	} else {
+			mes "[Heimdall]";
+			mes "Good day Master Slayer, where are you heading?";
+			next;
+			switch(select("^F70000King's Throne^000000:Abyss_dun02:lhz_dun02:iz_dun03:c_tower3:mjo_dun02:gl_sew03:ice_dun02:juperos_02:mag_dun02:pay_dun03:in_sphinx3:moc_pryd02")) 
+		{
+		case 1:
+			warp "s_room",50,65;
+			break;
+		case 2:
+			warp "abyss_02",275,270;
+			break;
+		case 3:
+			warp "lhz_dun02",150,18;
+			break;
+		case 4:
+			warp "iz_dun03",261,245;
+			break;
+		case 5:
+			warp "c_tower3",47,42;
+			break;
+		case 6:
+			warp "mjo_dun02",381,343;
+			break;
+		case 7:
+			warp "gl_sew03",171,283;
+			break;
+		case 8:
+			warp "ice_dun02",151,139;
+			break;
+		case 9:
+			warp "juperos_02",37,63;
+			break;
+		case 10:
+			warp "mag_dun02",47,30;
+			break;
+		case 11:
+			warp "pay_dun03",155,158;
+			break;
+		case 12:
+			warp "in_sphinx3",210,54;
+			break;
+		case 13:
+			warp "moc_pryd02",10,192;
+			break;
+
+		}
+ 
+ 
+ 
+			}	
+ 
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

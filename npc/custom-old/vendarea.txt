@@ -1,0 +1,19 @@
+geffen,106,60,6	script	Vending Area#11	837  ,{	
+	warp "geffen",140,68;
+	end;
+OnPCLoadMapEvent:
+	if(strcharinfo(3) == strnpcinfo(4)) {
+		showevent QTYPE_WARG;
+	}
+end;
+
+OnInit:
+	while(1) {
+		showscript "Vending Area", getnpcid(0);
+		sleep 1000;
+	}
+end;
+}
+geffen	mapflag	loadevent
+
+

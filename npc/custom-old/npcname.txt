@@ -1,0 +1,160 @@
+izlude,161,125,4	script	 Akira#01223eqwe	111,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Rental NPC");
+	setnpctimer 0;
+	end;
+}
+
+izlude,157,130,4	script	 #Rental NPC#201223eqwe	111,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Quest Costume");
+	setnpctimer 0;
+	end;
+}
+
+
+izlude,157,120,2	script	 #Rental NPC#2201223eqwe	111,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("MVP Quest Costume");
+	setnpctimer 0;
+	end;
+}
+
+
+
+//s_room,68,75,4	cashshop	Chaos#0123	922,	14284:1499 
+
+
+izlude,120,156,3	script	 Job Master#22012e23eqwe	111,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Job Master");
+	setnpctimer 0;
+	end;
+}
+
+
+
+izlude,154,150,6	script	Gatchapon#012333	111 ,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Gatchapon!");
+	setnpctimer 0;
+	end;
+}
+
+izlude,123,151,4	script	Heimdall#012111333	111 ,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Slayer's Guild Hall");
+	setnpctimer 0;
+	end;
+}
+
+izlude,108,140,0	script	Akio#3xzzx1z	111 ,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Slayer's Hunting Quest");
+	setnpctimer 0;
+	end;
+}
+
+izlude,108,134,0	script	Kaden#3xzzx1z	111 ,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Random Hunting Quest");
+	setnpctimer 0;
+	end;
+}
+
+
+izlude,108,128,0	script	Raizen#3xz1	111 ,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Solo or Group Quest");
+	setnpctimer 0;
+
+	end;
+}
+new_1-1,53,80,4	script	Rigor#3xz1	111 ,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Race to 99/70 Registration");
+	setnpctimer 0;
+
+	end;
+}
+
+
+izlude,158,148,0	script	Rigor#13xz1	111 ,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Race to 99/70");
+	setnpctimer 0;
+
+	end;
+}
+
+
+izlude,160,136,2	script	Camilla#0112302	111 ,{
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Costume Recyler");
+	setnpctimer 0;
+
+	end;
+}
+
+
+izlude,121,105,4	script	Market Manager#0123e	111,1,1,{
+	end;
+OnTouch:
+	npctalk "Looking for Vending slots?! Click me!!! "+strcharinfo(0);
+	sleep2 5000;
+	sleep2 10000;
+	end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

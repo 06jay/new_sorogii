@@ -1,0 +1,16 @@
+//izlude,121,105,0	script	Market Manager#012	111,{
+end;
+
+OnInit:
+setarray .alphabets$,"","<<<Vend Here<<<";
+set .alphabets_size,getarraysize( .alphabets$ );
+while( 1 ){
+	set .@title$,.@title$ + .alphabets$[.@i%.alphabets_size];
+	set .@i,.@i + 1;
+	delwaitingroom;
+	waitingroom ""+.@title$,0;
+	sleep 1000;
+	if( .@i % .alphabets_size == 0 ) set .@title$,"";
+}
+}
+

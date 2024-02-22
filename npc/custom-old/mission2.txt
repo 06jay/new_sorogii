@@ -1,0 +1,488 @@
+//===== rAthena Script =======================================
+//= saders hunting quest
+//===== By: ==================================================
+//= Sader1992
+//https://rathena.org/board/profile/30766-sader1992/
+//===== Current Version: =====================================
+//= 5.2
+//===== Compatible With: ===================================== 
+//= rAthena Project
+//https://rathena.org/board/files/file/3579-saders-hunting-quest/
+//https://github.com/sader1992/sader_scripts
+//===== Description: =========================================
+//============================================================
+//============================================================
+-	pointshop	Slayer_Quest_Shop	-1,#Slayer_Q_POINTS,5199:1,501:1; //Account Based Shop
+//-	pointshop	Hunting_Quest_Shop	-1,HUNT_Q_POINTS,5199:1; //Character Based Shop 
+prontera,129,194,6	script	Akio#08	459 ,{
+	function Ac;
+	mes "[Akio]";
+	mes "Your Quest Progress:";
+	for(.@i=0;.@i<getarraysize(.CataName$);.@i++){
+		if(getd(Ac() + "COM_" + .@i)){
+			mes .CataName$[.@i] + ": Complete";
+			setd Ac() + "POINTS",getd(Ac() + "POINTS") + .CataRP[.@i];
+			if(.ExpServerRate){
+				getexp .CataBXP[.@i],.CataJXP[.@i];
+			}else{
+				getexp2 .CataBXP[.@i],.CataJXP[.@i];
+			}
+			if(getd(".IRD_" + .@i)){
+				for(.@j=0;.@j<getarraysize(getd(".IRD_" + .@i));.@j++){
+					getitem(getd(".IRD_" + .@i + "[" + .@j + "]"),getd(".CRD_" + .@i + "[" + .@j + "]"));
+				}
+			}
+			setd(Ac() + "CD_" + .@i,gettimetick(2) + (.CataCD[.@i] * 60 * 60));
+			setd(Ac() + "COM_" + .@i,false);
+			setd(Ac() + "ID_" + .@i,0);
+			setd(Ac() + "C_" + .@i,0);
+			setd(Ac() + "CC_" + .@i,0);
+			continue;
+		}
+		.@CD = getd(Ac() + "CD_" + .@i);
+		if(.@CD > gettimetick(2)){
+	mes "[Akio]";
+			mes .CataName$[.@i] + ": " + gettimestr("%Y-%m/%d %H:%M:%S",21,.@CD);
+			continue;
+		}
+		if(getd(Ac() + "ID_" + .@i)){
+			mes .CataName$[.@i] + "(" + getd(Ac() + "CC_" + .@i) + "/" + getd(Ac() + "C_" + .@i) + ") " + strmobinfo(1,getd(Ac() + "ID_" + .@i));
+			continue;
+		}
+		mes .CataName$[.@i] + ": None";
+	}
+	.@s1 = select("Open Shop:" + implode(.CataName$,":")) -2;
+	clear;
+	if(.@s1 == -1){
+		callshop "Slayer_Quest_Shop",1;
+OnPCLoadMapEvent:
+if( strcharinfo(3) == strnpcinfo(4) )
+	showevent 0,1;
+		end;
+	}
+	.@CD = getd(Ac() + "CD_" + .@s1);
+	if(.@CD > gettimetick(2)){
+		mes "you are under the cooldown effect";
+		mes "try again after " + gettimestr("%Y-%m/%d %H:%M:%S",21,.@CD);
+		end;
+	}
+	if(getd(Ac() + "ID_" + .@s1)){
+		mes "Your Quest Progress:";
+		mes "(" + getd(Ac() + "CC_" + .@s1) + "/" + getd(Ac() + "C_" + .@s1) + ") " + strmobinfo(1,getd(Ac() + "ID_" + .@s1));
+		if(.AllowDeleteQuest){
+			mes "would you like to delete the quest?";
+			if(select("yes:no") == 2)
+				end;
+			mes "by deleting the quest you wont get any reward";
+			if(.ApplyCoolDownOnDelete) mes "and the cooldown will be applied!";
+			mes "Are you sure!?";
+			if(select("yes:no") == 2)
+				end;
+			clear;
+			if(.ApplyCoolDownOnDelete){
+				setd(Ac() + "CD_" + .@s1,gettimetick(2) + (.CataCD[.@s1] * 60 * 60));
+			}
+			setd(Ac() + "ID_" + .@s1,0);
+			setd(Ac() + "C_" + .@s1,0);
+			setd(Ac() + "CC_" + .@s1,0);
+			mes "your quest has been deleted!";
+			end;
+		}
+		end;
+	}
+	if(BaseLevel < .CataMN_L[.@s1] || BaseLevel > .CataMX_L[.@s1]){
+		mes "you need to be between level " + .CataMN_L[.@s1] + " And " + .CataMX_L[.@s1] + " to get this quest!";
+		end;
+	}
+	mes "Slayer, would you like to proceed?";
+	if(select("yes:no") == 2)
+		end;
+	copyarray(.@mid,getd(".m_id_" + .@s1),getarraysize(getd(".m_id_" + .@s1)));
+	.@r = rand(getarraysize(.@mid));
+	copyarray(.@mmn,getd(".m_mn_" + .@s1),getarraysize(getd(".m_mn_" + .@s1)));
+	copyarray(.@mmx,getd(".m_mx_" + .@s1),getarraysize(getd(".m_mx_" + .@s1)));
+	setd(Ac() + "ID_" + .@s1,.@mid[.@r]);
+	setd(Ac() + "C_" + .@s1,rand(getd(".m_mn_" + .@s1 + "[" + .@r + "]"),getd(".m_mx_" + .@s1 + "[" + .@r + "]")));
+	setd(Ac() + "CC_" + .@s1,0);
+	mes "Slay e'm all:";
+	mes "(" + getd(Ac() + "CC_" + .@s1) + "/" + getd(Ac() + "C_" + .@s1) + ") " + strmobinfo(1,getd(Ac() + "ID_" + .@s1));
+end;
+
+OnNPCKillEvent:
+	for(.@i=0;.@i<getarraysize(.CataName$);.@i++){
+		if(getd(Ac() + "ID_" + .@i) == killedrid && !getd(Ac() + "COM_" + .@i)){
+			setd(Ac() + "CC_" + .@i,getd(Ac() + "CC_" + .@i) + 1);
+			dispbottom "Hunting Quest [" + .CataName$[.@i] + "]: (" + getd(Ac() + "CC_" + .@i) + "/" + getd(Ac() + "C_" + .@i) + ") " + strmobinfo( 1,getd(Ac() + "ID_" + .@i));
+			if(getd(Ac() + "CC_" + .@i) >= getd(Ac() + "C_" + .@i)){
+				dispbottom "Your " + .CataName$[.@i] + " Hunting Quest is Done.";
+				setd(Ac() + "COM_" + .@i,true);
+			}
+		}
+	}
+end;
+
+OnHuntingCheck:
+	dispbottom "Your Hunting Quest Progress:";
+	for(.@i=0;.@i<getarraysize(.CataName$);.@i++){
+		if(getd(Ac() + "COM_" + .@i)){
+			dispbottom .CataName$[.@i] + ": Complete";
+			continue;
+		}
+		.@CD = getd(Ac() + "CD_" + .@i);
+		if(.@CD > gettimetick(2)){
+			dispbottom .CataName$[.@i] + ": " + gettimestr("%Y-%m/%d %H:%M:%S",21,.@CD);
+			continue;
+		}
+		if(getd(Ac() + "ID_" + .@i) == killedrid && !getd(Ac() + "COM_" + .@i)){
+			dispbottom .CataName$[.@i] + "(" + getd(Ac() + "CC_" + .@i) + "/" + getd(Ac() + "C_" + .@i) + ") " + strmobinfo(1,getd(Ac() + "ID_" + .@i));
+			continue;
+		}
+		dispbottom .CataName$[.@i] + ": None";
+	}
+end;
+
+	function	Ac	{
+		if(.AccountBase)
+			return "#" + .variable_name$;
+		return .variable_name$;
+	}
+
+	function	AddCata	{
+		.@s = getarraysize(.CataName$);
+		set getarg(1),.@s;
+		.CataName$[.@s] = getarg(0);
+		.CataMN_L[.@s] = getarg(2);
+		.CataMX_L[.@s] = getarg(3);
+		.CataCD[.@s] = getarg(4);
+		.CataBXP[.@s] = getarg(5);
+		.CataJXP[.@s] = getarg(6);
+		.CataRP[.@s] = getarg(7);
+		for(.@i=8;.@i<getargcount();.@i+=2){
+			.@s2 = getarraysize(getd(".IRD_" + .@s));
+			setd ".IRD_" + .@s + "[" + .@s2 + "]",getarg(.@i);
+			setd ".CRD_" + .@s + "[" + .@s2 + "]",getarg(.@i+1);
+		}
+		return;
+	}
+
+	function	AddMob	{
+		.@s = getarraysize(getd(".m_id_" + getarg(0)));
+		setd ".m_id_" + getarg(0) + "[" + .@s + "]",getarg(1);
+		setd ".m_mn_" + getarg(0) + "[" + .@s + "]",getarg(2);
+		setd ".m_mx_" + getarg(0) + "[" + .@s + "]",getarg(3);
+		return;
+	}
+
+OnInit:
+	.AccountBase = true;//wither or not the quests are on account or on character
+	.ExpServerRate = false;//get exp according to the server rate?
+	.AllowDeleteQuest = true;//allow player to delete his quest without getting the reward
+	.ApplyCoolDownOnDelete = true;//wither or not apply cooldown on deleting the quest.
+	.variable_name$ = "Slayer_Q_";	//keep in mind if you changed this you need to change the points in the shop!
+	bindatcmd("MyQuest",strnpcinfo(3)+"::OnHuntingCheck",0,99);
+	freeloop(1);
+	//You can add as much categories as you want!
+	//recommended not more then 25!
+	//AddCata(<"name">,<.var>,<mini level>,<max level>,<cooldown in hours>,<base exp reward>,<job exp reward>,<point reward>,<ITEM ID>,<COUNT>{,<ITEM ID>,<COUNT>{,<ITEM ID>,<COUNT>}})
+	AddCata("^339900>New Slayer^000000",.Easy,1,99,12,0,0,10);
+	AddCata("^6600CC>Advance Slayer^000000",.Normal,1,99,0,0,0,20);
+	AddCata("^FF9900>Pro Slayer^000000",.Hard,1,99,0,0,0,30);
+	AddCata("^FF0000>Expert Slayer^000000",.Indeterminate,1,99,0,0,0,40);
+	
+	
+	//You can add as much mobs as you want!
+	//AddMob(<.var>,<mob id>,<min count>,<max count>);
+	AddMob(.Easy,1271,70,100);//aligator    //"1271:6084","1030:6084","1271:6084","1206:6084","1016:6084","1099:6084","1100:6084","1494:6084","1060:6084","1367:6084","1211:6084","1103:6084","1246:6084","1265:6084",
+	AddMob(.Easy,1030,70,100);//anaconda	//"1248:6084","1030:6084","1271:6084","1380:6084","1781:6084","1493:6084","1383:6084","1368:6084","1036:6084","1123:6084","1211:6084","1125:6084","1122:6084","1124:6084",
+	AddMob(.Easy,1206,70,100);//anolian	//"1369:6084","1277:6084","1687:6084","1130:6084","1400:6084","1134:6084","1133:6084","1135:6084","1282:6084","1881:6084","1517:6084","1138:6084","1045:6084","1140:6084",
+	AddMob(.Easy,1016,70,100);//archer skel 
+	AddMob(.Easy,1099,70,100);//agrio	
+	AddMob(.Easy,1100,70,100);//argos
+	AddMob(.Easy,1102,70,100);//bathory
+	AddMob(.Easy,1494,70,100);//king bettle
+	AddMob(.Easy,1060,70,100);//bigfoot
+	AddMob(.Easy,1367,70,100);//blazer
+	AddMob(.Easy,1211,70,100);//brilight
+	AddMob(.Easy,1103,70,100);//caramel
+	AddMob(.Easy,1246,70,100);//cookie xmas
+	AddMob(.Easy,1265,70,100);//g.cookie
+	AddMob(.Easy,1248,70,100);//cruiser
+	AddMob(.Easy,1106,70,100);//d.wolf
+	AddMob(.Easy,1109,70,100);//deviruch
+	AddMob(.Easy,1111,70,100);//drainliar
+	AddMob(.Easy,1380,70,100);//drailer
+	AddMob(.Easy,1781,70,100);//drosera
+	AddMob(.Easy,1493,70,100);//dryad
+	AddMob(.Easy,1383,70,100);//explosion
+	AddMob(.Easy,1368,70,100);//geo
+	AddMob(.Easy,1036,70,100);//ghoul
+	AddMob(.Easy,1123,70,100);//goblin
+	AddMob(.Easy,1125,70,100);//goblin
+	AddMob(.Easy,1122,70,100);//goblin
+	AddMob(.Easy,1124,70,100);//goblin
+	AddMob(.Easy,1369,70,100);//g.peco
+	AddMob(.Easy,1277,70,100);//g.general
+	AddMob(.Easy,1687,70,100);//grove
+	AddMob(.Easy,1130,70,100);//jakk
+	AddMob(.Easy,1400,70,100);//karakasa
+	AddMob(.Easy,1134,70,100);//kbold
+	AddMob(.Easy,1133,70,100);//kbld
+	AddMob(.Easy,1135,70,100);//kld
+	AddMob(.Easy,1282,70,100);//kbold archer
+	AddMob(.Easy,1881,70,100);//les
+	AddMob(.Easy,1517,70,100);//jing guai
+	AddMob(.Easy,1138,70,100);//magnolia
+	AddMob(.Easy,1045,70,100);//marc
+	AddMob(.Easy,1140,70,100);//marduk
+	AddMob(.Easy,1143,70,100);//marionet //"1143:6084","1146:6084","1613:6084","1191:6084","1628:6084","1041:6084","1026:6084","1249:6084","1255:6084","1620:6084","1044:6084","1273:6084","1256:6084","1156:6084",
+	AddMob(.Easy,1146,70,100);//matyr
+	AddMob(.Easy,1613,70,100);//metaling
+	AddMob(.Easy,1191,60,80);//mimic
+	AddMob(.Easy,1628,70,100);//mole
+	AddMob(.Easy,1041,70,100);//mummy
+	AddMob(.Easy,1026,70,100);//munak
+	AddMob(.Easy,1249,70,100);//myscast
+	AddMob(.Easy,1255,70,100);//nerd
+	AddMob(.Easy,1620,50,80);//noxs
+	AddMob(.Easy,1044,70,100);//obneaune
+	AddMob(.Easy,1273,70,100);//orc lady
+	AddMob(.Easy,1256,70,100);//pest
+	AddMob(.Easy,1156,70,100);//petite 
+	AddMob(.Easy,1155,70,100);//petite ////"1155:6084","1616:6084","1402:6084","1619:6084","1199:6084","1162:6084","1164:6084","1169:6084","1023:6084","1170:6084","1028:6084","1280:6084","1215:6084","1034:6084",
+	AddMob(.Easy,1616,70,100);//pitman
+	AddMob(.Easy,1402,50,70);//toad
+	AddMob(.Easy,1619,70,100);//porce
+	AddMob(.Easy,1199,70,100);//punk
+	AddMob(.Easy,1162,70,100);//raflesia
+	AddMob(.Easy,1164,70,100);//requime
+	AddMob(.Easy,1169,70,100);//skel worker
+	AddMob(.Easy,1023,70,100);//orc warrior
+	AddMob(.Easy,1170,70,100);//sohee
+	AddMob(.Easy,1028,70,100);//soldier skel
+	AddMob(.Easy,1784,70,100);//stapo
+	AddMob(.Easy,1280,50,80);//steam goblin
+	AddMob(.Easy,1215,70,100);//worm tail
+	AddMob(.Easy,1034,70,100);//thara
+	AddMob(.Easy,1279,70,100);//TRIJOINT ////"1279:6084","1179:6084","1413:6084","1261:6084","1880:6084","1057:6084","1177:6084","1178:6084";
+	AddMob(.Easy,1179,70,100);//WISPER
+	AddMob(.Easy,1413,70,100);//GINSEN
+	AddMob(.Easy,1261,70,100);//WILDROSE
+	AddMob(.Easy,1880,70,100);//WOOD GOBLIN
+	AddMob(.Easy,1057,70,100);//YOYO
+	AddMob(.Easy,1177,70,100);//ZENORC
+	AddMob(.Easy,1178,70,100);//ZEROM
+
+
+
+
+
+
+
+
+	
+	AddMob(.Normal,1193,60,90);//clock////"1193:6084","1275:6084","1737:6084","1699:6084","1403:6084","1194:6084","1654:6084","1882:6084","1415:6084","1101:6084","1633:6084","1408:6084","1188:6084","1692:6084",
+	AddMob(.Normal,1275,50,90);//alice
+	AddMob(.Normal,1737,60,90);//alizel
+	AddMob(.Normal,1699,60,90);//ancient mimci
+	AddMob(.Normal,1403,60,90);//ancient solider
+	AddMob(.Normal,1194,60,90);//arclose
+	AddMob(.Normal,1654,60,90);//armia
+	AddMob(.Normal,1882,60,90);//babayhga
+	AddMob(.Normal,1415,60,90);//leopard
+	AddMob(.Normal,1101,50,80);//bapho jr
+	AddMob(.Normal,1633,50,80);//beholder
+	AddMob(.Normal,1408,60,90);//bloody buterfly
+	AddMob(.Normal,1188,60,90);//bongun
+	AddMob(.Normal,1692,60,90);//breeze
+	AddMob(.Normal,1267,50,80);//carat////"1267:6084","1513:6084","1269:6084","1745:6084","1209:6084","1514:6084","1260:6084","1385:6084","1384:6084","1378:6084","1382:6084","1506:6084","1321:6084","1504:6084",
+	AddMob(.Normal,1513,50,70);//civil servant
+	AddMob(.Normal,1269,60,90);//clock
+	AddMob(.Normal,1745,60,90);//constant
+	AddMob(.Normal,1209,60,90);//cramp
+	AddMob(.Normal,1514,60,90);//dancing dragon
+	AddMob(.Normal,1260,60,90);// darkframe
+	AddMob(.Normal,1385,60,90);//deleter
+	AddMob(.Normal,1384,60,90);//deleter
+	AddMob(.Normal,1378,60,90);//d.fungus
+	AddMob(.Normal,1382,60,90);//diabolic
+	AddMob(.Normal,1506,60,90);//disguse
+	AddMob(.Normal,1321,60,90);//dragonfly
+	AddMob(.Normal,1504,60,90);//dullahan
+	AddMob(.Normal,1117,60,90);//evil druid////"1117:6084","1717:6084","1714:6084","1869:6084","1391:6084","1737:6084","1253:6084","1778:6084","1503:6084","1387:6084","1372:6084","1632:6084","1213:6084","1680:6084",
+	AddMob(.Normal,1717,60,90);//ferus
+	AddMob(.Normal,1714,60,90);//r.ferus
+	AddMob(.Normal,1869,60,90);//flame skull
+	AddMob(.Normal,1391,60,90);//galapago
+	AddMob(.Normal,1737,60,90);//galion
+	AddMob(.Normal,1253,60,90);//gargoil
+	AddMob(.Normal,1778,60,90);//gazeti
+	AddMob(.Normal,1503,60,90);//gibet
+	AddMob(.Normal,1387,60,90);//gig
+	AddMob(.Normal,1372,60,90);//goat
+	AddMob(.Normal,1632,60,90);//gremlin
+	AddMob(.Normal,1213,60,90);//HO
+	AddMob(.Normal,1680,60,90);//hilwind
+	AddMob(.Normal,1516,60,90);//soil      ////"1516:6084","1257:6084","1131:6084","1072:6084","1406:6084","1656:6084","1132:6084","1587:6084","1410:6084","1836:6084","1264:6084","1149:6084","1404:6084","1780:6084",
+	AddMob(.Normal,1257,60,90);//injyustince
+	AddMob(.Normal,1131,60,90);//joker
+	AddMob(.Normal,1072,60,90);//kaho
+	AddMob(.Normal,1406,60,90);//kapha
+	AddMob(.Normal,1656,50,70);//kavac
+	AddMob(.Normal,1132,60,90);//kalitz
+	AddMob(.Normal,1587,60,90);//kraben
+	AddMob(.Normal,1410,60,90);//peach tree
+	AddMob(.Normal,1836,60,90);//magmaring
+	AddMob(.Normal,1264,50,75);//merman
+	AddMob(.Normal,1149,60,90);//mino
+	AddMob(.Normal,1404,60,90);//miyabi
+	AddMob(.Normal,1780,60,90);//muscipular
+	AddMob(.Normal,1151,60,90);//myst  ////"1151:6084","1061:6084","1180:6084","1715:6084","1718:6084","1615:6084","1189:6084","1500:6084","1154:6084","1216:6084","1314:6084","1508:6084","1163:6084","1276:6084",
+	AddMob(.Normal,1061,60,90);//nightmare
+	AddMob(.Normal,1180,60,90);//ninetail
+	AddMob(.Normal,1715,60,90);//novus
+	AddMob(.Normal,1718,60,90);//novus
+	AddMob(.Normal,1615,60,90);//obsidian
+	AddMob(.Normal,1189,60,90);//orc archer
+	AddMob(.Normal,1500,60,90);//parasite
+	AddMob(.Normal,1154,60,90);//pasana
+	AddMob(.Normal,1216,60,90);//phenomena
+	AddMob(.Normal,1314,60,90);//permeter
+	AddMob(.Normal,1508,60,90);//cube
+	AddMob(.Normal,1163,60,90);//raydric
+	AddMob(.Normal,1276,60,90);//raydric archer
+	AddMob(.Normal,1682,60,90);//remover
+	AddMob(.Normal,1195,60,90);//rideword
+	AddMob(.Normal,1782,60,90);//roween
+	AddMob(.Normal,1281,40,65);//sageworm
+	AddMob(.Normal,1323,60,80);//seaoter
+	AddMob(.Normal,1037,60,80);//sidwinder
+	AddMob(.Normal,1263,60,90);//	 ghost
+	AddMob(.Normal,1776,60,90);//siroma
+	AddMob(.Normal,1386,60,90);//sleeper
+	AddMob(.Normal,1322,60,90);//spring rabbit
+	AddMob(.Normal,1278,50,80);//stalactic
+	AddMob(.Normal,1207,60,90);//sting
+	AddMob(.Normal,1495,60,90);//stone shoter
+	AddMob(.Normal,1065,60,90);//strouf
+	AddMob(.Normal,1584,50,70);//tamuaran
+	AddMob(.Normal,1375,40,70);//the paper
+	AddMob(.Normal,1883,60,90);//UZHAS
+	AddMob(.Normal,1771,60,90);//VANBERK
+	AddMob(.Normal,1621,60,90);//VENOMOUS
+	AddMob(.Normal,1497,60,90);//WOODEN GOLEM
+	AddMob(.Normal,1499,60,90);//WOOTAN FIGHER
+	AddMob(.Normal,1498,60,90);//WOOTAN SHOTER
+	AddMob(.Normal,1192,60,90);//WRAITH
+	AddMob(.Normal,1197,60,90);//ZOMBIE PRISONER
+	AddMob(.Normal,1417,60,90);//Z.BEAR
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	AddMob(.Hard,1716,60,75);//blue acid //"1716:6084","1713:6084","1769:6084","1716:6084","1736:6084","1098:6084","1365:6084","1668:6084","1315:6084","1631:6084","1698:6084","1671:6084","1770:6084","1655:6084",
+	AddMob(.Hard,1713,60,75);	//yellow
+	AddMob(.Hard,1769,55,75); //agav
+	AddMob(.Hard,1716,55,75);	//alicel
+	AddMob(.Hard,1736,55,75);//aliot
+	AddMob(.Hard,1098,55,75);//anubis
+	AddMob(.Hard,1365,55,75);//apoca
+	AddMob(.Hard,1668,55,75);//arcdam
+	AddMob(.Hard,1315,55,75);//assulter
+	AddMob(.Hard,1631,55,75);//chung e
+	AddMob(.Hard,1698,55,75);//deathword
+	AddMob(.Hard,1671,55,75);//dimik
+	AddMob(.Hard,1770,55,75);//echio
+	AddMob(.Hard,1655,55,75);//acolyte
+	AddMob(.Hard,1887,55,75);//freezer//"1887:6084","1381:6084","1376:6084","1318:6084","1866:6084","1773:6084","1512:6084","1777:6084","1837:6084","1772:6084","1838:6084","1366:6084","1505:6084","1148:6084",
+	AddMob(.Hard,1381,55,75);//grizzly
+	AddMob(.Hard,1376,55,75);//harpy
+	AddMob(.Hard,1318,55,75);//heater
+	AddMob(.Hard,1866,55,75);//hell pooplde
+	AddMob(.Hard,1773,55,75);//hodremlin
+	AddMob(.Hard,1512,55,75);//you jun
+	AddMob(.Hard,1777,55,75);//ice titan
+	AddMob(.Hard,1837,35,55);//fire ifrit
+	AddMob(.Hard,1772,55,75);//isilia
+	AddMob(.Hard,1838,55,75);//knocker
+	AddMob(.Hard,1366,55,75);//lava golem
+	AddMob(.Hard,1505,55,75);//loli
+	AddMob(.Hard,1148,55,75);//medusa
+	AddMob(.Hard,1884,55,75);//mavka//"1884:6084","1379:6084","1686:6084","1202:6084","1694:6084","1865:6084","1657:6084","1392:6084","1201:6084","1774:6084","1401:6084","1196:6084","1775:6084","1703:6084",
+	AddMob(.Hard,1379,55,75);//n.terror
+	AddMob(.Hard,1686,20,30);//orc baby
+	AddMob(.Hard,1202,55,75);//pendark
+	AddMob(.Hard,1694,35,60);//plasma
+	AddMob(.Hard,1865,55,75);//ragged zombie
+	AddMob(.Hard,1657,55,75);//mage
+	AddMob(.Hard,1392,55,75);//rotar raizo
+	AddMob(.Hard,1201,55,75);//raybio
+	AddMob(.Hard,1774,55,75);//seeker
+	AddMob(.Hard,1401,55,75);//shinob
+	AddMob(.Hard,1196,55,75);//zombie prison
+	AddMob(.Hard,1775,55,75);//snowier
+	AddMob(.Hard,1703,55,75);//solace
+	AddMob(.Hard,1316,55,75);//heater//"1316:6084","1622:6084","1405:6084","1677:6084","1208:6084","1617:6084","1653:6084","1652:6084","1864:6084","1774:6084","1401:6084","1196:6084","1775:6084","1703:6084",
+	AddMob(.Hard,1622,55,75);//teddy bear
+	AddMob(.Hard,1405,55,75);//tengu
+	AddMob(.Hard,1677,55,75);//VENATU
+	AddMob(.Hard,1208,55,75);//WANDERER
+	AddMob(.Hard,1617,55,75);//GASTOVE
+	AddMob(.Hard,1653,55,75);//WIKIBAINE
+	AddMob(.Hard,1652,55,75);//CENIA	
+	AddMob(.Hard,1864,55,75);//ZOMBIE SLAUGHER
+
+
+
+
+	
+	AddMob(.Indeterminate,1297,20,35);//a.mummy//"1297:6084","1098:6084","1867:6084","1830:6084","1283:6084","1635:6084","1753:6084","1681:6084","1636:6084","1720:6084","1833:6084","1639:6084","1219:6084","1637:6084",
+	AddMob(.Indeterminate,1098,20,35);//anubis
+	AddMob(.Indeterminate,1867,20,35);//bunshee
+	AddMob(.Indeterminate,1830,15,20);//archer guardian
+	AddMob(.Indeterminate,1283,10,20);//chimera
+	AddMob(.Indeterminate,1635,10,20);//eremes
+	AddMob(.Indeterminate,1753,10,20);//fruz
+	AddMob(.Indeterminate,1681,20,35);//gemini
+	AddMob(.Indeterminate,1636,10,20);//white smith
+	AddMob(.Indeterminate,1720,6,15);//hydrolancer
+	AddMob(.Indeterminate,1833,6,15);//kasa
+	AddMob(.Indeterminate,1639,6,15);//hw
+	AddMob(.Indeterminate,1219,25,50);//AK	
+	AddMob(.Indeterminate,1637,6,15);//hp
+	AddMob(.Indeterminate,1870,6,17);//necro//"1870:6084","1700:6084","1295:6084","1320:6084","1702:6084","1831:6084","1634:6084","1638:6084","1701:6084","1755:6084","1829:6084","1639:6084","1829:6084","1829:6084",
+	AddMob(.Indeterminate,1700,6,17);//dame sentinel
+	AddMob(.Indeterminate,1295,15,30);//owl baron
+	AddMob(.Indeterminate,1320,10,20);//duke
+	AddMob(.Indeterminate,1702,10,20);//retribution
+	AddMob(.Indeterminate,1831,5,10);//salamander
+	AddMob(.Indeterminate,1634,6,15);//seyren
+	AddMob(.Indeterminate,1638,6,15);//cesil
+	AddMob(.Indeterminate,1701,10,15);//shelter
+	AddMob(.Indeterminate,1755,5,10);//sago skeggiold
+	AddMob(.Indeterminate,1829,5,10);//sword guardian
+	AddMob(.Indeterminate,1705,7,14);//thana des fire//"1705:6084","1707:6084","1706:6084","1704:6084","1204:6084","1765:6084","1200:6084","1919:6084","1921:6084","1918:6084","1920:6084",
+	AddMob(.Indeterminate,1707,7,14);//dolor
+	AddMob(.Indeterminate,1706,7,14);//maero thana
+	AddMob(.Indeterminate,1704,7,14);//odium
+	AddMob(.Indeterminate,1204,7,14);//TIRFTIGN
+	AddMob(.Indeterminate,1765,5,10);//VALKS
+	AddMob(.Indeterminate,1200,5,10);//SHIRTAS
+	AddMob(.Indeterminate,1919,5,10);//incarnation
+	AddMob(.Indeterminate,1921,5,10);//incanation
+	AddMob(.Indeterminate,1918,5,10);//inca
+	AddMob(.Indeterminate,1920,5,10);//incar
+
+	
+end;
+}
+prontera	mapflag	loadevent
+

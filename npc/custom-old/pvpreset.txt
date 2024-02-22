@@ -1,0 +1,23 @@
+-	script	RESET_PVP	-1,{
+
+OnInit:
+
+bindatcmd("resetpvp", strnpcinfo(3) + "::OnPvPResetCommand", 99);
+
+function OnPvPResetCommand {
+	mes "[^870B87Admin Panel^000000]";
+	mes "Want reset ^FF0000PvP Ranking^000000?";
+	while (1) {
+		switch ( select ( "- ^17AA24Yes^000000","^FF0000No^000000" ) ) {
+			case 1:
+					query_sql("TRUNCATE TABLE `YOUR SQL DATABASE`.`pvpladder`;");
+					query_sql("TRUNCATE TABLE `YOUR SQL DATABASE`.`ownladder`;");
+					close;
+			case 2:
+					mes "[^870B87Admin Panel^000000]";
+					mes "Ok.";
+					close;
+			}
+		}
+	}
+}

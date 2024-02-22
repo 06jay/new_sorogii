@@ -1,0 +1,31 @@
+prontera,140,179,6	script	Vending Area#11	837  ,{	
+	    mes "[Market Manager]";
+    mes "Hello, adventurer! Would you like to go vending/market area of prontera?";
+    next;
+    
+    switch(select("Yes", "No")) {
+        case 1:
+            warp "prontera",129,151; // Replace with the actual coordinates of the market place.
+            break;
+        case 2:
+            mes "[Market Manager]";
+            mes "Alright, feel free to explore the town!";
+            break;
+    }
+    close2;
+OnPCLoadMapEvent:
+	if(strcharinfo(3) == strnpcinfo(4)) {
+		showevent QTYPE_WARG;
+	}
+end;
+
+OnInit:
+	while(1) {
+		showscript "Market Manager", getnpcid(0);
+		sleep 1000;
+	}
+end;
+}
+prontera	mapflag	loadevent
+
+

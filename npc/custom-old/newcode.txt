@@ -1,0 +1,73 @@
+prontera,150,150,3	script	Daily Buff NPC	1_F_MARIA,{
+    mes "[Daily Buff NPC]";
+    mes "Hello! Welcome to the Daily Buff NPC.";
+    mes "Would you like to receive your daily buffs?";
+    next;
+
+    switch(select("Yes", "No")) {
+        case 1:
+            callsub DailyBuff;
+            break;
+        case 2:
+            mes "Alright then, have a nice day!";
+            close;
+            break;
+    }
+    close;
+}
+
+function DailyBuff {
+    mes "[Daily Buff NPC]";
+    mes "Let me see if you're eligible to receive your daily buffs...";
+    mes "Please wait a moment.";
+
+    /* Struct for storing daily buff data */
+    struct DailyBuffData {
+        bool used;
+        int account_id;
+        char ip[16];
+    };
+
+    /* Buff ID and duration in seconds */
+    const int BUFF_ID = 1234;
+    const int BUFF_DURATION = 10800; /* 3 hours */
+
+    /* Daily Buff storage key */
+    const string DAILY_BUFF_STORAGE_KEY = "daily_buffs";
+
+    /* Function to check if a player has already used their daily buff */
+    function bool hasDailyBuff(struct map_session_data* sd, DailyBuffData& data) {
+        memset(&data, 0, sizeof(data));
+        const int account_id = sd->status.account_id;
+        memcpy(data.ip, sd->ip, 16);
+        storage_load(DAILY_BUFF_STORAGE_KEY, account_id, &data, sizeof(data));
+        return data.used && (data.account_id == account_id || strcmp(data.ip, sd->ip) == 0);
+    }
+
+    /* Function to set a player's daily buff as used */
+    function void setDailyBuffUsed(struct map_session_data* sd) {
+        const int account_id = sd->status.account_id;
+        DailyBuffData data = { true, account_id };
+        memcpy(data.ip, sd->ip, 16);
+        storage_save(DAILY_BUFF_STORAGE_KEY, account_id, &data, sizeof(data));
+    }
+
+    /* Check if the player has already used their daily buff */
+    DailyBuffData data;
+    if (hasDailyBuff(&@sd, data)) {
+        mes "I'm sorry, but you have already received your daily buffs today.";
+        close;
+    }
+
+    /* Apply the daily buff and mark it as used */
+    const int buff_time = BUFF_DURATION;
+    skill cast_skill = { 0 };
+    cast_skill.id = BUFF_ID;
+    cast_skill.lv = 1;
+    skill_castend_nodamage_id(&@sd, &@sd, &cast_skill, 1);
+    setDailyBuffUsed(&@sd);
+
+    mes "Congratulations! You have received your daily buffs.";
+    mes "The effects will last for " + string(buff_time / 60) + " minutes.";
+    close;
+}

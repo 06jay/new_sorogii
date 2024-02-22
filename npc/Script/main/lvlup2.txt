@@ -1,0 +1,77 @@
+geffen,145,66,4	script	Maya#0212	10183 ,{
+    if (Class == Job_Ninja || Class == Job_Taekwon || Class == Job_Star_Gladiator || Class == Job_SuperNovice || Class == Job_Gunslinger) {
+        mes "^FF3300[Maya]^000000";
+        mes "I'm sorry, but I'm not interested in talking to your kind.";
+        mes "Come back when you have a more suitable job.";
+        close;
+        end;
+    }
+cutin "ep162_est01",2;
+if (BaseLevel < 99 || JobLevel < 70 || Class == Job_Gunslinger || Class == Job_Super_Novice || Class == Job_Ninja) {
+		mes "^FF3300[Maya]^000000";
+		mes "What? You're still weak for the ^3300FFREWARD^000000. Go slay more monsters.";
+		mes "Come back to me when you're ^3300FFTrans Job and 99/70^000000.";
+		mes "And I'll give you the prize.";
+		close2;
+		cutin "", 255;
+		end;
+	}
+	
+	cutin "ep162_est01",2;
+	if ($ItemGive == 8) {
+		mes "^FF3300[Maya]^000000";
+		mes "Sorry to say, but you're too late.";
+		mes "All the rewards have been claimed already.";
+		close2;
+		cutin "", 255;
+		end;
+	}
+	
+	cutin "ep162_est03",2;
+	if (getreward) {
+		mes "^FF3300[Maya]^000000";
+		mes "You again?! What do you think of me, eh?";
+		mes "Now scram!!!";
+		mes "So annoying~!";
+		close2;
+		cutin "", 255;
+		end;
+	}
+	
+	cutin "ep162_est01",2;
+	mes "^FF3300[Maya]^000000";
+	mes "Congratulations! You made it this far.";
+	close2;
+	cutin "", 255;
+	
+getitem 17160, 1; // Reward 1: racebox
+    getitem 14003, 20; // Reward 2: 20ESB
+//    getitem 503, 10; // Reward 3: 10x Green Potion
+//    getitem 1203, 5; // Reward 4: 5x Yggdrasil Berry
+//    getitem 900, 1;  // Reward 5: 1x Emperium
+//    getitem 501, 25; // Reward 6: 25x Condensed White Potion
+//    getitem 502, 25; // Reward 7: 25x Condensed Blue Potion
+	++$ItemGive;
+	getreward = 1;
+	announce "Congratulations! "+strcharinfo(0)+" has claimed thei reward for the Race to 99/70 Event.", bc_all;
+	sleep 2000;
+	announce "There are "+(8 - $ItemGive)+" rewards left to give!", bc_all;
+	end;
+}
+
+//ep13_captin_edq
+
+geffen,145,66,4	script	Maya#02212	111 ,{
+OnPCLoadMapEvent:
+	if( strcharinfo(3) == strnpcinfo(4) )
+		showevent QTYPE_EVENT3;
+	end;
+
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Race to 99/70");
+	setnpctimer 0;
+	end;
+}

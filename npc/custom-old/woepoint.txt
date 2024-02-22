@@ -1,0 +1,21 @@
+prontera,155,181,5	script	Woe Points	100,{
+   .@nb = query_sql( "select name, woe_points from guild order by woe_points desc limit 3", .@guild_name$, .@points );
+   for ( .@i = 0; .@i < .@nb; .@i++ ) {
+       if ( !.@points[.@i] ) break;
+       mes ( .@i +1 )+". "+ .@guild_name$[.@i] +" -> "+ .@points[.@i];
+   }
+   close;
+OnClock0630:
+OnClock0700:
+OnClock2030:
+OnClock2100:
+   for ( .@i = 0; .@i < 30; .@i++ ) {
+       .@castle_guild_id = getcastledata( getvariableofnpc( .Castles$[.@i], "WOE_CONTROL" ), 1 );
+       if ( getvariableofnpc( .Active[0], "WOE_CONTROL" ) & 1 << .@i && .@castle_guild_id )
+           query_sql "update guild set woe_points = woe_points +1 where guild_id = "+ .@castle_guild_id;
+   }
+   end;
+OnBreakEmp: // put doevent under OnAgitBreak ...
+   query_sql "update guild set woe_points = woe_points +1 where guild_id = "+ getcharid(2);
+   end;
+}

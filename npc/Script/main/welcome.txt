@@ -1,0 +1,10 @@
+-	script	arriving	-1,{
+OnPCLoginEvent:
+if ( !#new_account ) {
+announce "Attention, citizens of Midgard: "+strcharinfo(0)+" is here to SLAY! Welcome to HYPER WORLD!!!",bc;
+dispbottom "Welcome to HYPERO! Kill e'm All!";
+#new_account = 1;
+}
+else
+end;
+}

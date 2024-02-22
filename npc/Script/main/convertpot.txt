@@ -1,0 +1,64 @@
+prt_in,45,115,4	script	Ramil#01	749 ,{
+mes "[Ramil]";
+	mes "Hi! I can convert your potions to your choice.";
+	mes "Select which item you want to exchange.";
+	next;
+	switch(select("ESB White Pots 2x->ESB Blue Pot 1x:ESB Blue Pot 1x->ESB White Pot 1x")) {
+//	switch(select("ESB White Pots 2x->ESB Blue Pot 1x:ESB Blue Pot 1x->ESB White Pot 1x:WOE White Pots 2x->WOE Blue Pot 1x:WOE Blue Pot 1x->WOE White Pot 1x")) {
+	
+	case 1:
+mes "[Ramil]";
+		mes "How much?";
+		input .@num, 1, 30000;
+		if(countitem(11503) >= .@num) {
+			delitem 11503, .@num;
+			getitem 11504, .@num/2;
+		} else if ((.@weight) > 50){
+			mes "Hmmmm... it seems you are overweight";
+		} else if(countitem(11503) < .@num) {
+			mes "Sorry You don't have the required item!";
+		}
+		break;
+	case 2:
+mes "[Ramil]";
+		mes "How much?";
+		input .@num, 1, 30000;
+		if(countitem(11504) >= .@num) {
+			delitem 11504, .@num;
+			getitem 11503, .@num/1;
+		} else if ((.@weight) > 50){
+			mes "Hmmmm... it seems you are overweight";
+		}  else if(countitem(11504) < .@num) {
+			mes "Sorry You don't have the required item!";
+		}
+		break;
+	case 3:
+mes "[Ramil]";
+		mes "How much?";
+		input .@num, 1, 30000;
+		if(countitem(11501) >= .@num) {
+			delitem 11501, .@num;
+			getitem 11502, .@num/2;
+		} else if ((.@weight) > 50){
+			mes "Hmmmm... it seems you are overweight";
+		}  else if(countitem(11501) < .@num) {
+			mes "Sorry You don't have the required item!";
+		}
+		break;
+	case 4:
+mes "[Ramil]";
+		mes "How much?";
+		input .@num, 1, 30000;
+		if(countitem(11502) >= .@num) {
+			delitem 11502, .@num;
+			getitem 11501, .@num/1;
+		} else if ((.@weight) > 50){
+			mes "Hmmmm... it seems you are overweight";
+		}  else if(countitem(11502) < .@num) {
+			mes "Sorry You don't have the required item!";
+		}
+	default:
+		break;
+	}
+	close;
+}

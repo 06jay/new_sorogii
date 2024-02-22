@@ -1,0 +1,32 @@
+prontera,155,185,4	script	Gachapon	4_F_BABAYAGA,{
+    mes "[Gachapon]"; 
+    mes "Hello! Welcome to my Gachapon machine.";
+    mes "Do you have a Gachapon ticket?";
+    next;
+    if (countitem(7634) < 1) { //Change 7634 to the item ID of your Gachapon ticket
+        mes "Sorry, you don't have a Gachapon ticket.";
+        close;
+    }
+    mes "Alright! Let's see what you get.";
+    sleep2 2000;
+    set [email] = getcharid(3);
+    set [ip] = getcharip();
+    if(checkstorage( [email], [ip] ) > 0) { //Change this to your storage system function
+        mes "Sorry, you have already claimed your daily reward.";
+        close;
+    }
+    set [rand] = rand(1, 10000);
+    if ([rand] == 1) {
+        getitem 501, 1; //Change 501 to the item ID of the rarest item you want to give out
+        mes "Congratulations! You got a rare item!";
+    } else if ([rand] < 2000) {
+        getitem 502, 1; //Change 502 to the item ID of a less rare item you want to give out
+        mes "You got a pretty good item!";
+    } else {
+        getitem 503, 1; //Change 503 to the item ID of a common item you want to give out
+        mes "You got a common item.";
+    }
+    delitem 7634, 1; //Change 7634 to the item ID of your Gachapon ticket
+    addstorage [email], [ip], 1; //Change this to your storage system function
+    close;
+}

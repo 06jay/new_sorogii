@@ -1,0 +1,27 @@
+// https://rathena.org/board/topic/107199-autotrade-customization/
+ 
+-	script	atcmd_example	FAKE_NPC,{
+	OnInit:
+		bindatcmd("autotrade", strnpcinfo(3)+"::OnAtcommand");
+ 
+		setbattleflag "at_timeout",( 8 * 60 );
+		end;
+ 
+	OnAtcommand:
+		query_sql( "SELECT COUNT(`char_id`) FROM `vendings` WHERE `autotrade` > 0",.@count );
+		if ( .@count >= 50 ) {
+			dispbottom "You cant autotrade now.";
+		}
+		else {
+			atcommand "@autotrade";
+		}
+		end;
+ 
+	OnAgitStart:
+	OnAgitStart2:
+		addrid(0);
+		if ( checkvending() & 2 ) {
+			atcommand "@kick "+strcharinfo(0);
+		}
+		end;
+}

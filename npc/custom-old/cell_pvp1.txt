@@ -1,0 +1,23 @@
+-	script	test_cellpvp	-1,{
+end;
+OnInit:
+setcell "geffen",101,137,139,137,cell_pvp, 1;
+end;
+}
+
+
+
+function	script	F_Autobuff	{
+ 
+specialeffect2 EF_INCAGILITY;
+sc_start SC_INCREASEAGI,240000,10;
+specialeffect2 EF_BLESSING;
+sc_start SC_BLESSING,240000,10;
+return;
+}
+ 
+-	script	deathmatch_core	-1,{
+ dispbottom "test";
+callfunc("F_Autobuff");
+end;
+}

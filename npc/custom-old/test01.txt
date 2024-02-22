@@ -1,0 +1,11 @@
+new_2-2,171,185,4	script	Freebies NPC#123	123,{
+if(#freebies==1) {
+mes "You already claim your freebies";
+close;
+}
+mes "Here we go";
+getitembound 501,1,4;
+getitembound 502,1,4;
+set #freebies,1;
+close;
+}

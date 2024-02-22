@@ -1,0 +1,145 @@
+prontera,52,79,3	script	Vending Helper#1	757,{
+	for (.@i = 1; .@i <= .count; .@i++) {
+		getmapxy(.@map$, .@x, .@y, BL_NPC, "#vend_slot"+.@i);
+		if (!getareausers(.map$, .@x, .@y, .@x, .@y) && .@x > 1 && .@y > 1) {
+			set .@available, .@available + 1;
+			set .@menu$, .@menu$ + "Slot - "+.@i+":";
+		} else {
+			set .@menu$, .@menu$ + ":";
+		}
+	}
+
+	if (!.@available) {
+		mes "Dont have any available slot.";
+	} else if (!getskilllv("MC_VENDING")) {
+		mes "You dont have ^0055FFVending Skill^000000.";
+	} else {
+		mes "Available Slot : "+.@available;
+		mes "Please select a slot to vending.";
+		set .@i, select(.@menu$);
+		getmapxy(.@map$, .@x, .@y, BL_NPC, "#vend_slot"+.@i);
+		if (.@x == 1 || .@y == 1) {
+			mes "This NPC at invalid location...";
+		} else {
+			warp .@map$, .@x, .@y;
+			hideonnpc "#vend_slot"+.@i;
+		}
+	}
+	close;
+
+OnInit:
+	sleep 1000;
+	// Map for vending
+	.map$ = "geffen";
+	setcell .map$, 0, 0, 300, 300, cell_novending, 1;
+
+	// x and y horizone ..
+	setarray .x_line, 145, 147,149;
+	setarray .y_line, 75, 77,73;
+
+	set .x_line_size, getarraysize(.x_line);
+	set .y_line_size, getarraysize(.y_line);
+	set .count, 1;
+	for (set .@x, 0; .@x < .x_line_size; set .@x, .@x + 1)
+		for (set .@y, 0; .@y < .y_line_size; set .@y, .@y + 1)
+			if (checkcell(.map$, .x_line[.@x], .y_line[.@y], cell_chkpass)) {
+				movenpc "#vend_slot"+.count, .x_line[.@x], .y_line[.@y];
+				setcell .map$, .x_line[.@x], .y_line[.@y], .x_line[.@x], .y_line[.@y], cell_novending, 0;
+				set .count, .count + 1;
+			}
+	npctalk "Vending Spot : "+.count;
+	donpcevent "::OnSetup";
+	end;
+}
+
+-	script	vend_slot	-1, {
+	getmapxy(.@map$, .@x, .@y, BL_NPC);
+	if (!getskilllv("MC_VENDING")) {
+		mes "You dont have ^0055FFVending Skill^000000.";
+	} else if (getareausers(.@map$, .@x, .@y, .@x, .@y)) {
+		mes "Someone already selected this spot.";
+	} else {
+		mes "Spot : ^777777Available^000000";
+		mes "^0055FF[ Vending Area Rules ]^000000";
+		mes "^FF0000 ~ Use proper Shop Name.^000000";
+		mes "^FF0000 ~ Never sell Junk/Gifts.^000000";
+		mes " ";
+		mes "^777777Player will failed to follow these will be punished.^000000";
+		if (select("Select this Spot", "Cancel") == 1) {
+			warp .@map$, .@x, .@y;
+			hideonnpc strnpcinfo(0);
+		}
+	}
+	close;
+
+OnSetup:
+	getmapxy(.@map$, .@x, .@y, BL_NPC);
+	set .@npcname$, strnpcinfo(0);
+	while(.@map$ != "") {
+		if (getareausers(.@map$, .@x, .@y, .@x, .@y)) {
+			hideonnpc .@npcname$;
+		} else {
+			hideoffnpc .@npcname$;
+			// specialeffect 313;
+		}
+		sleep 5000;
+	}
+	end;
+}
+
+// Add more if needed.
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot0	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot1	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot2	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot3	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot5	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot6	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot7	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot8	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot9	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot10	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot11	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot51	4_BULLETIN_BOARD2//1st row
+
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot12	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot13	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot14	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot15	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot16	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot17	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot18	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot19	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot20	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot21	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot22	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot23	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot24	4_BULLETIN_BOARD2//2nd row
+
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot25	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot26	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot27	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot28	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot29	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot30	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot31	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot32	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot33	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot34	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot35	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot36	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot37	4_BULLETIN_BOARD2//3rd row
+
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot38	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot39	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot40	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot41	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot42	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot43	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot44	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot45	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot46	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot47	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot48	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot49	4_BULLETIN_BOARD2
+geffen,0,0,4	duplicate(vend_slot)	#vend_slot50	4_BULLETIN_BOARD2//3rd row
+

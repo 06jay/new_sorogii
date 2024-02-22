@@ -1,0 +1,74 @@
+
+prt_in,39,116,4	script	Mira#012	408 ,{
+function ExchangeCard;
+function DetermineCard;
+
+// ExchangeCard( "<ItemID | Variable>",<Normal>,<MiniBoss>,<MVP> );
+ExchangeCard( "7539",5,10,10 );
+close;
+
+function	ExchangeCard	{
+mes "[Mira]";
+mes "Hello, do you want to trade your spare cards for some ^0099FF"+( ( atoi( getarg(0) ) )?getitemname( atoi( getarg(0) )):getarg(0) )+"^000000?";
+mes "I really like collecting cards you know!";
+for( set .@c,4001; .@c <= 4453; set .@c,.@c + 1 )
+	if( countitem( .@c ) ){
+		set .@CardList[ getarraysize( .@CardList ) ],.@c;
+		set .@Menu$,.@Menu$ + getitemname( .@c )+":";
+	}
+next;
+if( .@Menu$ == "" || !getarraysize( .@CardList ) ){
+mes "[Mira]";
+	mes "But you didn't have any card in your inventory right now?";
+}else{
+	set .@i,select( .@Menu$ ) - 1;
+mes "[Mira]";
+
+	mes "^0000FF"+getitemname( .@CardList[.@i] )+" : ^FF0000"+getarg( DetermineCard( .@CardList[.@i] ) )+" "+( ( atoi( getarg(0) ) )?getitemname( atoi( getarg(0) ) ):getarg(0) )+"^000000";
+	mes "Available : "+countitem( .@CardList[.@i] );
+	input .@Amount,0,countitem( .@CardList[.@i] );
+	if( !.@Amount ){
+		mes "Deal Cancelled";
+	}else{
+		set .@Gained,( .@Amount * getarg( DetermineCard( .@CardList[.@i] ) ) );
+		mes .@Amount+" "+getitemname( .@CardList[.@i] )+" traded into "+.@Gained+" "+( ( atoi( getarg(0) ) )?getitemname( atoi( getarg(0) ) ):getarg(0) );
+		delitem .@CardList[.@i],.@Amount;
+		if( atoi( getarg(0) ) )
+			getitem atoi( getarg(0) ),.@Gained;
+		else
+			set getd( getarg(0) ),getd( getarg(0) ) + .@Gained;;
+	}
+}
+close;
+}
+
+// Only Required to Edit MVP / MiniBoss / Restricted Card Array ID ...Max ~128 Card each.
+function	DetermineCard	{
+// Restricted Card
+//setarray .@CardLists,4001,4002,4003,4004;
+for( set .@i,0; .@i < getarraysize( .@CardLists ); set .@i,.@i + 1 )
+	if( getarg(0) == .@CardLists[.@i] ){
+		mes "This Card is Forbidden.";
+		close;
+	}
+		
+// Useful cards
+setarray .@CardLists,4129,4178 ,4088 ,4351 ,4210 ,4102 ,4367,4252 ,4040 ,4349 ,4103 ,4433 ,4091 ,4205 ,4077 ,4416 ,4022 ,4053 ,4348 ,4264 ,4160,4381 ,4097 ,4199 ,4396 ,4221 ,4100 ,4107 ,4402 ,4266 ,4373 ,4109 ,4197 ,4306,
+4183 ,4211,4248 ,4013 ,4138 ,4397 ,4439 ,4413  ,4124 ,4207 ,4254 ,4094 ,4246,4297 ,4398 ,4004 ,4176 ,4002 ,4316 ,4350 ,4395 ,4202 ,4126 ,4317 ,4440 ,4085 ,4005 ,4117 ,4111 ,4427 ,4049 ,4281 ,4119 ,4426 ,4392 ,4170,
+4451 ,4405 ,4099 ,4031 ,4315 ,4337 ,4052 ,4365 ,4269 ,4366 ,4112 ,4411 ,4010 ,4127   ;
+for( set .@i,0; .@i < getarraysize( .@CardLists ); set .@i,.@i + 1 )
+	if( getarg(0) == .@CardLists[.@i] )
+		return 3;
+		
+// WOE CARDS
+setarray .@CardLists,4133,4334,4303 ,4431 ,4197 ,4184,4079 ,4044 ,4064 ,4375 ,4429,4253 ,4045 ,4058 ,4140 ,4320 ,4214 ,4428 ,4368 ,4035 ,4092 ,4086 ,4172 ,4141 ,4105 ,4223 ;
+for( set .@i,0; .@i < getarraysize( .@CardLists ); set .@i,.@i + 1 )
+	if( getarg(0) == .@CardLists[.@i] )
+		return 2;
+		
+// Others
+return 1;
+}
+	
+
+}

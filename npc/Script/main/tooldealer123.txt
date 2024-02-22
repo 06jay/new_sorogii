@@ -1,0 +1,67 @@
+izlude,151,143,2	script	Tool Dealer#0112	10301 ,{
+
+
+cutin "ep171_elyumina03.png",2;
+	
+
+	switch(select("Sell Items:Tools:Ammunition:Gemstone")) {
+        case 1: callshop "Toools", 2; end;
+		case 2: callshop "StreetDealer", 1; end;
+		case 3: callshop "Arrowz", 1; end;
+		case 4: callshop "AlchemistS", 1; end;
+                next;
+	cutin "",255;
+                close;
+        }
+
+}
+
+
+
+
+//shops
+-	shop	Arrowz	,1750:2,1751:3,1752:3
+-	shop	StreetDealer	-,601:-1,602:-1,506:-1,656:-1,645:-1,657:-1,1065:-1,610:-1,611:-1
+-	shop	AlchemistS	-,715:600,716:600,717:600
+-	shop	Toools	,501:-1
+
+
+//,13250:4,13252:20,13253:40,13254:100,2117:10000,7522:150,7523:150,7524:300 arrow
+
+
+
+
+
+aldebaran,147,122,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12na	10301 
+alberta,33,240,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#122kaw	10301 
+amatsu,204,92,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#112sao	10301
+ayothaya,203,172,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#120ewq	10301 
+comodo,195,154,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1200233	10301 
+einbech,67,32,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12000	10301 
+einbroch,57,207,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#122221	10301 
+geffen,130,60,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12	10301 
+gonryun,155,127,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12011	10301 
+hugel,91,157,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1203	10301 
+//izlude,131,149,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1202	10301 	//Pre-RE: (125,118)
+jawaii,245,143,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1201	10301 
+lighthalzen,153,106,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1200	10301 
+louyang,206,99,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12ddee	10301 
+manuk,272,144,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12213c	10301 
+mid_camp,203,289,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12xcv	10301 
+moc_ruins,72,164,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12ddd	10301 
+morocc,148,102,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12714sss	10301 
+moscovia,216,198,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12eee	10301 
+niflheim,212,182,5	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12123z	10301 
+payon,164,99,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12dzx	10301 
+payon,169,233,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12eeq	10301 
+
+prontera,145,197,5	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1222q	10301 
+rachel,123,121,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12eqeq	10301 
+splendide,201,153,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12dq	10301 
+thor_camp,249,74,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12z2	10301 
+umbala,98,159,3	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12125	10301 
+veins,211,119,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1234	10301 
+xmas,141,138,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1222	10301 
+yuno,150,44,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#122	10301 
+
+

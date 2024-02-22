@@ -1,0 +1,9 @@
+function	script	CustomBox22	{
+	setarray .BoxItems[0],501,502,503;
+	
+	set .Random, getarraysize( .BoxItems );
+	delitem 512,1;
+	getitem .BoxItems[ rand( .Random ) ], 1;
+	announce "["+strcharinfo(0)+"] has just obtained a ["+getitemname(.BoxItems[ .Random ])+"] from a Custom Box.",0;
+	end;
+}

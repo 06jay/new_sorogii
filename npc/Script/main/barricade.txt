@@ -1,0 +1,26 @@
+new_2-1,54,110,0	script	Barricade	626,{
+
+OnCellBarricade:
+if (getgmlevel() > 98) {
+    if (.barrier1 < 1) {
+        mes  "[ Midgard Council ] Barrier is now on";
+        close2;
+        setwall "new_1-1",67,113,6,4,1,"barrier1";
+        monster "new_1-1",67,109,"Barrier",1905,1,strnpcinfo(0)+"::OnCellBarricade";
+        monster "new_1-1",67,110,"Barrier",1905,1,strnpcinfo(0)+"::OnCellBarricade";
+        monster "new_1-1",67,111,"Barrier",1905,1,strnpcinfo(0)+"::OnCellBarricade";
+        monster "new_1-1",67,112,"Barrier",1905,1,strnpcinfo(0)+"::OnCellBarricade";
+        monster "new_1-1",67,113,"Barrier",1905,1,strnpcinfo(0)+"::OnCellBarricade";
+        monster "new_1-1",67,114,"Barrier",1905,1,strnpcinfo(0)+"::OnCellBarricade";
+        set .barrier1,1;
+    }
+    else {
+        mes"[ Midgard Council ] Barrier is now off";
+        close2;
+        delwall "barrier1";
+        set .barrier1,0;
+        killmonster "new_1-1","All";
+    }
+}
+end;
+}

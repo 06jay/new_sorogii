@@ -1,0 +1,36 @@
+geffen,104,80,4	script	Ashura	483,{
+cutin "3rd_sura_master",2;
+if(.n$ == "") donpcevent strnpcinfo(3)+"::OnInit";
+mes .n$;
+if(Class != .class) {
+    mes "I'm sorry, but only "+jobname(.class)+"s are allowed to join this PvP Room.";
+cutin "", 255;
+    close;
+}
+mes "^FF3300Do you want to enter to the Champ vs Champ Room?^000000";
+if(select("Let's Go!") - 1) close;
+warp "1@ge_st",0,0;
+announce ""+strcharinfo(0)+" entered Champion vs Champion Room",bc_blue;
+end;
+
+OnInit:
+set .n$,"["+strnpcinfo(1)+"]"; // NPC Name
+set .class,4016; // Allowed Class
+
+	waitingroom "CvC Room [0]",0;
+	freeloop(1);
+	while( 1 ){
+		.@count = getmapusers("1@ge_st");
+		if( .@count != .count ) {
+			.count = .@count;
+			delwaitingroom;
+			waitingroom "CvC Room ["+.@count+"]",0;
+		}
+	sleep 1000;
+	}
+	end;
+}
+
+1@ge_st	mapflag	nowarpto
+1@ge_st	mapflag	nowarp
+1@ge_st	mapflag	noreturn

@@ -1,0 +1,61 @@
+new_1-1,64,107,2	script	Sakray#1022	685,{
+
+
+set .@n$, "[Sakray]";
+
+setarray .@rwd[0],6045,1,7059,10,7060,10,6153,1; // Rewards: <item id>,<item amount>
+
+query_sql ("SELECT `last_ip` FROM `login` WHERE `account_id`=" + getcharid(3) + "", .@lip$);
+
+if ( getd("$" + .@lip$ + "_NG") > 0 || #NewbieGift > 0)
+
+{
+
+mes .@n$;
+mes "I'm sorry, the rewards are exclusively for new players.Please follow our FB page and DC channel for more update.";
+mes "^0000FFhttps://www.facebook.com/RagnaxChaos^000000";
+mes "^0000FFhttps://discord.io/xchaos^000000";
+close;
+
+}
+
+mes .@n$;
+
+mes "Welcome to ^FF0000RO x Chaos!^000000, "+ strcharinfo ( 0 ) +".I Am Sakray";
+
+for ( set .@i, 0; .@i < getarraysize(.@rwd); set .@i, .@i + 2 )
+
+mes .@rwd[.@i+1] + " x " + getitemname(.@rwd[.@i]);
+close2;
+
+announce strcharinfo(0)+" Claimed the X-Treme Box Supplies.",bc_all;
+
+
+set #NewbieGift, 1;
+
+setd "$" + .@lip$ + "_NG", getd("$" + .@lip$ + "_NG") + 1;
+
+for ( set .@i, 0; .@i < getarraysize(.@rwd); set .@i, .@i + 2 )
+
+getitem .@rwd[.@i], .@rwd[.@i+1];
+
+end;
+
+announce "[System] "+ strcharinfo(0) +" Received the X-Treme kit.",0,FF9900;
+
+
+
+
+OnInit:
+setarray .alphabets$,"","  WELCOME";
+set .alphabets_size,getarraysize( .alphabets$ );
+while( 1 ){
+	set .@title$,.@title$ + .alphabets$[.@i%.alphabets_size];
+	set .@i,.@i + 1;
+	delwaitingroom;
+	waitingroom ""+.@title$,0;
+	sleep 2000;
+	if( .@i % .alphabets_size == 0 ) set .@title$,"";
+}
+}
+

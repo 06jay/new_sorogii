@@ -1,0 +1,71 @@
+geffen,112,60,6	script	Akio::pvp	10298,{
+
+	while(1) {
+		mes "["+strnpcinfo(0)+"]";
+cutin "se_star03",2;
+		.@menu$ = "";
+		for (.@i = 0; .@i < .map_size; .@i++)
+			.@menu$ = .@menu$ + sprintf("%s [ %d / %d ]", .map_name$[.@i], getmapusers(.map$[.@i]), .map_max_player[.@i]) + ":";
+		.@i = select(.@menu$) - 1;
+		if (.map_max_player[.@i] && getmapusers(.map$[.@i]) >= .map_max_player[.@i]) {
+			mes "This map is currently full.";
+			next;
+		}
+		else {
+			// Check for level 89+ and transcendent job
+	cutin "se_star01",2;
+if (BaseLevel >= 89 && JobLevel >= 50 && Class >= 4000 && Class <= 4022)
+
+			{
+				warp .map$[.@i], 0, 0;
+				if (.@i == 0) {
+					announce ""+strcharinfo(0)+" has entered the Izlude PVP Room!", bc_all, 0x00FFFF;
+				} else if (.@i == 1) {
+					announce ""+strcharinfo(0)+" has entered Death Match Room!", bc_all, 0xFF0066;
+				} else if (.@i == 2) {
+					announce ""+strcharinfo(0)+" has entered the Sandwich Arena!", bc_all, 0xFF0066;
+				} else if (.@i == 3) {
+					announce ""+strcharinfo(0)+" has entered the Prontera Arena!", bc_all, 0xFF0066;
+				}
+				end;
+			}
+			else {
+mes "^3300CCYou want to join? Dont make me laugh! MAHINA KAPA SIR.";
+mes " ";
+				mes "You must be level 89 or higher and transcendent job to enter.^000000";
+				next;
+			}
+		}
+	}	close;
+		cutin "", 255;
+end;
+	
+	OnInit:
+	setarray .map_name$, "^0033CC>Izlude Room", "^FF0000>Death Match Room^000000";
+	setarray .map$, "pvp_y_1-2", "guild_vs3";
+	setarray .map_max_player, 30, 30;
+	.map_size = getarraysize(.map$);
+
+
+		// Check if there are players in any of the maps
+		for (.@i = 0; .@i < .map_size; .@i++) {
+			if (getmapusers(.map$[.@i]) > 0) {
+				specialeffect 948;
+				break;
+			}
+		}
+
+		sleep 1000;
+		end;
+	}
+
+pvp_y_1-2	mapflag	nowarpto
+pvp_y_1-2	mapflag	nowarp
+pvp_y_1-2	mapflag	noreturn
+pvp_y_1-2	mapflag	loadevent
+guild_vs3	mapflag	nowarpto
+guild_vs3	mapflag	nowarp
+guild_vs3	mapflag	noreturn
+guild_vs3	mapflag	loadevent
+
+

@@ -1,0 +1,57 @@
+prt_in,32,115,4	script	Reset Girl	735 ,{
+
+	mes "[Reset Girl]";
+	mes " ";
+	mes "Reset Stats: "+ .count_Stat +" "+ getitemname( .ResetStat );
+	mes "Reset Skills: "+ .count_Skill +" "+ getitemname( .ResetSkill );
+	mes "Reset Both: "+ .count_Both +" "+ getitemname( .ResetBoth );
+	mes "Please select the service you want:";
+	next;
+	switch(select("^FF3355Reset Skills:Reset Stats:Reset Both^000000:Cancel")) {
+	case 1:
+		mes "[Reset Girl]";
+		if ( countitem( .ResetSkill ) < .count_Skill ) {
+			mes "Sorry, you don't have enough Items.";
+			close;
+		}
+		delitem .ResetSkill, .count_Skill;
+		sc_end SC_ALL;
+		ResetSkill;
+		mes "There you go!";
+		close;
+	case 2:
+		mes "[Reset Girl]";
+		if ( countitem( .ResetStat ) < .count_Stat ) {
+			mes "Sorry, you don't have enough Items.";
+			close;
+		}
+		delitem .ResetStat, .count_Stat;
+		ResetStatus;
+		mes "There you go!";
+		close;
+	case 3:
+		mes "[Reset Girl]";
+		if ( countitem( .ResetBoth ) < .count_Both ) {
+			mes "Sorry, you don't have enough Items.";
+			close;
+		}
+		delitem .ResetBoth, .count_Both;
+		sc_end SC_ALL;
+		ResetSkill;
+		ResetStatus;
+		mes "There you go!";
+		close;
+	case 4:
+		close;
+	}
+OnInit:
+	set .ResetStat, 6320 ;	// item stat reset
+	set .count_Stat, 1;	// number of item need for stat reset
+
+	set .ResetSkill, 6320 ;	// item for skill reset
+	set .count_Skill, 1;	// number of item need for skill reset
+
+	set .ResetBoth, 6320 ;	// item for resetting both together
+	set .count_Both, 2;	// number of item need for Bothtogether
+	end;
+}

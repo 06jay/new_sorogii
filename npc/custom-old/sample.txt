@@ -1,0 +1,40 @@
+prontera,155,185,5	script	DailyBuff	90,{
+mes "[Daily Buff NPC]";
+mes "Hello, adventurer! Are you interested in purchasing a daily buff that increases your drop rate and experience rate?";
+next;
+mes "For a fee of 3 gold coins, I can give you a 3-hour buff that doubles your drop and experience rates.";
+next;
+if (countitem(9001) < 3) {
+mes "I'm sorry, but you don't have enough gold coins to purchase the buff.";
+close;
+}
+if (gettimetick(2) - getd("LastBuffTime") < 86400 && getd("LastBuffMachine") == getcharid(0)) {
+mes "I'm sorry, but you've already claimed your daily buff today.";
+close;
+}
+set @duration = 10800; // 3 hours in seconds
+mes "Great, here's your buff!";
+setd "LastBuffTime", gettimetick(2);
+setd "LastBuffMachine", getcharid(0);
+set @cost, 3;
+set @option = select("3 hours (3 gold coins)", "5 hours (4 gold coins)", "8 hours (7 gold coins)");
+switch (@option) {
+case 1:
+break;
+case 2:
+set @duration, 18000; // 5 hours in seconds
+set @cost, 4;
+break;
+case 3:
+set @duration, 28800; // 8 hours in seconds
+set @cost, 7;
+break;
+}
+setcount 9001, countitem(9001) - @cost;
+sc_start SC_EXPBOOST, @duration, 200;
+sc_start SC_ITEMBOOST, @duration, 200;
+mes "Your buff will last for " + (@duration/60) + " minutes!";
+next;
+mes "Enjoy the buff, and come back tomorrow for your next daily buff!";
+close;
+}

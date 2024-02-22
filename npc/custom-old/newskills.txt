@@ -1,0 +1,101 @@
+prontera,155,180,0	script	Platinum Skill Pusher	779,{
+
+				function SetSkills;
+				function SetJobLevel;
+				function Validate;
+
+        mes "[Platinum Skill Pusher]";
+        mes "Pssst, ehy you!";
+        mes "Hand me ^0000FF100.000 zeny^000000 and you'll avoid a boring training, none will know!";
+        mes "Man, there's no refund... are you sure you want it?";
+        next;
+        if (select("Yes Please:No") == 2) {
+                mes "[Platinum Skill Pusher]";
+                mes "Have a nice day... dude!";
+                close;
+        }
+
+        if( Zeny < .@zeny ) {
+          mes "...ehy dude, you need ^0000FF100.000 zeny^000000,";
+          mes "ask them to mom!";
+          close;
+        }
+
+        Validate();
+        
+        set Zeny,Zeny -100000;
+        callfunc "F_GetPlatinumSkills";
+        mes "[Platinum Skill Pusher]";
+        mes "Dehee thanks man...lazy people like you makes me rich buahah!";
+        close;	      
+
+
+    OnInit:
+    	
+    	SetSkills(Job_Swordman, 144, 145, 146);
+    	SetJobLevel(Job_Swordman, 35);
+
+    	SetSkills(Job_Mage, 157);
+    	SetSkills(Job_Archer, 147, 148);
+    	SetSkills(Job_Acolyte, 156);
+    	SetSkills(Job_Merchant, 153, 154, 155);
+    	SetSkills(Job_Thief, 149, 150, 151, 152);
+    	SetSkills(Job_Knight, 1001);
+    	SetSkills(Job_Wizard, 1006);
+    	SetSkills(Job_Hunter, 1009);
+    	SetSkills(Job_Priest, 1014);
+    	SetSkills(Job_Blacksmith, 1012, 1013);
+    	SetSkills(Job_Assassin, 1003, 1004);
+    	SetSkills(Job_Crusader, 1002);
+    	SetSkills(Job_Sage, 1007, 1008, 1017, 1018, 1019);
+    	SetSkills(Job_Bard, 1010);
+    	SetSkills(Job_Dancer, 1011);
+    	SetSkills(Job_Monk, 1015, 1016);
+    	SetSkills(Job_Alchemist, 238);
+    	SetSkills(Job_Rogue, 238);
+
+    	set .@zeny, 100000;
+    	end;
+
+    // getarg(0) = Class ID
+    // getarg(1+) = Skill ID
+    function SetSkills {
+
+    	// Skip 0 because that's Class ID, not a Skill ID
+    	for(.@i = 1; .@i <= getargcount(); .@i++) {
+    		setd(".job_" + getarg(0) + "_skills["+(.@i - 1)+"]", getarg(.@i)); // .job_ClassID[0] = SkillID 1, [1] = SKill ID2 etc...
+    	}
+    	return;
+    }
+
+    // getarg(0) = Class ID
+    // getarg(1) = Job Level
+    function SetJobLevel {
+    	for(.@i = 1; .@i <= getargcount(); .@i++) {
+    		setd("job_" + getarg(0) + "_level", getarg(1));
+    	}
+    	return;
+    }
+
+    function Validate {
+
+    	if (getd(".job_" + Class + "_level")) {
+    		if (JobLevel < getd(".job_" + Class + "_level")) {
+    			mes "You do not meet the Job Level Requirements";
+    			close;
+    		}
+    	}
+
+    	for(.@i = 0; .@i < getarraysize(getd(".job_" + Class + "_skills")); .@i++) {
+    		if (getskilllv(getd(".job_" + Class + "_skills["+.@i+"]"))) {
+    			mes "You have already received your skills";
+    			close;
+    		}
+    	}
+
+    	return;
+
+    }
+
+	      
+}

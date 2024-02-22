@@ -1,0 +1,22 @@
+-	script	PCKill	-1,{
+OnPCKillEvent:
+   if (killedrid == getcharid(3)) end;
+   for(set .@i,0; .@i<getarraysize(.maps$); set .@i,.@i+1)
+       if (strcharinfo(3)==.Maps$[.@i]) {
+           if (.NoFarm) {
+               if (killedrid == @last_kill) end;
+               set @last_kill, killedrid; }
+           if (.Item) getitem .Item, 1;
+           if (.Cash$ != "") {
+               setd .Cash$, getd(.Cash$)+1;
+               dispbottom "Gained a kill point! Total: "+getd(.Cash$); }
+           break; }
+   end;
+
+OnInit:
+   setarray .Maps$[0],"pvp_y_1-2","pvp_y_2-2","pvp_y_3-2";
+   set .NoFarm,1;            // End script for repeated kills? (1:yes / 0:no)
+   set .Item, 7642;            // 0 to disable
+   set .Cash$, "";    // "" to disable
+   end;
+}
