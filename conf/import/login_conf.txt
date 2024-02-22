@@ -1,0 +1,4 @@
+//SKYZONE LOGIN_CONF
+login_port: 6900
+console_silent: 7
+new_account: no

@@ -1,0 +1,11 @@
+//SKYZONE MAP_CONF
+userid: s1
+passwd: p1
+ 
+// Character Server IP
+char_ip: 127.0.0.1
+char_port: 6121
+ 
+// Map Server IP
+map_ip: 127.0.0.1
+map_port: 5121
