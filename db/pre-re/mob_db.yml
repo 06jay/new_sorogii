@@ -41438,7 +41438,7 @@ Body:
       TeleportBlock: true
   - Id: 21067
     AegisName: S_DUMMY_100_NOTHING
-    Name: Training Dummy (formless)
+    Name: Training Dummy (4mless)
     Level: 100
     Hp: 2000000000
     Attack: 10
