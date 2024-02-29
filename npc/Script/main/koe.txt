@@ -10,6 +10,7 @@ else if ( compare ( @whispervar0$, "on" ) ) goto L_start;
 else if ( compare ( @whispervar0$, "off" ) ) goto L_end;
 else end;
 
+OnClock2030:   // End 8:30PM
 L_end:
 announce "The King of Emperium Hill is over!", 0;
 set .koe_start, 0;
@@ -18,11 +19,7 @@ disablenpc "The King#KoE";
 killmonsterall "guild_vs1";
 end;
 
-OnClock1930:
-OnClock2100:
-//etc
-if( gettime(4) != 1 && gettime(4) != 3 && gettime(4) != 5 && gettime(4) != 0 ) end;
-
+OnClock2000:   // Start 8:00AM
 L_start:
 announce "The King of Emperium Hill has begun!", 0;
 set .koe_start, 1;
