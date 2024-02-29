@@ -111,11 +111,11 @@ Body:
   - Id: 20
     Option: VAR_ITEMDEFPOWER
     Script: |
-      //bonus bDef,getrandomoptinfo(ROA_VALUE);
+      bonus bDef,getrandomoptinfo(ROA_VALUE);
   - Id: 21
     Option: VAR_MDEFPOWER
     Script: |
-      //bonus bMdef,getrandomoptinfo(ROA_VALUE);
+      bonus bMdef,getrandomoptinfo(ROA_VALUE);
   - Id: 22
     Option: VAR_AVOIDSUCCESSVALUE
     Script: |
@@ -988,7 +988,7 @@ Body:
   - Id: 244
     Option: VAR_DEFRATE
     Script: |
-      //bonus bDefRate,getrandomoptinfo(ROA_VALUE);
+      bonus bDefRate,getrandomoptinfo(ROA_VALUE);
   - Id: 245
     Option: VAR_SPEEDRATE
     Script: |
@@ -1024,7 +1024,7 @@ Body:
   - Id: 253
     Option: VAR_MDEFRATE
     Script: |
-      //bonus bMdefRate,getrandomoptinfo(ROA_VALUE);
+      bonus bMdefRate,getrandomoptinfo(ROA_VALUE);
   - Id: 254
     Option: VAR_WEIGHT
     Script: |
