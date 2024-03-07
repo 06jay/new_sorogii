@@ -2607,7 +2607,7 @@
 1514,Dancing Dragon@NPC_EMOTION,chase,197,1,10000,0,3000,yes,self,always,0,6,,,,,,
 1515,Garm Baby@MG_FROSTDIVER,chase,15,40,2000,0,5000,yes,target,always,0,,,,,,6,
 1515,Garm Baby@NPC_LICK,attack,206,3,2000,0,5000,yes,target,always,0,,,,,,6,
-1516,Increase Soil@NPC_METAMORPHOSIS,attack,193,2,50,5000,5000,no,self,always,0,1516,,,,,,
+//1516,Increase Soil@NPC_METAMORPHOSIS,attack,193,2,50,5000,5000,no,self,always,0,1516,,,,,,
 1517,Li Me Mang Ryang@NPC_RANGEATTACK,chase,160,1,2000,0,5000,yes,target,always,0,,,,,,24,
 1517,Li Me Mang Ryang@NPC_CRITICALSLASH,attack,170,1,500,500,5000,yes,target,always,0,,,,,,6,
 1518,Bacsojin@NPC_INVISIBLE,chase,353,1,2000,1000,30000,yes,self,always,0,,,,,,29,

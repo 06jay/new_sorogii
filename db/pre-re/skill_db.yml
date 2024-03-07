@@ -8013,7 +8013,7 @@ Body:
     Description: Hocus-pocus
     MaxLevel: 10
     Type: Magic
-    TargetType: Self
+    # TargetType: Self
     DamageFlags:
       NoDamage: true
     Hit: Single
@@ -13484,7 +13484,7 @@ Body:
     Range: 1
     Hit: Single
     HitCount: 1
-    Duration1: 300000
+    Duration1: 1500000
     Requires:
       SpCost: 10
       ItemCost:

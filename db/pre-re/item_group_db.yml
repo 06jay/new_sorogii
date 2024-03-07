@@ -7083,21 +7083,21 @@ Body:
     SubGroups:
       - SubGroup: 1
         List:
-          - Index: 0
-            Item: Ghostring_Card
-            Rate: 1
-          - Index: 1
-            Item: Angeling_Card
-            Rate: 1
+          # - Index: 0
+          #   Item: Ghostring_Card
+          #   Rate: 1
+          # - Index: 1
+          #   Item: Angeling_Card
+          #   Rate: 1
           - Index: 2
             Item: Gryphon_Card
             Rate: 1
           - Index: 3
             Item: Dark_Illusion_Card
             Rate: 1
-          - Index: 4
-            Item: Deviling_Card
-            Rate: 1
+          # - Index: 4
+          #   Item: Deviling_Card
+          #   Rate: 1
           - Index: 5
             Item: Dragon_Fly_Card
             Rate: 10
@@ -7125,9 +7125,9 @@ Body:
           - Index: 13
             Item: Owl_Baron_Card
             Rate: 5
-          - Index: 14
-            Item: Archangeling_Card
-            Rate: 1
+          # - Index: 14
+          #   Item: Archangeling_Card
+          #   Rate: 1
           - Index: 15
             Item: Executioner_Card
             Rate: 1

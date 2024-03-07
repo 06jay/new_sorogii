@@ -6742,8 +6742,8 @@ Body:
       Both_Accessory: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bClassChange,100;
+    # Script: |
+    #   bonus bClassChange,100;
   - Id: 4322
     AegisName: High_Orc_Card
     Name: High Orc Card

@@ -4346,8 +4346,8 @@ Body:
         Rate: 28
       - Item: Emperium
         Rate: 40
-      - Item: Angeling_Card
-        Rate: 1
+      # - Item: Angeling_Card
+      #   Rate: 1
         StealProtected: true
   - Id: 1097
     AegisName: ANT_EGG
@@ -5457,8 +5457,8 @@ Body:
         Rate: 30
       - Item: Ghost_Scroll_1_5
         Rate: 100
-      - Item: Ghostring_Card
-        Rate: 1
+      # - Item: Ghostring_Card
+      #   Rate: 1
         StealProtected: true
   - Id: 1121
     AegisName: GIEARTH
@@ -16949,8 +16949,8 @@ Body:
         Rate: 3
       - Item: Turquoise
         Rate: 1500
-      - Item: Archangeling_Card
-        Rate: 1
+      # - Item: Archangeling_Card
+      #   Rate: 1
         StealProtected: true
   - Id: 1389
     AegisName: DRACULA
@@ -23031,8 +23031,8 @@ Body:
         Rate: 100
       - Item: Ghost_Scroll_1_3
         Rate: 100
-      - Item: Deviling_Card
-        Rate: 1
+      # - Item: Deviling_Card
+      #   Rate: 1
         StealProtected: true
   - Id: 1583
     AegisName: TAO_GUNKA
