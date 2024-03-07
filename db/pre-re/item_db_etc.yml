@@ -253,7 +253,7 @@ Body:
     AegisName: Yellow_Gemstone
     Name: Yellow Gemstone
     Type: Etc
-    Buy: 100
+    Buy: 600
     Weight: 30
     Flags:
       BuyingStore: true
@@ -261,7 +261,7 @@ Body:
     AegisName: Red_Gemstone
     Name: Red Gemstone
     Type: Etc
-    Buy: 100
+    Buy: 600
     Weight: 30
     Flags:
       BuyingStore: true
@@ -269,7 +269,7 @@ Body:
     AegisName: Blue_Gemstone
     Name: Blue Gemstone
     Type: Etc
-    Buy: 100
+    Buy: 600
     Weight: 30
     Flags:
       BuyingStore: true
@@ -309,7 +309,7 @@ Body:
     AegisName: Scarlet_Jewel
     Name: Pearl
     Type: Etc
-    Buy: 900
+    Buy: 6000
     Weight: 100
     Flags:
       BuyingStore: true
@@ -325,7 +325,7 @@ Body:
     AegisName: Cardinal_Jewel_
     Name: Cursed Ruby
     Type: Etc
-    Buy: 150
+    Buy: 600
     Weight: 100
     Flags:
       BuyingStore: true
@@ -373,7 +373,7 @@ Body:
     AegisName: Crystal_Jewel
     Name: 1carat Diamond
     Type: Etc
-    Buy: 1500
+    Buy: 10000
     Weight: 100
     Flags:
       BuyingStore: true
@@ -381,7 +381,7 @@ Body:
     AegisName: Crystal_Jewel_
     Name: 2carat Diamond
     Type: Etc
-    Buy: 4000
+    Buy: 25000
     Weight: 100
     Flags:
       BuyingStore: true
@@ -389,7 +389,7 @@ Body:
     AegisName: Crystal_Jewel__
     Name: 3carat Diamond
     Type: Etc
-    Buy: 9500
+    Buy: 55000
     Weight: 100
     Flags:
       BuyingStore: true
@@ -405,7 +405,7 @@ Body:
     AegisName: Red_Frame
     Name: Red Frame
     Type: Etc
-    Buy: 300
+    Buy: 3000
     Weight: 200
     Flags:
       BuyingStore: true
@@ -453,7 +453,7 @@ Body:
     AegisName: Stuffed_Doll
     Name: Puppet
     Type: Etc
-    Buy: 250
+    Buy: 1000
     Weight: 100
     Flags:
       BuyingStore: true
@@ -509,7 +509,7 @@ Body:
     AegisName: Crystal_Mirror
     Name: Crystal Mirror
     Type: Etc
-    Buy: 3000
+    Buy: 15000
     Weight: 50
     Flags:
       BuyingStore: true
@@ -517,7 +517,7 @@ Body:
     AegisName: Witherless_Rose
     Name: Witherless Rose
     Type: Etc
-    Buy: 3000
+    Buy: 55000
     Weight: 10
     Flags:
       BuyingStore: true
@@ -525,7 +525,7 @@ Body:
     AegisName: Frozen_Rose
     Name: Frozen Rose
     Type: Etc
-    Buy: 8000
+    Buy: 35000
     Weight: 10
     Flags:
       BuyingStore: true
@@ -613,7 +613,7 @@ Body:
     AegisName: Scorpion's_Tail
     Name: Scorpion Tail
     Type: Etc
-    Buy: 31
+    Buy: 124
     Weight: 10
     Flags:
       BuyingStore: true
@@ -677,7 +677,7 @@ Body:
     AegisName: Zargon
     Name: Zargon
     Type: Etc
-    Buy: 120
+    Buy: 480
     Weight: 10
     Flags:
       BuyingStore: true
@@ -765,7 +765,7 @@ Body:
     AegisName: Evil_Horn
     Name: Evil Horn
     Type: Etc
-    Buy: 300
+    Buy: 1200
     Weight: 10
     Flags:
       BuyingStore: true
@@ -813,7 +813,7 @@ Body:
     AegisName: Rotten_Bandage
     Name: Rotten Bandage
     Type: Etc
-    Buy: 82
+    Buy: 350
     Weight: 10
     Flags:
       BuyingStore: true
@@ -837,7 +837,7 @@ Body:
     AegisName: Mementos
     Name: Memento
     Type: Etc
-    Buy: 150
+    Buy: 600
     Weight: 10
     Flags:
       BuyingStore: true
@@ -853,7 +853,7 @@ Body:
     AegisName: Scales_Shell
     Name: Scale Shell
     Type: Etc
-    Buy: 116
+    Buy: 466
     Weight: 10
     Flags:
       BuyingStore: true
@@ -893,7 +893,7 @@ Body:
     AegisName: Nose_Ring
     Name: Nose Ring
     Type: Etc
-    Buy: 142
+    Buy: 568
     Weight: 10
     Flags:
       BuyingStore: true
@@ -909,7 +909,7 @@ Body:
     AegisName: Solid_Shell
     Name: Solid Shell
     Type: Etc
-    Buy: 112
+    Buy: 448
     Weight: 10
     Flags:
       BuyingStore: true
@@ -917,7 +917,7 @@ Body:
     AegisName: Horseshoe
     Name: Horseshoe
     Type: Etc
-    Buy: 205
+    Buy: 588
     Weight: 10
     Flags:
       BuyingStore: true
@@ -973,7 +973,7 @@ Body:
     AegisName: Fin
     Name: Fin
     Type: Etc
-    Buy: 103
+    Buy: 412
     Weight: 10
     Flags:
       BuyingStore: true
@@ -997,7 +997,7 @@ Body:
     AegisName: Shining_Scales
     Name: Shining Scale
     Type: Etc
-    Buy: 116
+    Buy: 466
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1029,7 +1029,7 @@ Body:
     AegisName: Horrendous_Mouth
     Name: Horrendous Mouth
     Type: Etc
-    Buy: 97
+    Buy: 390
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1069,7 +1069,7 @@ Body:
     AegisName: Sharp_Scale
     Name: Sharp Scale
     Type: Etc
-    Buy: 62
+    Buy: 250
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1101,7 +1101,7 @@ Body:
     AegisName: Turtle_Shell
     Name: Turtle Shell
     Type: Etc
-    Buy: 120
+    Buy: 680
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1277,7 +1277,7 @@ Body:
     AegisName: Boody_Red
     Name: Red Blood
     Type: Etc
-    Buy: 250
+    Buy: 1000
     Weight: 50
     Flags:
       BuyingStore: true
@@ -1285,7 +1285,7 @@ Body:
     AegisName: Crystal_Blue
     Name: Crystal Blue
     Type: Etc
-    Buy: 250
+    Buy: 1000
     Weight: 50
     Flags:
       BuyingStore: true
@@ -1293,7 +1293,7 @@ Body:
     AegisName: Wind_Of_Verdure
     Name: Wind of Verdure
     Type: Etc
-    Buy: 250
+    Buy: 1000
     Weight: 50
     Flags:
       BuyingStore: true
@@ -1301,7 +1301,7 @@ Body:
     AegisName: Yellow_Live
     Name: Green Live
     Type: Etc
-    Buy: 250
+    Buy: 1000
     Weight: 50
     Flags:
       BuyingStore: true
@@ -1309,7 +1309,7 @@ Body:
     AegisName: Flame_Heart
     Name: Flame Heart
     Type: Etc
-    Buy: 750
+    Buy: 3000
     Weight: 300
     Flags:
       BuyingStore: true
@@ -1317,7 +1317,7 @@ Body:
     AegisName: Mistic_Frozen
     Name: Mystic Frozen
     Type: Etc
-    Buy: 750
+    Buy: 3000
     Weight: 300
     Flags:
       BuyingStore: true
@@ -1325,7 +1325,7 @@ Body:
     AegisName: Rough_Wind
     Name: Rough Wind
     Type: Etc
-    Buy: 750
+    Buy: 3000
     Weight: 300
     Flags:
       BuyingStore: true
@@ -1333,7 +1333,7 @@ Body:
     AegisName: Great_Nature
     Name: Great Nature
     Type: Etc
-    Buy: 750
+    Buy: 3000
     Weight: 300
     Flags:
       BuyingStore: true
@@ -1357,7 +1357,7 @@ Body:
     AegisName: Star_Crumb
     Name: Star Crumb
     Type: Etc
-    Buy: 1125
+    Buy: 4500
     Weight: 100
     Flags:
       BuyingStore: true
@@ -1365,7 +1365,7 @@ Body:
     AegisName: Sparkling_Dust
     Name: Star Dust
     Type: Etc
-    Buy: 375
+    Buy: 1500
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1381,7 +1381,7 @@ Body:
     AegisName: Coal
     Name: Coal
     Type: Etc
-    Buy: 75
+    Buy: 500
     Weight: 50
     Flags:
       BuyingStore: true
@@ -1637,7 +1637,7 @@ Body:
     AegisName: Dragon_Canine
     Name: Dragon Canine
     Type: Etc
-    Buy: 121
+    Buy: 484
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1645,7 +1645,7 @@ Body:
     AegisName: Dragon_Scale
     Name: Dragon Scale
     Type: Etc
-    Buy: 125
+    Buy: 500
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1653,7 +1653,7 @@ Body:
     AegisName: Dragon_Train
     Name: Dragon Tail
     Type: Etc
-    Buy: 300
+    Buy: 1200
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1661,7 +1661,7 @@ Body:
     AegisName: Petite_DiablOfs_Horn
     Name: Little Evil Horn
     Type: Etc
-    Buy: 132
+    Buy: 528
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1669,7 +1669,7 @@ Body:
     AegisName: Petite_DiablOfs_Wing
     Name: Little Evil Wing
     Type: Etc
-    Buy: 500
+    Buy: 2000
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1741,7 +1741,7 @@ Body:
     AegisName: Slender_Snake
     Name: Horrendous Hair
     Type: Etc
-    Buy: 200
+    Buy: 800
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1789,7 +1789,7 @@ Body:
     AegisName: Lip_Of_Ancient_Fish
     Name: Ancient Lips
     Type: Etc
-    Buy: 250
+    Buy: 1000
     Weight: 10
     Flags:
       BuyingStore: true
@@ -2054,7 +2054,7 @@ Body:
     AegisName: Needle_Of_Alarm
     Name: Needle of Alarm
     Type: Etc
-    Buy: 137
+    Buy: 546
     Weight: 10
     Flags:
       BuyingStore: true
@@ -2062,7 +2062,7 @@ Body:
     AegisName: Round_Shell
     Name: Round Shell
     Type: Etc
-    Buy: 195
+    Buy: 780
     Weight: 10
     Flags:
       BuyingStore: true
@@ -2070,7 +2070,7 @@ Body:
     AegisName: Worn_Out_Page
     Name: Worn Out Page
     Type: Etc
-    Buy: 237
+    Buy: 948
     Weight: 10
     Flags:
       BuyingStore: true
@@ -2086,7 +2086,7 @@ Body:
     AegisName: Worn_Out_Prison_Uniform
     Name: Worn-out Prison Uniform
     Type: Etc
-    Buy: 170
+    Buy: 680
     Weight: 10
     Flags:
       BuyingStore: true
@@ -12513,7 +12513,7 @@ Body:
     AegisName: Mud_Lump
     Name: Mud Lump
     Type: Etc
-    Buy: 140
+    Buy: 876
     Weight: 10
     Flags:
       BuyingStore: true
@@ -12553,7 +12553,7 @@ Body:
     AegisName: Glitter_Shell
     Name: Glitter Shell
     Type: Etc
-    Buy: 132
+    Buy: 528
     Weight: 10
     Flags:
       BuyingStore: true
@@ -12577,7 +12577,7 @@ Body:
     AegisName: Tough_Scalelike_Stem
     Name: Tough Scalelike Stem
     Type: Etc
-    Buy: 103
+    Buy: 412
     Weight: 10
     Flags:
       BuyingStore: true
@@ -12601,7 +12601,7 @@ Body:
     AegisName: Bookclip_In_Memory
     Name: Bookclip in Memory
     Type: Etc
-    Buy: 300
+    Buy: 3000
     Weight: 20
     Flags:
       BuyingStore: true
@@ -12609,7 +12609,7 @@ Body:
     AegisName: Spoon_Stub
     Name: Spoon Stub
     Type: Etc
-    Buy: 625
+    Buy: 2500
     Weight: 20
     Flags:
       BuyingStore: true
@@ -12881,7 +12881,7 @@ Body:
     AegisName: Cyfar
     Name: Cyfar
     Type: Etc
-    Buy: 183
+    Buy: 772
     Weight: 10
     Flags:
       BuyingStore: true
@@ -12889,7 +12889,7 @@ Body:
     AegisName: Brigan
     Name: Brigan
     Type: Etc
-    Buy: 186
+    Buy: 746
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13022,7 +13022,7 @@ Body:
     AegisName: Rust_Suriken
     Name: Old Shuriken
     Type: Etc
-    Buy: 445
+    Buy: 1780
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13214,7 +13214,7 @@ Body:
     AegisName: Cold_Magma
     Name: Lava
     Type: Etc
-    Buy: 272
+    Buy: 1109
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13222,7 +13222,7 @@ Body:
     AegisName: Burning_Heart
     Name: Burning Heart
     Type: Etc
-    Buy: 120
+    Buy: 924
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13230,7 +13230,7 @@ Body:
     AegisName: Live_Coal
     Name: Live Coal
     Type: Etc
-    Buy: 159
+    Buy: 638
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13246,7 +13246,7 @@ Body:
     AegisName: Sharp_Leaf
     Name: Sharp Leaf
     Type: Etc
-    Buy: 201
+    Buy: 806
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13254,7 +13254,7 @@ Body:
     AegisName: Peco_Wing_Feather
     Name: Peco Peco Feather
     Type: Etc
-    Buy: 113
+    Buy: 454
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13294,7 +13294,7 @@ Body:
     AegisName: Goat's_Horn
     Name: Antelope Horn
     Type: Etc
-    Buy: 168
+    Buy: 672
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13302,7 +13302,7 @@ Body:
     AegisName: Gaoat's_Skin
     Name: Antelope Skin
     Type: Etc
-    Buy: 189
+    Buy: 756
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13326,7 +13326,7 @@ Body:
     AegisName: Vroken_Sword
     Name: Broken Sword
     Type: Etc
-    Buy: 142
+    Buy: 588
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13366,7 +13366,7 @@ Body:
     AegisName: Harpy's_Feather
     Name: Harpy Feather
     Type: Etc
-    Buy: 285
+    Buy: 1142
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13406,7 +13406,7 @@ Body:
     AegisName: Burning_Horse_Shoe
     Name: Burning Horseshoe
     Type: Etc
-    Buy: 140
+    Buy: 823
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13414,7 +13414,7 @@ Body:
     AegisName: Honey_Jar
     Name: Honey Pot
     Type: Etc
-    Buy: 155
+    Buy: 622
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13422,7 +13422,7 @@ Body:
     AegisName: Hot_Hair
     Name: Burning Hair
     Type: Etc
-    Buy: 120
+    Buy: 974
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13430,7 +13430,7 @@ Body:
     AegisName: Dragon's_Skin
     Name: Dragon Skin
     Type: Etc
-    Buy: 256
+    Buy: 1025
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13446,7 +13446,7 @@ Body:
     AegisName: Scropion's_Nipper
     Name: Scorpion Claw
     Type: Etc
-    Buy: 176
+    Buy: 706
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13916,7 +13916,7 @@ Body:
     AegisName: Browny_Root
     Name: Brown Root
     Type: Etc
-    Buy: 140
+    Buy: 560
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13924,7 +13924,7 @@ Body:
     AegisName: Heart_Of_Tree
     Name: Wooden Heart
     Type: Etc
-    Buy: 170
+    Buy: 680
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13987,7 +13987,7 @@ Body:
     AegisName: Tough_Vines
     Name: Tough Vines
     Type: Etc
-    Buy: 125
+    Buy: 500
     Weight: 10
     Flags:
       BuyingStore: true
@@ -13995,7 +13995,7 @@ Body:
     AegisName: Great_Leaf
     Name: Huge Leaf
     Type: Etc
-    Buy: 152
+    Buy: 610
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14008,7 +14008,7 @@ Body:
     AegisName: Flexible_String
     Name: Elastic Band
     Type: Etc
-    Buy: 95
+    Buy: 380
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14016,7 +14016,7 @@ Body:
     AegisName: Log
     Name: Log
     Type: Etc
-    Buy: 62
+    Buy: 250
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14056,7 +14056,7 @@ Body:
     AegisName: Black_Kitty_Doll
     Name: Black Cat Doll
     Type: Etc
-    Buy: 250
+    Buy: 1440
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14064,7 +14064,7 @@ Body:
     AegisName: Old_Manteau
     Name: Old Manteau
     Type: Etc
-    Buy: 262
+    Buy: 1050
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14072,7 +14072,7 @@ Body:
     AegisName: Rusty_Cleaver
     Name: Rusty Kitchen Knife
     Type: Etc
-    Buy: 300
+    Buy: 1780
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14080,7 +14080,7 @@ Body:
     AegisName: Dullahan's_Helm
     Name: Helm of Dullahan
     Type: Etc
-    Buy: 250
+    Buy: 1350
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14088,7 +14088,7 @@ Body:
     AegisName: Dullahan_Armor
     Name: Armor Piece of Dullahan
     Type: Etc
-    Buy: 190
+    Buy: 790
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14104,7 +14104,7 @@ Body:
     AegisName: Hanging_Doll
     Name: Hung Doll
     Type: Etc
-    Buy: 300
+    Buy: 1020
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14112,7 +14112,7 @@ Body:
     AegisName: Needle_Pouch
     Name: Needle Packet
     Type: Etc
-    Buy: 208
+    Buy: 832
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14120,7 +14120,7 @@ Body:
     AegisName: Bat_Cage
     Name: Bat Cage
     Type: Etc
-    Buy: 200
+    Buy: 880
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14128,7 +14128,7 @@ Body:
     AegisName: Broken_Needle
     Name: Broken Needle
     Type: Etc
-    Buy: 172
+    Buy: 690
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14136,7 +14136,7 @@ Body:
     AegisName: Red_Scarf
     Name: Red Muffler
     Type: Etc
-    Buy: 165
+    Buy: 660
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14152,7 +14152,7 @@ Body:
     AegisName: Rotten_Rope
     Name: Decomposed Rope
     Type: Etc
-    Buy: 90
+    Buy: 390
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14160,7 +14160,7 @@ Body:
     AegisName: Striped_Socks
     Name: Striped Sock
     Type: Etc
-    Buy: 230
+    Buy: 920
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14168,7 +14168,7 @@ Body:
     AegisName: Ectoplasm
     Name: Ectoplasm
     Type: Etc
-    Buy: 80
+    Buy: 322
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14176,7 +14176,7 @@ Body:
     AegisName: Tangled_Chain
     Name: Tangled Chains
     Type: Etc
-    Buy: 185
+    Buy: 740
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14184,7 +14184,7 @@ Body:
     AegisName: Tree_Knot
     Name: Wooden Gnarl
     Type: Etc
-    Buy: 117
+    Buy: 468
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14192,7 +14192,7 @@ Body:
     AegisName: Distorted_Portrait
     Name: Contorted Self-Portrait
     Type: Etc
-    Buy: 200
+    Buy: 2032
     Weight: 10
     Flags:
       BuyingStore: true
@@ -14205,7 +14205,7 @@ Body:
     AegisName: Pumpkin_Bucket
     Name: Pumpkin Lantern
     Type: Etc
-    Buy: 121
+    Buy: 486
     Weight: 10
     Flags:
       BuyingStore: true
@@ -17778,7 +17778,7 @@ Body:
     AegisName: Clattering_Skull
     Name: Clattering Skull
     Type: Etc
-    Buy: 250
+    Buy: 840
     Weight: 10
     Flags:
       BuyingStore: true

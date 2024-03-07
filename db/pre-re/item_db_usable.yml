@@ -117,7 +117,7 @@ Body:
     AegisName: White_Potion
     Name: White Potion
     Type: Healing
-    Buy: 200
+    Buy: 1200
     Weight: 150
     Script: |
       itemheal rand(325,405),0;
@@ -125,7 +125,7 @@ Body:
     AegisName: Blue_Potion
     Name: Blue Potion
     Type: Healing
-    Buy: 500
+    Buy: 5000
     Weight: 150
     Script: |
       itemheal 0,rand(40,60);
@@ -295,7 +295,7 @@ Body:
     AegisName: Fruit_Of_Mastela
     Name: Mastela Fruit
     Type: Healing
-    Buy: 500
+    Buy: 8500
     Weight: 30
     Flags:
       BuyingStore: true
@@ -330,7 +330,7 @@ Body:
     AegisName: Royal_Jelly
     Name: Royal Jelly
     Type: Healing
-    Buy: 900
+    Buy: 7000
     Weight: 150
     Flags:
       BuyingStore: true
@@ -447,7 +447,7 @@ Body:
     AegisName: Well_Baked_Cookie
     Name: Well-baked Cookie
     Type: Healing
-    Buy: 250
+    Buy: 1000
     Weight: 30
     Flags:
       BuyingStore: true
@@ -457,7 +457,7 @@ Body:
     AegisName: Piece_Of_Cake
     Name: Piece of Cake
     Type: Healing
-    Buy: 750
+    Buy: 3000
     Weight: 100
     Flags:
       BuyingStore: true
