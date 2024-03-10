@@ -6099,9 +6099,9 @@ ve_in,281,214,3	script	Bookshelf#vol	111,{
 		else if ((.@box_box > 8) && (.@box_box < 20)) {
 			getitem 12027,5; //Giggling_Box
 		}
-		else {
+	/*	else {
 			getitem 12103,1; //Bloody_Dead_Branch
-		}
+		}*/
 		getexp (checkre(3))?100000:800000,0;
 		mes "^3355FFWell, you've done all";
 		mes "that you could here.";

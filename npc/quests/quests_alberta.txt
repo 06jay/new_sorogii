@@ -1971,10 +1971,11 @@ tur_dun04,113,178,4	script	Turtle Statue#tur	111,{
 				close;
 			}
 		}
-		getitem 604,1; //Branch_Of_Dead_Tree
+		//getitem 604,1; //Branch_Of_Dead_Tree
 		mes "^3355FFInside the drawer,";
-		mes "is a Dead Branch.";
-		mes "It is now yours to keep.^000000";
+		/*mes "is a Dead Branch.";
+		mes "It is now yours to keep.^000000";*/
+		mes "Opps Dead Branch is disabled at this moment";
 		close;
 	}
 	mes "^3355FFIt is a turtle statue";

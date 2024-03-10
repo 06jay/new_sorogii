@@ -372,9 +372,9 @@ Body:
           - Index: 50
             Item: Wing_Of_Butterfly
             Rate: 12
-          - Index: 51
-            Item: Branch_Of_Dead_Tree
-            Rate: 512
+          # - Index: 51
+          #   Item: Branch_Of_Dead_Tree
+          #   Rate: 512
           - Index: 52
             Item: Anodyne
             Rate: 12
@@ -5274,9 +5274,9 @@ Body:
           - Index: 13
             Item: Old_Blue_Box
             Rate: 40
-          - Index: 14
-            Item: Branch_Of_Dead_Tree
-            Rate: 9
+          # - Index: 14
+          #   Item: Branch_Of_Dead_Tree
+          #   Rate: 9
           - Index: 15
             Item: Anodyne
             Rate: 1
@@ -7503,9 +7503,9 @@ Body:
           - Index: 0
             Item: Old_Blue_Box
             Rate: 11
-          - Index: 1
-            Item: Branch_Of_Dead_Tree
-            Rate: 3
+          # - Index: 1
+          #   Item: Branch_Of_Dead_Tree
+          #   Rate: 3
           - Index: 2
             Item: Old_Violet_Box
             Rate: 5
@@ -7581,9 +7581,9 @@ Body:
           - Index: 26
             Item: Luk_Dish10
             Rate: 3
-          - Index: 27
-            Item: Bloody_Dead_Branch
-            Rate: 1
+          # - Index: 27
+          #   Item: Bloody_Dead_Branch
+          #   Rate: 1
   - Group: POISON
     SubGroups:
       - SubGroup: 1
@@ -8314,9 +8314,9 @@ Body:
           - Index: 50
             Item: Wing_Of_Butterfly
             Rate: 14
-          - Index: 51
-            Item: Branch_Of_Dead_Tree
-            Rate: 214
+          # - Index: 51
+          #   Item: Branch_Of_Dead_Tree
+          #   Rate: 214
           - Index: 52
             Item: Anodyne
             Rate: 14

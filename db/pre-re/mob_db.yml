@@ -1488,8 +1488,8 @@ Body:
         Rate: 30
       - Item: Fire_Scroll_1_3
         Rate: 100
-      - Item: Branch_Of_Dead_Tree
-        Rate: 100
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 100
       - Item: Elder_Wilow_Card
         Rate: 1
         StealProtected: true
@@ -5449,8 +5449,8 @@ Body:
         Rate: 100
       - Item: Thief_Clothes_
         Rate: 50
-      - Item: Branch_Of_Dead_Tree
-        Rate: 500
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 500
       - Item: Old_Blue_Box
         Rate: 10
       - Item: Emperium
@@ -8212,8 +8212,8 @@ Body:
         Rate: 200
       - Item: Old_Blue_Box
         Rate: 100
-      - Item: Branch_Of_Dead_Tree
-        Rate: 100
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 100
       - Item: Royal_Jelly
         Rate: 250
       - Item: Panacea
@@ -14704,8 +14704,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -14764,8 +14764,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -14824,8 +14824,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -14884,8 +14884,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -14944,8 +14944,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15004,8 +15004,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15064,8 +15064,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15124,8 +15124,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15184,8 +15184,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15244,8 +15244,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15304,8 +15304,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15364,8 +15364,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15424,8 +15424,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15484,8 +15484,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15544,8 +15544,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15604,8 +15604,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15664,8 +15664,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15724,8 +15724,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15784,8 +15784,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -15844,8 +15844,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -17304,8 +17304,8 @@ Body:
         Rate: 6500
       - Item: Chocolate
         Rate: 5000
-      - Item: Branch_Of_Dead_Tree
-        Rate: 300
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 300
         StealProtected: true
   - Id: 1398
     AegisName: CRYSTAL_4
@@ -17870,8 +17870,8 @@ Body:
         Rate: 4365
       - Item: Royal_Jelly
         Rate: 1000
-      - Item: Branch_Of_Dead_Tree
-        Rate: 400
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 400
       - Item: Banana_Juice
         Rate: 100
       - Item: Old_Blue_Box
@@ -20344,8 +20344,8 @@ Body:
         Rate: 110
       - Item: Centimental_Leaf
         Rate: 10
-      - Item: Branch_Of_Dead_Tree
-        Rate: 100
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 100
       - Item: Log
         Rate: 5000
       - Item: Mushroom_Spore
@@ -20599,8 +20599,8 @@ Body:
         Rate: 300
       - Item: Red_Gemstone
         Rate: 100
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10
       - Item: Gibbet_Card
         Rate: 1
         StealProtected: true
@@ -24256,8 +24256,8 @@ Body:
         Rate: 50
       - Item: Iron_Ore
         Rate: 1000
-      - Item: Branch_Of_Dead_Tree
-        Rate: 50
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 50
       - Item: Old_Steel_Plate
         Rate: 3800
       - Item: Waste_Stove_Card
@@ -27487,8 +27487,8 @@ Body:
         Rate: 10
       - Item: Gust_Bow
         Rate: 10
-      - Item: Branch_Of_Dead_Tree
-        Rate: 10
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 10
       - Item: Centimental_Flower
         Rate: 10
       - Item: Rough_Wind
@@ -36319,8 +36319,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree_Box
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree_Box
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -36349,8 +36349,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree_Box
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree_Box
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -36379,8 +36379,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree_Box
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree_Box
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -36409,8 +36409,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree_Box
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree_Box
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -36439,8 +36439,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree_Box
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree_Box
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -36469,8 +36469,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree_Box
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree_Box
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -36499,8 +36499,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree_Box
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree_Box
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -36529,8 +36529,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree_Box
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree_Box
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -36559,8 +36559,8 @@ Body:
         Rate: 80
       - Item: Union_Of_Tribe
         Rate: 500
-      - Item: Branch_Of_Dead_Tree_Box
-        Rate: 10000
+      # - Item: Branch_Of_Dead_Tree_Box
+      #   Rate: 10000
       - Item: Oridecon
         Rate: 4850
       - Item: Elunium
@@ -36786,8 +36786,8 @@ Body:
         Rate: 6500
       - Item: Chocolate
         Rate: 5000
-      - Item: Branch_Of_Dead_Tree
-        Rate: 300
+      # - Item: Branch_Of_Dead_Tree
+      #   Rate: 300
         StealProtected: true
   - Id: 1954
     AegisName: CRYSTAL_9

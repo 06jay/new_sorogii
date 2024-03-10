@@ -9932,7 +9932,7 @@ moc_fild18,108,116,0	script	#treasure	844,{
 					set treasure_nd,12;
 				}
 				getitem 7725,1; //Unlucky_Emerald
-				getitem 604,1; //Branch_Of_Dead_Tree
+				//getitem 604,1; //Branch_Of_Dead_Tree
 				getitem 1157,1; //Two_Hand_Sword
 				sc_start SC_Curse,10000,0,10000;
 				next;
