@@ -4073,8 +4073,8 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bHit,100;
+    # Script: |
+    #   bonus bHit,100;
   - Id: 4122
     AegisName: Deviruchi_Card
     Name: Deviruchi Card
@@ -4100,9 +4100,9 @@ Body:
       Shoes: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bMaxHPrate,-25;
-      bonus bNoWalkDelay;
+    # Script: |
+    #   bonus bMaxHPrate,-25;
+    #   bonus bNoWalkDelay;
   - Id: 4124
     AegisName: Medusa_Card
     Name: Medusa Card
@@ -4171,9 +4171,9 @@ Body:
       Left_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bNoMagicDamage,100;
-      bonus bUseSPrate,100;
+    # Script: |
+    #   bonus bNoMagicDamage,100;
+    #   bonus bUseSPrate,100;
   - Id: 4129
     AegisName: Baphomet__Card
     Name: Bapho Jr. Card
@@ -4209,8 +4209,8 @@ Body:
       Shoes: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bSpeedRate,25;
+    # Script: |
+    #   bonus bSpeedRate,25;
   - Id: 4132
     AegisName: Mistress_Card
     Name: Mistress Card
@@ -4223,9 +4223,9 @@ Body:
       Head_Top: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bNoGemStone;
-      bonus bUseSPrate,25;
+    # Script: |
+    #   bonus bNoGemStone;
+    #   bonus bUseSPrate,25;
   - Id: 4133
     AegisName: Daydric_Card
     Name: Raydric Card
@@ -4248,8 +4248,8 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus2 bSPDrainRate,100,5;
+    # Script: |
+    #   bonus2 bSPDrainRate,100,5;
   - Id: 4135
     AegisName: Orc_Load_Card
     Name: Orc Lord Card
@@ -4260,8 +4260,8 @@ Body:
       Armor: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bShortWeaponDamageReturn,30;
+    # Script: |
+    #   bonus bShortWeaponDamageReturn,30;
   - Id: 4136
     AegisName: Khalitzburg_Card
     Name: Khalitzburg Card
@@ -4284,8 +4284,8 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bNoSizeFix;
+    # Script: |
+    #   bonus bNoSizeFix;
   - Id: 4138
     AegisName: Anubis_Card
     Name: Anubis Card
@@ -4346,8 +4346,8 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bAspdRate,10;
+    # Script: |
+    #   bonus bAspdRate,10;
   - Id: 4143
     AegisName: Orc_Hero_Card
     Name: Orc Hero Card
@@ -4360,9 +4360,9 @@ Body:
       Head_Top: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bVit,3;
-      bonus2 bResEff,Eff_Stun,10000;
+    # Script: |
+    #   bonus bVit,3;
+    #   bonus2 bResEff,Eff_Stun,10000;
   - Id: 4144
     AegisName: Osiris_Card
     Name: Osiris Card
@@ -4373,8 +4373,8 @@ Body:
       Both_Accessory: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bRestartFullRecover;
+    # Script: |
+    #   bonus bRestartFullRecover;
   - Id: 4145
     AegisName: Berzebub_Card
     Name: Berzebub Card
@@ -4385,8 +4385,8 @@ Body:
       Both_Accessory: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bCastrate,-30;
+    # Script: |
+    #   bonus bCastrate,-30;
   - Id: 4146
     AegisName: Maya_Card
     Name: Maya Card
@@ -4397,8 +4397,8 @@ Body:
       Left_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bMagicDamageReturn,50;
+    # Script: |
+    #   bonus bMagicDamageReturn,50;
   - Id: 4147
     AegisName: Baphomet_Card
     Name: Baphomet Card
@@ -4409,9 +4409,9 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bHit,-10;
-      bonus bSplashRange,1;
+    # Script: |
+    #   bonus bHit,-10;
+    #   bonus bSplashRange,1;
   - Id: 4148
     AegisName: Pharaoh_Card
     Name: Pharaoh Card
@@ -4424,8 +4424,8 @@ Body:
       Head_Top: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bUseSPrate,-30;
+    # Script: |
+    #   bonus bUseSPrate,-30;
   - Id: 4149
     AegisName: Gargoyle_Card
     Name: Gargoyle Card
@@ -4694,8 +4694,8 @@ Body:
       Shoes: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus3 bAutoSpellWhenHit,"WZ_METEOR",5,100;
+    # Script: |
+    #   bonus3 bAutoSpellWhenHit,"WZ_METEOR",5,100;
   - Id: 4169
     AegisName: Dark_Illusion_Card
     Name: Dark Illusion Card
@@ -5599,9 +5599,9 @@ Body:
       Shoes: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bAllStats,1;
-      bonus3 bAutoSpellWhenHit,"PR_KYRIE",10,(30+70*(readparam(bInt)>=99));
+    # Script: |
+    #   bonus bAllStats,1;
+    #   bonus3 bAutoSpellWhenHit,"PR_KYRIE",10,(30+70*(readparam(bInt)>=99));
   - Id: 4237
     AegisName: Owl_Duke_Card
     Name: Owl Duke Card
@@ -5963,17 +5963,17 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bIgnoreDefClass,Class_Normal;
-      bonus bHPrecovRate,-100;
-      bonus2 bHPLossRate,666,10000;
-    UnEquipScript: |
-      if (Hp <= 999 && !getmapflag(strcharinfo(3),mf_pvp) && !getmapflag(strcharinfo(3),mf_pvp_noparty) && !getmapflag(strcharinfo(3),mf_pvp_noguild)) {
-         heal (1-Hp),0;
-      }
-      else {
-         heal -999,0;
-      }
+    # Script: |
+    #   bonus bIgnoreDefClass,Class_Normal;
+    #   bonus bHPrecovRate,-100;
+    #   bonus2 bHPLossRate,666,10000;
+    # UnEquipScript: |
+    #   if (Hp <= 999 && !getmapflag(strcharinfo(3),mf_pvp) && !getmapflag(strcharinfo(3),mf_pvp_noparty) && !getmapflag(strcharinfo(3),mf_pvp_noguild)) {
+    #      heal (1-Hp),0;
+    #   }
+    #   else {
+    #      heal -999,0;
+    #   }
   - Id: 4264
     AegisName: Wind_Ghost_Card
     Name: Wind Ghost Card
@@ -6141,13 +6141,13 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus3 bAddEff,Eff_Stun,500,ATF_SHORT;
-      bonus3 bAddEff,Eff_Curse,500,ATF_SHORT;
-      bonus3 bAddEff,Eff_Silence,500,ATF_SHORT;
-      bonus3 bAddEff,Eff_Poison,500,ATF_SHORT;
-      bonus3 bAddEff,Eff_Bleeding,500,ATF_SHORT;
-      bonus2 bComaClass,Class_Normal,1;
+    # Script: |
+    #   bonus3 bAddEff,Eff_Stun,500,ATF_SHORT;
+    #   bonus3 bAddEff,Eff_Curse,500,ATF_SHORT;
+    #   bonus3 bAddEff,Eff_Silence,500,ATF_SHORT;
+    #   bonus3 bAddEff,Eff_Poison,500,ATF_SHORT;
+    #   bonus3 bAddEff,Eff_Bleeding,500,ATF_SHORT;
+    #   bonus2 bComaClass,Class_Normal,1;
   - Id: 4277
     AegisName: Zherlthsh_Card
     Name: Zealotus Card
@@ -6485,10 +6485,10 @@ Body:
       Armor: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bMaxHPrate,100;
-      bonus bDef,-50;
-      bonus bMdef,-50;
+    # Script: |
+    #   bonus bMaxHPrate,100;
+    #   bonus bDef,-50;
+    #   bonus bMdef,-50;
   - Id: 4303
     AegisName: Whisper_Boss_Card
     Name: Giant Whisper Card
@@ -6528,9 +6528,9 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus2 bAddClass,Class_All,20;
-      bonus3 bAutoSpell,"SM_MAGNUM",10,30;
+    # Script: |
+    #   bonus2 bAddClass,Class_All,20;
+    #   bonus3 bAutoSpell,"SM_MAGNUM",10,30;
   - Id: 4306
     AegisName: Toad_Card
     Name: Toad Card
@@ -6703,9 +6703,9 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus3 bAutoSpell,"WZ_STORMGUST",2,20;
-      bonus2 bAddEff,Eff_Freeze,2000;
+    # Script: |
+    #   bonus3 bAutoSpell,"WZ_STORMGUST",2,20;
+    #   bonus2 bAddEff,Eff_Freeze,2000;
   - Id: 4319
     AegisName: Freezer_Card
     Name: Freezer Card
@@ -6779,8 +6779,8 @@ Body:
       Armor: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus2 bAddEffWhenHit,Eff_Freeze,5000;
+    # Script: |
+    #   bonus2 bAddEffWhenHit,Eff_Freeze,5000;
   - Id: 4325
     AegisName: Harpy_Card
     Name: Harpy Card
@@ -6862,10 +6862,10 @@ Body:
       Head_Top: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bInt,3;
-      bonus2 bResEff,Eff_Blind,10000;
-      bonus2 bResEff,Eff_Curse,10000;
+    # Script: |
+    #   bonus bInt,3;
+    #   bonus2 bResEff,Eff_Blind,10000;
+    #   bonus2 bResEff,Eff_Curse,10000;
   - Id: 4331
     AegisName: Heater_Card
     Name: Heater Card
@@ -7020,10 +7020,10 @@ Body:
       Armor: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bVit,3;
-      bonus bUnbreakableArmor;
-      bonus bNoKnockback;
+    # Script: |
+    #   bonus bVit,3;
+    #   bonus bUnbreakableArmor;
+    #   bonus bNoKnockback;
   - Id: 4343
     AegisName: Mole_Card
     Name: Holden Card
@@ -7157,11 +7157,11 @@ Body:
       Shoes: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
-      bonus2 bHPRegenRate,50,10000;
-      bonus2 bSPRegenRate,10,10000;
+    # Script: |
+    #   bonus bMaxHPrate,10;
+    #   bonus bMaxSPrate,10;
+    #   bonus2 bHPRegenRate,50,10000;
+    #   bonus2 bSPRegenRate,10,10000;
   - Id: 4353
     AegisName: Removal_Card
     Name: Remover Card
@@ -7232,9 +7232,9 @@ Body:
       Head_Top: true
     Flags:
       BuyingStore: true
-    Script: |
-      skill "LK_BERSERK",1;
-      bonus bMaxHPrate,-50;
+    # Script: |
+    #   skill "LK_BERSERK",1;
+    #   bonus bMaxHPrate,-50;
   - Id: 4358
     AegisName: Seyren_Card
     Name: Seyren Windsor Card
@@ -7259,10 +7259,10 @@ Body:
       Garment: true
     Flags:
       BuyingStore: true
-    Script: |
-      skill "AS_CLOAKING",3;
-    UnEquipScript: |
-      sc_end SC_CLOAKING;
+    # Script: |
+    #   skill "AS_CLOAKING",3;
+    # UnEquipScript: |
+    #   sc_end SC_CLOAKING;
   - Id: 4360
     AegisName: Eremes_Card
     Name: Eremes Guile Card
@@ -7286,9 +7286,9 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bBreakWeaponRate,1000;
-      bonus bBreakArmorRate,700;
+    # Script: |
+    #   bonus bBreakWeaponRate,1000;
+    #   bonus bBreakArmorRate,700;
   - Id: 4362
     AegisName: Harword_Card
     Name: Howard Alt-Eisen Card
@@ -7312,8 +7312,8 @@ Body:
       Armor: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus5 bAutoSpellWhenHit,"HP_ASSUMPTIO",1,50,BF_WEAPON|BF_MAGIC,0;
+    # Script: |
+    #   bonus5 bAutoSpellWhenHit,"HP_ASSUMPTIO",1,50,BF_WEAPON|BF_MAGIC,0;
   - Id: 4364
     AegisName: Magaleta_Card
     Name: Margaretha Sorin Card
@@ -7341,12 +7341,12 @@ Body:
       Head_Top: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus2 bIgnoreMdefClassRate,Class_Normal,100;
-      bonus bCastrate,100;
-      bonus bSPrecovRate,-100;
-    UnEquipScript: |
-      heal 0,-2000;
+    # Script: |
+    #   bonus2 bIgnoreMdefClassRate,Class_Normal,100;
+    #   bonus bCastrate,100;
+    #   bonus bSPrecovRate,-100;
+    # UnEquipScript: |
+    #   heal 0,-2000;
   - Id: 4366
     AegisName: Katrinn_Card
     Name: Kathryne Keyron Card
@@ -7374,9 +7374,9 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus2 bHPDrainRate,50,20;
-      bonus bHPrecovRate,-10;
+    # Script: |
+    #   bonus2 bHPDrainRate,50,20;
+    #   bonus bHPrecovRate,-10;
   - Id: 4368
     AegisName: Shecil_Card
     Name: Cecil Damon Card
@@ -7439,9 +7439,9 @@ Body:
       Head_Top: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bHealPower,30;
-      bonus bUseSPrate,15;
+    # Script: |
+    #   bonus bHealPower,30;
+    #   bonus bUseSPrate,15;
   - Id: 4373
     AegisName: Chung_E_Card
     Name: Green Maiden Card
@@ -7467,9 +7467,9 @@ Body:
       Head_Top: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bDex,2;
-      bonus2 bIgnoreMdefClassRate,Class_Boss,30;
+    # Script: |
+    #   bonus bDex,2;
+    #   bonus2 bIgnoreMdefClassRate,Class_Boss,30;
   - Id: 4375
     AegisName: Orc_Baby_Card
     Name: Orc Baby Card
@@ -7499,11 +7499,11 @@ Body:
       Shoes: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bMaxHPrate,-40;
-      bonus bMaxSPrate,50;
-      bonus2 bAddMonsterDropItem,513,200;
-      bonus2 bAddItemHealRate,513,100;
+    # Script: |
+    #   bonus bMaxHPrate,-40;
+    #   bonus bMaxSPrate,50;
+    #   bonus2 bAddMonsterDropItem,513,200;
+    #   bonus2 bAddItemHealRate,513,100;
   - Id: 4377
     AegisName: Green_Iguana_Card
     Name: Grove Card
@@ -7644,10 +7644,10 @@ Body:
       Armor: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bMdef,-20;
-      bonus2 bResEff,Eff_Freeze,10000;
-      bonus5 bAutoSpellWhenHit,"SA_LANDPROTECTOR",1,70,BF_MAGIC,0;
+    # Script: |
+    #   bonus bMdef,-20;
+    #   bonus2 bResEff,Eff_Freeze,10000;
+    #   bonus5 bAutoSpellWhenHit,"SA_LANDPROTECTOR",1,70,BF_MAGIC,0;
   - Id: 4387
     AegisName: Ancient_Mimic_Card
     Name: Ancient Mimic Card
@@ -7812,11 +7812,11 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bDefRatioAtkClass,Class_All;
-      bonus bSPDrainValue,-1;
-      bonus bDef,-30;
-      bonus bFlee,-30;
+    # Script: |
+    #   bonus bDefRatioAtkClass,Class_All;
+    #   bonus bSPDrainValue,-1;
+    #   bonus bDef,-30;
+    #   bonus bFlee,-30;
   - Id: 4400
     AegisName: Aliza_Card
     Name: Aliza Card
@@ -7873,8 +7873,8 @@ Body:
       Head_Top: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bDelayRate,-30;
+    # Script: |
+    #   bonus bDelayRate,-30;
   - Id: 4404
     AegisName: Skogul_Card
     Name: Skogul Card
@@ -7923,10 +7923,10 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bUnbreakableWeapon;
-      bonus2 bAddClass,Class_All,10;
-      bonus3 bAutoSpell,"SA_DISPELL",1,50;
+    # Script: |
+    #   bonus bUnbreakableWeapon;
+    #   bonus2 bAddClass,Class_All,10;
+    #   bonus3 bAutoSpell,"SA_DISPELL",1,50;
   - Id: 4408
     AegisName: Gloom_Under_Night_Card
     Name: Gloom Under Night Card
@@ -7937,11 +7937,11 @@ Body:
       Armor: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus2 bAddEle,Ele_Holy,40;
-      bonus2 bAddEle,Ele_Dark,40;
-      bonus2 bAddRace,RC_Angel,40;
-      bonus2 bAddRace,RC_Demon,40;
+    # Script: |
+    #   bonus2 bAddEle,Ele_Holy,40;
+    #   bonus2 bAddEle,Ele_Dark,40;
+    #   bonus2 bAddRace,RC_Angel,40;
+    #   bonus2 bAddRace,RC_Demon,40;
   - Id: 4409
     AegisName: Agav_Card
     Name: Agav Card
@@ -8089,9 +8089,9 @@ Body:
       Armor: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus2 bAddEle,Ele_Fire,50;
-      bonus5 bAutoSpellWhenHit,"WZ_FROSTNOVA",10,20,BF_WEAPON|BF_MAGIC,0;
+    # Script: |
+    #   bonus2 bAddEle,Ele_Fire,50;
+    #   bonus5 bAutoSpellWhenHit,"WZ_FROSTNOVA",10,20,BF_WEAPON|BF_MAGIC,0;
   - Id: 4420
     AegisName: Muscipular_Card
     Name: Muscipular Card
@@ -8168,9 +8168,9 @@ Body:
       Right_Hand: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bBaseAtk,25;
-      autobonus "{ bonus bAspdRate,100; }",5,10000,0,"{ specialeffect2 EF_POTION_BERSERK; }";
+    # Script: |
+    #   bonus bBaseAtk,25;
+    #   autobonus "{ bonus bAspdRate,100; }",5,10000,0,"{ specialeffect2 EF_POTION_BERSERK; }";
   - Id: 4426
     AegisName: Byorgue_Card
     Name: Byorgue Card
@@ -8241,11 +8241,11 @@ Body:
       Both_Accessory: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bBaseAtk,(JobLevel/10);
-      bonus bCritical,(JobLevel/10);
-      bonus bHit,(JobLevel/10);
-      bonus3 bAutoSpellWhenHit,"NPC_EARTHQUAKE",2,10;
+    # Script: |
+    #   bonus bBaseAtk,(JobLevel/10);
+    #   bonus bCritical,(JobLevel/10);
+    #   bonus bHit,(JobLevel/10);
+    #   bonus3 bAutoSpellWhenHit,"NPC_EARTHQUAKE",2,10;
   - Id: 4431
     AegisName: Kasa_Card
     Name: Kasa Card
@@ -8417,12 +8417,12 @@ Body:
       Shoes: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus bMatkRate,10;
-      bonus bMaxSPrate,-50;
-      bonus2 bMagicAddRace,RC_Angel,50;
-      bonus2 bMagicAddRace,RC_DemiHuman,50;
-      bonus2 bMagicAddRace,RC_Player_Human,50;
+    # Script: |
+    #   bonus bMatkRate,10;
+    #   bonus bMaxSPrate,-50;
+    #   bonus2 bMagicAddRace,RC_Angel,50;
+    #   bonus2 bMagicAddRace,RC_DemiHuman,50;
+    #   bonus2 bMagicAddRace,RC_Player_Human,50;
   - Id: 4442
     AegisName: Tatacho_Card
     Name: Tatacho Card
