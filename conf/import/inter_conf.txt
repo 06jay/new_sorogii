@@ -7,14 +7,14 @@ login_server_ip: 127.0.0.1
 login_server_port: 3306
 login_server_id: root
 login_server_pw: ragnarok
-login_server_db: server_main
+login_server_db: sorogii_main
  
  
 ipban_db_ip: 127.0.0.1
 ipban_db_port: 3306
 ipban_db_id: root
 ipban_db_pw: ragnarok
-ipban_db_db: server_main
+ipban_db_db: sorogii_main
  
  
 // MySQL Character server
@@ -22,7 +22,7 @@ char_server_ip: 127.0.0.1
 char_server_port: 3306
 char_server_id: root
 char_server_pw: ragnarok
-char_server_db: server_main
+char_server_db: sorogii_main
  
  
 //Database Map Server
@@ -30,7 +30,7 @@ map_server_ip: 127.0.0.1
 map_server_port: 3306
 map_server_id: root
 map_server_pw: ragnarok
-map_server_db: server_main
+map_server_db: sorogii_main
 
 
 // MySQL Web Server
@@ -38,7 +38,7 @@ web_server_ip: 127.0.0.1
 web_server_port: 3306
 web_server_id: root
 web_server_pw: ragnarok
-web_server_db: server_main
+web_server_db: sorogii_main
 
  
  
@@ -47,6 +47,6 @@ log_db_ip: 127.0.0.1
 log_db_port: 3306
 log_db_id: root
 log_db_pw: ragnarok
-log_db_db: server_log
+log_db_db: sorogii_logs
 log_codepage: 
 log_login_db: loginlog

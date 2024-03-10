@@ -769,24 +769,24 @@ Body:
       bonus bInt,5;
       bonus2 bSubRace,RC_Angel,10;
   - Combos:
-      - Combo:
-          - Poring_Card
-          - Mastering_Card
-      - Combo:
-          - Lunatic_Card
-          - Eclipse_Card
-      - Combo:
-          - Chonchon_Card
-          - Dragon_Fly_Card
-      - Combo:
-          - Roda_Frog_Card
-          - Toad_Card
+    #   - Combo:
+    #       - Poring_Card
+    #       - Mastering_Card
+    #   - Combo:
+    #       - Lunatic_Card
+    #       - Eclipse_Card
+    #   - Combo:
+    #       - Chonchon_Card
+    #       - Dragon_Fly_Card
+    #   - Combo:
+    #       - Roda_Frog_Card
+    #       - Toad_Card
       - Combo:
           - Rocker_Card
           - Vocal_Card
-      - Combo:
-          - Wolf_Card
-          - Vagabond_Wolf_Card
+    #   - Combo:
+    #       - Wolf_Card
+    #       - Vagabond_Wolf_Card
     Script: |
       bonus bFlee,18;
   - Combos:
@@ -869,14 +869,14 @@ Body:
     Script: |
       bonus3 bAddMonsterDropItem,544,RC_Fish,3000;
       bonus2 bAddEle,Ele_Water,30;
-  - Combos:
-      - Combo:
-          - Dark_Lord_Card
-          - Dark_Illusion_Card
-    Script: |
-      bonus bMaxHPrate,20;
-      bonus bMaxSPrate,20;
-      bonus bCastrate,-10;
+#   - Combos:
+#       - Combo:
+#           - Dark_Lord_Card
+#           - Dark_Illusion_Card
+#     Script: |
+#       bonus bMaxHPrate,20;
+#       bonus bMaxSPrate,20;
+#       bonus bCastrate,-10;
   - Combos:
       - Combo:
           - The_Paper_Card
@@ -1047,12 +1047,12 @@ Body:
     Script: |
       bonus bDef,3;
       bonus bMdef,3;
-  - Combos:
-      - Combo:
-          - Owl_Duke_Card
-          - Owl_Baron_Card
-    Script: |
-      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",5,20;
+#   - Combos:
+#       - Combo:
+#           - Owl_Duke_Card
+#           - Owl_Baron_Card
+#     Script: |
+#       bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",5,20;
   - Combos:
       - Combo:
           - Injustice_Card

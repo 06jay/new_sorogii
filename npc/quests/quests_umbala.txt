@@ -503,8 +503,8 @@ um_in,44,71,2	script	Utan Shaman	782,{
 	mes "enchanted stones and to divide a";
 	mes "pure enchanted stone into rough ones.";
 	next;
-	switch (select("Create rough enchanted stones:Divide a pure enchanted stone:Quit.")) {
-	case 1:
+	switch (select("/*Create rough enchanted stones:Divide a pure enchanted stone:*/Quit.")) {
+	/*case 1:
 		mes "[Puchuchartan]";
 		mes "Do you wish to create rough";
 		mes "enchanted stones? Which";
@@ -814,8 +814,8 @@ um_in,44,71,2	script	Utan Shaman	782,{
 			mes "Hm? You need to enter";
 			mes "a number from 1 to 10.";
 			close;
-		}
-	case 3:
+		}*/
+	case 1:
 		mes "[Puchuchartan]";
 		mes "I see. It's your call.";
 		mes "Come back when you need me.";

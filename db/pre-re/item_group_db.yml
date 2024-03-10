@@ -3766,9 +3766,9 @@ Body:
           - Index: 141
             Item: Demon_Pungus_Card
             Rate: 1
-          - Index: 142
-            Item: Poison_Toad_Card
-            Rate: 1
+          # - Index: 142
+          #   Item: Poison_Toad_Card
+          #   Rate: 1
           - Index: 143
             Item: Dullahan_Card
             Rate: 1
@@ -3928,12 +3928,12 @@ Body:
           - Index: 195
             Item: Cookie_XMAS_Card
             Rate: 1
-          - Index: 196
-            Item: Owl_Duke_Card
-            Rate: 1
-          - Index: 197
-            Item: Owl_Baron_Card
-            Rate: 1
+          # - Index: 196
+          #   Item: Owl_Duke_Card
+          #   Rate: 1
+          # - Index: 197
+          #   Item: Owl_Baron_Card
+          #   Rate: 1
           - Index: 198
             Item: Iron_Fist_Card
             Rate: 1
@@ -4069,9 +4069,9 @@ Body:
           - Index: 242
             Item: Caterpillar_Card
             Rate: 1
-          - Index: 243
-            Item: Cat_O_Nine_Tail_Card
-            Rate: 1
+          # - Index: 243
+          #   Item: Cat_O_Nine_Tail_Card
+          #   Rate: 1
           - Index: 244
             Item: Kobold_Archer_Card
             Rate: 1
@@ -4096,9 +4096,9 @@ Body:
           - Index: 251
             Item: Clock_Card
             Rate: 1
-          - Index: 252
-            Item: Chimera_Card
-            Rate: 1
+          # - Index: 252
+          #   Item: Chimera_Card
+          #   Rate: 1
           - Index: 253
             Item: Killer_Mantis_Card
             Rate: 1
@@ -4225,9 +4225,9 @@ Body:
           - Index: 294
             Item: Removal_Card
             Rate: 1
-          - Index: 295
-            Item: Gemini_Card
-            Rate: 1
+          # - Index: 295
+          #   Item: Gemini_Card
+          #   Rate: 1
           - Index: 296
             Item: Gremlin_Card
             Rate: 3
@@ -4285,9 +4285,9 @@ Body:
           - Index: 314
             Item: Novus_Card
             Rate: 3
-          - Index: 315
-            Item: Hydro_Card
-            Rate: 1
+          # - Index: 315
+          #   Item: Hydro_Card
+          #   Rate: 1
           - Index: 316
             Item: Dragon_Egg_Card
             Rate: 3
@@ -4306,24 +4306,24 @@ Body:
           - Index: 321
             Item: Retribution_Card
             Rate: 3
-          - Index: 322
-            Item: Observation_Card
-            Rate: 1
-          - Index: 323
-            Item: Shelter_Card
-            Rate: 1
-          - Index: 324
-            Item: Solace_Card
-            Rate: 1
-          - Index: 325
-            Item: Tha_Maero_Card
-            Rate: 1
-          - Index: 326
-            Item: Tha_Odium_Card
-            Rate: 1
-          - Index: 327
-            Item: Tha_Despero_Card
-            Rate: 1
+          # - Index: 322
+          #   Item: Observation_Card
+          #   Rate: 1
+          # - Index: 323
+          #   Item: Shelter_Card
+          #   Rate: 1
+          # - Index: 324
+          #   Item: Solace_Card
+          #   Rate: 1
+          # - Index: 325
+          #   Item: Tha_Maero_Card
+          #   Rate: 1
+          # - Index: 326
+          #   Item: Tha_Odium_Card
+          #   Rate: 1
+          # - Index: 327
+          #   Item: Tha_Despero_Card
+          #   Rate: 1
           - Index: 328
             Item: Aliza_Card
             Rate: 1
@@ -4378,27 +4378,27 @@ Body:
           - Index: 345
             Item: Roween_Card
             Rate: 1
-          - Index: 346
-            Item: Galion_Card
-            Rate: 1
+          # - Index: 346
+          #   Item: Galion_Card
+          #   Rate: 1
           - Index: 347
             Item: Stapo_Card
             Rate: 3
-          - Index: 348
-            Item: Byorgue_Card
-            Rate: 1
-          - Index: 349
-            Item: Sword_Guardian_Card
-            Rate: 1
-          - Index: 350
-            Item: Bow_Guardian_Card
-            Rate: 1
-          - Index: 351
-            Item: Salamander_Card
-            Rate: 1
-          - Index: 352
-            Item: Kasa_Card
-            Rate: 1
+          # - Index: 348
+          #   Item: Byorgue_Card
+          #   Rate: 1
+          # - Index: 349
+          #   Item: Sword_Guardian_Card
+          #   Rate: 1
+          # - Index: 350
+          #   Item: Bow_Guardian_Card
+          #   Rate: 1
+          # - Index: 351
+          #   Item: Salamander_Card
+          #   Rate: 1
+          # - Index: 352
+          #   Item: Kasa_Card
+          #   Rate: 1
           - Index: 353
             Item: Magmaring_Card
             Rate: 2
@@ -4423,9 +4423,9 @@ Body:
           - Index: 360
             Item: Flame_Skull_Card
             Rate: 1
-          - Index: 361
-            Item: Necromancer_Card
-            Rate: 1
+          # - Index: 361
+          #   Item: Necromancer_Card
+          #   Rate: 1
   - Group: CASH_FOOD
     SubGroups:
       - SubGroup: 1
@@ -7089,69 +7089,69 @@ Body:
           # - Index: 1
           #   Item: Angeling_Card
           #   Rate: 1
-          - Index: 2
-            Item: Gryphon_Card
-            Rate: 1
-          - Index: 3
-            Item: Dark_Illusion_Card
-            Rate: 1
+          # - Index: 2
+          #   Item: Gryphon_Card
+          #   Rate: 1
+          # - Index: 3
+          #   Item: Dark_Illusion_Card
+          #   Rate: 1
           # - Index: 4
           #   Item: Deviling_Card
           #   Rate: 1
-          - Index: 5
-            Item: Dragon_Fly_Card
-            Rate: 10
-          - Index: 6
-            Item: Vagabond_Wolf_Card
-            Rate: 10
-          - Index: 7
-            Item: Mastering_Card
-            Rate: 10
-          - Index: 8
-            Item: Maya_Puple_Card
-            Rate: 1
-          - Index: 9
-            Item: Mutant_Dragon_Card
-            Rate: 10
-          - Index: 10
-            Item: Mysteltainn_Card
-            Rate: 1
+          # - Index: 5
+          #   Item: Dragon_Fly_Card
+          #   Rate: 10
+          # - Index: 6
+          #   Item: Vagabond_Wolf_Card
+          #   Rate: 10
+          # - Index: 7
+          #   Item: Mastering_Card
+          #   Rate: 10
+          # - Index: 8
+          #   Item: Maya_Puple_Card
+          #   Rate: 1
+          # - Index: 9
+          #   Item: Mutant_Dragon_Card
+          #   Rate: 10
+          # - Index: 10
+          #   Item: Mysteltainn_Card
+          #   Rate: 1
           - Index: 11
             Item: Vocal_Card
             Rate: 1
-          - Index: 12
-            Item: Owl_Duke_Card
-            Rate: 5
-          - Index: 13
-            Item: Owl_Baron_Card
-            Rate: 5
+          # - Index: 12
+          #   Item: Owl_Duke_Card
+          #   Rate: 5
+          # - Index: 13
+          #   Item: Owl_Baron_Card
+          #   Rate: 5
           # - Index: 14
           #   Item: Archangeling_Card
           #   Rate: 1
-          - Index: 15
-            Item: Executioner_Card
-            Rate: 1
-          - Index: 16
-            Item: Tirfing_Card
-            Rate: 1
-          - Index: 17
-            Item: Eclipse_Card
-            Rate: 10
+          # - Index: 15
+          #   Item: Executioner_Card
+          #   Rate: 1
+          # - Index: 16
+          #   Item: Tirfing_Card
+          #   Rate: 1
+          # - Index: 17
+          #   Item: Eclipse_Card
+          #   Rate: 10
           - Index: 18
             Item: Chepet_Card
             Rate: 10
           - Index: 19
             Item: Choco_Card
             Rate: 10
-          - Index: 20
-            Item: Cat_O_Nine_Tail_Card
-            Rate: 5
+          # - Index: 20
+          #   Item: Cat_O_Nine_Tail_Card
+          #   Rate: 5
           - Index: 21
             Item: Kobold_Leader_Card
             Rate: 10
-          - Index: 22
-            Item: Chimera_Card
-            Rate: 10
+          # - Index: 22
+          #   Item: Chimera_Card
+          #   Rate: 10
           - Index: 23
             Item: Toad_Card
             Rate: 10
@@ -7161,21 +7161,21 @@ Body:
           - Index: 25
             Item: Ungoliant_Card
             Rate: 1
-          - Index: 26
-            Item: Gemini_Card
-            Rate: 1
-          - Index: 27
-            Item: Hydro_Card
-            Rate: 1
-          - Index: 28
-            Item: Tha_Maero_Card
-            Rate: 3
-          - Index: 29
-            Item: Tha_Odium_Card
-            Rate: 3
-          - Index: 30
-            Item: Tha_Despero_Card
-            Rate: 3
+          # - Index: 26
+          #   Item: Gemini_Card
+          #   Rate: 1
+          # - Index: 27
+          #   Item: Hydro_Card
+          #   Rate: 1
+          # - Index: 28
+          #   Item: Tha_Maero_Card
+          #   Rate: 3
+          # - Index: 29
+          #   Item: Tha_Odium_Card
+          #   Rate: 3
+          # - Index: 30
+          #   Item: Tha_Despero_Card
+          #   Rate: 3
   - Group: MASK
     SubGroups:
       - SubGroup: 1
