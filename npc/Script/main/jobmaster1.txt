@@ -188,8 +188,8 @@ function	Job_Options	{
 			case Job_Novice:
 				// First job change
 				Job_Options(.@job_opt,Job_Swordman,
-					Job_Mage, Job_Archer, Job_Acolyte, Job_Merchant, Job_Thief);
-					Job_Options(.@job_opt,Job_Super_Novice);
+					Job_Mage, Job_Archer, Job_Acolyte, Job_Merchant, Job_Thief,
+					Job_Super_Novice, Job_Taekwon, Job_Gunslinger, Job_Ninja);
 				if( .BabyNovice )
 //					Job_Options(.@job_opt, Job_Baby);
 				break;
@@ -440,67 +440,67 @@ function	Get_Job_Equip	{
 	.@eac = eaclass();
 	if( .@eac&EAJL_THIRD ) {
 		// Third Class Items
-		getitem 2795,1;	//	Green Apple Ring for every 3rd Class
+		getitembound 2795,1,1;	//	Green Apple Ring for every 3rd Class
 		switch(BaseJob) {
 			// BaseJob of Third Cls
 			// For Normal Third, Baby Third and Transcended Third Cls
 			case Job_Knight:
-				getitem 5746,1;	break;	//	Rune Circlet [1]
+				getitembound 5746,1,1;	break;	//	Rune Circlet [1]
 			case Job_Wizard:
-				getitem 5753,1;	break;	//	Magic Stone Hat [1]
+				getitembound 5753,1,1;	break;	//	Magic Stone Hat [1]
 			case Job_Hunter:
-				getitem 5748,1;	break;	//	Sniper Goggle [1]
+				getitembound 5748,1,1;	break;	//	Sniper Goggle [1]
 			case Job_Priest:
-				getitem 5747,1;	break;	//	Mitra [1]
+				getitembound 5747,1,1;	break;	//	Mitra [1]
 			case Job_Blacksmith:
-				getitem 5749,1;	break;	//	Driver Band [1]
+				getitembound 5749,1,1;	break;	//	Driver Band [1]
 			case Job_Assassin:
-				getitem 5755,1;	break;	//	Silent Executor [1]
+				getitembound 5755,1,1;	break;	//	Silent Executor [1]
 			case Job_Crusader:
-				getitem 5757,1;	break;	//	Dip Schmidt Helm [1]
+				getitembound 5757,1,1;	break;	//	Dip Schmidt Helm [1]
 			case Job_Sage:
-				getitem 5756,1;	break;	//	Wind Whisper [1]
+				getitembound 5756,1,1;	break;	//	Wind Whisper [1]
 			case Job_Bard:
-				getitem 5751,1;	break;	//	Maestro Song's Hat [1]
+				getitembound 5751,1,1;	break;	//	Maestro Song's Hat [1]
 			case Job_Dancer:
-				getitem 5758,1;	break;	//	Dying Swan [1]
+				getitembound 5758,1,1;	break;	//	Dying Swan [1]
 			case Job_Monk:
-				getitem 5754,1;	break;	//	Blazing Soul [1]
+				getitembound 5754,1,1;	break;	//	Blazing Soul [1]
 			case Job_Alchemist:
-				getitem 5752,1;	break;	//	Midas Whisper[1]
+				getitembound 5752,1,1;	break;	//	Midas Whisper[1]
 			case Job_Rogue:
-				getitem 5750,1; 		//	Shadow Handicraft [1]
-				getitem 6121,1;			//	Makeover Brush
-				getitem 6122,1;	break;	//	Paint Brush
+				getitembound 5750,1,1; 		//	Shadow Handicraft [1]
+				getitembound 6121,1,1;			//	Makeover Brush
+				getitembound 6122,1,1;	break;	//	Paint Brush
 		}
 	} else if ( !(.@eac&EAJL_2) && !(.@eac&EAJL_UPPER) ) {
 		// Not Second Job AND not Rebirth/Third
 		if ( (.@eac&EAJ_UPPERMASK) == EAJ_SWORDMAN ) {
-			getitem 1101,1;
-			getitem 2101,1;
+			getitembound 1101,1,1;
+			getitembound 2101,1,1;
 		} else if ( (.@eac&EAJ_UPPERMASK) == EAJ_MAGE ) {
-			getitem 1601,1;
-			getitem 2101,1;
+			getitembound 1601,1,1;
+			getitembound 2101,1,1;
 		} else if ( (.@eac&EAJ_UPPERMASK) == EAJ_ARCHER ) {
-			getitem 1701,1;
-			getitem 1750,500;
+			getitembound 1701,1,1;
+			getitembound 1750,500,1;
 		} else if ( (.@eac&EAJ_UPPERMASK) == EAJ_ACOLYTE ) {
-			getitem 1501,1;
-			getitem 2101,1;
+			getitembound 1501,1,1;
+			getitembound 2101,1,1;
 		} else if ( (.@eac&EAJ_UPPERMASK) == EAJ_MERCHANT ) {
-			getitem 1301,1;
-			getitem 2101,1;
+			getitembound 1301,1,1;
+			getitembound 2101,1,1;
 		} else if ( (.@eac&EAJ_UPPERMASK) == EAJ_THIEF ) {
-			getitem 1204,1;
-			getitem 2101,1;
+			getitembound 1204,1,1;
+			getitembound 2101,1,1;
 		} else if ( (.@eac&EAJ_UPPERMASK) == EAJ_GUNSLINGER ) {
-			getitem 13100,1;
-			getitem 13200,500;
+			getitembound 13100,1,1;
+			getitembound 13200,500,1;
 		} else if ( (.@eac&EAJ_UPPERMASK) == EAJ_NINJA ) {
-			getitem 13010,1;
-			getitem 2101,1;
+			getitembound 13010,1,1;
+			getitembound 2101,1,1;
 		} else if ( (.@eac&EAJ_UPPERMASK) == EAJ_TAEKWON ) {
-			getitem 2101,1;
+			getitembound 2101,1,1;
 		}
 	}
 	return;
@@ -519,7 +519,7 @@ OnInit:
 	.BabyNovice = true;			// Enable Baby novice classes? Disable it if you like player must have parent to get job baby.
 	.BabyClass = true;			// Enable Baby classes?
 	.BabyThird = false;			// Enable Baby third classes?
-	.BabyExpanded = false;			// Enable Baby Expanded classes: Ex. Baby Ninja, Baby Taekwon, etc.
+	.BabyExpanded = true;			// Enable Baby Expanded classes: Ex. Baby Ninja, Baby Taekwon, etc.
 	.BabySummoner = false;			// Enable Baby Summoner?
 	.LastJob = true;			// Enforce linear class changes?
 	.SkillPointCheck = true;		// Force player to use up all skill points?
