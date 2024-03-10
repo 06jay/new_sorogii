@@ -2730,8 +2730,8 @@ Body:
     Drops:
       - Item: Bear's_Foot
         Rate: 9000
-      - Item: Poo_Poo_Hat
-        Rate: 5
+      # - Item: Poo_Poo_Hat
+      #   Rate: 5
       - Item: Animal's_Skin
         Rate: 5000
       - Item: Stuffed_Doll
@@ -13825,8 +13825,8 @@ Body:
     Drops:
       - Item: Bear's_Foot
         Rate: 4550
-      - Item: Poo_Poo_Hat
-        Rate: 8
+      # - Item: Poo_Poo_Hat
+      #   Rate: 8
       - Item: Stuffed_Doll
         Rate: 120
       - Item: Honey
@@ -30442,8 +30442,8 @@ Body:
         Rate: 10
       - Item: Bloody_Rune
         Rate: 4000
-      - Item: Beret
-        Rate: 20
+      # - Item: Beret
+      #   Rate: 20
       - Item: Holy_Arrow_Quiver
         Rate: 20
       - Item: Bloody_Rune
@@ -30489,8 +30489,8 @@ Body:
         Rate: 10
       - Item: Bloody_Rune
         Rate: 1000
-      - Item: Beret
-        Rate: 10
+      # - Item: Beret
+      #   Rate: 10
       - Item: Scalpel
         Rate: 5
       - Item: Bloody_Rune

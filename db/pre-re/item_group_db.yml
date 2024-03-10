@@ -2193,9 +2193,9 @@ Body:
           - Index: 657
             Item: Mr_Scream
             Rate: 3
-          - Index: 658
-            Item: Poo_Poo_Hat
-            Rate: 3
+          # - Index: 658
+          #   Item: Poo_Poo_Hat
+          #   Rate: 3
           - Index: 659
             Item: Funeral_Costume
             Rate: 3
@@ -5865,9 +5865,9 @@ Body:
           - Index: 210
             Item: Pirate_Bandana
             Rate: 1
-          - Index: 211
-            Item: Poo_Poo_Hat
-            Rate: 1
+          # - Index: 211
+          #   Item: Poo_Poo_Hat
+          #   Rate: 1
           - Index: 212
             Item: Funeral_Costume
             Rate: 1
@@ -9874,9 +9874,9 @@ Body:
           - Index: 570
             Item: Mr_Scream
             Rate: 7
-          - Index: 571
-            Item: Poo_Poo_Hat
-            Rate: 7
+          # - Index: 571
+          #   Item: Poo_Poo_Hat
+          #   Rate: 7
           - Index: 572
             Item: Funeral_Costume
             Rate: 7

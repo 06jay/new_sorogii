@@ -91,7 +91,7 @@ rachel,91,273,8	script	?	930,{
 	mes "come back without anyone knowning. Giggle giggle.";
 	close;
 }
-
+/*
 // Feather Beret
 //============================================================
 rachel,152,131,3	script	Sakjul	928,{
@@ -207,7 +207,7 @@ rachel,152,131,3	script	Sakjul	928,{
 	mes "Put yourself together, right now!";
 	close;
 }
-
+*/
 // Valkyrie Helm
 //============================================================
 hugel,147,103,3	script	Ghenirhemin	897,{
