@@ -27,12 +27,12 @@ function Go; function Disp; function Pick; function Restrict;
 menu	"Last Warp ^777777["+lastwarp$+"]^000000",-,
     	" ~ Towns",Towns,
     	" ~ Fields",Fields,
-    	" ~ Dungeons",Dungeons,
-    	" ~ Guild Castles",Castles,
+    	" ~ Dungeons",Dungeons;
+    /*	" ~ Guild Castles",Castles,
     	" ~ Guild Dungeons",Guild_Dungeons,
     	" ~ Instances",Instances,
     	" ~ Special Areas",Special;
-
+	*/
 	if (lastwarp$ == "")
 		message strcharinfo(0),"You haven't warped anywhere yet.";
 	else
@@ -130,14 +130,14 @@ function Restrict {
 	Towns:
 // --------------------------------------------------
 menu	"Prontera",T1, "Alberta",T2, "Aldebaran",T3, "Amatsu",T4, "Ayothaya",T5,
-    	"Brasilis",T6, "Comodo",T7, "Dewata",T8, "Eclage",T9, "Einbech",T10,
-		"Einbroch",T11, "El Dicastes",T12, "Geffen",T13, "Hugel",T14, "Ice Castle",T15,
-		"Izlude",T16, "Jawaii",T17, "Juno",T18, "Kunlun",T19, "Lasagna",T20,
-		"Lighthalzen",T21, "Luoyang",T22, "Lutie",T23, "Malangdo",T24, "Malaya",T25,
-		"Manuk",T26, "Midgarts Expedition Camp",T27, "Mora",T28, "Morocc",T29, "Moscovia",T30,
+    	/*"Brasilis",T6, */"Comodo",T7, /*"Dewata",T8, "Eclage",T9, */"Einbech",T10,
+		"Einbroch",T11, /*"El Dicastes",T12, */"Geffen",T13, "Hugel",T14, /*"Ice Castle",T15,*/
+		"Izlude",T16, "Jawaii",T17, "Juno",T18, "Kunlun",T19, /*"Lasagna",T20,*/
+		"Lighthalzen",T21, "Luoyang",T22, "Lutie",T23, /*"Malangdo",T24, "Malaya",T25,
+		"Manuk",T26, "Midgarts Expedition Camp",T27, "Mora",T28, */"Morocc",T29, "Moscovia",T30,
 		"Nameless Island (Day)",T31, "Nameless Island (Night)",T32, "Niflheim",T33, "Payon",T34, "Rachel",T35,
-		"Rockridge",T36, "Special Security Area, Cor",T37, "Splendide",T38, "Thor Camp",T39, "Umbala",T40,
-		"Varmundt's Mansion",T41, "Veins",T42, "Verus Findspot",T43, "Wolf Village",T44;
+		/*"Rockridge",T36, "Special Security Area, Cor",T37, "Splendide",T38, */"Thor Camp",T39, "Umbala",T40,
+		/*"Varmundt's Mansion",T41, */"Veins",T42 /*,"Verus Findspot",T43, "Wolf Village",T44*/;
 
 T1: Go("prontera",155,183);
 T2: Go("alberta",28,234);
@@ -202,16 +202,16 @@ T44: Restrict("RE");
 	Fields:
 // --------------------------------------------------
 @f = true;
-menu	"Amatsu Fields",F1, "Ayothaya Fields",F2, "Bifrost Fields", F3,
-    	"Brasilis Fields",F4, "Comodo Fields",F5, "Dewata Fields",F6,
-    	"Eclage Fields",F7, "Einbroch Fields",F8, "El Dicastes Fields",F9,
-    	"Frozen Scale Fields",F10, "Geffen Fields",F11, "Grey Wolf Forest",F12,
-		"Hugel Fields",F13, "Juno Fields",F14, "Kiwawa Desert",F15,
-		"Kunlun Fields",F16, "Lasagna Fields",F17, "Lighthalzen Fields",F18,
-		"Luoyang Field",F19, "Lutie Field",F20, "Malaya Fields",F21,
-		"Manuk Fields",F22, "Mjolnir Fields",F23, "Moscovia Fields",F24,
+menu	"Amatsu Fields",F1, "Ayothaya Fields",F2, /*"Bifrost Fields", F3,
+    	"Brasilis Fields",F4,*/ "Comodo Fields",F5, /*"Dewata Fields",F6,
+    	"Eclage Fields",F7, */"Einbroch Fields",F8, /*"El Dicastes Fields",F9,
+    	"Frozen Scale Fields",F10, */"Geffen Fields",F11, /*"Grey Wolf Forest",F12,*/
+		"Hugel Fields",F13, "Juno Fields",F14, /*"Kiwawa Desert",F15,*/
+		"Kunlun Fields",F16, /*"Lasagna Fields",F17, */"Lighthalzen Fields",F18,
+		"Luoyang Field",F19, "Lutie Field",F20, /*"Malaya Fields",F21,*/
+		/*"Manuk Fields",F22, */"Mjolnir Fields",F23, "Moscovia Fields",F24,
 		"Niflheim Fields",F25, "Payon Forests",F26, "Prontera Fields",F27,
-		"Rachel Fields",F28, "Sograt Deserts",F29, "Splendide Fields",F30,
+		"Rachel Fields",F28, "Sograt Deserts",F29, /*"Splendide Fields",F30,*/
 		"Umbala Fields",F31, "Veins Fields",F32;
 
 F1: setarray @c[2],190,197;
@@ -307,24 +307,24 @@ F32: Restrict("Pre-RE",5);
 	Dungeons:
 // --------------------------------------------------
 @d = true;
-menu	"Abandoned Lab Amicitia",D1, "Abyss Lakes",D2, "Amatsu Dungeon",D3,
+menu	/*"Abandoned Lab Amicitia",D1, */"Abyss Lakes",D2, "Amatsu Dungeon",D3,
 		"Anthell",D4, "Ayothaya Dungeon",D5, "Beach Dungeon",D6,
-		"Bifrost Tower",D7, "Bio Labs",D8, "Brasilis Dungeon",D9,
+		/*"Bifrost Tower",D7, "Bio Labs",D8, "Brasilis Dungeon",D9,*/
 		"Byalan Dungeon",D10, "Clock Tower",D11, "Coal Mines",D12,
-		"Culvert",D13, "Cursed Abbey",D14, "Dewata Dungeon",D15,
-		"Einbroch Dungeon",D16, "Flame Basin",D17, "Gefenia",D18,
+		"Culvert",D13, "Cursed Abbey",D14, /*"Dewata Dungeon",D15,*/
+		"Einbroch Dungeon",D16, /*"Flame Basin",D17, */"Gefenia",D18,
 		"Geffen Dungeon",D19, "Glast Heim",D20, "Hidden Dungeon",D21,
-		"Ice Dungeon",D22, "Illusion Dungeon",D23, "Issgard Dungeon",D24,
+		"Ice Dungeon",D22, /*"Illusion Dungeon",D23, "Issgard Dungeon",D24,*/
 		"Juperos",D25, "Kiel Dungeon",D26, "Kunlun Dungeon",D27,
-		"Lasagna Dungeon",D28, "Luoyang Dungeon",D29, "Magma Dungeon",D30,
-		"Malangdo Dungeon",D31, "Moscovia Dungeon",D32, "Nidhogg's Dungeon",D33,
+		/*"Lasagna Dungeon",D28, */"Luoyang Dungeon",D29, "Magma Dungeon",D30,
+		/*"Malangdo Dungeon",D31, */"Moscovia Dungeon",D32, /*"Nidhogg's Dungeon",D33,*/
 		"Niflheim Dungeon",D34, "Odin Temple",D35, "Orc Dungeon",D36,
-		"Oz Labyrinth Dungeon",D37, "Payon Dungeon",D38, "Prontera Underground",D39,
-		"Pyramids",D40, "Rachel Sanctuary",D41, "Rock Ridge Dungeon",D42,
-		"Rudus Dungeon",D43, "Scaraba Hole",D44, "Sphinx",D45,
+		/*"Oz Labyrinth Dungeon",D37, */"Payon Dungeon",D38, /*"Prontera Underground",D39,*/
+		"Pyramids",D40, "Rachel Sanctuary",D41, /*"Rock Ridge Dungeon",D42,
+		"Rudus Dungeon",D43, "Scaraba Hole",D44, */"Sphinx",D45,
 		"Sunken Ship",D46, "Thanatos Tower",D47, "Thor Volcano",D48,
-		"Toy Factory",D49, "Turtle Dungeon",D50, "Umbala Dungeon",D51,
-		"Varmundt's Dungeon",D52, "Verus Area",D53;
+		"Toy Factory",D49, "Turtle Dungeon",D50, "Umbala Dungeon",D51
+		/*,"Varmundt's Dungeon",D52, "Verus Area",D53*/;
 
 D1: Restrict("RE");
 	setarray @c[2],253,244,145,278;
