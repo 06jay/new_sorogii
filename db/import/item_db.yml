@@ -109,6 +109,140 @@ Body:
       NoAuction: true
     Script: |
       callfunc "bot_at";
+  - Id: 40002
+    AegisName: 3rd_Job_Suit
+    Name: 3rd Job Suit
+    Type: Shadowgear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      if (BaseJob == Job_Knight)
+        if ( checkriding() ) { setoption Option_Dragon1; } changebase Job_Rune_Knight;
+      if (BaseJob == Job_Priest)
+         changebase JOB_ARCH_BISHOP;
+      if (BaseJob == Job_Wizard)
+         changebase JOB_WARLOCK;
+      if (BaseJob == Job_Blacksmith)
+         changebase JOB_MECHANIC;
+      if (BaseJob == Job_Hunter)
+         changebase JOB_RANGER;
+      if (BaseJob == Job_Assassin)
+         changebase JOB_GUILLOTINE_CROSS;
+      if (BaseJob == Job_Crusader)
+         changebase JOB_ROYAL_GUARD;
+      if (BaseJob == Job_Monk)
+         changebase JOB_SURA;
+      if (BaseJob == Job_Sage)
+         changebase JOB_SORCERER;
+      if (BaseJob == Job_Rogue)
+         changebase JOB_SHADOW_CHASER;
+      if (BaseJob == Job_Alchemist)
+         changebase JOB_GENETIC;
+      if (BaseJob == Job_Bard)
+         changebase JOB_MINSTREL;
+      if (BaseJob == Job_Dancer)
+         changebase JOB_WANDERER;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 40003
+    AegisName: Baby_3rd_Job_Suit
+    Name: Baby 3rd Job Suit
+    Type: Shadowgear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      if (BaseJob == Job_Knight)
+          if ( checkriding() ) { setoption Option_Dragon1; } changebase 4096;
+      if (BaseJob == Job_Priest)
+         changebase 4099;
+      if (BaseJob == Job_Wizard)
+         changebase 4097;
+      if (BaseJob == Job_Blacksmith)
+         changebase 4100;
+      if (BaseJob == Job_Hunter)
+         changebase 4098;
+      if (BaseJob == Job_Assassin)
+         changebase 4101;
+      if (BaseJob == Job_Crusader)
+         changebase 4102;
+      if (BaseJob == Job_Monk)
+         changebase 4106;
+      if (BaseJob == Job_Sage)
+         changebase 4103;
+      if (BaseJob == Job_Rogue)
+         changebase 4108;
+      if (BaseJob == Job_Alchemist)
+         changebase 4107;
+      if (BaseJob == Job_Bard)
+         changebase 4104;
+      if (BaseJob == Job_Dancer)
+         changebase 4105;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 40004
+    AegisName: Baby_2nd_Job_Suit
+    Name: Baby 2nd Job Suit
+    Type: Shadowgear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      if (BaseJob == Job_Knight)
+         changebase 4030;
+      if (BaseJob == Job_Priest)
+         changebase 4031;
+      if (BaseJob == Job_Wizard)
+         changebase 4032;
+      if (BaseJob == Job_Blacksmith)
+         changebase 4033;
+      if (BaseJob == Job_Hunter)
+         changebase 4034;
+      if (BaseJob == Job_Assassin)
+         changebase 4035;
+      if (BaseJob == Job_Crusader)
+         changebase 4037;
+      if (BaseJob == Job_Monk)
+         changebase 4038;
+      if (BaseJob == Job_Sage)
+         changebase 4039;
+      if (BaseJob == Job_Rogue)
+         changebase 4040;
+      if (BaseJob == Job_Alchemist)
+         changebase 4041;
+      if (BaseJob == Job_Bard)
+         changebase 4042;
+      if (BaseJob == Job_Dancer)
+         changebase 4043;
+    UnEquipScript: |
+      changebase Class;
+  - Id: 12622
+    AegisName: Boarding_Halter
+    Name: Reins Of Mount
+    Type: Usable
+    Flags:
+      NoConsume: true
+    Delay:
+      Duration: 3000
+      Status: All_Riding_Reuse_Limit
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      setmounting();
+    UnEquipScript: |
+      if (ismounting())
+         setmounting();
   - Id: 17069
     AegisName: Acidbomb_Box100
     Name: Acidbomb Box100
