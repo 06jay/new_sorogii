@@ -1,0 +1,13 @@
+-	script	HappyHourScript	-1,{ 
+OnSat0000:
+	setbattleflag "base_exp_rate",1200,true;
+	setbattleflag "job_exp_rate",1200,true;
+	announce "[ System ]: Happy hour has now begun, exp rates are now 12x!",bc_all,0xc4ff5e;
+	end;
+
+OnMon0000:
+	setbattleflag "base_exp_rate",1000,true;
+	setbattleflag "job_exp_rate",1000,true;
+	announce "[  System ]: Happy hour has ended, exp rates have returned to normal",bc_all,0xc4ff5e;
+	end;
+}
