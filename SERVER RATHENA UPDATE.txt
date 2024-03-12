@@ -1,0 +1,2 @@
+LINK: https://github.com/rathena/rathena/commits/master?before=f34a47ae24b6e96e2d68d03cb0bdc7dc3dbee74c+105
+LAST: Update docs from txt to Markdown (#7975)
