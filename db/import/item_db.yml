@@ -91,7 +91,7 @@ Header:
 Body:
   - Id: 40001
     AegisName: AAttack
-    Name: Automatic Player
+    Name: Assistive Device
     Type: Delayconsume
     Flags:
       NoConsume: true

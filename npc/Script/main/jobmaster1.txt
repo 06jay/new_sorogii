@@ -100,7 +100,9 @@ function	Check_Riding	{
 			((checkriding()) ? "Peco" : "") +
 			((ismounting()) ? "mount" : "") +
 			"^000000 before proceeding.";
-		close;
+	close2;
+	cutin "",255;
+	end;
 	}
 	return;
 }
