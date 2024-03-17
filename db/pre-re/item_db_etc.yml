@@ -7514,8 +7514,8 @@ Body:
       Both_Accessory: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus3 bAddMonsterDropItem,12063,RC_Formless,50;
+    # Script: |
+    #   bonus3 bAddMonsterDropItem,12063,RC_Formless,50;
   - Id: 4378
     AegisName: Acidus_Card
     Name: Gold Acidus Card
@@ -7714,8 +7714,8 @@ Body:
       Both_Accessory: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus3 bAddMonsterDropItem,12068,RC_Angel,50;
+    # Script: |
+    #   bonus3 bAddMonsterDropItem,12068,RC_Angel,50;
   - Id: 4392
     AegisName: Observation_Card
     Name: Dame of Sentinel Card
