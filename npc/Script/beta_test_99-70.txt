@@ -1,0 +1,17 @@
+prontera,158,182,5	script	99/70 Registration	100,{
+OnPCBaseLvUpEvent:
+if(#9970reward == 1 ) {
+    mes "[ 99/70 Registration ]";
+    mes "Thank you very much for participating. Your account is now listed to receive the 99/70 reward at the grand opening.";
+    close;
+}
+if(BaseLevel < 99 || JobLevel < 70) {
+    mes "[ 99/70 Registration ]";
+    mes "Hello you need to reach level 99/70 first to qualify for the 99/70 reward in the grand opening. Thank you very much.";
+    close;
+}
+    mes "[ 99/70 Registration ]";
+    mes "Congratulations! You are now level 99/70 and I have listed you as eligible to receive the reward at the grand opening.";
+    set #9970reward,1;
+    close;
+}

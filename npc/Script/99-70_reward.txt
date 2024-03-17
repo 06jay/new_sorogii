@@ -1,0 +1,20 @@
+prontera,154,182,5	script	99/70 Reward Claim	101,{
+OnPCBaseLvUpEvent:
+if(#9970reward_claim == 1 ){
+    mes "[ 99/70 Reward Claim ]";
+    mes "Your reward has been claimed already.";
+    close;
+}
+if(#9970reward == 1 ) {
+    mes "[ 99/70 Reward Claim ]";
+    mes "Thank you very much for your support since the beta phase and here in the record, you've reached 99/70 so this is the reward you'll receive.";
+    next;
+    getitem 501,1;
+    set #9970reward,0;
+     set #9970reward_claim,1;
+    close;
+    }
+    mes "[ 99/70 Reward Claim ]";
+    mes "I'm sorry but you are not qualified for the 99/70 reward because you are not listed on my list. I apologize for any inconvenience.";
+    close;
+}

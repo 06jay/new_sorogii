@@ -1,0 +1,20 @@
+-	script	CBT_TestRewards	-1,{
+OnPCLoginEvent:
+    if (!#cbtplayer) {
+        set #cbtplayer, 1;
+
+        set Zeny, Zeny + 500000000;
+		getitem 7179,1000;
+
+        mes "[ Open Beta Phase ]";
+		mes "^FF0000NOTE: ALL PROGRESS WILL BE WIPE OUT AFTER OBT^000000";
+        mes "Welcome ^004DFE"+strcharinfo(0)+"^000000!";
+        mes "During OBT, you will receive the following:";
+        mes "--";
+        mes "^FF00001,000^000000 ^8a2be2PODS^000000";
+        mes "^FF0000500,000,000^000000z";
+        mes "Enjoy your stay and kindly report if you found some bugs!";
+        close;
+    }
+    end;
+}
