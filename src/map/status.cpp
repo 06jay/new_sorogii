@@ -13827,7 +13827,7 @@ TIMER_FUNC(status_change_timer){
 	switch(type) {
 		case SC_AUTOATTACK:
 		if (--(sce->val4) > 0) {
-			if( pc_isdead(sd) || pc_search_inventory(sd,40001)<=1 ){
+			if( pc_isdead(sd) || pc_search_inventory(sd,40001)<=1 || pc_is90overweight(sd) ){
 				status_change_end(&sd->bl, SC_AUTOATTACK);
 				break;
 			}
