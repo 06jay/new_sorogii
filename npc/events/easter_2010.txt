@@ -25,9 +25,9 @@ prontera,202,297,3	script	Rina#Easter	727,{
 		mes "but your experience is not enough.";
 		next;
 		consumeitem 607; //Yggdrasilberry
-		consumeitem 12068; //Luk_Dish03
-		consumeitem 12063; //Dex_Dish03
-		consumeitem 12053; //Vit_Dish03
+		//consumeitem 12068; //Luk_Dish03
+		//consumeitem 12063; //Dex_Dish03
+		//consumeitem 12053; //Vit_Dish03
 		npcskill "AL_INCAGI",1,0,0;
 		npcskill "AL_BLESSING",1,0,0;
 		mes "[Rina]";
@@ -274,9 +274,9 @@ prontera,202,297,3	script	Rina#Easter	727,{
 			mes "See you again.";
 			close2;
 			consumeitem 607; //Yggdrasilberry
-			consumeitem 12068; //Luk_Dish03
-			consumeitem 12063; //Dex_Dish03
-			consumeitem 12053; //Vit_Dish03
+			//consumeitem 12068; //Luk_Dish03
+			//consumeitem 12063; //Dex_Dish03
+			//consumeitem 12053; //Vit_Dish03
 			npcskill "AL_INCAGI",1,0,0;
 			npcskill "AL_BLESSING",1,0,0;
 			end;
