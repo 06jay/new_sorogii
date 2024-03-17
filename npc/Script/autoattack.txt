@@ -619,6 +619,14 @@ attackskills_menu:
 		if(.@attack_skillid < 1 )
 			goto(attackskills_menu);
 
+		if(.@attack_skillid == 219 ){
+			clear;
+			mes .@menu$;
+			mes "Sorry, this skill is disabled on Assistive Device";
+			next;
+			goto(attackskills_menu);
+		}
+
 		if(!getskillinfoint(2,.@attack_skillid) || !getskilllv(.@attack_skillid)){
 			clear;
 			mes .@menu$;
@@ -729,4 +737,10 @@ OnDo2:
 		else
 			return "^000088[ON]^000000";
 	}
+}
+
+-	script	AutoattackEndSC	-1,{
+OnPCLogoutEvent:
+    sc_end SC_AUTOATTACK;
+	end;
 }

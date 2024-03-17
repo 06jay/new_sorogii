@@ -10943,7 +10943,7 @@ BUILDIN_FUNC(setautoattack)
 					//check if skill exist and is support type and has status change
 					skill = skill_db.find(skill_id);
 					e_cast_type type = skill_get_casttype(skill_id);
-					if (!(skill && skill->skill_type != BF_NONE && skill->inf != INF_PASSIVE_SKILL && !skill_get_nk(skill_id, NK_NODAMAGE) && (type != CAST_NODAMAGE || skill->inf & INF_SELF_SKILL)))
+					if ((!(skill && skill->skill_type != BF_NONE && skill->inf != INF_PASSIVE_SKILL && !skill_get_nk(skill_id, NK_NODAMAGE) && (type != CAST_NODAMAGE || skill->inf & INF_SELF_SKILL)))  || skill_id == 219 )
 						return SCRIPT_CMD_FAILURE;
 
 					if(!is_active){
