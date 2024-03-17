@@ -220,6 +220,113 @@ Body:
          changebase 4043;
     UnEquipScript: |
       changebase Class;
+# BUBBLE GUM / FIELD MANUAL 25% / 50% / 100% FOR 30MINS
+  - Id: 40005
+    AegisName: Bubble_Gum_25
+    Name: Bubble Gum
+    Type: Usable
+    Buy: 2
+    Weight: 10
+    Delay:
+      Duration: 60000
+      Status: Reuse_Limit_D
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      sc_start SC_ITEMBOOST,1800000,25;
+  - Id: 40006
+    AegisName: Bubble_Gum_50
+    Name: Bubble Gum
+    Type: Usable
+    Buy: 2
+    Weight: 10
+    Delay:
+      Duration: 60000
+      Status: Reuse_Limit_D
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      sc_start SC_ITEMBOOST,1800000,50;
+  - Id: 40007
+    AegisName: Bubble_Gum_100
+    Name: Bubble Gum
+    Type: Usable
+    Buy: 2
+    Weight: 10
+    Delay:
+      Duration: 60000
+      Status: Reuse_Limit_D
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      sc_start SC_ITEMBOOST,1800000,100;
+  - Id: 40008
+    AegisName: Comp_Battle_Manual_25
+    Name: Field Manual
+    Type: Usable
+    Buy: 2
+    Weight: 10
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      sc_start SC_EXPBOOST,1800000,25;
+  - Id: 40009
+    AegisName: Comp_Battle_Manual_50
+    Name: Field Manual
+    Type: Usable
+    Buy: 2
+    Weight: 10
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      sc_start SC_EXPBOOST,1800000,50;
+  - Id: 40010
+    AegisName: Comp_Battle_Manual_100
+    Name: Field Manual
+    Type: Usable
+    Buy: 2
+    Weight: 10
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      sc_start SC_EXPBOOST,1800000,100;
+# BUBBLE GUM / FIELD MANUAL END
   - Id: 12622
     AegisName: Boarding_Halter
     Name: Reins Of Mount
