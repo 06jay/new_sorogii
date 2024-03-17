@@ -8819,9 +8819,9 @@ Body:
       if (readparam(bStr)>=77) {
          bonus bAspdRate,4;
          bonus2 bAddEff,Eff_Stun,1500;
-         bonus3 bAddMonsterDropItem,12065,RC_Plant,500;
+        /* bonus3 bAddMonsterDropItem,12065,RC_Plant,500;
          bonus3 bAddMonsterDropItem,12043,RC_Brute,500;
-         bonus3 bAddMonsterDropItem,12069,RC_Fish,500;
+         bonus3 bAddMonsterDropItem,12069,RC_Fish,500; */
       }
   - Id: 1545
     AegisName: N_Mace

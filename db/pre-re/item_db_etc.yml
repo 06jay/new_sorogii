@@ -7048,8 +7048,8 @@ Body:
       Both_Accessory: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus3 bAddMonsterDropItem,12058,RC_Insect,50;
+    # Script: |
+    #   bonus3 bAddMonsterDropItem,12058,RC_Insect,50;
   - Id: 4345
     AegisName: Hill_Wind_Card
     Name: Hill Wind Card
@@ -7088,8 +7088,8 @@ Body:
       Both_Accessory: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus3 bAddMonsterDropItem,12053,RC_Fish,50;
+    # Script: |
+    #   bonus3 bAddMonsterDropItem,12053,RC_Fish,50;
   - Id: 4348
     AegisName: Whikebain_Card
     Name: Wickebine Tres Card
@@ -7632,8 +7632,8 @@ Body:
       Both_Accessory: true
     Flags:
       BuyingStore: true
-    Script: |
-      bonus3 bAddMonsterDropItem,12048,RC_Dragon,50;
+    # Script: |
+    #   bonus3 bAddMonsterDropItem,12048,RC_Dragon,50;
   - Id: 4386
     AegisName: Detale_Card
     Name: Detardeurus Card
