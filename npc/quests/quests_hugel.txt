@@ -2841,8 +2841,9 @@ hu_in01,256,40,3	script	Herico	897,{
 			switch(select("I brought Handcuffs:Regarding Sage Varmunt's documents")) {
 			case 1:
 				mes "[Herico]";
-				mes "I am willing to exchange 1 of level 4 food with 100 Handcuffs.";
-				next;
+				//mes "I am willing to exchange 1 of level 4 food with 100 Handcuffs.";
+				mes "DISABLED.";
+				* /next;
 				if(select("Exchange:Cancel.") == 1) {
 					if (countitem(7345) > 99) {
 						mes "[Herico]";
@@ -2872,7 +2873,7 @@ hu_in01,256,40,3	script	Herico	897,{
 						mes "[Herico]";
 						mes "I don't think that you have brought me 100 Handcuffs.";
 					}
-				}
+				} */
 				close2;
 				cutin "",255;
 				end;
