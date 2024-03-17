@@ -37584,8 +37584,8 @@ Body:
         Rate: 3000
       - Item: Golden_Jewel
         Rate: 500
-      - Item: Elemental_Sword
-        Rate: 5
+      # - Item: Elemental_Sword
+      #   Rate: 5
       - Item: Oridecon
         Rate: 80
       - Item: Emveretarcon
@@ -37731,8 +37731,8 @@ Body:
         Rate: 5
       - Item: Gate_KeeperDD
         Rate: 5
-      - Item: Improved_Tights
-        Rate: 10
+      # - Item: Improved_Tights
+      #   Rate: 10
   - Id: 1980
     AegisName: KUBLIN
     Name: Kublin
