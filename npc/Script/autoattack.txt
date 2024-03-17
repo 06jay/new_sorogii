@@ -8,6 +8,7 @@ OnDo:
 	end;
 
 main_menu:
+	cutin "kafra_06",2;
 	.@menu$ = "[Auto Attack Configuration]";
 	mes .@menu$;
 	
@@ -18,6 +19,7 @@ main_menu:
 	if( .@main_menu == 2 )
 		goto(config_menu);
 	
+	cutin "kafra_06",255;
 	close;
 
 config_menu:
