@@ -118,8 +118,8 @@ Body:
     EquipLevelMin: 1
     Refineable: true
     Script: |
-      if (BaseJob == Job_Knight) {
-        if ( checkriding() ) { setoption Option_Dragon1; } changebase Job_Rune_Knight; }
+      if (BaseJob == Job_Knight)
+        if ( checkriding() ) { setoption Option_Dragon1; } changebase Job_Rune_Knight;
       if (BaseJob == Job_Priest)
          changebase JOB_ARCH_BISHOP;
       if (BaseJob == Job_Wizard)
@@ -155,8 +155,8 @@ Body:
     EquipLevelMin: 1
     Refineable: true
     Script: |
-      if (BaseJob == Job_Knight) {
-          if ( checkriding() ) { setoption Option_Dragon1; } changebase 4096; }
+      if (BaseJob == Job_Knight)
+          if ( checkriding() ) { setoption Option_Dragon1; } changebase 4096;
       if (BaseJob == Job_Priest)
          changebase 4099;
       if (BaseJob == Job_Wizard)

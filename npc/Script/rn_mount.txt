@@ -1,8 +1,8 @@
 -	script	RN_Mount	FAKE_NPC,{
 OnInit:
-setitemscript 40002, "{ { setoption Option_Dragon1; } changebase 4060; }", 1;
+setitemscript 40002, "{ if (BaseJob == Job_Knight) { { setoption Option_Dragon1; } changebase 4060; } end; }", 1;
 setitemscript 40002, "{ changebase Class; } ", 2;
-setitemscript 40003, "{ { setoption Option_Dragon1; } changebase 4096; }", 1;
+setitemscript 40003, "{ if (BaseJob == Job_Knight) { { setoption Option_Dragon1; } changebase 4096; } end; }", 1;
 setitemscript 40003, "{ changebase Class; } ", 2;
 end;
 }
