@@ -27323,13 +27323,13 @@ Body:
     MvpDrops:
       - Item: Old_Violet_Box
         Rate: 5500
-      - Item: Dex_Dish10
-        Rate: 5000
+      # - Item: Dex_Dish10
+      #   Rate: 5000
       - Item: Crystal_Jewel__
         Rate: 2000
     Drops:
-      - Item: Agi_Dish10
-        Rate: 5000
+      # - Item: Agi_Dish10
+      #   Rate: 5000
       - Item: Tropical_Banana
         Rate: 4000
       - Item: Fantastic_Cooking_Kits
@@ -28697,8 +28697,8 @@ Body:
         Rate: 5000
       - Item: Scale_Of_Red_Dragon
         Rate: 3589
-      - Item: Int_Dish10
-        Rate: 1000
+      # - Item: Int_Dish10
+      #   Rate: 1000
       - Item: Pole_Axe
         Rate: 100
       - Item: Gemmed_Crown
@@ -28747,8 +28747,8 @@ Body:
         Rate: 500
       - Item: Morrigane's_Helm
         Rate: 500
-      - Item: Vit_Dish10
-        Rate: 300
+      # - Item: Vit_Dish10
+      #   Rate: 300
       - Item: Fricca_Circlet
         Rate: 500
       # - Item: Hydro_Card
@@ -32055,8 +32055,8 @@ Body:
         Rate: 500
       - Item: Pole_Axe
         Rate: 500
-      - Item: Int_Dish10
-        Rate: 1500
+      # - Item: Int_Dish10
+      #   Rate: 1500
       - Item: Treasure_Box
         Rate: 5500
   - Id: 1814
@@ -32193,10 +32193,10 @@ Body:
         Rate: 500
       - Item: Bloody_Roar
         Rate: 500
-      - Item: Int_Dish10
-        Rate: 1500
-      - Item: Luk_Dish10
-        Rate: 1500
+      # - Item: Int_Dish10
+      #   Rate: 1500
+      # - Item: Luk_Dish10
+      #   Rate: 1500
   - Id: 1818
     AegisName: EVENT_ALARM
     Name: Alarm
@@ -34767,8 +34767,8 @@ Body:
         Rate: 4000
       - Item: Ring_
         Rate: 200
-      - Item: Int_Dish10
-        Rate: 1000
+      # - Item: Int_Dish10
+      #   Rate: 1000
       - Item: Ixion_Wing
         Rate: 100
       - Item: Pole_Axe
