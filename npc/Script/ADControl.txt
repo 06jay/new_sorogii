@@ -1,0 +1,176 @@
+//// ------------------------------------ 30MINUTES RENTAL 
+function	script	ADControl30	{
+
+if(#AD30 > gettimetick(2)){
+    mes "[ Assistive Device ]";
+    mes "^ff0000Note^000000:";
+    mes "Item: ^0000ffAssistive Device(30MIN)^000000";
+    mes "You need to wait "+Time2Str(#AD30)+" before open again.";
+    close;
+}
+
+    mes "[ Assistive Device ]";
+    mes "Item: ^0000ffAssistive Device(30MIN)^000000";
+    mes "LAGAY MO NALANG YUNG NOTE MO DITO PARA SAKANILA";
+    next;
+    mes "[ Assistive Device ]";
+    mes "Item: ^0000ffAssistive Device(30MIN)^000000";
+    mes "Would you like to open this box?";
+    next;
+switch(select("No:Yes")){
+    case 1:
+        mes "[ Assistive Device ]";
+        mes "Item: ^0000ffAssistive Device(30MIN)^000000";
+        mes "Okay have a nice day";
+        close;
+
+    case 2:
+    if(countitem(40011) < 1 ){
+        mes "[ Assistive Device ]";
+        mes "Item: ^0000ffAssistive Device(30MIN)^000000";
+        mes "Wait a second...";
+        mes "Do you think I'm stupid?!";
+        mes "You remove the item while I wasn't looking! Get out of here!";
+        close;
+    }
+        set #AD30,0;
+        delitem 40011,1;
+        rentitem 40001,1800;
+        .ftime$ = gettimetick(2)+86400; // 24hours
+        set #AD30, #AD30 + .ftime$;
+        end;
+    }
+    close;
+}
+
+//// ------------------------------------ 1HOUR RENTAL 
+function	script	ADControl1h	{
+
+if(#AD1H > gettimetick(2)){
+    mes "[ Assistive Device ]";
+    mes "^ff0000Note^000000:";
+    mes "Item: ^0000ffAssistive Device(1HR)^000000";
+    mes "You need to wait "+Time2Str(#AD1H)+" before open again.";
+    close;
+}
+
+    mes "[ Assistive Device ]";
+    mes "Item: ^0000ffAssistive Device(1HR)^000000";
+    mes "LAGAY MO NALANG YUNG NOTE MO DITO PARA SAKANILA";
+    next;
+    mes "[ Assistive Device ]";
+    mes "Item: ^0000ffAssistive Device(1HR)^000000";
+    mes "Would you like to open this box?";
+    next;
+switch(select("No:Yes")){
+    case 1:
+        mes "[ Assistive Device ]";
+        mes "Item: ^0000ffAssistive Device(1HR)^000000";
+        mes "Okay have a nice day";
+        close;
+
+    case 2:
+    if(countitem(40012) < 1 ){
+        mes "[ Assistive Device ]";
+        mes "Item: ^0000ffAssistive Device(1HR)^000000";
+        mes "Wait a second...";
+        mes "Do you think I'm stupid?!";
+        mes "You remove the item while I wasn't looking! Get out of here!";
+        close;
+    }
+        set #AD1H,0;
+        delitem 40012,1;
+        rentitem 40001,3600;
+        .ftime$ = gettimetick(2)+86400; // 24hours
+        set #AD1H, #AD1H + .ftime$;
+        end;
+    }
+}
+
+//// ------------------------------------ 3HOURS RENTAL 
+function	script	ADControl3h	{
+
+if(#AD3H > gettimetick(2)){
+    mes "[ Assistive Device ]";
+    mes "^ff0000Note^000000:";
+    mes "Item: ^0000ffAssistive Device(3HRS)^000000";
+    mes "You need to wait "+Time2Str(#AD3H)+" before open again.";
+    close;
+}
+
+    mes "[ Assistive Device ]";
+    mes "Item: ^0000ffAssistive Device(3HRS)^000000";
+    mes "LAGAY MO NALANG YUNG NOTE MO DITO PARA SAKANILA";
+    next;
+    mes "[ Assistive Device ]";
+    mes "Item: ^0000ffAssistive Device(3HRS)^000000";
+    mes "Would you like to open this box?";
+    next;
+switch(select("No:Yes")){
+    case 1:
+        mes "[ Assistive Device ]";
+        mes "Item: ^0000ffAssistive Device(3HRS)^000000";
+        mes "Okay have a nice day";
+        close;
+
+    case 2:
+    if(countitem(40013) < 1 ){
+        mes "[ Assistive Device ]";
+        mes "Item: ^0000ffAssistive Device(3HRS)^000000";
+        mes "Wait a second...";
+        mes "Do you think I'm stupid?!";
+        mes "You remove the item while I wasn't looking! Get out of here!";
+        close;
+    }
+        set #AD3H,0;
+        delitem 40013,1;
+        rentitem 40001,10800;
+        .ftime$ = gettimetick(2)+86400; // 24hours
+        set #AD3H, #AD3H + .ftime$;
+        end;
+    }
+}
+
+//// ------------------------------------ 5HOURS RENTAL 
+function	script	ADControl5h	{
+
+if(#AD5H > gettimetick(2)){
+    mes "[ Assistive Device ]";
+    mes "^ff0000Note^000000:";
+    mes "Item: ^0000ffAssistive Device(5HRS)^000000";
+    mes "You need to wait "+Time2Str(#AD5H)+" before open again.";
+    close;
+}
+
+    mes "[ Assistive Device ]";
+    mes "Item: ^0000ffAssistive Device(5HRS)^000000";
+    mes "LAGAY MO NALANG YUNG NOTE MO DITO PARA SAKANILA";
+    next;
+    mes "[ Assistive Device ]";
+    mes "Item: ^0000ffAssistive Device(5HRS)^000000";
+    mes "Would you like to open this box?";
+    next;
+switch(select("No:Yes")){
+    case 1:
+        mes "[ Assistive Device ]";
+        mes "Item: ^0000ffAssistive Device(5HRS)^000000";
+        mes "Okay have a nice day";
+        close;
+
+    case 2:
+    if(countitem(40014) < 1 ){
+        mes "[ Assistive Device ]";
+        mes "Item: ^0000ffAssistive Device(5HRS)^000000";
+        mes "Wait a second...";
+        mes "Do you think I'm stupid?!";
+        mes "You remove the item while I wasn't looking! Get out of here!";
+        close;
+    }
+        set #AD5H,0;
+        delitem 40014,1;
+        rentitem 40001,18000;
+        .ftime$ = gettimetick(2)+86400; // 24hours
+        set #AD5H, #AD5H + .ftime$;
+        end;
+    }
+}

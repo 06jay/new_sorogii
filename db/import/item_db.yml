@@ -327,6 +327,46 @@ Body:
     Script: |
       sc_start SC_EXPBOOST,1800000,100;
 # BUBBLE GUM / FIELD MANUAL END
+  - Id: 40011
+    AegisName: AD(30MINS)
+    Name: Assistive Device(30MINS)
+    Type: Usable
+    Flags:
+      NoConsume: true
+    Buy: 1000
+    Weight: 10
+    Script: |
+      callfunc "ADControl30";
+  - Id: 40012
+    AegisName: AD(1HR)
+    Name: Assistive Device(1HR)
+    Type: Usable
+    Flags:
+      NoConsume: true
+    Buy: 1000
+    Weight: 10
+    Script: |
+      callfunc "ADControl1h";
+  - Id: 40013
+    AegisName: AD(3HRS)
+    Name: Assistive Device(3HRS)
+    Type: Usable
+    Flags:
+      NoConsume: true
+    Buy: 1000
+    Weight: 10
+    Script: |
+      callfunc "ADControl3h";
+  - Id: 40014
+    AegisName: AD(5HRS)
+    Name: Assistive Device(5HRS)
+    Type: Usable
+    Flags:
+      NoConsume: true
+    Buy: 1000
+    Weight: 10
+    Script: |
+      callfunc "ADControl5h";
   - Id: 12622
     AegisName: Boarding_Halter
     Name: Reins Of Mount
