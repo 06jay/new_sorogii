@@ -1915,7 +1915,7 @@ int64 battle_calc_damage(struct block_list *src,struct block_list *bl,struct Dam
 	} //End of caster SC_ check
 
 	//PK damage rates
-	if (battle_config.pk_mode == 1 && map_getmapflag(bl->m, MF_PVP) > 0)
+	if (battle_config.pk_mode == 1 || map_getmapflag(sd->bl.m, MF_PK) && map_getmapflag(bl->m, MF_PVP) > 0)
 		damage = battle_calc_pk_damage(*src, *bl, damage, skill_id, flag);
 
 	if(battle_config.skill_min_damage && damage > 0 && damage < div_) {
@@ -9938,7 +9938,7 @@ int battle_check_target( struct block_list *src, struct block_list *target,int f
 		return (flag&state)?1:-1;
 	}
 
-	if( mapdata_flag_vs(mapdata) )
+	if( mapdata_flag_vs(mapdata) || mapdata->getMapFlag(MF_PK) )
 	{ //Check rivalry settings.
 		int sbg_id = 0, tbg_id = 0;
 		if(mapdata->getMapFlag(MF_BATTLEGROUND) )
@@ -9966,7 +9966,7 @@ int battle_check_target( struct block_list *src, struct block_list *target,int f
 		if( state&BCT_ENEMY && mapdata->getMapFlag(MF_BATTLEGROUND) && sbg_id && sbg_id == tbg_id )
 			state &= ~BCT_ENEMY;
 
-		if( state&BCT_ENEMY && battle_config.pk_mode && !mapdata_flag_gvg(mapdata) && s_bl->type == BL_PC && t_bl->type == BL_PC )
+		if( state&BCT_ENEMY && (battle_config.pk_mode || mapdata->getMapFlag(MF_PK)) && !mapdata_flag_gvg(mapdata) && s_bl->type == BL_PC && t_bl->type == BL_PC )
 		{ // Prevent novice engagement on pk_mode (feature by Valaris)
 			TBL_PC *sd = (TBL_PC*)s_bl, *sd2 = (TBL_PC*)t_bl;
 			if (

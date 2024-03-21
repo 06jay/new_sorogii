@@ -538,6 +538,7 @@
 	export_constant(MF_NOBUYINGSTORE);
 	export_constant(MF_NOITEM);
 	export_constant(MF_NODYNAMICNPC);
+	export_constant(MF_PK);
 	export_constant(MF_NOBANK);
 
 	/* setcell types */
