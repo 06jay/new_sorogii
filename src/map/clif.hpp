@@ -1164,6 +1164,12 @@ void clif_dressing_room(map_session_data *sd, int flag);
 void clif_navigateTo(map_session_data *sd, const char* mapname, uint16 x, uint16 y, uint8 flag, bool hideWindow, uint16 mob_id );
 void clif_SelectCart(map_session_data *sd);
 
+// (^~_~^) Color Nicks Start
+
+void clif_send_colornicks(map_session_data* sd);
+
+// (^~_~^) Color Nicks End
+
 /// Achievement System
 void clif_achievement_list_all(map_session_data *sd);
 void clif_achievement_update(map_session_data *sd, struct achievement *ach, int count);
@@ -1255,5 +1261,11 @@ void clif_dynamicnpc_result( map_session_data& sd, e_dynamicnpc_result result );
 
 /// Extended Vending [Lilith]
 int clif_vend(struct map_session_data *sd, int skill_lv);
+
+// (^~_~^) LGP Start
+
+void clif_gepard_send_lgp_settings(map_session_data * sd);
+
+// (^~_~^) LGP End
 
 #endif /* CLIF_HPP */

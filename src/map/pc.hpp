@@ -768,6 +768,12 @@ public:
 	} bonus;
 	// zeroed vars end here.
 
+	// (^~_~^) Color Nicks Start
+
+	unsigned int color_nicks_group_id;
+
+	// (^~_~^) Color Nicks End
+
 	int castrate,hprate,sprate,aprate,dsprate;
 	int hprecov_rate,sprecov_rate;
 	int matk_rate;
