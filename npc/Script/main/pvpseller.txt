@@ -380,7 +380,7 @@ OnPCLoadMapEvent:
 	end;
 }
 
-prontera,125,210,4	script	PvP Ranker	512,{
+prontera,127,215,4	script	PvP Ranker	512,{
 
 	.@npcname$ = strnpcinfo(0);
 	while (true) {

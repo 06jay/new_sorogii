@@ -31,6 +31,14 @@
 	}
 	specialeffect2 EF_HEAL2;
 	percentheal 100,100;
+	specialeffect2 EF_HEAL2;
+	percentheal 100,100;
+	if (.@Buffs) {
+		specialeffect2 EF_INCAGILITY;
+		sc_start SC_INCREASEAGI,240000,10;
+		specialeffect2 EF_BLESSING;
+		sc_start SC_BLESSING,240000,10;
+	}
 	if (.@Buffs) {
 		if(getgroupid() < 5) {  ////
 			end;				//// ITONG END NA ITO KAPAG HINDI VIP YUNG PLAYER KAPAG KINAUSAP ITONG HEALER MA HHEAL SYA TAPOS MAG EEND NA SYA DITO HND NA AABOT SA BUFFS SA BABA

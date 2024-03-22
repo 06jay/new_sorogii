@@ -1,4 +1,5 @@
-prontera,151,182,5	script	SG Resetter	644,{
+prontera,188,198,2	script	SG Resetter	10437 ,{
+cutin "ex_se_happycloud03.png",2;
    mes "[sG Resetter]";
    mes "What do you wish to reset?";
    menu "Reset Feeling",feeling,"Reset Hatred",hatred;
@@ -6,7 +7,9 @@ prontera,151,182,5	script	SG Resetter	644,{
 feeling:
    atcommand "@feelreset";
    mes "Done.";
-   close;
+	cutin "",255;
+                close;
+
 
 hatred:
    set PC_HATE_MOB_MOON, 0;
@@ -27,6 +30,21 @@ later:
    next;
    mes "[sG Resetter]";
    mes "Ok then, but don't forget changes won't take effect until you relog.";
-   close;
+	cutin "",255;
+                close;
 
+
+OnInit:
+	while(1) {
+		showscript "Feel Reset", getnpcid(0);
+		sleep 1000;
+	}
+	end;
+
+OnPCLoadMapEvent:
+if( strcharinfo(3) == strnpcinfo(4) )
+	showevent QTYPE_CLICKME;
+end;
 }
+
+

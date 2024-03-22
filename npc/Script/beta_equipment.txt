@@ -1,0 +1,43 @@
+prontera,165,172,4	script	Beta Basic Gear#0112	10376 ,{
+
+
+cutin "ep18_maram_01.png",2;
+	
+
+	switch(select(">Sword and Dagger:>Katar and Instrument:>Box and Axe:>Mace and Staf:>Guns and Shuriken")) {
+		case 1: callshop "Weapon", 1; end;
+		case 2: callshop "Katar", 1; end;
+		case 3: callshop "BowA", 1; end;
+		case 4: callshop "MS", 1; end;
+		case 5: callshop "GS", 1; end;
+                next;
+	cutin "",255;
+                close;
+OnInit:
+	while(1) {
+		showscript "Weapon Gallery", getnpcid(0);
+		sleep 1000;
+	}
+	end;
+
+OnPCLoadMapEvent:
+if( strcharinfo(3) == strnpcinfo(4) )
+	showevent QTYPE_CLICKME;
+end;
+}
+}
+
+
+
+
+//shops
+-	shop	Katar	,1251:50000,1253:100000,1255:75000,1405:20000,1408:50000,1902:10000,1904:20000,1953:20000,1955:30000
+
+-	shop	Weapon	,1155:50000,1158:90000,1163:120000,1108:10000,1117:10000,1120:100000,1208:20000,1211:20000,1217:20000,1221:50000,13048:50000
+-	shop	BowA	-,1702:20000,1705:50000,1708:20000,1302:10000,1352:20000,1355:30000,1358:75000,1802:20000,1804:50000,1806:60000,1808:75000
+-	shop	MS	,1502:10000,1505:20000,1511:20000,1514:-1,1517:-1,1520:50000,1522:100000,1523:25000,1602:20000,1605:20000,1608:20000,1611:45000,1618:85000
+-	shop	GS	,13103:60000,13105:100000,13106:200000,13101:10000,13150:6000,13152:30000,7522:500,7521:500,7523:500
+
+
+
+//,13250:4,13252:20,13253:40,13254:100,2117:10000,7522:150,7523:150,7524:300 arrow

@@ -1,0 +1,43 @@
+prontera,146,172,6	script	Beta Basic Gear#0115	10378 ,{
+
+
+cutin "ep18_suad_01.png",2;
+	
+
+	switch(select(">Armor:>Shield:>Foot Gear:>Garment:>Acce")) {
+		case 1: callshop "Armor", 1; end;
+		case 2: callshop "Shield", 1; end;
+		case 3: callshop "Boots", 1; end;
+		case 4: callshop "Garment", 1; end;
+		case 5: callshop "Acce", 1; end;
+                next;
+	cutin "",255;
+                close;
+OnInit:
+	while(1) {
+		showscript "Armory Gallery", getnpcid(0);
+		sleep 1000;
+	}
+	end;
+
+OnPCLoadMapEvent:
+if( strcharinfo(3) == strnpcinfo(4) )
+	showevent QTYPE_CLICKME;
+end;
+}
+}
+
+
+
+//shops
+-	shop	Armor	,2304:10000,2306:20000,2308:20000,2310:50000,2311:50000,2313:50000,2315:75000,2317:100000,2322:20000,2326:60000,2331:75000
+
+-	shop	Shield	,2102:10000,2106:60000,2108:60000,2114:30000,2116:30000,2123:50000
+
+-	shop	Boots	-,2404:10000,2406:20000,2409:30000,2412:50000,2417:50000
+-	shop	Garment	,2504:10000,2506:40000,2507:82000,2508:56000
+-	shop	Acce	,2621:-1,2622:-1,2624:30000,2618:10000,2625:30000,2626:30000
+
+
+
+//,13250:4,13252:20,13253:40,13254:100,2117:10000,7522:150,7523:150,7524:300 arrow

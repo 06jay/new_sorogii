@@ -13,7 +13,7 @@ OnPCLoginEvent:
         mes "--";
         mes "^FF00001,000^000000 ^8a2be2PODS^000000";
         mes "^FF0000500,000,000^000000z";
-        mes "Enjoy your stay and kindly report if you found some bugs!";
+        mes "Thank you so much participating on Beta test and kindly report if you found some bugs!";
         close;
     }
     end;

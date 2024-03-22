@@ -1,0 +1,46 @@
+new_1-1,146,112,4	script	Promise Beta Test#101	403 ,{
+	cutin "valk1.png",2;
+	    mes "^62A9FF[Promise Beta Test]^000000";
+    mes "Hello, Thank you so much for participating our Beta Test Phase! We are so happy to see you here.";
+next;
+	    mes "^62A9FF[Promise Beta Test]^000000";
+
+    mes "Just a heads-up: PROmise is currently in its beta phase!";
+    mes "Please remember that all items, farmed items, and characters will be reset at the end of the beta phase. Additionally, all EXP and drop rate modifications will be reverted to their original settings.";
+    next;
+	    mes "^62A9FF[Promise Beta Test]^000000";
+
+    mes "So are you ready to go to Prontera?<3";
+    next;
+
+
+    switch(select("Yes", "No")) {
+        case 1:
+            warp "prontera",156,184; // Replace with the actual coordinates of the market place.
+atcommand "@blvl 9";
+atcommand "@jlvl 9";
+            break;
+        case 2:
+	    mes "^62A9FF[Promise Beta Test]^000000";
+
+            mes "Alright! Just tell me when you are ready to go.";
+            break;
+    }
+	close2;
+	cutin "",255;
+
+OnInit:
+	while(1) {
+		showscript "Promise Beta Test", getnpcid(0);
+		sleep 1000;
+	}
+	close2;
+	cutin "",255;
+	end;
+
+
+OnPCLoadMapEvent:
+if( strcharinfo(3) == strnpcinfo(4) )
+	showevent QTYPE_CLICKME;
+end;
+}

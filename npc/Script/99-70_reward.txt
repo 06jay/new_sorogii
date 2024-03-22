@@ -1,4 +1,4 @@
-prontera,154,182,5	script	99/70 Reward Claim	101,{
+prt_in,38,104,5	script	99/70 Reward Claim	101,{
 if(#9970reward_claim == 1 ){
     mes "[ 99/70 Reward Claim ]";
     mes "Your reward has been claimed already.";

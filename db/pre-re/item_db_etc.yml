@@ -13862,7 +13862,7 @@ Body:
     AegisName: Donation_Card
     Name: Proof of Donation
     Type: Etc
-    Weight: 10
+    Weight: 0
   - Id: 7180
     AegisName: Introduction_Of_Mr.Han
     Name: Hahn Sukbong's Recommendation

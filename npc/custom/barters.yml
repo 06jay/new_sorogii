@@ -44,3 +44,28 @@
 Header:
   Type: BARTER_DB
   Version: 1
+
+
+Body:
+  - Name: barter_refine_11
+    Map: lasagna
+    X: 161
+    Y: 196
+    Direction: East
+    Sprite: 4_GEFFEN_09
+    Items:
+      - Index: 0
+        Item: Elite_Siege_Supply_Box
+        Stock: 0
+        RequiredItems:
+          - Index: 0
+            Item: Donation_Card
+            Amount: 10
+      - Index: 1
+        Item: Poison_Bottle_10_Box
+        Stock: 0
+        RequiredItems:
+          - Index: 0
+            Item: Donation_Card
+            Amount: 10
+

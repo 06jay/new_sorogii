@@ -1,8 +1,8 @@
 -	script	arriving	-1,{
 OnPCLoginEvent:
 if ( !#new_account ) {
-announce "Attention, citizens of Midgard: "+strcharinfo(0)+" is here to SLAY! Welcome to HYPER WORLD!!!",bc;
-dispbottom "Welcome to HYPERO! Kill e'm All!";
+announce "Attention, citizens of Midgard: "+strcharinfo(0)+" is here to Play! Welcome to Promise Ragnarok WORLD!!!",bc;
+dispbottom "Welcome to Promise Server! Lets have some fun!!";
 #new_account = 1;
 }
 else

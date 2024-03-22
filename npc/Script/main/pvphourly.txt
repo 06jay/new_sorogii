@@ -29,7 +29,8 @@
 //============================================================
 prt_in,44,94,4	script	Hourly Manager#0121	833,{ callfunc "weshop",1,4; }
 prt_in,39,94,4	script	PVP Master#0121	733,{ callfunc "weshop",2; }
-new_1-1,65,118,4	script	Loki#012q1xs	512,{ callfunc "weshop",3; }
+//prontera,154,185,4	script	Loki#012q1xs	512,{ callfunc "weshop",3; }
+prontera,154,185,4	script	Item Shop	512,{ callfunc "weshop",8; }
 
 // prontera,165,203,6	script	Quest Shop#2	998,{ callfunc "qshop",1,2; }	// call the shop 1 and 2 defined below
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
@@ -73,7 +74,7 @@ OnInit:
 // -----------------------------------------------------------
 
 	setarray .Shops$[1],
-		">Hourly",">PVP SHOP",">Freebies",">Event",">Head Gear",">Mid Gear",">Lower Gear";
+		">Hourly",">PVP SHOP",">Freebies",">Event",">Head Gear",">Mid Gear",">Lower Gear",">Item Mall";
 			// Shop Named 1
 // -----------------------------------------------------------
 //  Quest items -- do NOT use a reward item more than once!
@@ -81,6 +82,20 @@ OnInit:
 //	    <Zeny cost>,<point cost>,<success rate>
 //	    <required item ID>,<required item amount>{,...});
 // -----------------------------------------------------------
+
+
+// Shop 1 itemmall
+	Add(8,14003,1,0,0,0,7179,3);//esb nt
+	Add(8,12210,1,0,0,0,7179,2);//bbg
+	Add(8,14592,1,0,0,0,7179,5);//jman nt
+	Add(8,7776 ,1,0,0,0,7179,20);//gymnt
+	Add(8,6833,1,0,0,0,7179,5);//token nt
+	Add(8,12221 ,1,0,0,0,7179,1);//mic nt
+	Add(8,14592,1,0,0,0,7179,20);//agi nt
+	Add(8,14169 ,1,0,0,0,7179,20);//bless
+	Add(8,14170 ,1,0,0,0,7179,2);//agi
+	Add(8,12214 ,1,0,0,0,7179,2);//convex
+
 
 // Shop 1 hourly
 	Add(1,14003,1,0,0,0,6380,1);//esb nt
@@ -93,6 +108,8 @@ OnInit:
 	Add(1,14169 ,1,0,0,0,6380,4);//bless
 	Add(1,14170 ,1,0,0,0,6380,2);//poring coin
 	Add(1,12214 ,1,0,0,0,6380,2);//convex
+
+
 
 
 
@@ -121,17 +138,17 @@ OnInit:
 
 
 //shop3 freebies hg
-	Add(3,19678,1,0,0,0,6153,1);//bellriboon
-	Add(3,19573,1,0,0,0,6153,1);//heart nt
-	Add(3,19934,1,0,0,0,6153,1);//gallon nt
-	Add(3,19824,1,0,0,0,6153,1);//ed nt
-	Add(3,20375,1,0,0,0,6153,1);//ignis nt
-//	Add(3,18884,1,0,0,0,6153,1);//tanashi cap nt
-//	Add(3,20100,1,0,0,0,6153,1);//eagle nt
-	Add(3,31415,1,0,0,0,6153,1);//blue sakat nt
-	Add(3,19507 ,1,0,0,0,6153,1);//bb cap nt 31140 
-	Add(3,31323 ,1,0,0,0,6153,1);//cowboyhat cap nt 31140 
-	Add(5,31323,1,0,0,0,6153,1);//yellow huntingcap
+	Add(3,19678,1,0,0,0,7179,1);//bellriboon
+	Add(3,19573,1,0,0,0,7179,1);//heart nt
+	Add(3,19934,1,0,0,0,7179,1);//gallon nt
+	Add(3,19824,1,0,0,0,7179,1);//ed nt
+	Add(3,20375,1,0,0,0,7179,1);//ignis nt
+//	Add(3,18884,1,0,0,0,7179,1);//tanashi cap nt
+//	Add(3,20100,1,0,0,0,7179,1);//eagle nt
+	Add(3,31415,1,0,0,0,7179,1);//blue sakat nt
+	Add(3,19507 ,1,0,0,0,7179,1);//bb cap nt 31140 
+	Add(3,31323 ,1,0,0,0,7179,1);//cowboyhat cap nt 31140 
+	Add(5,31323,1,0,0,0,7179,1);//yellow huntingcap
 	
 //====================================================
 
@@ -182,6 +199,9 @@ OnInit:
 	Add(7,5305,1,0,0,0,7929,50);//Pirate Dagger
 	Add(7,5548,1,0,0,0,7929,50);//Scarlet Rose
 	Add(7,5574,1,0,0,0,7929,50);//Well-Chewed Pencil
+
+//=================================================================
+
 
 
 
@@ -356,7 +376,7 @@ function	script	weshop	{
 
 
 
-new_1-1,65,118,4	script	Loki#q2302	111,{
+new_2-1,65,118,4	script	Loki#q2302	111,{
 end;
 
 OnInit:

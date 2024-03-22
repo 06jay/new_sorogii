@@ -1,4 +1,4 @@
-prontera,140,179,6	script	Vending Area#11	837  ,{	
+prontera,142,178,6	script	Vending Area#11	837  ,{	
 	    mes "[Market Manager]";
     mes "Hello, adventurer! Would you like to go vending/market area of prontera?";
     next;
@@ -21,11 +21,12 @@ end;
 
 OnInit:
 	while(1) {
-		showscript "Market Manager", getnpcid(0);
+		showscript "Market Area", getnpcid(0);
 		sleep 1000;
 	}
 end;
 }
 prontera	mapflag	loadevent
+new_1-1	mapflag	loadevent
 
 

@@ -17,7 +17,7 @@ OnNPCKillEvent:
 -	shop	MVP_Shop	-1,512:100
 
 
-prt_in,34,94,4	script	MVP Exchanger Shop	734 ,{
+prt_in,0,0,0	script	MVP Exchanger Shop	734 ,{
 function ShopSettings;
 function ValidateCost;
 function CurrencyInfo;

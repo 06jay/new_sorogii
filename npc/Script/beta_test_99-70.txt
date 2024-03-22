@@ -1,4 +1,4 @@
-prontera,158,182,5	script	99/70 Registration	100,{
+prt_in,38,108,4	script	99/70 Registration	100,{
 if(#9970reward == 1 ) {
     mes "[ 99/70 Registration ]";
     mes "Thank you very much for participating. Your account is now listed to receive the 99/70 reward at the grand opening.";

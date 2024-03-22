@@ -107,7 +107,7 @@ OnNPCKillEvent: // Logic to detect when a MvP is killed
 
 //---- MvP Ladder Info NPC
 
-prontera,120,210,4	script	MVP Ladder	469 ,{
+prontera,124,212,4	script	MVP Ladder	469 ,{
 	.@npcname$ = strnpcinfo(0);
 	while (1) {
 		mes "["+ .@npcname$ +"]";
