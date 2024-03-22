@@ -89,6 +89,22 @@ Header:
   Version: 3
 
 Body:
+  - Id: 6010
+    AegisName: Pickaxe
+    Name: Hoe
+    Type: Weapon
+    SubType: 2hAxe
+    Buy: 1
+    Weight: 10
+    Attack: 1
+    Range: 1
+    Slots: 0
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    View: 103
   - Id: 40001
     AegisName: AAttack
     Name: Assistive Device
