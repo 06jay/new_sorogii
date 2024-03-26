@@ -6138,7 +6138,7 @@ Body:
     Defense: 50
     Locations:
       Garment: true
-    ArmorLevel: 2
+    ArmorLevel: 1
     EquipLevelMin: 200
     Refineable: true
     Script: |
@@ -6156,7 +6156,7 @@ Body:
     Defense: 30
     Locations:
       Garment: true
-    ArmorLevel: 2
+    ArmorLevel: 1
     EquipLevelMin: 200
     Refineable: true
     Script: |
@@ -6175,7 +6175,7 @@ Body:
     Defense: 10
     Locations:
       Garment: true
-    ArmorLevel: 2
+    ArmorLevel: 1
     EquipLevelMin: 200
     Refineable: true
     Script: |
