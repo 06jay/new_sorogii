@@ -4219,11 +4219,13 @@ static int skill_check_unit_range_sub(struct block_list *bl, va_list ap)
 
 	switch (skill_id) {
 		case AL_PNEUMA: //Pneuma doesn't work even if just one cell overlaps with Land Protector
+		case MG_SAFETYWALL:
+		case WZ_FIREPILLAR:
 			if(g_skill_id == SA_LANDPROTECTOR)
 				break;
 			//Fall through
 		case MH_STEINWAND:
-		case MG_SAFETYWALL:
+		//case MG_SAFETYWALL:
 		case SC_MAELSTROM:
 			if(g_skill_id != MH_STEINWAND && g_skill_id != MG_SAFETYWALL && g_skill_id != AL_PNEUMA && g_skill_id != SC_MAELSTROM)
 				return 0;
@@ -13630,6 +13632,13 @@ int skill_castend_pos2(struct block_list* src, int x, int y, uint16 skill_id, ui
 			return 0; // Don't consume gems if cast on Land Protector
 		}
 	}
+
+	case PF_FOGWALL:
+		if( map_getcell(src->m, x, y, CELL_CHKLANDPROTECTOR) ) {
+			clif_skill_fail(sd,skill_id,USESKILL_FAIL_LEVEL,0);
+			break; 
+		}	
+
 	case MG_FIREWALL:
 	case MG_THUNDERSTORM:
 	case AL_PNEUMA:
@@ -13658,7 +13667,7 @@ int skill_castend_pos2(struct block_list* src, int x, int y, uint16 skill_id, ui
 	case HT_CLAYMORETRAP:
 	case AS_VENOMDUST:
 	case AM_DEMONSTRATION:
-	case PF_FOGWALL:
+	//case PF_FOGWALL:
 	case PF_SPIDERWEB:
 	case HT_TALKIEBOX:
 	case WE_CALLPARTNER:
@@ -13770,6 +13779,11 @@ int skill_castend_pos2(struct block_list* src, int x, int y, uint16 skill_id, ui
 		break;
 
 	case WZ_ICEWALL:
+		if( map_getcell(src->m, x, y, CELL_CHKLANDPROTECTOR) ) {
+			clif_skill_fail(sd,skill_id,USESKILL_FAIL_LEVEL,0);
+			break; 
+		}
+
 		flag|=1;
 		if(skill_unitsetting(src,skill_id,skill_lv,x,y,0))
 			clif_skill_poseffect(src,skill_id,skill_lv,x,y,tick);
@@ -20036,6 +20050,29 @@ static int skill_cell_overlap(struct block_list *bl, va_list ap)
 			if (skill_get_unit_flag(unit->group->skill_id, UF_CRAZYWEEDIMMUNE))
 				break;
 		case HW_GANBANTEIN:
+			switch (unit->group->skill_id) {
+			case WZ_METEOR:
+				if(map_getcell(bl->m, bl->x, bl->y, CELL_CHKLANDPROTECTOR)){
+					return 1;
+				}else{
+					skill_delunit(unit);
+					return 1;
+				}
+			case WZ_STORMGUST:
+				if(map_getcell(bl->m, bl->x, bl->y, CELL_CHKLANDPROTECTOR)){
+					return 1;
+				}else{
+					skill_delunit(unit);
+					return 1;
+				}	
+            case SA_LANDPROTECTOR:
+				skill_delunit(unit);
+				return 1;
+			 default:
+				skill_delunit(unit);
+				return 1;
+            }
+            break;
 		case LG_EARTHDRIVE:
 			// Officially songs/dances are removed
 			if (skill_get_unit_flag(unit->group->skill_id, UF_RANGEDSINGLEUNIT)) {
@@ -20118,8 +20155,8 @@ static int skill_cell_overlap(struct block_list *bl, va_list ap)
 	std::bitset<INF2_MAX> inf2 = skill_db.find(skill_id)->inf2;
 
 	if (unit->group->skill_id == SA_LANDPROTECTOR && !inf2[INF2_ISTRAP] && !inf2[INF2_IGNORELANDPROTECTOR] ) { //It deletes everything except traps and barriers
-		(*alive) = 0;
-		return 1;
+		//(*alive) = 0;
+		//return 1;
 	}
 
 	return 0;
