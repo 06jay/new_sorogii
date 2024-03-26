@@ -1,5 +1,5 @@
 
-prontera,118,191,6	script	Universal Rental NPC	732 ,{
+prontera,135,228,6	script	Universal Rental NPC	732 ,{
 	if (ismounting()) {
 		message strcharinfo(0),"You must first remove your mount.";
 		end;

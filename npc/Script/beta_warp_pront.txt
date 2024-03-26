@@ -17,8 +17,9 @@ next;
     switch(select("Yes", "No")) {
         case 1:
             warp "prontera",156,184; // Replace with the actual coordinates of the market place.
-atcommand "@blvl 9";
-atcommand "@jlvl 9";
+			savepoint "prontera",156,184;
+			atcommand "@blvl 9";
+			atcommand "@jlvl 9";
             break;
         case 2:
 	    mes "^62A9FF[Promise Beta Test]^000000";

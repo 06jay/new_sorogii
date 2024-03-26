@@ -11,7 +11,9 @@ if(#AD30 > gettimetick(2)){
 
     mes "[ Assistive Device ]";
     mes "Item: ^0000ffAssistive Device(30MIN)^000000";
-    mes "LAGAY MO NALANG YUNG NOTE MO DITO PARA SAKANILA";
+    mes "Warning! You can use this device, but you cannot use them together as they do not stack.";
+    mes "It's best to finish using your first Assistive Device before opening another one when it's finished.";
+
     next;
     mes "[ Assistive Device ]";
     mes "Item: ^0000ffAssistive Device(30MIN)^000000";
@@ -56,7 +58,8 @@ if(#AD1H > gettimetick(2)){
 
     mes "[ Assistive Device ]";
     mes "Item: ^0000ffAssistive Device(1HR)^000000";
-    mes "LAGAY MO NALANG YUNG NOTE MO DITO PARA SAKANILA";
+    mes "Warning! You can use this device, but you cannot use them together as they do not stack.";
+    mes "It's best to finish using your first Assistive Device before opening another one when it's finished.";
     next;
     mes "[ Assistive Device ]";
     mes "Item: ^0000ffAssistive Device(1HR)^000000";
@@ -100,7 +103,8 @@ if(#AD3H > gettimetick(2)){
 
     mes "[ Assistive Device ]";
     mes "Item: ^0000ffAssistive Device(3HRS)^000000";
-    mes "LAGAY MO NALANG YUNG NOTE MO DITO PARA SAKANILA";
+    mes "Warning! You can use this device, but you cannot use them together as they do not stack.";
+    mes "It's best to finish using your first Assistive Device before opening another one when it's finished.";
     next;
     mes "[ Assistive Device ]";
     mes "Item: ^0000ffAssistive Device(3HRS)^000000";

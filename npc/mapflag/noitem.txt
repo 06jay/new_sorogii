@@ -1,2 +1,2 @@
-gef_fild09	mapflag	noitem	4002, Sword, Cotton_Shirt
-geffen	mapflag	noitem	IT_ARMOR
+//gef_fild09	mapflag	noitem	4002, Sword, Cotton_Shirt
+//geffen	mapflag	noitem	IT_ARMOR

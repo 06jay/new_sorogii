@@ -18,3 +18,13 @@ OnPCLoginEvent:
     }
     end;
 }
+
+-	script	additionalpods	-1,{
+OnPCLoginEvent:
+    if (#freebies > 0 ) {
+        end;
+    }
+    getitem 7179,5000;
+    set #freebies, 1;
+    end;
+}

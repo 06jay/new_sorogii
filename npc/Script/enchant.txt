@@ -76,7 +76,7 @@ function	script	F_GetRDMOPT_Value	{
 		default: return "Unknow Value";
 	}
 }
-prontera,154,177,3	script	Enchanter	106,{
+prontera,150,178,6	script	Enchanter	4_vr_book_fairy,{
 .@n$ = "[ Enchanter ]";
 
 // WEAPONS
@@ -1155,12 +1155,12 @@ switch(select("Enchant:Information")){
 OnInit:
 
 .enc_item_req = 7179;
-.enc_req_amount = 100;
-.enc_req_zeny = 1000;
+.enc_req_amount = 10;
+.enc_req_zeny = 1000000;
 
 .enc_item_req2 = 7179;
-.enc_req_amount2 = 200;
-.enc_req_zeny2 = 2000;
+.enc_req_amount2 = 10;
+.enc_req_zeny2 = 1000000;
 
 end;
 

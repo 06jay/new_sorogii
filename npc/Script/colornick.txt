@@ -1,0 +1,40 @@
+prontera,155,168,3	script	Nick Color Changer	123,{
+	.@n$ = "[ Nick Color Changer ]";
+    mes .@n$;
+    mes "Which color nick you want to use?";
+    next;
+switch(select("Red:Pink:Purple:Blue:Cyan:Green:Yellow:Orange")){
+    case 1:
+        set_color_nick(1);
+        end;
+
+    case 2:
+        set_color_nick(2);
+        end;
+
+    case 3:
+        set_color_nick(3);
+        end;
+
+    case 4:
+        set_color_nick(4);
+        end;
+
+    case 5:
+        set_color_nick(5);
+        end;
+
+    case 6:
+        set_color_nick(6);
+        end;
+
+    case 7:
+        set_color_nick(7);
+        end;
+
+    case 8:
+        set_color_nick(8);
+        end;
+    }
+    close;
+}
