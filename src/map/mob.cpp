@@ -2501,7 +2501,7 @@ int mob_getdroprate(struct block_list *src, std::shared_ptr<s_mob_db> mob, int b
 			int drop_rate_bonus = 100;
 
 			// In PK mode players get an additional drop chance bonus of 25% if there is a 20 level difference
-			if( battle_config.pk_mode && (int)(mob->lv - sd->status.base_level) >= 20 ){
+			if( (battle_config.pk_mode || map_getmapflag(src->m, MF_PK)) && (int)(mob->lv - sd->status.base_level) >= 20 ){
 				drop_rate_bonus += 25;
 			}
 

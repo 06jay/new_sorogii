@@ -540,6 +540,7 @@
 	export_constant(MF_NODYNAMICNPC);
 	export_constant(MF_NOBANK);
 	export_constant(MF_KINGOFEMP);
+	export_constant(MF_PK);
 
 	/* setcell types */
 	export_constant(CELL_WALKABLE);

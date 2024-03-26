@@ -990,7 +990,7 @@ bool skill_isNotOk(uint16 skill_id, map_session_data *sd)
 		case WM_LULLABY_DEEPSLEEP:
 		case WM_GLOOMYDAY:
 		case WM_SATURDAY_NIGHT_FEVER:
-			if( !mapdata_flag_vs(mapdata) ) {
+			if( !mapdata_flag_vs(mapdata) && !mapdata->getMapFlag(MF_PK) ) {
 				clif_skill_teleportmessage(sd,2); // This skill uses this msg instead of skill fails.
 				return true;
 			}
@@ -11062,7 +11062,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 		else {
 			struct map_data *mapdata = map_getmapdata(src->m);
 
-			map_foreachinallrange(skill_area_sub,src,skill_get_splash(skill_id, skill_lv),BL_CHAR,src,skill_id,skill_lv,tick,(mapdata_flag_vs(mapdata)?BCT_ALL:BCT_ENEMY|BCT_SELF)|flag|1,skill_castend_nodamage_id);
+			map_foreachinallrange(skill_area_sub,src,skill_get_splash(skill_id, skill_lv),BL_CHAR,src,skill_id,skill_lv,tick,((mapdata_flag_vs(mapdata)||mapdata->getMapFlag(MF_PK))?BCT_ALL:BCT_ENEMY|BCT_SELF)|flag|1,skill_castend_nodamage_id);
 			clif_skill_nodamage(src, bl, skill_id, skill_lv, 1);
 		}
 		break;
@@ -15390,7 +15390,7 @@ static int skill_unit_onplace(struct skill_unit *unit, struct block_list *bl, t_
 				const struct TimerData* td;
 				struct map_data *mapdata = map_getmapdata(bl->m);
 
-				if (mapdata_flag_vs(mapdata))
+				if (mapdata_flag_vs(mapdata) || mapdata->getMapFlag(MF_PK))
 					sec /= 2;
 				if (sc->getSCE(type)) {
 					if (sc->getSCE(type)->val2 && sc->getSCE(type)->val3 && sc->getSCE(type)->val4) {
@@ -15399,9 +15399,9 @@ static int skill_unit_onplace(struct skill_unit *unit, struct block_list *bl, t_
 						break;
 					}
 					//Don't increase val1 here, we need a higher val in status_change_start so it overwrites the old one
-					if (mapdata_flag_vs(mapdata) && sc->getSCE(type)->val1 < 3)
+					if ((mapdata_flag_vs(mapdata) || mapdata->getMapFlag(MF_PK)) && sc->getSCE(type)->val1 < 3)
 						sec *= (sc->getSCE(type)->val1 + 1);
-					else if(!mapdata_flag_vs(mapdata) && sc->getSCE(type)->val1 < 2)
+					else if((!mapdata_flag_vs(mapdata) && !mapdata->getMapFlag(MF_PK)) && sc->getSCE(type)->val1 < 2)
 						sec *= (sc->getSCE(type)->val1 + 1);
 					//Add group id to status change
 					if (sc->getSCE(type)->val2 == 0)

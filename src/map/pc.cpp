@@ -8455,7 +8455,7 @@ static void pc_calcexp(map_session_data *sd, t_exp *base_exp, t_exp *job_exp, st
 		if( sd->indexed_bonus.expaddclass[CLASS_ALL] )
 			bonus += sd->indexed_bonus.expaddclass[CLASS_ALL];
 
-		if (battle_config.pk_mode &&
+		if ((battle_config.pk_mode || map_getmapflag(sd->bl.m, MF_PK)) &&
 			(int)(status_get_lv(src) - sd->status.base_level) >= 20)
 			bonus += 15; // pk_mode additional exp if monster >20 levels [Valaris]
 
