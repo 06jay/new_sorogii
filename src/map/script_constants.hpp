@@ -538,9 +538,7 @@
 	export_constant(MF_NOBUYINGSTORE);
 	export_constant(MF_NOITEM);
 	export_constant(MF_NODYNAMICNPC);
-	export_constant(MF_PK);
 	export_constant(MF_NOBANK);
-	export_constant(MF_KINGOFEMP);
 
 	/* setcell types */
 	export_constant(CELL_WALKABLE);

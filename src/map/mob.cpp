@@ -2501,7 +2501,7 @@ int mob_getdroprate(struct block_list *src, std::shared_ptr<s_mob_db> mob, int b
 			int drop_rate_bonus = 100;
 
 			// In PK mode players get an additional drop chance bonus of 25% if there is a 20 level difference
-			if( (battle_config.pk_mode || map_getmapflag(src->m, MF_PK)) && (int)(mob->lv - sd->status.base_level) >= 20 ){
+			if( battle_config.pk_mode && (int)(mob->lv - sd->status.base_level) >= 20 ){
 				drop_rate_bonus += 25;
 			}
 
@@ -2793,6 +2793,8 @@ int mob_dead(struct mob_data *md, struct block_list *src, int type)
 					pc_getzeny(tmpsd[i], zeny, LOG_TYPE_PICKDROP_MONSTER);
 			}
 
+			if( md->get_bosstype() == BOSSTYPE_MVP )
+				pc_damage_log_clear(tmpsd[i],md->bl.id);
 		}
 
 		for( i = 0; i < pnum; i++ ) //Party share.
@@ -3149,12 +3151,6 @@ int mob_dead(struct mob_data *md, struct block_list *src, int type)
 			pc_setparam(mvp_sd, SP_KILLEDRID, md->mob_id);
 			npc_script_event(mvp_sd, NPCE_KILLNPC); // PCKillNPC [Lance]
 		}
-	}
-
-	for(i = 0; i < DAMAGELOG_SIZE && md->dmglog[i].id; i++) {
-		if (!tmpsd[i]) continue;
-		if( md->get_bosstype() == BOSSTYPE_MVP )
-			pc_damage_log_clear(tmpsd[i],md->bl.id);
 	}
 
 	if(md->deletetimer != INVALID_TIMER) {

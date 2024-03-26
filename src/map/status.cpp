@@ -10568,7 +10568,7 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 					int i;
 					for( i = 0; i < MAX_DEVOTION; i++ ) {
 						if( sd->devotion[i] && (tsd = map_id2sd(sd->devotion[i])) )
-							status_change_start(src,&tsd->bl, type, 10000, val1, val2, val3, val4, tick, SCSTART_NOAVOID);
+							status_change_start(src,&tsd->bl, type, 10000, val1, val2, val3, val4, tick, SCSTART_NOAVOID|SCSTART_NOICON);
 					}
 				}
 				else if( bl->type == BL_MER && ((TBL_MER*)bl)->devotion_flag && (tsd = ((TBL_MER*)bl)->master) )
@@ -10666,7 +10666,7 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 					int i;
 					for( i = 0; i < MAX_DEVOTION; i++ ) {
 						if( sd->devotion[i] && (tsd = map_id2sd(sd->devotion[i])) )
-							status_change_start(src,&tsd->bl, type, 10000, val1, val2, 0, 1, tick, SCSTART_NOAVOID);
+							status_change_start(src,&tsd->bl, type, 10000, val1, val2, 0, 1, tick, SCSTART_NOAVOID|SCSTART_NOICON);
 					}
 				}
 				else if( bl->type == BL_MER && ((TBL_MER*)bl)->devotion_flag && (tsd = ((TBL_MER*)bl)->master) )
@@ -11026,7 +11026,7 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 					if( sd ) {
 						for( i = 0; i < MAX_DEVOTION; i++ ) {
 							if( sd->devotion[i] && (tsd = map_id2sd(sd->devotion[i])) )
-								status_change_start(src,&tsd->bl, type, 10000, val1, val2, 0, 0, tick, SCSTART_NOAVOID);
+								status_change_start(src,&tsd->bl, type, 10000, val1, val2, 0, 0, tick, SCSTART_NOAVOID|SCSTART_NOICON);
 						}
 					}
 					else if( bl->type == BL_MER && ((TBL_MER*)bl)->devotion_flag && (tsd = ((TBL_MER*)bl)->master) )
@@ -11036,10 +11036,10 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 			break;
 
 		case SC_DEFENDER:
-				val2 = 5 + 15*val1; // Damage reduction
- 				val3 = 0; // Unused, previously speed adjustment
- 				val4 = 250 - 50*val1; // Aspd adjustment
 			if (!(flag&SCSTART_NOAVOID)) {
+				val2 = 5 + 15*val1; // Damage reduction
+				val3 = 0; // Unused, previously speed adjustment
+				val4 = 250 - 50*val1; // Aspd adjustment
 
 				if (sd) {
 					map_session_data *tsd;
@@ -11190,7 +11190,7 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 				while( i >= 0 ) {
 					enum sc_type type2 = types[i];
 					if( d_sc->getSCE(type2) )
-						status_change_start(d_bl, bl, type2, 10000, d_sc->getSCE(type2)->val1, 0, 0, (type2 == SC_REFLECTSHIELD ? 1 : 0), skill_get_time(status_db.getSkill(type2),d_sc->getSCE(type2)->val1), SCSTART_NOAVOID);
+						status_change_start(d_bl, bl, type2, 10000, d_sc->getSCE(type2)->val1, 0, 0, (type2 == SC_REFLECTSHIELD ? 1 : 0), skill_get_time(status_db.getSkill(type2),d_sc->getSCE(type2)->val1), (type2 == SC_DEFENDER) ? SCSTART_NOAVOID : SCSTART_NOAVOID|SCSTART_NOICON);
 					i--;
 				}
 			}

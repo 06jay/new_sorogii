@@ -990,7 +990,7 @@ bool skill_isNotOk(uint16 skill_id, map_session_data *sd)
 		case WM_LULLABY_DEEPSLEEP:
 		case WM_GLOOMYDAY:
 		case WM_SATURDAY_NIGHT_FEVER:
-			if (!mapdata_flag_vs(mapdata) && !mapdata->getMapFlag(MF_PK)) {
+			if( !mapdata_flag_vs(mapdata) ) {
 				clif_skill_teleportmessage(sd,2); // This skill uses this msg instead of skill fails.
 				return true;
 			}
@@ -4219,13 +4219,11 @@ static int skill_check_unit_range_sub(struct block_list *bl, va_list ap)
 
 	switch (skill_id) {
 		case AL_PNEUMA: //Pneuma doesn't work even if just one cell overlaps with Land Protector
-		case MG_SAFETYWALL:
-		case WZ_FIREPILLAR:		
 			if(g_skill_id == SA_LANDPROTECTOR)
 				break;
 			//Fall through
 		case MH_STEINWAND:
-		//case MG_SAFETYWALL:
+		case MG_SAFETYWALL:
 		case SC_MAELSTROM:
 			if(g_skill_id != MH_STEINWAND && g_skill_id != MG_SAFETYWALL && g_skill_id != AL_PNEUMA && g_skill_id != SC_MAELSTROM)
 				return 0;
@@ -11062,7 +11060,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 		else {
 			struct map_data *mapdata = map_getmapdata(src->m);
 
-			map_foreachinallrange(skill_area_sub, src, skill_get_splash(skill_id, skill_lv), BL_CHAR, src, skill_id, skill_lv, tick, ((mapdata_flag_vs(mapdata) || mapdata->getMapFlag(MF_PK)) ? BCT_ALL : BCT_ENEMY | BCT_SELF) | flag | 1, skill_castend_nodamage_id);
+			map_foreachinallrange(skill_area_sub,src,skill_get_splash(skill_id, skill_lv),BL_CHAR,src,skill_id,skill_lv,tick,(mapdata_flag_vs(mapdata)?BCT_ALL:BCT_ENEMY|BCT_SELF)|flag|1,skill_castend_nodamage_id);
 			clif_skill_nodamage(src, bl, skill_id, skill_lv, 1);
 		}
 		break;
@@ -13632,13 +13630,6 @@ int skill_castend_pos2(struct block_list* src, int x, int y, uint16 skill_id, ui
 			return 0; // Don't consume gems if cast on Land Protector
 		}
 	}
-
-	case PF_FOGWALL:
-		if( map_getcell(src->m, x, y, CELL_CHKLANDPROTECTOR) ) {
-			clif_skill_fail(sd,skill_id,USESKILL_FAIL_LEVEL,0);
-			break; 
-		}	
-
 	case MG_FIREWALL:
 	case MG_THUNDERSTORM:
 	case AL_PNEUMA:
@@ -13667,7 +13658,7 @@ int skill_castend_pos2(struct block_list* src, int x, int y, uint16 skill_id, ui
 	case HT_CLAYMORETRAP:
 	case AS_VENOMDUST:
 	case AM_DEMONSTRATION:
-	//case PF_FOGWALL:
+	case PF_FOGWALL:
 	case PF_SPIDERWEB:
 	case HT_TALKIEBOX:
 	case WE_CALLPARTNER:
@@ -13779,11 +13770,6 @@ int skill_castend_pos2(struct block_list* src, int x, int y, uint16 skill_id, ui
 		break;
 
 	case WZ_ICEWALL:
-		if( map_getcell(src->m, x, y, CELL_CHKLANDPROTECTOR) ) {
-			clif_skill_fail(sd,skill_id,USESKILL_FAIL_LEVEL,0);
-			break; 
-		}
-
 		flag|=1;
 		if(skill_unitsetting(src,skill_id,skill_lv,x,y,0))
 			clif_skill_poseffect(src,skill_id,skill_lv,x,y,tick);
@@ -15354,10 +15340,6 @@ static int skill_unit_onplace(struct skill_unit *unit, struct block_list *bl, t_
 
 	tstatus = status_get_status_data(bl);
 
-	if( (skill_get_type(sg->skill_id) == WZ_METEOR && ((battle_config.land_protector_behavior) ? map_getcell(bl->m, bl->x, bl->y, CELL_CHKLANDPROTECTOR) : map_getcell(unit->bl.m, unit->bl.x, unit->bl.y, CELL_CHKLANDPROTECTOR)) && sg->skill_id != SA_LANDPROTECTOR) ||
-		map_getcell(bl->m, bl->x, bl->y, CELL_CHKMAELSTROM) )
-		return 0; //AoE skills are ineffective. [Skotlex]
-
 	if( (skill_get_type(sg->skill_id) == BF_MAGIC && ((battle_config.land_protector_behavior) ? map_getcell(bl->m, bl->x, bl->y, CELL_CHKLANDPROTECTOR) : map_getcell(unit->bl.m, unit->bl.x, unit->bl.y, CELL_CHKLANDPROTECTOR)) && sg->skill_id != SA_LANDPROTECTOR) ||
 		map_getcell(bl->m, bl->x, bl->y, CELL_CHKMAELSTROM) )
 		return 0; //AoE skills are ineffective. [Skotlex]
@@ -15390,7 +15372,7 @@ static int skill_unit_onplace(struct skill_unit *unit, struct block_list *bl, t_
 				const struct TimerData* td;
 				struct map_data *mapdata = map_getmapdata(bl->m);
 
-				if (mapdata_flag_vs(mapdata) || mapdata->getMapFlag(MF_PK))
+				if (mapdata_flag_vs(mapdata))
 					sec /= 2;
 				if (sc->getSCE(type)) {
 					if (sc->getSCE(type)->val2 && sc->getSCE(type)->val3 && sc->getSCE(type)->val4) {
@@ -15399,9 +15381,9 @@ static int skill_unit_onplace(struct skill_unit *unit, struct block_list *bl, t_
 						break;
 					}
 					//Don't increase val1 here, we need a higher val in status_change_start so it overwrites the old one
-					if ((mapdata_flag_vs(mapdata) || mapdata->getMapFlag(MF_PK)) && sc->getSCE(type)->val1 < 3)
+					if (mapdata_flag_vs(mapdata) && sc->getSCE(type)->val1 < 3)
 						sec *= (sc->getSCE(type)->val1 + 1);
-					else if((!mapdata_flag_vs(mapdata) && !mapdata->getMapFlag(MF_PK)) && sc->getSCE(type)->val1 < 2)
+					else if(!mapdata_flag_vs(mapdata) && sc->getSCE(type)->val1 < 2)
 						sec *= (sc->getSCE(type)->val1 + 1);
 					//Add group id to status change
 					if (sc->getSCE(type)->val2 == 0)
@@ -20054,29 +20036,6 @@ static int skill_cell_overlap(struct block_list *bl, va_list ap)
 			if (skill_get_unit_flag(unit->group->skill_id, UF_CRAZYWEEDIMMUNE))
 				break;
 		case HW_GANBANTEIN:
-			switch (unit->group->skill_id) {
-			case WZ_METEOR:
-				if(map_getcell(bl->m, bl->x, bl->y, CELL_CHKLANDPROTECTOR)){
-					return 1;
-				}else{
-					skill_delunit(unit);
-					return 1;
-				}
-			case WZ_STORMGUST:
-				if(map_getcell(bl->m, bl->x, bl->y, CELL_CHKLANDPROTECTOR)){
-					return 1;
-				}else{
-					skill_delunit(unit);
-					return 1;
-				}	
-            case SA_LANDPROTECTOR:
-				skill_delunit(unit);
-				return 1;
-			 default:
-				skill_delunit(unit);
-				return 1;
-            }
-            break;
 		case LG_EARTHDRIVE:
 			// Officially songs/dances are removed
 			if (skill_get_unit_flag(unit->group->skill_id, UF_RANGEDSINGLEUNIT)) {
@@ -20159,8 +20118,8 @@ static int skill_cell_overlap(struct block_list *bl, va_list ap)
 	std::bitset<INF2_MAX> inf2 = skill_db.find(skill_id)->inf2;
 
 	if (unit->group->skill_id == SA_LANDPROTECTOR && !inf2[INF2_ISTRAP] && !inf2[INF2_IGNORELANDPROTECTOR] ) { //It deletes everything except traps and barriers
-		//(*alive) = 0;
-		//return 1;
+		(*alive) = 0;
+		return 1;
 	}
 
 	return 0;
@@ -21005,9 +20964,6 @@ int skill_unit_timer_sub_onplace(struct block_list* bl, va_list ap)
 	std::shared_ptr<s_skill_db> skill = skill_db.find(group->skill_id);
 
 	if( !(skill->inf2[INF2_ISSONG] || skill->inf2[INF2_ISTRAP]) && !skill->inf2[INF2_IGNORELANDPROTECTOR] && group->skill_id != NC_NEUTRALBARRIER && (battle_config.land_protector_behavior ? map_getcell(bl->m, bl->x, bl->y, CELL_CHKLANDPROTECTOR) : map_getcell(unit->bl.m, unit->bl.x, unit->bl.y, CELL_CHKLANDPROTECTOR)) )
-		return 0; //AoE skills are ineffective. [Skotlex]
-
-	if( skill->inf2[INF2_IGNORELANDPROTECTOR] && group->skill_id == WZ_METEOR && (battle_config.land_protector_behavior ? map_getcell(bl->m, bl->x, bl->y, CELL_CHKLANDPROTECTOR) : map_getcell(unit->bl.m, unit->bl.x, unit->bl.y, CELL_CHKLANDPROTECTOR)) )
 		return 0; //AoE skills are ineffective. [Skotlex]
 
 	if( battle_check_target(&unit->bl,bl,group->target_flag) <= 0 )
