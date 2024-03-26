@@ -279,8 +279,8 @@ L_talk:
 			close;
 		}
 		mes "Your current :";
-		mes " > Rank : "+.@rank;
-		mes " > Point : "+.@points+" Point(s).";
+		mes "> Rank : "+.@rank;
+		mes "> Point : "+.@points+" Point(s).";
 		close;
 	}
 	end; // shouldn't reach

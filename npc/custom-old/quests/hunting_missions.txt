@@ -166,7 +166,7 @@ Mission_Status:
 		.@j[.Quests] = .@j[.Quests] + strmobinfo(3,.@j[.@i]);
 		.@j[.Quests+1] = .@j[.Quests+1] + (strmobinfo(6,.@j[.@i]) / (getbattleflag("base_exp_rate") / 100) * .Modifier[0]);
 		.@j[.Quests+2] = .@j[.Quests+2] + (strmobinfo(7,.@j[.@i]) / (getbattleflag("job_exp_rate") / 100) * .Modifier[1]);
-		mes " > "+Chk(getd("Mission"+.@i+"_"),#Mission_Count) + strmobinfo(1,.@j[.@i]) + " (" + getd("Mission"+.@i+"_") + "/" + #Mission_Count + ")^000000";
+		mes "> "+Chk(getd("Mission"+.@i+"_"),#Mission_Count) + strmobinfo(1,.@j[.@i]) + " (" + getd("Mission"+.@i+"_") + "/" + #Mission_Count + ")^000000";
 	}
 
 	// Reward formulas:
@@ -178,10 +178,10 @@ Mission_Status:
 	next;
 	mes "[Hunting Missions]";
 	mes "Mission rewards:";
-	mes " > Mission Points: ^0055FF" + .@Mission_Points + "^000000";
-	mes " > Base Experience: ^0055FF" + F_InsertComma(.@Base_Exp) + "^000000";
-	mes " > Job Experience: ^0055FF" + F_InsertComma(.@Job_Exp) + "^000000";
-	mes " > Zeny: ^0055FF" + F_InsertComma(.@Zeny) + "^000000";
+	mes "> Mission Points: ^0055FF" + .@Mission_Points + "^000000";
+	mes "> Base Experience: ^0055FF" + F_InsertComma(.@Base_Exp) + "^000000";
+	mes "> Job Experience: ^0055FF" + F_InsertComma(.@Job_Exp) + "^000000";
+	mes "> Zeny: ^0055FF" + F_InsertComma(.@Zeny) + "^000000";
 	if (@f) {
 		@f = false;
 		return;

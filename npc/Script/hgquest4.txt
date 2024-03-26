@@ -85,7 +85,7 @@ OnInit:
 
 //==Headgear list.==wizhat 2252 //veil 2206 == //sweetgent 2245 ==//post stop 2272 ==//santa hat 2236 ==//redbandana 2275 ==//safetyhelme 5009 ==//puppy headban 5118 ==//aoa 2285 ==//pirate banda 2287 //
 //popoo hat 2289 ==//phdhat 5012 ==//pandhat 5030 ==//orchelm 2299 ==//nursecp 2277 ==//monkhat 2251 ==//minipropeler 2259 ==//marionetdoll 5141 =//kitty band 2213=//
-//magnis capt 5122 ==//jokerjester 5003 ==//galapago 5111 ==//hat 2221 ­==//circlet 2233 ==//cap 2227==//buckethat 5120 ==//bonehelm 5017 =//wickbomb 2279 ­==//beret 5172 =//bananahat 5116 ==//
+//magnis capt 5122 ==//jokerjester 5003 ==//galapago 5111 ==//hat 2221 ï¿½==//circlet 2233 ==//cap 2227==//buckethat 5120 ==//bonehelm 5017 =//wickbomb 2279 ï¿½==//beret 5172 =//bananahat 5116 ==//
 
 //mvp HG drop// coronet 2249 //granc cirlet 5007 // shpx hat 5053 // crowwn 2235 // jewel 5002 // gemmed sallet 2231 // helm 2229 // tiara 2234 // eulls cap 5123 // magestic goat 5160 //
 //bone helm 5162 // spiky band 2258 // corsair 5019 // phdhat 5012 //golden geat 2246 //  assassin mask 5096 //
@@ -250,10 +250,10 @@ OnBuyItem:
 //	if (.SuccessRate) mes "Success Rate: ^ff0000"+ .@q[6] +"^000000%";
 	mes "Requirements:";
 	disable_items;
-	if (.@q[4]) mes " > "+Chk(Zeny,.@q[4]*.@q[1])+(.@q[4]*.@q[1])+" Zeny^000000";
-	if (.@q[5]) mes " > "+Chk(getd(.Points$[0]),.@q[5]*.@q[1])+(.@q[5]*.@q[1])+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+(.@q[5]*.@q[1])+")^000000";
+	if (.@q[4]) mes "> "+Chk(Zeny,.@q[4]*.@q[1])+(.@q[4]*.@q[1])+" Zeny^000000";
+	if (.@q[5]) mes "> "+Chk(getd(.Points$[0]),.@q[5]*.@q[1])+(.@q[5]*.@q[1])+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+(.@q[5]*.@q[1])+")^000000";
 	if (.@q[7]) for(set .@i,7; .@i<getarraysize(.@q); set .@i,.@i+2)
-		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])+((.ShowID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+(.@q[.@i+1]*.@q[1])+")^000000";
+		mes "> "+Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])+((.ShowID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+(.@q[.@i+1]*.@q[1])+")^000000";
 	next;
 	setarray @qe[1], getiteminfo(.@q[0],5), getiteminfo(.@q[0],11);
 	if (@qe[2] > 0 && ((@qe[1] & EQP_HEAD_LOW) || (@qe[1] & EQP_HEAD_TOP) || (@qe[1] & EQP_HEAD_MID) || (@qe[1] & EQP_COSTUME_HEAD_TOP) || (@qe[1] & EQP_COSTUME_HEAD_MID) || (@qe[1] & EQP_COSTUME_HEAD_LOW) || (@qe[1] & EQP_GARMENT) || (@qe[1] & EQP_COSTUME_GARMENT)))
