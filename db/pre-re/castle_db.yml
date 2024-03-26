@@ -270,4 +270,20 @@ Body:
   - Id: 100
     Map: guild_vs1
     Name: King of Emperium Hill
-    Npc: koe
+    Npc: KoE
+  - Id: 101
+    Map: valkyrie_vs
+    Name: King of Emperium Hill
+    Npc: KoE
+  - Id: 102
+    Map: payg_vs
+    Name: King of Emperium Hill
+    Npc: KoE
+  - Id: 103
+    Map: freya_vs
+    Name: King of Emperium Hill
+    Npc: KoE
+  - Id: 104
+    Map: ra_koe
+    Name: King of Emperium Hill
+    Npc: KoE

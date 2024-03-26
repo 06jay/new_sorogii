@@ -1,91 +1,568 @@
--	script	KoE	-1,{
+/*==============================================================
+ * Version 1.0 : Added. King Of Emperium Mapflag
+ * Version 2.0 : Revamped to rotational KoE
+ * Version 2.1 : Added Rewards
+ * Version 2.2 : Fixed Bug where adding session not recognized
+ * Version 2.3 : Added Participation Points
+ * Version 3.0 : Added Defender Time for holding the emperium.
+ * Version 3.1 : Revamped Rewards
+ * Version 4.0 : Added Enable Barricade
+ * Version 4.1 : Added Enable Guardian
+ * Version 4.2 : Added Special Effect to NPC when King of Emperium is Active.
+ *==============================================================*/
+prontera,155,180,4	script	King Of Emperium	94,{
+function Add_Zero; function Add_Zero2;
+
+L_Menu1:
+mes "[ King of Emperium ]";
+for(.@i=0;.@i<getarraysize(.Maps$);.@i++){
+	if(getd("$@koe_"+.Maps$[.@i]+"_start")){
+		.@active = 1;
+		.@Maps$[.@x] = .Maps$[.@i];
+		.@MapsName$[.@x++] = .MapsName$[.@i];
+	}
+}
+if(.@active)
+	mes "The King of Emperium is ^0055FFactive^000000.";
+else{
+	deletearray .@time[0],getarraysize(.@time);
+	for(.@i=0; .@i<.Size; .@i+=3)
+		if ((gettime(DT_DAYOFWEEK) == $KOE_CONTROL[.@i]-1 && gettime(DT_HOUR) <= $KOE_CONTROL[.@i+1]-1 ) || gettime(DT_DAYOFWEEK) < $KOE_CONTROL[.@i]-1) {
+			setarray .@time[0],$KOE_CONTROL[.@i]-1,$KOE_CONTROL[.@i+1]-1;
+		break;
+	}
+	if (!getarraysize(.@time))
+		setarray .@time[0],$KOE_CONTROL[0]-1,$KOE_CONTROL[1]-1;
+		mes "The King of Emperium is ^777777inactive^000000.";
+	if (.Size) {
+		mes " ";
+		mes "The next session will begin";
+		mes "on ^0055FF"+.Days$[.@time[0]]+"^000000 at "+Add_Zero(.@time[1])+"^000000.";
+	}
+}
+next;
+switch(select((.@active ? "^0055FF~ Enter King of Emperium^000000":"")+":~ Check Schedules:~ Manage Sessions:~ Information:~ Goodbye")){
+	case 1:
+		mes "[ King of Emperium ]";
+		mes "Which arena are you going to join?.";
+		next;
+		.@menu$ = "";
+		for(.@i=0;.@i<.Size;.@i+=3)
+			if(gettime(DT_DAYOFWEEK) == $KOE_CONTROL[.@i]-1 && gettime(DT_HOUR) == $KOE_CONTROL[.@i+1]-1){
+				.@menu$ = .@menu$+"~ "+.MapsName$[$KOE_CONTROL[.@i+2]-1]+":";
+				.@sel[.@j++] = $KOE_CONTROL[.@i+2]-1;
+			}
+		.@warp = select(.@menu$)-1;
+		if(getd("$koe_"+.Maps$[.@sel[.@warp]])==getcharid(2)) //owner warps
+			explode(.@Warps$,.Warp2$[.@sel[.@warp]],",");
+		else
+			explode(.@Warps$,.Warp1$[.@sel[.@warp]],",");
+		.@warppoints = getarraysize(.@Warps$);
+		.@rand = rand(0,.@warppoints)/2;
+		warp .Maps$[.@sel[.@warp]],atoi(.@Warps$[.@rand*2]),atoi(.@Warps$[(.@rand*2)+1]);
+		end;
+	case 2:
+		callsub OnSchedule;
+		goto L_Menu1;
+	case 3:
+		L_Menu2:
+		switch(select(" ~ Add a session...: ~ Delete a session...: ~ ^777777Go back^000000")){
+			case 1:
+				mes "[New Session]";
+				mes "Select a day.";
+				next;
+				set .@Day, select(" ~ "+implode(.Days$,": ~ "))-1;
+				mes "[New Session]";
+				mes "Select a start time for ^0055FF"+.Days$[.@Day]+"^000000.";
+				next;
+				set .@menu$,"";
+				for(set .@i,0; .@i<24; set .@i,.@i+1)
+					set .@menu$, .@menu$+" ~ "+Add_Zero(.@i,1)+":";
+				set .@Start, select(.@menu$)-1;
+				mes "[New Session]";
+				mes "Select a map for ^0055FF"+.Days$[.@Day]+" ("+Add_Zero(.@Start)+")^000000.";
+				next;
+				set .@map, select(" ~ "+implode(.MapsName$,": ~ "))-1;
+				mes "[New Session]";
+				mes "You are about to add a\nKing of Emperium Session.";
+				mes "Schedule : \n~ ^0055FF"+.Days$[.@Day]+"^000000\n~ ^0055FF"+Add_Zero(.@Start)+"^000000\n~ ^0055FF"+.MapsName$[.@map]+"^000000";
+				next;
+				if(select(" ~ Add Session...: ~ Cancel")==2)
+					goto L_Menu1;
+				mes "[New Session]";
+				mes "New session has been added!";
+				if(!.@Day && !.@Start && !.@map ) goto L_Menu1;
+				set $KOE_CONTROL[.Size],.@Day+1;
+				set $KOE_CONTROL[.Size+1],.@Start+1;
+				set $KOE_CONTROL[.Size+2],.@map+1;
+				set .Size,getarraysize($KOE_CONTROL);
+				next;
+				break;
+			case 2:
+				mes "[Remove Session]";
+				if (!.Size) {
+					mes "There are no sessions configured.";
+					next;
+					break;
+				}
+				mes "Select a session to remove.";
+				next;
+				set .@menu$,"";
+				for(set .@i,0; .@i<.Size; set .@i,.@i+3)
+					set .@menu$, .@menu$+" ~ [^0055FF"+.MapsName$[$KOE_CONTROL[.@i+2]-1]+"^000000] "+.Days$[$KOE_CONTROL[.@i]-1]+" "+Add_Zero($KOE_CONTROL[.@i+1]-1,1)+"-"+Add_Zero2($KOE_CONTROL[.@i+1]-1,1)+":";
+				set .@i, select(.@menu$)-1;
+				mes "[Remove Session]";
+				mes "Delete ^0055FF"+.MapsName$[$KOE_CONTROL[.@i+2]-1]+" "+.Days$[$KOE_CONTROL[.@i*3]-1]+"^000000 session?";
+				mes "This action cannot be undone.";
+				next;
+				set .@j, select(" ~ ^FF0000Delete session...^000000: ~ ^777777Cancel^000000");
+				mes "[Remove Session]";
+				if (.@j == 2)
+					mes "cancelled.";
+				else {
+					deletearray $KOE_CONTROL[.@i*3],3;
+					set .Size, getarraysize($KOE_CONTROL);
+					mes "Session deleted.";
+				}
+				next;
+				break;
+			case 3:
+				break;
+		}
+		goto L_Menu1;
+	case 4:
+		mes "[ King of Emperium ]";
+		mes "The King of Emperium hill";
+		mes "is a guild royal rumble event";
+		mes "in which the strongest guild";
+		mes "will receive tons of awards and glory.";
+		next;
+		goto L_Menu1;
+	case 5:
+		mes "[ King of Emperium ]";
+		mes "Good bye~";
+		mes "See you again next time~";
+		end;
+}
+end;
+
+OnStart:
+OnMinute00: //START OF KOE
+	for(.@i=0;.@i<.Size;.@i+=3)
+		if(gettime(DT_DAYOFWEEK) == $KOE_CONTROL[.@i]-1 && gettime(DT_HOUR) == $KOE_CONTROL[.@i+1]-1)
+			donpcevent "KoE#"+.Maps$[$KOE_CONTROL[.@i+2]-1]+"::OnStartKoE";
+	while(1){
+		for(.@i=0;.@i<getarraysize(.Maps$);.@i++)
+			if(getd("$@koe_"+.Maps$[.@i]+"_start"))
+				.@active = 1;
+			else
+				.@active = 0;
+		if(!.@active) break;
+		specialeffect EF_BEGINSPELL6;
+		sleep 425;
+	}
+end;
+
+OnEnd:
+
+OnMinute45: //END OF KOE
+	for(.@i=0;.@i<.Size;.@i+=3)
+		if(gettime(DT_DAYOFWEEK) == $KOE_CONTROL[.@i]-1 && gettime(DT_HOUR) == $KOE_CONTROL[.@i+1]-1)
+			donpcevent "KoE#"+.Maps$[$KOE_CONTROL[.@i+2]-1]+"::OnEndKoE";
+end;
+
+OnSchedule:
+	freeloop(1);
+	for(.@j=0;.@j<7;.@j++){
+		mes "[ King of Emperium ]";
+		mes "King of Emperium Schedules";
+		mes "^0055FF"+.Days$[.@j]+"^000000 :";
+		for(.@i=0;.@i<.Size;.@i+=3)
+			if($KOE_CONTROL[.@i]-1==.@j)
+				mes "~ ^FF5500"+.MapsName$[$KOE_CONTROL[.@i+2]-1]+"^000000 [ "+Add_Zero($KOE_CONTROL[.@i+1]-1)+" - "+Add_Zero2($KOE_CONTROL[.@i+1]-1)+" ]";
+		next;
+	}
+	freeloop(0);
+return;
+
 OnInit:
-disablenpc "The King#KoE";
-disablenpc "Exit#KoE";
+	////////////////////////////////////////////////////
+	//CONSTANTS! DO NOT TOUCH WITHOUT KNOWING ANYTHING//
+	////////////////////////////////////////////////////
+	set .Size,getarraysize($KOE_CONTROL);
+	setarray .MapsName$[0], "Geffen Arena",
+							"Valkyrie Arena",
+							"Payon Arena",
+							"Freyja Arena",
+							"Rachel Arena";
+
+	setarray .Maps$[0], "guild_vs1",
+						"valkyrie_vs",
+						"payg_vs",
+						"freya_vs",
+						"ra_koe";
+						
+	setarray .Warp1$[0],"7,50,49,7,92,49,49,91",
+						"6,51,48,8,91,50",
+						"18,43,18,18,43,18,43,43",
+						"89,62,39,37,11,36,11,62",
+						"15,15,15,85,85,85,85,15"; //Non owner warps
+						
+	setarray .Warp2$[0],"31,68,31,31,68,31,68,68",
+						"48,83,40,86,57,86",
+						"23,23,38,38",
+						"26,50,49,26,73,49,50,73",
+						"40,40,59,59";	//Owner Warps
+						
+	setarray .Days$[0],"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday";
+	////////////////////////////////////////////////////
+	//CONSTANTS! DO NOT TOUCH WITHOUT KNOWING ANYTHING//
+	////////////////////////////////////////////////////
+	sleep 2000;
+	if(gettime(DT_MINUTE)<45)
+		donpcevent strnpcinfo(0)+"::OnStart";
+	else
+		donpcevent strnpcinfo(0)+"::OnEnd";
 end;
+function Add_Zero {
+	return ((getarg(0)<10)?"0":"")+getarg(0)+(getarg(1,0)?".":":")+"00";
+}
 
-OnWhisperGlobal:
-if ( getgroupid() < 99 ) end;
-else if ( compare ( @whispervar0$, "on" ) ) goto L_start;
-else if ( compare ( @whispervar0$, "off" ) ) goto L_end;
-else end;
+function Add_Zero2 {
+	return ((getarg(0)<10)?"0":"")+getarg(0)+(getarg(1,0)?".":":")+"45";
+}
 
-OnClock2030:   // End 8:30PM
-L_end:
-announce "The King of Emperium Hill is over!", 0;
-set .koe_start, 0;
-enablenpc "Exit#KoE";
-disablenpc "The King#KoE";
-killmonsterall "guild_vs1";
-end;
+//$KOE_CONTROL[0], {Day}{TIME START},{MAP}
+}
 
-OnClock2000:   // Start 8:00AM
-L_start:
-announce "The King of Emperium Hill has begun!", 0;
-set .koe_start, 1;
-enablenpc "The King#KoE";
-disablenpc "Exit#KoE";
-set $koegid, 0;
+//==========================KoE Engine===================//
+-	script	KoE	-1,{
+
+OnStartKoE:
+setd "$@koe_"+strnpcinfo(2)+"_start", 1;
+//============ Initilialize ============//
+setd "$koe_"+strnpcinfo(2),0;
+SetCastleData strnpcinfo(2),CD_GUILD_ID, 0;
+.@size = getarraysize(getd(".koe_"+strnpcinfo(2)+"_def"));
+deletearray getd(".koe_"+strnpcinfo(2)+"_def[0]"),.@size;
+deletearray getd(".koe_"+strnpcinfo(2)+"_time[0]"),.@size;
+setd ".koe_"+strnpcinfo(2)+"_defguild",0;
+setd ".koe_"+strnpcinfo(2)+"_deftime",0;
+//============ Initilialize ============//
+announce "The King of Emperium Hill in "+callsub(OnKoeMap)+" has begun! Prove who's the best!..", 0;
 donpcevent "::OnRevKoE";
-maprespawnguildid "guild_vs1", $koegid, 6;
-monster "guild_vs1",49,49,"EMPERIUM",1288,1,"KoE::OnEmpDead";
+maprespawnguildid strnpcinfo(2), getd("$koe_"+strnpcinfo(2)), 6;
+if(.enableBarricade)
+	callsub OnSetKoE;
+monster strnpcinfo(2),getd("."+strnpcinfo(2)+"_emp[0]"),getd("."+strnpcinfo(2)+"_emp[1]"),"EMPERIUM",1288,1,strnpcinfo(0)+"::OnEmpDead";
 end;
+
+OnWhisperGlobal: if(getgmlevel()<99) end;
+OnEndKoE:
+if(!getd("$@koe_"+strnpcinfo(2)+"_start")) end;
+announce "The King of Emperium Hill at "+callsub(OnKoeMap)+" is over!~", 0;
+// DEFENDER START
+callsub OnDefTime;
+for(.@i=0;.@i<getarraysize(getd(".koe_"+strnpcinfo(2)+"_def"));.@i++){
+	if(getd(".koe_"+strnpcinfo(2)+"_deftime") < getd(".koe_"+strnpcinfo(2)+"_time["+.@i+"]")){
+		setd ".koe_"+strnpcinfo(2)+"_defguild",getd(".koe_"+strnpcinfo(2)+"_def["+.@i+"]");
+		setd ".koe_"+strnpcinfo(2)+"_deftime",getd(".koe_"+strnpcinfo(2)+"_time["+.@i+"]");
+	}
+}
+// DEFENDER END
+announce "The Guild "+getguildname(getd(".koe_"+strnpcinfo(2)+"_defguild"))+" defended the "+callsub(OnKoeMap)+" Emperium the longest. "+callsub(OnConvertTime,getd(".koe_"+strnpcinfo(2)+"_deftime")), 0;
+// REWARD START
+if((.Options&1)){
+	if(getd(".koe_"+strnpcinfo(2)+"_defguild") == getd("$koe_"+strnpcinfo(2)))
+		callsub OnRewardBoth,getd("$koe_"+strnpcinfo(2));
+	else{
+		callsub OnRewardDefender,getd(".koe_"+strnpcinfo(2)+"_defguild");
+		callsub OnRewardHolder,getd("$koe_"+strnpcinfo(2));
+	}
+}
+// REWARD END
+setcell strnpcinfo(2),getd(".walkable_"+strnpcinfo(2)+"[0]"),getd(".walkable_"+strnpcinfo(2)+"[1]"),getd(".walkable_"+strnpcinfo(2)+"[2]"),getd(".walkable_"+strnpcinfo(2)+"[3]"),cell_walkable,1;
+setd "$@koe_"+strnpcinfo(2)+"_start", 0;
+killmonsterall strnpcinfo(2);
+sleep 10000;
+mapwarp strnpcinfo(2),"prontera",155,180;
+end;
+ 
+OnConvertTime:
+	.@Time = getarg(0);
+	.@Hours = .@Time / 3600000;
+	.@Time = .@Time - (.@Hours * 3600000);
+	.@Minutes = .@Time / 60000;
+	.@Time = .@Time - (.@Minutes * 60000);
+	.@Seconds = .@Time / 1000;
+	.@Time = .@Time - (.@Seconds * 1000);
+	.@timestr$ = (.@Hours ? .@Hours+"h ":"")+(.@Minutes ? .@Minutes+"m ":"")+(.@Seconds ? .@Seconds+"s ":"")+(.@Time ? .@Time+"ms ":"");
+return .@timestr$;
 
 OnEmpDead:
-set $koegid, getcharid(2);
-announce "The current King of Emperium Hill is the [" + strcharinfo(2) + "] guild.", 0;
+if(getd("$koe_"+strnpcinfo(2)))
+	callsub OnDefTime;
+initnpctimer strnpcinfo(0);
+SetCastleData strnpcinfo(2),CD_GUILD_ID, getcharid(2);
+setd "$koe_"+strnpcinfo(2), getcharid(2);
+announce "The current King of Emperium Hill in "+callsub(OnKoeMap)+" is the [" + strcharinfo(2) + "] guild.", 0;
 donpcevent "::OnRevKoE";
-maprespawnguildid "guild_vs1", $koegid, 6;
+maprespawnguildid strnpcinfo(2), getd("$koe_"+strnpcinfo(2)), 6;
 sleep 500;
-if ( .koe_start )
-	monster "guild_vs1",49,49,"EMPERIUM",1288,1,"KoE::OnEmpDead";
+if ( getd("$@koe_"+strnpcinfo(2)+"_start") ){
+	if(.enableBarricade){
+		sleep 1000;
+		mapwarp strnpcinfo(2),strnpcinfo(2),getd(".warpbreak_"+strnpcinfo(2)+"[0]"),getd(".warpbreak_"+strnpcinfo(2)+"[1]"),1,getd("$koe_"+strnpcinfo(2));
+		callsub OnSetKoE;
+	} else
+		monster strnpcinfo(2),getd("."+strnpcinfo(2)+"_emp[0]"),getd("."+strnpcinfo(2)+"_emp[1]"),"EMPERIUM",1288,1,strnpcinfo(0)+"::OnEmpDead";
+	if(.EnableGuardian){
+		getfreecell(strnpcinfo(2),.@x,.@y,getd("."+strnpcinfo(2)+"_emp[0]"),getd("."+strnpcinfo(2)+"_emp[1]"),7,7);
+		guardian strnpcinfo(2),.@x,.@y,"Emperium Guardian",(getd("."+strnpcinfo(2)+"_guardian") ? getd("."+strnpcinfo(2)+"_guardian"):.guardian);
+	}
+}
+end;
+
+//============================= Defender Engine ===============================//
+OnDefTime:
+	.@tick = getnpctimer(0),strnpcinfo(0);
+	.@a = inarray(getd(".koe_"+strnpcinfo(2)+"_def"),getd("$koe_"+strnpcinfo(2)));
+	if(.@a>=0)
+		setd ".koe_"+strnpcinfo(2)+"_time["+.@a+"]",getd(".koe_"+strnpcinfo(2)+"_time["+.@a+"]")+.@tick;
+	else {
+		.@size = getarraysize(getd(".koe_"+strnpcinfo(2)+"_def"));
+		setd ".koe_"+strnpcinfo(2)+"_def["+.@size+"]",getd("$koe_"+strnpcinfo(2));
+		setd ".koe_"+strnpcinfo(2)+"_time["+.@size+"]",getd(".koe_"+strnpcinfo(2)+"_time["+.@size+"]")+.@tick;
+	}
+return;
+//============================== Defender Engine ==============================//
+
+//============================= Barricade Engine ===============================//
+OnSetKoE:
+	monster strnpcinfo(2),getd("."+strnpcinfo(2)+"_emp[0]"),getd("."+strnpcinfo(2)+"_emp[1]"),"EMPERIUM",1288,1,strnpcinfo(0)+"::OnEmpDead";
+	setd ".EmpID_"+strnpcinfo(2),$@mobid[0];
+	setunitdata getd(".EmpID_"+strnpcinfo(2)),UMOB_DMGIMMUNE,1;
+	setd ".Barricade_"+strnpcinfo(2),0;
+	for(.@i=0;.@i<getarraysize(getd(".barx_"+strnpcinfo(2)));.@i++){
+		monster	strnpcinfo(2),getd(".barx_"+strnpcinfo(2)+"["+.@i+"]"),getd(".bary_"+strnpcinfo(2)+"["+.@i+"]"),"Barricade",1905,1,strnpcinfo(0)+"::OnBarDead",0;
+		setd ".Barricade_"+strnpcinfo(2),getd(".Barricade_"+strnpcinfo(2))+1;
+	}
+	setcell strnpcinfo(2),getd(".walkable_"+strnpcinfo(2)+"[0]"),getd(".walkable_"+strnpcinfo(2)+"[1]"),getd(".walkable_"+strnpcinfo(2)+"[2]"),getd(".walkable_"+strnpcinfo(2)+"[3]"),cell_walkable,0;
+return;
+
+OnBarDead:
+	setd ".Barricade_"+strnpcinfo(2),getd(".Barricade_"+strnpcinfo(2))-1;
+	if(getd(".Barricade_"+strnpcinfo(2)) <= 0){
+		mapannounce strnpcinfo(2),"The Barricades have fallen, The Emperium is now Vulnerable!",bc_map;
+		setcell strnpcinfo(2),getd(".walkable_"+strnpcinfo(2)+"[0]"),getd(".walkable_"+strnpcinfo(2)+"[1]"),getd(".walkable_"+strnpcinfo(2)+"[2]"),getd(".walkable_"+strnpcinfo(2)+"[3]"),cell_walkable,1;
+		setunitdata getd(".EmpID_"+strnpcinfo(2)),UMOB_DMGIMMUNE,0;
+	}
+end;
+//============================= Barricade Engine ===============================//
+
+//=============================== Reward Engine ===============================//
+OnRewardHolder:
+	set .@sql$, ((.Options&4)?"position = 0":"online = 1");
+	freeloop(1);
+		set .@gid, getarg(0);
+		set .@size, query_sql("SELECT account_id,char_id FROM `guild_member` WHERE guild_id = '"+.@gid+"' AND "+.@sql$,.@aid,.@cid);
+		for(set .@j,0; .@j<.@size; set .@j,.@j+1) {
+			if ((.Options&8) && !(.Options&4)) {
+				set .@ip$, replacestr(getcharip(.@aid[.@j]),".","a");
+				if (getd(".@ip_"+.@i+"_"+.@ip$)) continue;
+				setd ".@ip_"+.@i+"_"+.@ip$,1;
+			}
+			if (isloggedin(.@aid[.@j])) {
+				for(set .@k,0; .@k<getarraysize(.holderprize); set .@k,.@k+2)
+					getitem .holderprize[.@k], .holderprize[.@k+1], .@aid[.@j];
+				message rid2name(.@aid[.@j]),"You have been rewarded for being part of the guild at "+callsub(OnKoeMap)+" King of Emperium.";
+			}
+		}
+	return;	
+
+OnRewardDefender:
+	set .@sql$, ((.Options&4)?"position = 0":"online = 1");
+	freeloop(1);
+		set .@gid, getarg(0);
+		set .@size, query_sql("SELECT account_id,char_id FROM `guild_member` WHERE guild_id = '"+.@gid+"' AND "+.@sql$,.@aid,.@cid);
+		for(set .@j,0; .@j<.@size; set .@j,.@j+1) {
+			if ((.Options&8) && !(.Options&4)) {
+				set .@ip$, replacestr(getcharip(.@aid[.@j]),".","a");
+				if (getd(".@ip_"+.@i+"_"+.@ip$)) continue;
+				setd ".@ip_"+.@i+"_"+.@ip$,1;
+			}
+			if (isloggedin(.@aid[.@j])) {
+				for(set .@k,0; .@k<getarraysize(.defenderprize); set .@k,.@k+2)
+					getitem .defenderprize[.@k], .defenderprize[.@k+1], .@aid[.@j];
+				message rid2name(.@aid[.@j]),"You have been rewarded for gracefully defending your Emperium "+callsub(OnKoeMap)+" King of Emperium.";
+			}
+		}
+	freeloop(0);
+	return;
+	
+OnRewardBoth:
+	set .@sql$, ((.Options&4)?"position = 0":"online = 1");
+	freeloop(1);
+		set .@gid, getarg(0);
+		set .@size, query_sql("SELECT account_id,char_id FROM `guild_member` WHERE guild_id = '"+.@gid+"' AND "+.@sql$,.@aid,.@cid);
+		for(set .@j,0; .@j<.@size; set .@j,.@j+1) {
+			if ((.Options&8) && !(.Options&4)) {
+				set .@ip$, replacestr(getcharip(.@aid[.@j]),".","a");
+				if (getd(".@ip_"+.@i+"_"+.@ip$)) continue;
+				setd ".@ip_"+.@i+"_"+.@ip$,1;
+			}
+			if (isloggedin(.@aid[.@j])) {
+				for(set .@k,0; .@k<getarraysize(.bothprize); set .@k,.@k+2)
+					getitem .bothprize[.@k], .bothprize[.@k+1], .@aid[.@j];
+				message rid2name(.@aid[.@j]),"You have been rewarded for being a part of the best defender guild and King Of Emperium Holder at "+callsub(OnKoeMap)+".";
+			}
+		}
+	freeloop(0);
+	return;	
+	
+OnKoeMap:
+	for(.@i=0;.@i<getarraysize(.maps$);.@i+=2)
+		if(.maps$[.@i]==strnpcinfo(2))
+			return .maps$[.@i+1];
+return;
+//=============================== Reward Engine ===============================//
+
+OnPCLoadMapEvent:
+	if(.Participation) //Enable Participation?
+	if(@lastmap$!=strnpcinfo(2) && strcharinfo(3)==strnpcinfo(2) && getd("$@koe_"+strnpcinfo(2)+"_start")){
+		set @lastmap$,strcharinfo(3);
+		message strcharinfo(0),"KoE Points Acquisition activated.";
+		addtimer 10000,strnpcinfo(0)+"::OnParticipate";
+	}
+end;
+
+OnParticipate:
+	set @lastmap$,strcharinfo(3);
+	if(@lastmap$==strnpcinfo(2) && getd("$@koe_"+strnpcinfo(2)+"_start")){
+		addtimer 10000,strnpcinfo(0)+"::OnParticipate";
+		set @KOEPOINTS,@KOEPOINTS+1;
+	}else
+		set @lastmap$,"";
+end;
+
+OnPCLogoutEvent:
+	set #KOEPOINTS,#KOEPOINTS+@KOEPOINTS;
+end;
+
+OnInit:
+// -----------------------------------------------------------
+//  Reward options.
+// -----------------------------------------------------------
+//  [1] Enable rewards.
+//  [4] Only reward Guild Masters.
+//      - If not set, all guild members are rewarded.
+//      - If mailing is enabled (option 2), offline Guild Masters WILL receive rewards.
+//  [8] Duplicate IP check.
+//      - Members in a guild with the same IP address are not rewarded.
+//      - If Guild Masters is enabled (option 4), this feature is not used.
+// -----------------------------------------------------------
+	// Combine values as needed (e.g. 1|8 = 1+8 = 9).
+	set .Options, 1;
+	// SET PRIZES HERE
+	setarray .defenderprize[0],502,1;
+	setarray .holderprize[0],501,1;
+	setarray .bothprize[0],504,1;
+	setarray .maps$[0],
+		"guild_vs1","Geffen Arena",
+		"valkyrie_vs","Valhalla Arena",
+		"payg_vs","Payon Arena",
+		"freya_vs","Freyja Arena",
+		"ra_koe","Rachel Arena";
+	setarray .guild_vs1_emp[0],50,50;
+	setarray .valkyrie_vs_emp[0],49,53;
+	setarray .payg_vs_emp[0],31,31;
+	setarray .freya_vs_emp[0],50,50;
+	setarray .ra_koe_emp[0],50,50;
+	
+	set .Participation,1;	//Enable Participation points?
+	
+	//Guardian Setup
+	set .EnableGuardian,1;	//Enable Guardian?
+	set .valkyrie_vs_guardian,1765;	//Valkyrie
+	set .payg_vs_guardian,1115;	//Eddga
+	//Default Guardian
+	set .guardian,1829;
+	
+	//Barricade Setup
+	set .enableBarricade,1;	//Enable Barricade?
+	
+	//Geffen
+	setarray .warpbreak_guild_vs1[0],42,57;
+	setarray .walkable_guild_vs1[0],48,51,51,48;
+	setarray .barx_guild_vs1[0],47,47,52,52;
+	setarray .bary_guild_vs1[0],52,47,47,52;
+	//Valkyrie
+	setarray .warpbreak_valkyrie_vs[0],48,64;
+	setarray .walkable_valkyrie_vs[0],46,55,51,50;
+	setarray .barx_valkyrie_vs[0],45,45,47,50,52,52,50,47;
+	setarray .bary_valkyrie_vs[0],54,51,56,56,54,51,49,49;
+	//Payon
+	setarray .warpbreak_payg_vs[0],38,38;
+	setarray .walkable_payg_vs[0],28,33,33,28;
+	setarray .barx_payg_vs[0],26,26,28,35,35,33;
+	setarray .bary_payg_vs[0],33,35,35,28,26,26;
+	//Freyja
+	setarray .warpbreak_freya_vs[0],58,58;
+	setarray .walkable_freya_vs[0],46,53,53,46;
+	setarray .barx_freya_vs[0],45,45,48,48,51,51,54,54;
+	setarray .bary_freya_vs[0],51,48,54,45,54,45,51,48;
+	//Rachel
+	setarray .warpbreak_ra_koe[0],58,58;
+	setarray .walkable_ra_koe[0],46,53,53,46;
+	setarray .barx_ra_koe[0],45,45,48,48,51,51,54,54;
+	setarray .bary_ra_koe[0],51,48,54,45,54,45,51,48;
+	//Barricade Setup
+	
+	for(.@i=0;.@i<getarraysize(.Maps$);.@i+=2)
+		killmonsterall .Maps$[.@i];
 end;
 }
 
-// KoE Entrance
-prontera,119,158,4	script	The King#KoE	58,{
-   mes "[The King]";
-if ( getcharid(2) == 0 ) {
-	mes "You must have a guild to participate in the ^FF0000King of Emperium Hill Tournament^000000.";
-	close;
-}
-   mes "Hello.";
-   mes "Would you like to participate in the ^FF0000King of Emperium Hill Tournament^000000?";
-if ( select ( "Yes", "No" ) == 2 ) close;
-   switch( rand(1,4) ){
-       case 1:	warp "guild_vs1", 50, 88; end;
-       case 2:	warp "guild_vs1", 88, 50; end;
-       case 3:	warp "guild_vs1", 50, 11; end;
-       case 4:	warp "guild_vs1", 11, 50; end;
-}
-}
+-	duplicate(KoE)	KoE#guild_vs1	722
+-	duplicate(KoE)	KoE#valkyrie_vs	722
+-	duplicate(KoE)	KoE#payg_vs	722
+-	duplicate(KoE)	KoE#freya_vs	722
+-	duplicate(KoE)	KoE#ra_koe	722
 
-// KoE Exit
-guild_vs1,49,56,5	script	Exit#KoE	51,{
-mes "[Exit]";
-mes "See ya.";
-if ( getcharid(2) == $koegid )
-getitem 501, 1; // configure prize here
-set Zeny,Zeny + 50000000;
-next;
-warp "Save",0,0;
-close;
+-	script	KOE POINTS	-1,{
+
+OnInit:
+	bindatcmd "koeshop",strnpcinfo(3)+"::OnMenu";
+	end;
+
+OnMenu:
+	mes "[ KOE POINTS ]";
+	mes "You can spend your KOE Points here";
+	mes "^FFFFFF_^000000";
+	set #KOEPOINTS,#KOEPOINTS+@KOEPOINTS;
+	set @KOEPOINTS,0;
+	mes "You current points: ^0000FF"+#KOEPOINTS+"^000000";
+	callshop "KOEPOINTS",1;
+	end;
 }
+//ADD YOUR ITEMS HERE
+-	pointshop	KOEPOINTS	-1,#KOEPOINTS,501:1
 
 // Flags
-guild_vs1,49,38,4	script	King of Emperium Hill#1::koe_flag	722,{
-set .@gid, $koegid;
-if ( .@gid == 0 ) end;
-mes "[King of Emperium Hill]";
-mes "The Current King of Emperium Hill is the ["+ getguildname(.@gid) +"] guild.";
-close;
+-	script	::koe_flag	GUILD_FLAG,{
+	if (!getd("$koe_"+strnpcinfo(2))) end;
+	mes "[King of Emperium Hill]";
+	mes "The Current King of Emperium Hill at ^0055FF"+strnpcinfo(1)+"^000000 is the [ ^0055FF"+ getguildname(getd("$koe_"+strnpcinfo(2))) +"^000000 ] guild.";
+	close;
+OnAgitInit: //Uncomment this line to make the emblem stay after @reloadscript
 OnRevKoE:
-flagemblem $koegid;
-end;
+	if(getd("$koe_"+strnpcinfo(2)))
+		flagemblem getd("$koe_"+strnpcinfo(2));
+	end;
 }
-guild_vs1,61,49,6	duplicate(koe_flag)	King of Emperium Hill#2	722
-guild_vs1,38,49,2	duplicate(koe_flag)	King of Emperium Hill#3	722
-guild_vs1,49,61,0	duplicate(koe_flag)	King of Emperium Hill#4	722
+
+prontera,148,174,5	duplicate(koe_flag)	Geffen Arena#guild_vs1	GUILD_FLAG
+prontera,163,174,3	duplicate(koe_flag)	Payon Arena#payg_vs	GUILD_FLAG
 
 guild_vs1	mapflag	gvg
 guild_vs1	mapflag	nobranch
@@ -94,6 +571,55 @@ guild_vs1	mapflag	nopenalty
 guild_vs1	mapflag	noreturn
 guild_vs1	mapflag	nosave	SavePoint
 guild_vs1	mapflag	noteleport
-guild_vs1	mapflag	gvg_noparty
 guild_vs1	mapflag	nowarp
 guild_vs1	mapflag	nowarpto
+guild_vs1	mapflag	kingofemp
+guild_vs1	mapflag	loadevent
+
+valkyrie_vs	mapflag	gvg
+valkyrie_vs	mapflag	nobranch
+valkyrie_vs	mapflag	nomemo
+valkyrie_vs	mapflag	nopenalty
+valkyrie_vs	mapflag	noreturn
+valkyrie_vs	mapflag	nosave	SavePoint
+valkyrie_vs	mapflag	noteleport
+valkyrie_vs	mapflag	nowarp
+valkyrie_vs	mapflag	nowarpto
+valkyrie_vs	mapflag	kingofemp
+valkyrie_vs	mapflag	loadevent
+
+payg_vs	mapflag	gvg
+payg_vs	mapflag	nobranch
+payg_vs	mapflag	nomemo
+payg_vs	mapflag	nopenalty
+payg_vs	mapflag	noreturn
+payg_vs	mapflag	nosave	SavePoint
+payg_vs	mapflag	noteleport
+payg_vs	mapflag	nowarp
+payg_vs	mapflag	nowarpto
+payg_vs	mapflag	kingofemp
+payg_vs	mapflag	loadevent
+
+freya_vs	mapflag	gvg
+freya_vs	mapflag	nobranch
+freya_vs	mapflag	nomemo
+freya_vs	mapflag	nopenalty
+freya_vs	mapflag	noreturn
+freya_vs	mapflag	nosave	SavePoint
+freya_vs	mapflag	noteleport
+freya_vs	mapflag	nowarp
+freya_vs	mapflag	nowarpto
+freya_vs	mapflag	kingofemp
+freya_vs	mapflag	loadevent
+
+ra_koe	mapflag	gvg
+ra_koe	mapflag	nobranch
+ra_koe	mapflag	nomemo
+ra_koe	mapflag	nopenalty
+ra_koe	mapflag	noreturn
+ra_koe	mapflag	nosave	SavePoint
+ra_koe	mapflag	noteleport
+ra_koe	mapflag	nowarp
+ra_koe	mapflag	nowarpto
+ra_koe	mapflag	kingofemp
+ra_koe	mapflag	loadevent
