@@ -2042,7 +2042,7 @@ Body:
     AegisName: Siege_White_Potion
     Name: WoE White Potion
     Type: Healing
-    Weight: 100
+    Weight: 5
     Trade:
       NoDrop: true
       NoTrade: true
@@ -2057,7 +2057,7 @@ Body:
     AegisName: Siege_Blue_Potion
     Name: WoE Blue Potion
     Type: Healing
-    Weight: 100
+    Weight: 5
     Trade:
       NoDrop: true
       NoTrade: true
@@ -5007,7 +5007,7 @@ Body:
       NoAuction: true
     Script: |
       input @megaphone$;
-      announce strcharinfo(0) + ": " + @megaphone$,bc_all,0xFF0000;
+      announce strcharinfo(0) + ": " + @megaphone$,bc_all,0x00FFFF;
   - Id: 12225
     AegisName: Sweet_Candy_Striper
     Name: Sweet Candy Cane
@@ -15840,8 +15840,8 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      getitem 7135,10;
-      getitem 7136,10;
+      getitem 7135,30;
+      getitem 7136,30;
   - Id: 13990
     AegisName: Job_Manual50_Box
     Name: JOB Battle Manual Box

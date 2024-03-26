@@ -3058,7 +3058,6 @@ Body:
     TargetType: Ground
     Flags:
       IsAutoShadowSpell: true
-      IgnoreLandProtector: true 
     Range: 9
     Hit: Multi_Hit
     HitCount:

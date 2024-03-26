@@ -16493,8 +16493,16 @@ Body:
     AegisName: Gold_Coin_
     Name: Gold Coin
     Type: Etc
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
     Buy: 1000
-    Weight: 100
+    Weight: 1
   - Id: 7518
     AegisName: Women's_Medal
     Name: Women's Medal

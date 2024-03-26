@@ -89,6 +89,5985 @@ Header:
   Version: 3
 
 Body:
+  - Id: 41000
+    AegisName: Costume Ultra instinct Green
+    Name: Costume Ultra instinct Green
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2455
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41001
+    AegisName: Costume Ultra instinct Gray
+    Name: Costume Ultra instinct Gray
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2456
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41002
+    AegisName: Costume Ultra instinct Orange
+    Name: Costume Ultra instinct Orange
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2457
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41003
+    AegisName: Costume Ultra instinct Pink
+    Name: Costume Ultra instinct Pink
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2458
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41004
+    AegisName: Costume Ultra instinct Purple
+    Name: Costume Ultra instinct Purple
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2459
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41005
+    AegisName: Costume Ultra instinct Red
+    Name: Costume Ultra instinct Red
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2460
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41006
+    AegisName: Costume Ultra instinct White
+    Name: Costume Ultra instinct White
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2461
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41007
+    AegisName: Costume Ultra instinct Yellow
+    Name: Costume Ultra instinct Yellow
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2462
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41008
+    AegisName: Costume AURAWISPS Black White
+    Name: Costume AURAWISPS Black White
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2463
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41009
+    AegisName: Costume AURAWISPS Blue Green
+    Name: Costume AURAWISPS Blue Green
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2464
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41010
+    AegisName: Costume AURAWISPS Orange
+    Name: Costume AURAWISPS Orange
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2465
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41011
+    AegisName: Costume AURAWISPS Pink Yellow
+    Name: Costume AURAWISPS Pink Yellow
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2466
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41012
+    AegisName: Costume AURAWISPS Purple Red
+    Name: Costume AURAWISPS Purple Red
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2467
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41013
+    AegisName: Costume AURAZART Black
+    Name: Costume AURAZART Black
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2468
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41014
+    AegisName: Costume AURAZART Blue
+    Name: Costume AURAZART Blue
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2469
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41015
+    AegisName: Costume AURAZART Green
+    Name: Costume AURAZART Green
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2470
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41016
+    AegisName: Costume AURAZART Orange
+    Name: Costume AURAZART Orange
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2471
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41017
+    AegisName: Costume AURAZART Pink
+    Name: Costume AURAZART Pink
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2472
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41018
+    AegisName: Costume AURAZART Purple
+    Name: Costume AURAZART Purple
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2473
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41019
+    AegisName: Costume AURAZART Red
+    Name: Costume AURAZART Red
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2474
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41020
+    AegisName: Costume AURAZART Yellow
+    Name: Costume AURAZART Yellow
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2475
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41021
+    AegisName: Costume AURAZEN Blue
+    Name: Costume AURAZEN Blue
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2476
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41022
+    AegisName: Costume AURAZEN Green
+    Name: Costume AURAZEN Green
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2477
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41023
+    AegisName: Costume AURAZEN Orange
+    Name: Costume AURAZEN Orange
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2478
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41024
+    AegisName: Costume AURAZEN Pink
+    Name: Costume AURAZEN Pink
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2479
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41025
+    AegisName: Costume AURAZEN Purple
+    Name: Costume AURAZEN Purple
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2480
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41026
+    AegisName: Costume AURAZEN Red
+    Name: Costume AURAZEN Red
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2481
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41027
+    AegisName: Costume AURAZEN Yellow
+    Name: Costume AURAZEN Yellow
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2482
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41028
+    AegisName: Costume AURAZEUS Black
+    Name: Costume AURAZEUS Black
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2483
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41029
+    AegisName: Costume AURAZEUS Blue
+    Name: Costume AURAZEUS Blue
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2484
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41030
+    AegisName: Costume AURAZEUS Green
+    Name: Costume AURAZEUS Green
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2485
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41031
+    AegisName: Costume AURAZEUS Orange
+    Name: Costume AURAZEUS Orange
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2486
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41032
+    AegisName: Costume AURAZEUS Pink
+    Name: Costume AURAZEUS Pink
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2487
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41033
+    AegisName: Costume AURAZEUS Purple
+    Name: Costume AURAZEUS Purple
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2488
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41034
+    AegisName: Costume AURAZEUS Red
+    Name: Costume AURAZEUS Red
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2489
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41035
+    AegisName: Costume AURAZEUS Yellow
+    Name: Costume AURAZEUS Yellow
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2490
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41036
+    AegisName: Costume Red Inferno
+    Name: Costume Red Inferno
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2491
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41037
+    AegisName: Costume Ice Inferno
+    Name: Costume Ice Inferno
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2492
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41038
+    AegisName: Costume Orange Inferno
+    Name: Costume Orange Inferno
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2493
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41039
+    AegisName: Costume Purple Inferno
+    Name: Costume Purple Inferno
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2494
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41040
+    AegisName: Costume Blue Music Aura
+    Name: Costume Blue Music Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2495
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41041
+    AegisName: Costume Blue Spark Aura
+    Name: Costume Blue Spark Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2496
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41042
+    AegisName: Costume Yellow Burning Aura
+    Name: Costume Yellow Burning Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2497
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41043
+    AegisName: Costume Blue Unstable Aura
+    Name: Costume Blue Unstable Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2498
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41044
+    AegisName: Costume Dragon Warmth Aura
+    Name: Costume Dragon Warmth Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2499
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41045
+    AegisName: Costume Golden Warmth Aura
+    Name: Costume Golden Warmth Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2500
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41046
+    AegisName: Costume Blue Warmth Aura
+    Name: Costume Blue Warmth Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2501
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41047
+    AegisName: Costume Purple Warmth Aura
+    Name: Costume Purple Warmth Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2502
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41048
+    AegisName: Costume Yellow Warmth Aura
+    Name: Costume Yellow Warmth Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2503
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41049
+    AegisName: Costume Yellow Music Aura
+    Name: Costume Yellow Music Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2504
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41050
+    AegisName: Costume Blue Dancing Daager
+    Name: Costume Blue Dancing Daager
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2505
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41051
+    AegisName: Costume Yellow Dancing Daager
+    Name: Costume Yellow Dancing Daager
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2506
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41052
+    AegisName: Costume Yellow Lord Aura
+    Name: Costume Yellow Lord Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2507
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41053
+    AegisName: Costume Ultimate_Destiny_Aura
+    Name: Costume Ultimate_Destiny_Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2508
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41054
+    AegisName: Costume Ultimate_Destiny_Aura_BLK
+    Name: Costume Ultimate_Destiny_Aura_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2509
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41055
+    AegisName: Costume Ultimate_Destiny_Aura_BLU
+    Name: Costume Ultimate_Destiny_Aura_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2510
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41056
+    AegisName: Costume Ultimate_Destiny_Aura_GRN
+    Name: Costume Ultimate_Destiny_Aura_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2511
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41057
+    AegisName: Costume Ultimate_Destiny_Aura_PRP
+    Name: Costume Ultimate_Destiny_Aura_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2512
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41058
+    AegisName: Costume Ultimate_Destiny_Aura_RED
+    Name: Costume Ultimate_Destiny_Aura_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2513
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41059
+    AegisName: Costume Ultimate_Destiny_Aura_WHT
+    Name: Costume Ultimate_Destiny_Aura_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2514
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41060
+    AegisName: Costume Ultimate_Destiny_Sword
+    Name: Costume Ultimate_Destiny_Sword
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2515
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41061
+    AegisName: Costume Ultimate_Destiny_Sword_BLK
+    Name: Costume Ultimate_Destiny_Sword_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2516
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41062
+    AegisName: Costume Ultimate_Destiny_Sword_BLU
+    Name: Costume Ultimate_Destiny_Sword_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2517
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41063
+    AegisName: Costume Ultimate_Destiny_Sword_GRN
+    Name: Costume Ultimate_Destiny_Sword_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2518
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41064
+    AegisName: Costume Ultimate_Destiny_Sword_PRP
+    Name: Costume Ultimate_Destiny_Sword_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2519
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41065
+    AegisName: Costume Ultimate_Destiny_Sword_RED
+    Name: Costume Ultimate_Destiny_Sword_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2520
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41066
+    AegisName: Costume Ultimate_Destiny_Sword_WHT
+    Name: Costume Ultimate_Destiny_Sword_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2521
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41067
+    AegisName: Costume 3431
+    Name: Costume 3431
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2522
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41068
+    AegisName: Costume Blue Bubbles
+    Name: Costume Blue Bubbles
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2523
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41069
+    AegisName: Costume 4804
+    Name: Costume 4804
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2524
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41070
+    AegisName: Costume Cart
+    Name: Costume Cart
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2525
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41071
+    AegisName: Costume White Motor
+    Name: Costume White Motor
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2526
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41072
+    AegisName: Costume 6266
+    Name: Costume 6266
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2527
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41073
+    AegisName: Costume 6267
+    Name: Costume 6267
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2528
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41074
+    AegisName: Costume 6268
+    Name: Costume 6268
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2529
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41075
+    AegisName: Costume 6269
+    Name: Costume 6269
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2530
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41076
+    AegisName: Costume 6270
+    Name: Costume 6270
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2531
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41077
+    AegisName: Costume 6271
+    Name: Costume 6271
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2532
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41078
+    AegisName: Costume 6272
+    Name: Costume 6272
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2533
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41079
+    AegisName: Costume 6273
+    Name: Costume 6273
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2534
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41080
+    AegisName: Costume 6274
+    Name: Costume 6274
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2535
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41081
+    AegisName: Costume 6275
+    Name: Costume 6275
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2536
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41082
+    AegisName: Costume 6276
+    Name: Costume 6276
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2537
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41083
+    AegisName: Costume 6277
+    Name: Costume 6277
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2538
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41084
+    AegisName: Costume 6278
+    Name: Costume 6278
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2539
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41085
+    AegisName: Costume 6347
+    Name: Costume 6347
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2540
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41086
+    AegisName: Costume 6348
+    Name: Costume 6348
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2541
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41087
+    AegisName: Costume Blue Light Aura
+    Name: Costume Blue Light Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2542
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41088
+    AegisName: Costume Green Light Aura
+    Name: Costume Green Light Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2543
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41089
+    AegisName: Costume Orange Light Aura
+    Name: Costume Orange Light Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2544
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41090
+    AegisName: Costume Pink Light Aura
+    Name: Costume Pink Light Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2545
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41091
+    AegisName: Costume Viole Light Aura
+    Name: Costume Viole Light Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2546
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41092
+    AegisName: Costume Red Light Aura
+    Name: Costume Red Light Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2547
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41093
+    AegisName: Costume Yellow Light Aura
+    Name: Costume Yellow Light Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2548
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41094
+    AegisName: Costume 41225
+    Name: Costume 41225
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2549
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41095
+    AegisName: Costume 41226
+    Name: Costume 41226
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2550
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41096
+    AegisName: Costume 41227
+    Name: Costume 41227
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2551
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41097
+    AegisName: Costume 41228
+    Name: Costume 41228
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2552
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41098
+    AegisName: Costume 41229
+    Name: Costume 41229
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2553
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41099
+    AegisName: Costume 41230
+    Name: Costume 41230
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2554
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41100
+    AegisName: Costume 41231
+    Name: Costume 41231
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2555
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41101
+    AegisName: Costume 41232
+    Name: Costume 41232
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2556
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41102
+    AegisName: Costume Blue Bubble Aura
+    Name: Costume Blue Bubble Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2557
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41103
+    AegisName: Costume Green Bubble Aura
+    Name: Costume Green Bubble Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2558
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41104
+    AegisName: Costume Orange Bubble Aura
+    Name: Costume Orange Bubble Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2559
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41105
+    AegisName: Costume Purple Bubble Aura
+    Name: Costume Purple Bubble Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2560
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41106
+    AegisName: Costume Red Bubble Aura
+    Name: Costume Red Bubble Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2561
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41107
+    AegisName: Costume Yellow Bubble Aura
+    Name: Costume Yellow Bubble Aura
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2562
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41108
+    AegisName: Costume AURAA BYSS_BLK
+    Name: Costume AURAA BYSS_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2563
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41109
+    AegisName: Costume AURAA BYSS_BLU
+    Name: Costume AURAA BYSS_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2564
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41110
+    AegisName: Costume AURAA BYSS_GRN
+    Name: Costume AURAA BYSS_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2565
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41111
+    AegisName: Costume AURAA BYSS_ORG
+    Name: Costume AURAA BYSS_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2566
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41112
+    AegisName: Costume AURAA BYSS_PNK
+    Name: Costume AURAA BYSS_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2567
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41113
+    AegisName: Costume AURAA BYSS_PRP
+    Name: Costume AURAA BYSS_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2568
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41114
+    AegisName: Costume AURAA BYSS_RED
+    Name: Costume AURAA BYSS_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2569
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41115
+    AegisName: Costume AURAA BYSS_TEL
+    Name: Costume AURAA BYSS_TEL
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2570
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41116
+    AegisName: Costume AURAA BYSS_WHT
+    Name: Costume AURAA BYSS_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2571
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41117
+    AegisName: Costume AURAA BYSS_YLW
+    Name: Costume AURAA BYSS_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2572
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41118
+    AegisName: Costume AURAA RES_BLU
+    Name: Costume AURAA RES_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2573
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41119
+    AegisName: Costume AURAA RES_GRN
+    Name: Costume AURAA RES_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2574
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41120
+    AegisName: Costume AURAA RES_ORG
+    Name: Costume AURAA RES_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2575
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41121
+    AegisName: Costume AURAA RES_PNK
+    Name: Costume AURAA RES_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2576
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41122
+    AegisName: Costume AURAA RES_PRP
+    Name: Costume AURAA RES_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2577
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41123
+    AegisName: Costume AURAA RES_RED
+    Name: Costume AURAA RES_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2578
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41124
+    AegisName: Costume AURAA RES_YLW
+    Name: Costume AURAA RES_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2579
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41125
+    AegisName: Costume AURAA SCENSION_BLK
+    Name: Costume AURAA SCENSION_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2580
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41126
+    AegisName: Costume AURAA SCENSION_BLU
+    Name: Costume AURAA SCENSION_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2581
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41127
+    AegisName: Costume AURAA SCENSION_GRN
+    Name: Costume AURAA SCENSION_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2582
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41128
+    AegisName: Costume AURAA SCENSION_ORG
+    Name: Costume AURAA SCENSION_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2583
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41129
+    AegisName: Costume AURAA SCENSION_PNK
+    Name: Costume AURAA SCENSION_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2584
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41130
+    AegisName: Costume AURAA SCENSION_PRP
+    Name: Costume AURAA SCENSION_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2585
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41131
+    AegisName: Costume AURAA SCENSION_RED
+    Name: Costume AURAA SCENSION_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2586
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41132
+    AegisName: Costume AURAA SCENSION_TEL
+    Name: Costume AURAA SCENSION_TEL
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2587
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41133
+    AegisName: Costume AURAA SCENSION_WHT
+    Name: Costume AURAA SCENSION_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2588
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41134
+    AegisName: Costume AURAA SCENSION_YLW
+    Name: Costume AURAA SCENSION_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2589
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41135
+    AegisName: Costume AURA ATHENA_BLU
+    Name: Costume AURA ATHENA_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2590
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41136
+    AegisName: Costume AURA ATHENA_GRN
+    Name: Costume AURA ATHENA_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2591
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41137
+    AegisName: Costume AURA ATHENA_ORG
+    Name: Costume AURA ATHENA_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2592
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41138
+    AegisName: Costume AURA ATHENA_PNK
+    Name: Costume AURA ATHENA_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2593
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41139
+    AegisName: Costume AURA ATHENA_PRP
+    Name: Costume AURA ATHENA_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2594
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41140
+    AegisName: Costume AURA ATHENA_RED
+    Name: Costume AURA ATHENA_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2595
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41141
+    AegisName: Costume AURA ATHENA_YLW
+    Name: Costume AURA ATHENA_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2596
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41142
+    AegisName: Costume AURA ATOM_BLK
+    Name: Costume AURA ATOM_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2597
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41143
+    AegisName: Costume AURA ATOM_BLU
+    Name: Costume AURA ATOM_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2598
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41144
+    AegisName: Costume AURA ATOM_GRN
+    Name: Costume AURA ATOM_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2599
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41145
+    AegisName: Costume AURA ATOM_ORG
+    Name: Costume AURA ATOM_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2600
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41146
+    AegisName: Costume AURA ATOM_PNK
+    Name: Costume AURA ATOM_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2601
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41147
+    AegisName: Costume AURA  ATOM_PRP
+    Name: Costume AURA  ATOM_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2602
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41148
+    AegisName: Costume AURA ATOM_YLW
+    Name: Costume AURA ATOM_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2603
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41149
+    AegisName: Costume AURA ATOMICENERGY_BLK
+    Name: Costume AURA ATOMICENERGY_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2604
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41150
+    AegisName: Costume AURA ATOMICENERGY_BLU
+    Name: Costume AURA ATOMICENERGY_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2605
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41151
+    AegisName: Costume AURA ATOMICENERGY_GRN
+    Name: Costume AURA ATOMICENERGY_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2606
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41152
+    AegisName: Costume AURA ATOMICENERGY_GRY
+    Name: Costume AURA ATOMICENERGY_GRY
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2607
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41153
+    AegisName: Costume AURA ATOMICENERGY_ORG
+    Name: Costume AURA ATOMICENERGY_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2608
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41154
+    AegisName: Costume AURA ATOMICENERGY_PNK
+    Name: Costume AURA ATOMICENERGY_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2609
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41155
+    AegisName: Costume AURA ATOMICENERGY_PRP
+    Name: Costume AURA ATOMICENERGY_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2610
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41156
+    AegisName: Costume AURA ATOMICENERGY_RED
+    Name: Costume AURA ATOMICENERGY_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2611
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41157
+    AegisName: Costume AURA ATOMICENERGY_WHT
+    Name: Costume AURA ATOMICENERGY_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2612
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41158
+    AegisName: Costume AURA ATOMICENERGY_YLW
+    Name: Costume AURA ATOMICENERGY_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2613
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41159
+    AegisName: Costume AURA BAT_BLU
+    Name: Costume AURA BAT_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2614
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41160
+    AegisName: Costume AURA BAT_GRN
+    Name: Costume AURA BAT_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2615
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41161
+    AegisName: Costume AURA BAT_ORG
+    Name: Costume AURA BAT_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2616
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41162
+    AegisName: Costume AURA BAT_PNK
+    Name: Costume AURA BAT_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2617
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41163
+    AegisName: Costume AURA BAT_PRP
+    Name: Costume AURA BAT_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2618
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41164
+    AegisName: Costume AURA BAT_RED
+    Name: Costume AURA BAT_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2619
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41165
+    AegisName: Costume AURA BAT_YLW
+    Name: Costume AURA BAT_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2620
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41166
+    AegisName: Costume AURA BELI_BLK
+    Name: Costume AURA BELI_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2621
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41167
+    AegisName: Costume AURA BELI_BLU
+    Name: Costume AURA BELI_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2622
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41168
+    AegisName: Costume AURA BELI_GRN
+    Name: Costume AURA BELI_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2623
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41169
+    AegisName: Costume AURA BELI_ORG
+    Name: Costume AURA BELI_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2624
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41170
+    AegisName: Costume AURA BELI_PNK
+    Name: Costume AURA BELI_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2625
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41171
+    AegisName: Costume AURA BELI_PRP
+    Name: Costume AURA BELI_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2626
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41172
+    AegisName: Costume AURA BELI_RED
+    Name: Costume AURA BELI_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2627
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41173
+    AegisName: Costume AURA BELI_YLW
+    Name: Costume AURA BELI_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2628
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41174
+    AegisName: Costume AURA BINDING_BLK
+    Name: Costume AURA BINDING_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2629
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41175
+    AegisName: Costume AURA BINDING_BLU
+    Name: Costume AURA BINDING_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2630
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41176
+    AegisName: Costume AURA BINDING_GRN
+    Name: Costume AURA BINDING_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2631
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41177
+    AegisName: Costume AURA BINDING_ORG
+    Name: Costume AURA BINDING_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2632
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41178
+    AegisName: Costume AURA BINDING_PNK
+    Name: Costume AURA BINDING_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2633
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41179
+    AegisName: Costume AURA BINDING_PRP
+    Name: Costume AURA BINDING_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2634
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41180
+    AegisName: Costume AURA BINDING_RED
+    Name: Costume AURA BINDING_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2635
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41181
+    AegisName: Costume AURA BINDING_TEL
+    Name: Costume AURA BINDING_TEL
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2636
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41182
+    AegisName: Costume AURA BINDING_WHT
+    Name: Costume AURA BINDING_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2637
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41183
+    AegisName: Costume AURA BINDING_YLW
+    Name: Costume AURA BINDING_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2638
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41184
+    AegisName: Costume AURA BLAZING_BLK
+    Name: Costume AURA BLAZING_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2639
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41185
+    AegisName: Costume AURA BLAZING_BLU
+    Name: Costume AURA BLAZING_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2640
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41186
+    AegisName: Costume AURA BLAZING_GRN
+    Name: Costume AURA BLAZING_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2641
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41187
+    AegisName: Costume AURA BLAZING_ORG
+    Name: Costume AURA BLAZING_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2642
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41188
+    AegisName: Costume AURA BLAZING_PNK
+    Name: Costume AURA BLAZING_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2643
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41189
+    AegisName: Costume AURA BLAZING_PRP
+    Name: Costume AURA BLAZING_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2644
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41190
+    AegisName: Costume AURA BLAZING_RED
+    Name: Costume AURA BLAZING_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2645
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41191
+    AegisName: Costume AURA BLAZING_TEL
+    Name: Costume AURA BLAZING_TEL
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2646
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41192
+    AegisName: Costume AURA BLAZING_WHT
+    Name: Costume AURA BLAZING_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2647
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41193
+    AegisName: Costume AURA BLAZING_YLW
+    Name: Costume AURA BLAZING_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2648
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41194
+    AegisName: Costume AURA BRIGHT_BLU
+    Name: Costume AURA BRIGHT_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2649
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41195
+    AegisName: Costume AURA BRIGHT_GRN
+    Name: Costume AURA BRIGHT_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2650
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41196
+    AegisName: Costume AURA BRIGHT_ORG
+    Name: Costume AURA BRIGHT_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2651
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41197
+    AegisName: Costume AURA BRIGHT_PNK
+    Name: Costume AURA BRIGHT_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2652
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41198
+    AegisName: Costume AURA BRIGHT_PRP
+    Name: Costume AURA BRIGHT_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2653
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41199
+    AegisName: Costume AURA BRIGHT_RED
+    Name: Costume AURA BRIGHT_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2654
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41200
+    AegisName: Costume AURA BRIGHT_YLW
+    Name: Costume AURA BRIGHT_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2655
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41201
+    AegisName: Costume AURA CIRCLE_BLK
+    Name: Costume AURA CIRCLE_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2656
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41202
+    AegisName: Costume AURA CIRCLE_GRN
+    Name: Costume AURA CIRCLE_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2657
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41203
+    AegisName: Costume AURA CIRCLE_PNK
+    Name: Costume AURA CIRCLE_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2658
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41204
+    AegisName: Costume AURA CIRCLE_PRP
+    Name: Costume AURA CIRCLE_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2659
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41205
+    AegisName: Costume AURA CIRCLE_YLW
+    Name: Costume AURA CIRCLE_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2660
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41206
+    AegisName: Costume AURA CRONUS_BLK
+    Name: Costume AURA CRONUS_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2661
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41207
+    AegisName: Costume AURA CRONUS_BLU
+    Name: Costume AURA CRONUS_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2662
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41208
+    AegisName: Costume AURA CRONUS_GRN
+    Name: Costume AURA CRONUS_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2663
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41209
+    AegisName: Costume AURA CRONUS_ORG
+    Name: Costume AURA CRONUS_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2664
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41210
+    AegisName: Costume AURA CRONUS_PNK
+    Name: Costume AURA CRONUS_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2665
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41211
+    AegisName: Costume AURA CRONUS_PRP
+    Name: Costume AURA CRONUS_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2666
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41212
+    AegisName: Costume AURA CRONUS_RED
+    Name: Costume AURA CRONUS_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2667
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41213
+    AegisName: Costume AURA CRONUS_YLW
+    Name: Costume AURA CRONUS_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2668
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41214
+    AegisName: Costume AURA DAGGEROFTIME
+    Name: Costume AURA DAGGEROFTIME
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2669
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41215
+    AegisName: Costume AURA DAGGEROFTIME_BLK
+    Name: Costume AURA DAGGEROFTIME_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2670
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41216
+    AegisName: Costume AURA DAGGEROFTIME_PRP
+    Name: Costume AURA DAGGEROFTIME_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2671
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41217
+    AegisName: Costume AURA DAGGEROFTIME_WHT
+    Name: Costume AURA DAGGEROFTIME_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2672
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41218
+    AegisName: Costume AURA DAGGEROFTIME_YLW
+    Name: Costume AURA DAGGEROFTIME_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2673
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41219
+    AegisName: Costume AURA DARKFORCE_BLK
+    Name: Costume AURA DARKFORCE_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2674
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41220
+    AegisName: Costume AURA DARKFORCE_BLU
+    Name: Costume AURA DARKFORCE_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2675
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41221
+    AegisName: Costume AURA DARKFORCE_GRN
+    Name: Costume AURA DARKFORCE_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2676
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41222
+    AegisName: Costume AURA DARKFORCE_ORG
+    Name: Costume AURA DARKFORCE_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2677
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41223
+    AegisName: Costume AURA DARKFORCE_PNK
+    Name: Costume AURA DARKFORCE_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2678
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41224
+    AegisName: Costume AURA DARKFORCE_PRP
+    Name: Costume AURA DARKFORCE_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2679
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41225
+    AegisName: Costume AURA DARKFORCE_RED
+    Name: Costume AURA DARKFORCE_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2680
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41226
+    AegisName: Costume AURA DARKFORCE_YLW
+    Name: Costume AURA DARKFORCE_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2681
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41227
+    AegisName: Costume AURA DEATH_BLU
+    Name: Costume AURA DEATH_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2682
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41228
+    AegisName: Costume AURA DEATH_GRN
+    Name: Costume AURA DEATH_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2683
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41229
+    AegisName: Costume AURA DEATH_ORG
+    Name: Costume AURA DEATH_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2684
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41230
+    AegisName: Costume AURA DEATH_PNK
+    Name: Costume AURA DEATH_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2685
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41231
+    AegisName: Costume AURA DEATH_PRP
+    Name: Costume AURA DEATH_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2686
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41232
+    AegisName: Costume AURA DEATH_RED
+    Name: Costume AURA DEATH_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2687
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41233
+    AegisName: Costume AURA DEATH_YLW
+    Name: Costume AURA DEATH_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2688
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41234
+    AegisName: Costume AURA DIVINEESSENCE_BLK
+    Name: Costume AURA DIVINEESSENCE_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2689
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41235
+    AegisName: Costume AURA DIVINEESSENCE_BLU
+    Name: Costume AURA DIVINEESSENCE_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2690
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41236
+    AegisName: Costume AURA DIVINEESSENCE_GRN
+    Name: Costume AURA DIVINEESSENCE_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2691
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41237
+    AegisName: Costume AURA DIVINEESSENCE_GRY
+    Name: Costume AURA DIVINEESSENCE_GRY
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2692
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41238
+    AegisName: Costume AURA DIVINEESSENCE_ORG
+    Name: Costume AURA DIVINEESSENCE_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2693
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41239
+    AegisName: Costume AURA DIVINEESSENCE_PNK
+    Name: Costume AURA DIVINEESSENCE_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2694
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41240
+    AegisName: Costume AURA DIVINEESSENCE_PRP
+    Name: Costume AURA DIVINEESSENCE_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2695
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41241
+    AegisName: Costume AURA DIVINEESSENCE_RED
+    Name: Costume AURA DIVINEESSENCE_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2696
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41242
+    AegisName: Costume AURA DIVINEESSENCE_WHT
+    Name: Costume AURA DIVINEESSENCE_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2697
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41243
+    AegisName: Costume AURA DIVINEESSENCE_YLW
+    Name: Costume AURA DIVINEESSENCE_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2698
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41244
+    AegisName: Costume AURA DREADLORD
+    Name: Costume AURA DREADLORD
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2699
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41245
+    AegisName: Costume AURA ELECTRIC_BLK
+    Name: Costume AURA ELECTRIC_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2700
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41246
+    AegisName: Costume AURA ELECTRIC_BLU
+    Name: Costume AURA ELECTRIC_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2701
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41247
+    AegisName: Costume AURA ELECTRIC_GRN
+    Name: Costume AURA ELECTRIC_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2702
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41248
+    AegisName: Costume AURA ELECTRIC_ORG
+    Name: Costume AURA ELECTRIC_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2703
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41249
+    AegisName: Costume AURA ELECTRIC_PRP
+    Name: Costume AURA ELECTRIC_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2704
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41250
+    AegisName: Costume AURA ELECTRIC_RED
+    Name: Costume AURA ELECTRIC_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2705
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41251
+    AegisName: Costume AURA ELECTRIC_SPR
+    Name: Costume AURA ELECTRIC_SPR
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2706
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41252
+    AegisName: Costume AURA ELECTRIC_WHT
+    Name: Costume AURA ELECTRIC_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2707
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41253
+    AegisName: Costume AURA ELECTRIC_YLW
+    Name: Costume AURA ELECTRIC_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2708
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41254
+    AegisName: Costume AURA FIGHTFIRE
+    Name: Costume AURA FIGHTFIRE
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2709
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41255
+    AegisName: Costume AURA FIGHTFIRE_BLK
+    Name: Costume AURA FIGHTFIRE_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2710
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41256
+    AegisName: Costume AURA FIGHTFIRE_BLU
+    Name: Costume AURA FIGHTFIRE_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2711
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41257
+    AegisName: Costume AURA FIGHTFIRE_PRP
+    Name: Costume AURA FIGHTFIRE_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2712
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41258
+    AegisName: Costume AURA FIGHTFIRE_RED
+    Name: Costume AURA FIGHTFIRE_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2713
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41259
+    AegisName: Costume AURA FIGHTFIRE_WHT
+    Name: Costume AURA FIGHTFIRE_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2714
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41260
+    AegisName: Costume AURA FIRESOUL_BLU
+    Name: Costume AURA FIRESOUL_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2715
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41261
+    AegisName: Costume AURA FIRESOUL_GRN
+    Name: Costume AURA FIRESOUL_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2716
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41262
+    AegisName: Costume AURA FIRESOUL_ORG
+    Name: Costume AURA FIRESOUL_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2717
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41263
+    AegisName: Costume AURA FIRESOUL_PNK
+    Name: Costume AURA FIRESOUL_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2718
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41264
+    AegisName: Costume AURA FIRESOUL_PRP
+    Name: Costume AURA FIRESOUL_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2719
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41265
+    AegisName: Costume AURA  FIRESOUL_RED
+    Name: Costume AURA  FIRESOUL_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2720
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41266
+    AegisName: Costume AURAF IRESOUL_YLW
+    Name: Costume AURAF IRESOUL_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2721
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41267
+    AegisName: Costume AURA FIREX_BLU
+    Name: Costume AURA FIREX_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2722
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41268
+    AegisName: Costume AURA FIREX_GRN
+    Name: Costume AURA FIREX_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2723
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41269
+    AegisName: Costume AURA FIREX_ORG
+    Name: Costume AURA FIREX_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2724
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41270
+    AegisName: Costume AURA FIREX_PNK
+    Name: Costume AURA FIREX_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2725
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41271
+    AegisName: Costume AURA FIREX_PRP
+    Name: Costume AURA FIREX_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2726
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41272
+    AegisName: Costume AURA  FIREX_RED
+    Name: Costume AURA  FIREX_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2727
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41273
+    AegisName: Costume AURA FIREX_YLW
+    Name: Costume AURA FIREX_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2728
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41274
+    AegisName: Costume AURA FLUZ_BLU
+    Name: Costume AURA FLUZ_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2729
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41275
+    AegisName: Costume AURA FLUZ_BRN
+    Name: Costume AURA FLUZ_BRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2730
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41276
+    AegisName: Costume AURA FLUZ_GOLD
+    Name: Costume AURA FLUZ_GOLD
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2731
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41277
+    AegisName: Costume AURA FLUZ_GRN
+    Name: Costume AURA FLUZ_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2732
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41278
+    AegisName: Costume AURA FLUZ_ORG
+    Name: Costume AURA FLUZ_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2733
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41279
+    AegisName: Costume AURA FLUZ_PNK
+    Name: Costume AURA FLUZ_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2734
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41280
+    AegisName: Costume AURA FLUZ_PRP
+    Name: Costume AURA FLUZ_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2735
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41281
+    AegisName: Costume AURA  FLUZ_RED
+    Name: Costume AURA  FLUZ_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2736
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41282
+    AegisName: Costume AURA FLUZ_SILVER
+    Name: Costume AURA FLUZ_SILVER
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2737
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41283
+    AegisName: Costume AURA FLUZ_WHT
+    Name: Costume AURA FLUZ_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2738
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41284
+    AegisName: Costume AURA FLUZ_YLW
+    Name: Costume AURA FLUZ_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2739
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41285
+    AegisName: Costume AURA FOREX_BLU
+    Name: Costume AURA FOREX_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2740
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41286
+    AegisName: Costume AURA FOREX_GRN
+    Name: Costume AURA FOREX_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2741
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41287
+    AegisName: Costume AURA FOREX_ORG
+    Name: Costume AURA FOREX_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2742
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41288
+    AegisName: Costume AURA FOREX_PNK
+    Name: Costume AURA FOREX_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2743
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41289
+    AegisName: Costume AURA FOREX_PRP
+    Name: Costume AURA FOREX_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2744
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41290
+    AegisName: Costume AURA FOREX_RED
+    Name: Costume AURA FOREX_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2745
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41291
+    AegisName: Costume AURA FOREX_YLW
+    Name: Costume AURA FOREX_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2746
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41292
+    AegisName: Costume AURA FURY_BLUE
+    Name: Costume AURA FURY_BLUE
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2747
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41293
+    AegisName: Costume AURA FURY_GREEN
+    Name: Costume AURA FURY_GREEN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2748
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41294
+    AegisName: Costume AURA FURY_ORANGE
+    Name: Costume AURA FURY_ORANGE
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2749
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41295
+    AegisName: Costume AURA FURY_PINK
+    Name: Costume AURA FURY_PINK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2750
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41296
+    AegisName: Costume AURA FURY_PURPLE
+    Name: Costume AURA FURY_PURPLE
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2751
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41297
+    AegisName: Costume AURA FURY_RED
+    Name: Costume AURA FURY_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2752
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41298
+    AegisName: Costume AURA FURY_YELLOW
+    Name: Costume AURA FURY_YELLOW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2753
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41299
+    AegisName: Costume AURA GODLY
+    Name: Costume AURA GODLY
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2754
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41300
+    AegisName: Costume AURA GODLY_BLK
+    Name: Costume AURA GODLY_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2755
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41301
+    AegisName: Costume AURA GODLY_BLKBLU
+    Name: Costume AURA GODLY_BLKBLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2756
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41302
+    AegisName: Costume AURA GODLY_BLKPRP
+    Name: Costume AURA GODLY_BLKPRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2757
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41303
+    AegisName: Costume AURA GODLY_BLU
+    Name: Costume AURA GODLY_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2758
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41304
+    AegisName: Costume AURA GODLY_CYN
+    Name: Costume AURA GODLY_CYN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2759
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41305
+    AegisName: Costume AURA GODLY_GRN
+    Name: Costume AURA GODLY_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2760
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41306
+    AegisName: Costume AURA GODLY_ORG
+    Name: Costume AURA GODLY_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2761
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41307
+    AegisName: Costume AURA GODLY_PNK
+    Name: Costume AURA GODLY_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2762
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41308
+    AegisName: Costume AURA GODLY_PRP
+    Name: Costume AURA GODLY_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2763
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41309
+    AegisName: Costume AURA GODLY_RED
+    Name: Costume AURA GODLY_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2764
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41310
+    AegisName: Costume AURA GODLY_SVR
+    Name: Costume AURA GODLY_SVR
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2765
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41311
+    AegisName: Costume AURA GODLY_WHTBLK
+    Name: Costume AURA GODLY_WHTBLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2766
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41312
+    AegisName: Costume AURA HERCULES_BLK
+    Name: Costume AURA HERCULES_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2767
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41313
+    AegisName: Costume AURA HERCULES_BLU
+    Name: Costume AURA HERCULES_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2768
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41314
+    AegisName: Costume AURA HERCULES_GRN
+    Name: Costume AURA HERCULES_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2769
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41315
+    AegisName: Costume AURA HERCULES_ORG
+    Name: Costume AURA HERCULES_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2770
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41316
+    AegisName: Costume AURA HERCULES_PNK
+    Name: Costume AURA HERCULES_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2771
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41317
+    AegisName: Costume AURA HERCULES_PRP
+    Name: Costume AURA HERCULES_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2772
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41318
+    AegisName: Costume AURA HERCULES_RED
+    Name: Costume AURA HERCULES_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2773
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41319
+    AegisName: Costume AURA HERCULES_YLW
+    Name: Costume AURA HERCULES_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2774
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41320
+    AegisName: Costume AURA HESTIA_BLK
+    Name: Costume AURA HESTIA_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2775
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41321
+    AegisName: Costume AURA HESTIA_BLU
+    Name: Costume AURA HESTIA_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2776
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41322
+    AegisName: Costume AURA HESTIA_GRN
+    Name: Costume AURA HESTIA_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2777
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41323
+    AegisName: Costume AURA HESTIA_ORG
+    Name: Costume AURA HESTIA_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2778
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41324
+    AegisName: Costume AURA HESTIA_PNK
+    Name: Costume AURA HESTIA_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2779
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41325
+    AegisName: Costume AURA HESTIA_PRP
+    Name: Costume AURA HESTIA_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2780
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41326
+    AegisName: Costume AURA HESTIA_RED
+    Name: Costume AURA HESTIA_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2781
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41327
+    AegisName: Costume AURA HESTIA_YLW
+    Name: Costume AURA HESTIA_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2782
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41328
+    AegisName: Costume AURA HUX_BL
+    Name: Costume AURA HUX_BL
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2783
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41329
+    AegisName: Costume AURA HUX_GRN
+    Name: Costume AURA HUX_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2784
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41330
+    AegisName: Costume AURA HUX_OG
+    Name: Costume AURA HUX_OG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2785
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41331
+    AegisName: Costume AURA HUX_PK
+    Name: Costume AURA HUX_PK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2786
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41332
+    AegisName: Costume AURA HUX_PP
+    Name: Costume AURA HUX_PP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2787
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41333
+    AegisName: Costume AURA HUX_RD
+    Name: Costume AURA HUX_RD
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2788
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41334
+    AegisName: Costume AURA HUX_YW
+    Name: Costume AURA HUX_YW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2789
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41335
+    AegisName: Costume AURAI NCEND_BLU
+    Name: Costume AURAI NCEND_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2790
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41336
+    AegisName: Costume AURAI NCEND_GRN
+    Name: Costume AURAI NCEND_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2791
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41337
+    AegisName: Costume AURAI NCEND_ORG
+    Name: Costume AURAI NCEND_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2792
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41338
+    AegisName: Costume AURAI NCEND_PNK
+    Name: Costume AURAI NCEND_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2793
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41339
+    AegisName: Costume AURAI NCEND_PRP
+    Name: Costume AURAI NCEND_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2794
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41340
+    AegisName: Costume AURAI NCEND_RED
+    Name: Costume AURAI NCEND_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2795
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41341
+    AegisName: Costume AURA INCEND_YLW
+    Name: Costume AURA INCEND_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2796
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41342
+    AegisName: Costume AURA LIGHTFORCE_BLU
+    Name: Costume AURA LIGHTFORCE_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2797
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41343
+    AegisName: Costume AURA LIGHTFORCE_GRN
+    Name: Costume AURA LIGHTFORCE_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2798
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41344
+    AegisName: Costume AURA LIGHTFORCE_ORG
+    Name: Costume AURA LIGHTFORCE_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2799
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41345
+    AegisName: Costume AURA LIGHTFORCE_PNK
+    Name: Costume AURA LIGHTFORCE_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2800
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41346
+    AegisName: Costume AURA LIGHTFORCE_PRP
+    Name: Costume AURA LIGHTFORCE_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2801
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41347
+    AegisName: Costume AURA LIGHTFORCE_RED
+    Name: Costume AURA LIGHTFORCE_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2802
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41348
+    AegisName: Costume AURA LIGHTFORCE_WHT
+    Name: Costume AURA LIGHTFORCE_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2803
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41349
+    AegisName: Costume AURA LIGHTFORCE_YLW
+    Name: Costume AURA LIGHTFORCE_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2804
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41350
+    AegisName: Costume AURA LIGHTNINGPOWER_BLK
+    Name: Costume AURA LIGHTNINGPOWER_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2805
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41351
+    AegisName: Costume AURA LIGHTNINGPOWER_BLU
+    Name: Costume AURA LIGHTNINGPOWER_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2806
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41352
+    AegisName: Costume AURA LIGHTNINGPOWER_GRN
+    Name: Costume AURA LIGHTNINGPOWER_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2807
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41353
+    AegisName: Costume AURA LIGHTNINGPOWER_ORG
+    Name: Costume AURA LIGHTNINGPOWER_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2808
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41354
+    AegisName: Costume AURA LIGHTNINGPOWER_PNK
+    Name: Costume AURA LIGHTNINGPOWER_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2809
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41355
+    AegisName: Costume AURA LIGHTNINGPOWER_PRP
+    Name: Costume AURA LIGHTNINGPOWER_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2810
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41356
+    AegisName: Costume AURA LIGHTNINGPOWER_RED
+    Name: Costume AURA LIGHTNINGPOWER_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2811
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41357
+    AegisName: Costume AURA LIGHTNINGPOWER_TEL
+    Name: Costume AURA LIGHTNINGPOWER_TEL
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2812
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41358
+    AegisName: Costume AURA LIGHTNINGPOWER_WHT
+    Name: Costume AURA LIGHTNINGPOWER_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2813
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41359
+    AegisName: Costume AURA LIGHTNINGPOWER_YLW
+    Name: Costume AURA LIGHTNINGPOWER_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2814
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41360
+    AegisName: Costume AURA MAGINX_BLU
+    Name: Costume AURA MAGINX_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2815
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41361
+    AegisName: Costume AURA MAGINX_GRN
+    Name: Costume AURA MAGINX_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2816
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41362
+    AegisName: Costume AURA MAGINX_ORG
+    Name: Costume AURA MAGINX_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2817
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41363
+    AegisName: Costume AURA MAGINX_PNK
+    Name: Costume AURA MAGINX_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2818
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41364
+    AegisName: Costume AURA MAGINX_PRP
+    Name: Costume AURA MAGINX_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2819
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41365
+    AegisName: Costume AURA MAGINX_RED
+    Name: Costume AURA MAGINX_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2820
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41366
+    AegisName: Costume AURA MAGINX_YLW
+    Name: Costume AURA MAGINX_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2821
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41367
+    AegisName: Costume AURA NART_BLK
+    Name: Costume AURA NART_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2822
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41368
+    AegisName: Costume AURA NART_BLU
+    Name: Costume AURA NART_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2823
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41369
+    AegisName: Costume AURA NART_GRN
+    Name: Costume AURA NART_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2824
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41370
+    AegisName: Costume AURA NART_ORG
+    Name: Costume AURA NART_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2825
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41371
+    AegisName: Costume AURA NART_PNK
+    Name: Costume AURA NART_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2826
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41372
+    AegisName: Costume AURA NART_PRP
+    Name: Costume AURA NART_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2827
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41373
+    AegisName: Costume AURA NART_RED
+    Name: Costume AURA NART_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2828
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41374
+    AegisName: Costume AURA NART_YLW
+    Name: Costume AURA NART_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2829
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41375
+    AegisName: Costume AURA NARUTO_BLU
+    Name: Costume AURA NARUTO_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2830
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41376
+    AegisName: Costume AURA NARUTO_BLU_MARINE
+    Name: Costume AURA NARUTO_BLU_MARINE
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2831
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41377
+    AegisName: Costume AURA NARUTO_GRN
+    Name: Costume AURA NARUTO_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2832
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41378
+    AegisName: Costume AURA NARUTO_ORG
+    Name: Costume AURA NARUTO_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2833
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41379
+    AegisName: Costume AURA NARUTO_PNK
+    Name: Costume AURA NARUTO_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2834
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41380
+    AegisName: Costume AURA NARUTO_PRP
+    Name: Costume AURA NARUTO_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2835
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41381
+    AegisName: Costume AURA NARUTO_RED
+    Name: Costume AURA NARUTO_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2836
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41382
+    AegisName: Costume AURA NARUTO_WHT
+    Name: Costume AURA NARUTO_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2837
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41383
+    AegisName: Costume AURA NARUTO_YLW
+    Name: Costume AURA NARUTO_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2838
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41384
+    AegisName: Costume AURA NATURE_BLU
+    Name: Costume AURA NATURE_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2839
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41385
+    AegisName: Costume AURA NATURE_GRN
+    Name: Costume AURA NATURE_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2840
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41386
+    AegisName: Costume AURA NATURE_ORG
+    Name: Costume AURA NATURE_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2841
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41387
+    AegisName: Costume AURA NATURE_PNK
+    Name: Costume AURA NATURE_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2842
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41388
+    AegisName: Costume AURA OVERFLOWING_BLK
+    Name: Costume AURA OVERFLOWING_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2843
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41389
+    AegisName: Costume AURA OVERFLOWING_BLU
+    Name: Costume AURA OVERFLOWING_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2844
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41390
+    AegisName: Costume AURA OVERFLOWING_CYN
+    Name: Costume AURA OVERFLOWING_CYN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2845
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41391
+    AegisName: Costume AURA OVERFLOWING_GRN
+    Name: Costume AURA OVERFLOWING_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2846
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41392
+    AegisName: Costume AURA OVERFLOWING_GRY
+    Name: Costume AURA OVERFLOWING_GRY
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2847
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41393
+    AegisName: Costume AURA OVERFLOWING_ORG
+    Name: Costume AURA OVERFLOWING_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2848
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41394
+    AegisName: Costume AURA OVERFLOWING_PNK
+    Name: Costume AURA OVERFLOWING_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2849
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41395
+    AegisName: Costume AURA OVERFLOWING_PRP
+    Name: Costume AURA OVERFLOWING_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2850
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41396
+    AegisName: Costume AURA OVERFLOWING_RED
+    Name: Costume AURA OVERFLOWING_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2851
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41397
+    AegisName: Costume AURA OVERFLOWING_WHT
+    Name: Costume AURA OVERFLOWING_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2852
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41398
+    AegisName: Costume AURA OVERFLOWING_YLW
+    Name: Costume AURA OVERFLOWING_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2853
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41399
+    AegisName: Costume AURA PANDORA_BLU
+    Name: Costume AURA PANDORA_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2854
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41400
+    AegisName: Costume AURA PANDORA_GRN
+    Name: Costume AURA PANDORA_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2855
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41401
+    AegisName: Costume AURA PANDORA_ORG
+    Name: Costume AURA PANDORA_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2856
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41402
+    AegisName: Costume AURA PANDORA_PNK
+    Name: Costume AURA PANDORA_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2857
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41403
+    AegisName: Costume AURA PANDORA_PRP
+    Name: Costume AURA PANDORA_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2858
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41404
+    AegisName: Costume AURA PANDORA_RED
+    Name: Costume AURA PANDORA_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2859
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41405
+    AegisName: Costume AURA PANDORA_YLW
+    Name: Costume AURA PANDORA_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2860
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41406
+    AegisName: Costume AURA RAIZEN3_BLK
+    Name: Costume AURA RAIZEN3_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2861
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41407
+    AegisName: Costume AURA RAIZEN3_BLU
+    Name: Costume AURA RAIZEN3_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2862
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41408
+    AegisName: Costume AURA RAIZEN3_GRN
+    Name: Costume AURA RAIZEN3_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2863
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41409
+    AegisName: Costume AURA RAIZEN3_ORG
+    Name: Costume AURA RAIZEN3_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2864
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41410
+    AegisName: Costume AURA RAIZEN3_PNK
+    Name: Costume AURA RAIZEN3_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2865
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41411
+    AegisName: Costume AURA RAIZEN3_PRP
+    Name: Costume AURA RAIZEN3_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2866
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41412
+    AegisName: Costume AURA RAIZEN3_RED
+    Name: Costume AURA RAIZEN3_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2867
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41413
+    AegisName: Costume AURA RAIZEN3_YLW
+    Name: Costume AURA RAIZEN3_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2868
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41414
+    AegisName: Costume AURA RAIZENV2_BLK
+    Name: Costume AURA RAIZENV2_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2869
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41415
+    AegisName: Costume AURA RAIZENV2_BLU
+    Name: Costume AURA RAIZENV2_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2870
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41416
+    AegisName: Costume AURA RAIZENV2_GRN
+    Name: Costume AURA RAIZENV2_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2871
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41417
+    AegisName: Costume AURA RAIZENV2_ORG
+    Name: Costume AURA RAIZENV2_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2872
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41418
+    AegisName: Costume AURA RAIZENV2_PNK
+    Name: Costume AURA RAIZENV2_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2873
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41419
+    AegisName: Costume AURA RAIZENV2_PRP
+    Name: Costume AURA RAIZENV2_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2874
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41420
+    AegisName: Costume AURA RAIZENV2_RED
+    Name: Costume AURA RAIZENV2_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2875
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41421
+    AegisName: Costume AURA RAIZENV2_YLW
+    Name: Costume AURA RAIZENV2_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2876
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41422
+    AegisName: Costume AURA RITUAL_BLK
+    Name: Costume AURA RITUAL_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2877
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41423
+    AegisName: Costume AURA RITUAL_BLU
+    Name: Costume AURA RITUAL_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2878
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41424
+    AegisName: Costume AURA RITUAL_GRN
+    Name: Costume AURA RITUAL_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2879
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41425
+    AegisName: Costume AURA RITUAL_ORG
+    Name: Costume AURA RITUAL_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2880
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41426
+    AegisName: Costume AURA RITUAL_PNK
+    Name: Costume AURA RITUAL_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2881
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41427
+    AegisName: Costume AURA RITUAL_PRP
+    Name: Costume AURA RITUAL_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2882
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41428
+    AegisName: Costume AURA RITUAL_RED
+    Name: Costume AURA RITUAL_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2883
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41429
+    AegisName: Costume AURA RITUAL_TEL
+    Name: Costume AURA RITUAL_TEL
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2884
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41430
+    AegisName: Costume AURA RITUAL_WHT
+    Name: Costume AURA RITUAL_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2885
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41431
+    AegisName: Costume AURA RITUAL_YLW
+    Name: Costume AURA RITUAL_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2886
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41432
+    AegisName: Costume AURA SACRED_BLK
+    Name: Costume AURA SACRED_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2887
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41433
+    AegisName: Costume AURA SACRED_BLU
+    Name: Costume AURA SACRED_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2888
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41434
+    AegisName: Costume AURA SACRED_CYN
+    Name: Costume AURA SACRED_CYN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2889
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41435
+    AegisName: Costume AURA SACRED_GRN
+    Name: Costume AURA SACRED_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2890
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41436
+    AegisName: Costume AURA SACRED_GRY
+    Name: Costume AURA SACRED_GRY
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2891
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41437
+    AegisName: Costume AURA SACRED_ORG
+    Name: Costume AURA SACRED_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2892
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41438
+    AegisName: Costume AURA SACRED_PNK
+    Name: Costume AURA SACRED_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2893
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41439
+    AegisName: Costume AURA SACRED_PRP
+    Name: Costume AURA SACRED_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2894
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41440
+    AegisName: Costume AURA SACRED_RED
+    Name: Costume AURA SACRED_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2895
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41441
+    AegisName: Costume AURA SACRED_WHT
+    Name: Costume AURA SACRED_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2896
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41442
+    AegisName: Costume AURA SACRED_YLW
+    Name: Costume AURA SACRED_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2897
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41443
+    AegisName: Costume AURA SEALED_BLK
+    Name: Costume AURA SEALED_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2898
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41444
+    AegisName: Costume AURA SEALED_BLU
+    Name: Costume AURA SEALED_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2899
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41445
+    AegisName: Costume AURA SEALED_GRN
+    Name: Costume AURA SEALED_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2900
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41446
+    AegisName: Costume AURA SEALED_ORG
+    Name: Costume AURA SEALED_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2901
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41447
+    AegisName: Costume AURA SEALED_PNK
+    Name: Costume AURA SEALED_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2902
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41448
+    AegisName: Costume AURA SEALED_PRP
+    Name: Costume AURA SEALED_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2903
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41449
+    AegisName: Costume AURA SEALED_RED
+    Name: Costume AURA SEALED_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2904
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41450
+    AegisName: Costume AURA SEALED_TEL
+    Name: Costume AURA SEALED_TEL
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2905
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41451
+    AegisName: Costume AURA SEALED_WHT
+    Name: Costume AURA SEALED_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2906
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41452
+    AegisName: Costume AURA SEALED_YLW
+    Name: Costume AURA SEALED_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2907
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41453
+    AegisName: Costume AURA SHEEN_BLK
+    Name: Costume AURA SHEEN_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2908
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41454
+    AegisName: Costume AURA SHEEN_BLU
+    Name: Costume AURA SHEEN_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2909
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41455
+    AegisName: Costume AURA SHEEN_CYN
+    Name: Costume AURA SHEEN_CYN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2910
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41456
+    AegisName: Costume AURA SHEEN_GRN
+    Name: Costume AURA SHEEN_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2911
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41457
+    AegisName: Costume AURA SHEEN_ORG
+    Name: Costume AURA SHEEN_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2912
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41458
+    AegisName: Costume AURA SHEEN_PNK
+    Name: Costume AURA SHEEN_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2913
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41459
+    AegisName: Costume AURA SHEEN_PRP
+    Name: Costume AURA SHEEN_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2914
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41460
+    AegisName: Costume AURA SHEEN_RED
+    Name: Costume AURA SHEEN_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2915
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41461
+    AegisName: Costume AURA SHEEN_WHT
+    Name: Costume AURA SHEEN_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2916
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41462
+    AegisName: Costume AURA SHEEN_YLW
+    Name: Costume AURA SHEEN_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2917
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41463
+    AegisName: Costume AURA SMOKING_BLU
+    Name: Costume AURA SMOKING_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2918
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41464
+    AegisName: Costume AURA SMOKING_BLU2
+    Name: Costume AURA SMOKING_BLU2
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2919
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41465
+    AegisName: Costume AURA SMOKING_CIAN
+    Name: Costume AURA SMOKING_CIAN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2920
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41466
+    AegisName: Costume AURA SMOKING_GRN
+    Name: Costume AURA SMOKING_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2921
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41467
+    AegisName: Costume AURA SMOKING_ORG
+    Name: Costume AURA SMOKING_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2922
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41468
+    AegisName: Costume AURA SMOKING_PNK
+    Name: Costume AURA SMOKING_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2923
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41469
+    AegisName: Costume AURA SMOKING_PRP
+    Name: Costume AURA SMOKING_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2924
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41470
+    AegisName: Costume AURA SMOKING_RED
+    Name: Costume AURA SMOKING_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2925
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41471
+    AegisName: Costume AURA SMOKING_WHT
+    Name: Costume AURA SMOKING_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2926
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41472
+    AegisName: Costume AURA SMOKING_YLW
+    Name: Costume AURA SMOKING_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2927
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41473
+    AegisName: Costume AURA SNOW_BLU
+    Name: Costume AURA SNOW_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2928
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41474
+    AegisName: Costume AURA SNOW_GRN
+    Name: Costume AURA SNOW_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2929
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41475
+    AegisName: Costume AURA SNOW_ORG
+    Name: Costume AURA SNOW_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2930
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41476
+    AegisName: Costume AURA SNOW_PNK
+    Name: Costume AURA SNOW_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2931
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41477
+    AegisName: Costume AURA SNOW_PRP
+    Name: Costume AURA SNOW_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2932
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41478
+    AegisName: Costume AURA SNOW_RED
+    Name: Costume AURA SNOW_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2933
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41479
+    AegisName: Costume AURA SNOW_YLW
+    Name: Costume AURA SNOW_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2934
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41480
+    AegisName: Costume AURA SONGS_BLUE
+    Name: Costume AURA SONGS_BLUE
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2935
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41481
+    AegisName: Costume AURA SONGS_PURPLE
+    Name: Costume AURA SONGS_PURPLE
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2936
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41482
+    AegisName: Costume AURA SONGS_RED
+    Name: Costume AURA SONGS_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2937
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41483
+    AegisName: Costume AURA SONGS_YELLOW
+    Name: Costume AURA SONGS_YELLOW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2938
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41484
+    AegisName: Costume AURA SPIRIT_BLK
+    Name: Costume AURA SPIRIT_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2939
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41485
+    AegisName: Costume AURA SPIRIT_BLU
+    Name: Costume AURA SPIRIT_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2940
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41486
+    AegisName: Costume AURA SPIRIT_GRN
+    Name: Costume AURA SPIRIT_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2941
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41487
+    AegisName: Costume AURA SPIRIT_GRY
+    Name: Costume AURA SPIRIT_GRY
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2942
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41488
+    AegisName: Costume AURA SPIRIT_ORG
+    Name: Costume AURA SPIRIT_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2943
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41489
+    AegisName: Costume AURA SPIRIT_PNK
+    Name: Costume AURA SPIRIT_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2944
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41490
+    AegisName: Costume AURA SPIRIT_PRP
+    Name: Costume AURA SPIRIT_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2945
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41491
+    AegisName: Costume AURA SPIRIT_RED
+    Name: Costume AURA SPIRIT_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2946
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41492
+    AegisName: Costume AURA SPIRIT_WHT
+    Name: Costume AURA SPIRIT_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2947
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41493
+    AegisName: Costume AURA SPIRIT_YLW
+    Name: Costume AURA SPIRIT_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2948
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41494
+    AegisName: Costume AURA  STORMGUST_BLU
+    Name: Costume AURA  STORMGUST_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2949
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41495
+    AegisName: Costume AURA  STORMGUST_BLUE
+    Name: Costume AURA  STORMGUST_BLUE
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2950
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41496
+    AegisName: Costume AURA  STORMGUST_GREEN
+    Name: Costume AURA  STORMGUST_GREEN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2951
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41497
+    AegisName: Costume AURA STORMGUST_GRN
+    Name: Costume AURA STORMGUST_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2952
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41498
+    AegisName: Costume AURA STORMGUST_PINK
+    Name: Costume AURA STORMGUST_PINK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2953
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41499
+    AegisName: Costume AURA STORMGUST_PNK
+    Name: Costume AURA STORMGUST_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2954
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41500
+    AegisName: Costume AURA STORMGUST_PRP
+    Name: Costume AURA STORMGUST_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2955
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41501
+    AegisName: Costume AURA STORMGUST_PURPLE
+    Name: Costume AURA STORMGUST_PURPLE
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2956
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41502
+    AegisName: Costume AURA STORMGUST_RED
+    Name: Costume AURA STORMGUST_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2957
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41503
+    AegisName: Costume AURA STORMGUST_YELLOW
+    Name: Costume AURA STORMGUST_YELLOW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2958
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41504
+    AegisName: Costume AURA STORMGUST_YLW
+    Name: Costume AURA STORMGUST_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2959
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41505
+    AegisName: Costume AURA STREAMER_BLU
+    Name: Costume AURA STREAMER_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2960
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41506
+    AegisName: Costume AURA STREAMER_GRN
+    Name: Costume AURA STREAMER_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2961
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41507
+    AegisName: Costume AURA STREAMER_ORG
+    Name: Costume AURA STREAMER_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2962
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41508
+    AegisName: Costume AURA STREAMER_PNK
+    Name: Costume AURA STREAMER_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2963
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41509
+    AegisName: Costume AURA STREAMER_PRP
+    Name: Costume AURA STREAMER_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2964
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41510
+    AegisName: Costume AURASTREAMER_RED
+    Name: Costume AURASTREAMER_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2965
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41511
+    AegisName: Costume AURA STREAMER_YLW
+    Name: Costume AURA STREAMER_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2966
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41512
+    AegisName: Costume AURA SUPERCHARGE_BLK
+    Name: Costume AURA SUPERCHARGE_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2967
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41513
+    AegisName: Costume AURA SUPERCHARGE_BLU
+    Name: Costume AURA SUPERCHARGE_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2968
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41514
+    AegisName: Costume AURA SUPERCHARGE_GRN
+    Name: Costume AURA SUPERCHARGE_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2969
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41515
+    AegisName: Costume AURA SUPERCHARGE_ORG
+    Name: Costume AURA SUPERCHARGE_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2970
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41516
+    AegisName: Costume AURA SUPERCHARGE_PNK
+    Name: Costume AURA SUPERCHARGE_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2971
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41517
+    AegisName: Costume AURA SUPERCHARGE_PRP
+    Name: Costume AURA SUPERCHARGE_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2972
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41518
+    AegisName: Costume AURA SUPERCHARGE_RED
+    Name: Costume AURA SUPERCHARGE_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2973
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41519
+    AegisName: Costume AURA SUPERCHARGE_TEL
+    Name: Costume AURA SUPERCHARGE_TEL
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2974
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41520
+    AegisName: Costume AURA SUPERCHARGE_WHT
+    Name: Costume AURA SUPERCHARGE_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2975
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41521
+    AegisName: Costume AURA SUPERCHARGE_YLW
+    Name: Costume AURA SUPERCHARGE_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2976
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41522
+    AegisName: Costume AURA THOR_BLK
+    Name: Costume AURA THOR_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2977
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41523
+    AegisName: Costume AURA THOR_BLU
+    Name: Costume AURA THOR_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2978
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41524
+    AegisName: Costume AURA THOR_GRN
+    Name: Costume AURA THOR_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2979
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41525
+    AegisName: Costume AURA THOR_ORG
+    Name: Costume AURA THOR_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2980
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41526
+    AegisName: Costume AURA THOR_PNK
+    Name: Costume AURA THOR_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2981
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41527
+    AegisName: Costume AURA THOR_PRP
+    Name: Costume AURA THOR_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2982
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41528
+    AegisName: Costume AURA THOR_RED
+    Name: Costume AURA THOR_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2983
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41529
+    AegisName: Costume AURA THOR_YLW
+    Name: Costume AURA THOR_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2984
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41530
+    AegisName: Costume AURA THUNACH_BLK
+    Name: Costume AURA THUNACH_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2985
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41531
+    AegisName: Costume AURA THUNACH_BLU
+    Name: Costume AURA THUNACH_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2986
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41532
+    AegisName: Costume AURA THUNACH_BLUGLOW
+    Name: Costume AURA THUNACH_BLUGLOW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2987
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41533
+    AegisName: Costume AURA THUNACH_CIAN
+    Name: Costume AURA THUNACH_CIAN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2988
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41534
+    AegisName: Costume AURA THUNACH_GRN
+    Name: Costume AURA THUNACH_GRN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2989
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41535
+    AegisName: Costume AURA THUNACH_ORG
+    Name: Costume AURA THUNACH_ORG
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2990
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41536
+    AegisName: Costume AURA THUNACH_PNK
+    Name: Costume AURA THUNACH_PNK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2991
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41537
+    AegisName: Costume AURA THUNACH_PRP
+    Name: Costume AURA THUNACH_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2992
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41538
+    AegisName: Costume AURA THUNACH_RED
+    Name: Costume AURA THUNACH_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2993
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41539
+    AegisName: Costume AURA THUNACH_YLW
+    Name: Costume AURA THUNACH_YLW
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2994
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41540
+    AegisName: Costume AURA THUNDER_CIRCLE_BLACK
+    Name: Costume AURA THUNDER_CIRCLE_BLACK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2995
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41541
+    AegisName: Costume AURA THUNDER_CIRCLE_BLUE
+    Name: Costume AURA THUNDER_CIRCLE_BLUE
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2996
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41542
+    AegisName: Costume AURA THUNDER_CIRCLE_PURPLE
+    Name: Costume AURA THUNDER_CIRCLE_PURPLE
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2997
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41543
+    AegisName: Costume AURA THUNDER_CIRCLE_RED
+    Name: Costume AURA THUNDER_CIRCLE_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2998
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41544
+    AegisName: Costume AURA THUNDER_CIRCLE_WHITE
+    Name: Costume AURA THUNDER_CIRCLE_WHITE
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 2999
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41545
+    AegisName: Costume AURA THUNDER_CIRCLE_YL
+    Name: Costume AURA THUNDER_CIRCLE_YL
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 3000
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41546
+    AegisName: Costume AURA THUNDERCIRCLE_BLK
+    Name: Costume AURA THUNDERCIRCLE_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 3001
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41547
+    AegisName: Costume AURA THUNDERCIRCLE_BLU
+    Name: Costume AURA THUNDERCIRCLE_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 3002
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41548
+    AegisName: Costume AURA THUNDERCIRCLE_PRP
+    Name: Costume AURA THUNDERCIRCLE_PRP
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 3003
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41549
+    AegisName: Costume AURA THUNDERCIRCLE_RED
+    Name: Costume AURA THUNDERCIRCLE_RED
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 3004
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41550
+    AegisName: Costume AURA THUNDERCIRCLE_WHT
+    Name: Costume AURA THUNDERCIRCLE_WHT
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 3005
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41551
+    AegisName: Costume AURA THUNDERCIRCLE_YL
+    Name: Costume AURA THUNDERCIRCLE_YL
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 3006
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41552
+    AegisName: Costume AURA ULTRAINSTINCT_BLK
+    Name: Costume AURA ULTRAINSTINCT_BLK
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 3007
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41553
+    AegisName: Costume AURA ULTRAINSTINCT_BLU
+    Name: Costume AURA ULTRAINSTINCT_BLU
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 3008
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41554
+    AegisName: Costume AURA ULTRAINSTINCT_CYN
+    Name: Costume AURA ULTRAINSTINCT_CYN
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 3009
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+  - Id: 41555
+    AegisName: Costume 
+    Name: Costume 
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    View: 3010
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;bonus2 bDropAddRace,RC_All,5;bonus bAddMaxWeight,5000;
+
+  - Id: 480055
+    AegisName: C_Wing_Of_Angel_Move_RD
+    Name: Costume Sky and Sky Red Angel Wings    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 72
+  - Id: 480056
+    AegisName: C_Wing_Of_Angel_Move_BK
+    Name: Costume Heavenly Fallen Angel Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 73
+  - Id: 480058
+    AegisName: C_Wing_Of_Angel_Move_GD
+    Name: Costume Wavy Golden Angel Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 75
+
+  - Id: 480108
+    AegisName: C_Poring_Basket
+    Name: Costume Poring Basket
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 103
+  - Id: 480110
+    AegisName: C_Adventure_Cat_Bag
+    Name: Costume Adventure Bag
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 107
+  - Id: 480111
+    AegisName: C_Flower_Wing
+    Name: Costume Flower Wing
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 106
+  - Id: 480114
+    AegisName: Striking_Mikoshi
+    Name: Striking Mikoshi
+    Type: Armor
+    Weight: 600
+    Defense: 60
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bSubClass,Class_Normal,5;
+      bonus2 bSubClass,Class_Boss,5;
+      bonus2 bAddRace,RC_All,.@r*2;
+      bonus bDelayrate,-.@r;
+      if (.@r>=6) {
+         bonus bAspdRate,10;
+         bonus bPerfectHitAddRate,25;
+      }
+      if (.@r>=8) {
+         skill "AC_CONCENTRATION",10;
+         if (getskilllv("AC_CONCENTRATION") == 10) {
+            bonus bBaseAtk,50;
+            bonus bFlee,50;
+         }
+      }
+    UnEquipScript: |
+      sc_end SC_CONCENTRATION;
+  - Id: 480115
+    AegisName: Light_Of_World_TW
+    Name: Light of the World Asprika
+    Type: Armor
+    Weight: 400
+    Defense: 40
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      bonus bMaxHPrate,20;
+      bonus bFlee,40;
+      bonus bMdef,10;
+      skill "AL_TELEPORT",1;
+      bonus bDelayrate,-10;
+      bonus2 bSubEle,Ele_All,30;
+      bonus bAtkRate,30;
+      bonus bMatkRate,30;
+  - Id: 480116
+    AegisName: Cursed_Devils_Manteau_A
+    Name: Awakening Magic Curse Cloak
+    Type: Armor
+    Buy: 20
+    Weight: 1000
+    Defense: 16
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 130
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bSubEle,Ele_All,5;
+      bonus bLongAtkDef,10;
+      bonus bMaxHPrate,3*.@r;
+      if (.@r>=7)
+         skill "WZ_HEAVENDRIVE",3;
+  - Id: 480117
+    AegisName: C_Elec_Guitar_Of_Phen
+    Name: Costume Electric Guitar Of Phen    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 108
+  - Id: 480118
+    AegisName: C_G_DaeHyon_Sword_TW
+    Name: Costume General Daehyon Falchion
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 114
+
+  - Id: 20597
+    AegisName: C_Evil_Scythe
+    Name: "Costume: Evil Scythe"
+    Type: Armor
+    View: 79
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+  - Id: 20509
+    AegisName: C_Wings_of_Uriel
+    Name: Costume Wings of Uriel
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 17
+  - Id: 20514
+    AegisName: C_Thanatos_Sword
+    Name: Costume Thanatos Sword
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 23
+  - Id: 20607
+    AegisName: C_Baldr_Wing_TW
+    Name: Costume Baldr Wing
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 91
+  - Id: 20613
+    AegisName: C_Wing_Of_Spider
+    Name: Costume Spider Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 101
+  - Id: 20614
+    AegisName: C_Kyel_hyre_Ulti_TW
+    Name: Costume Kyel hyre Ulti    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 102
+  - Id: 20988
+    AegisName: C_Mechanical_Butterfly
+    Name: "Costume: Mechanical Butterfly"
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 92
+  - Id: 20989
+    AegisName: C_Mainspring_Screw
+    Name: Costume Mainspring Screw
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 93
+  - Id: 20990
+    AegisName: C_Rotating_Gears
+    Name: Costume Rotating Gears
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    Script: |
+      hateffect HAT_EF_GEARWHEEL,true;
+    UnEquipScript: |
+      hateffect HAT_EF_GEARWHEEL,false;
+  - Id: 20578
+    AegisName: C_Wings_Of_Raguel
+    Name: Costume Raguel's Wings
+    Type: Armor
+    View: 56
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+  - Id: 20579
+    AegisName: C_Wings_Of_Raphael
+    Name: Costume Raphael's Wings
+    Type: Armor
+    View: 57
+    Jobs:
+      All: true
+      Novice: false
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+  - Id: 20582
+    AegisName: C_T_Bear_Bag
+    Name: Costume Bear Backpack
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 60
+  - Id: 31737
+    AegisName: C_Wings_Of_Lucifer
+    Name: Costume Lucifer's Wings
+    Type: Armor
+    View: 55
+    Jobs:
+      All: true
+      Novice: false
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+  - Id: 20737
+    AegisName: C_Kirin_Wing
+    Name: Costume Kirin Wing
+    Type: Armor
+    Buy: 10
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 6
+  - Id: 20761
+    AegisName: C_Wing_Of_Happiness
+    Name: Costume Happiness Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 9
+  - Id: 20535
+    AegisName: C_Digital_Space
+    Name: Costume Digital Space
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Script: |
+      hateffect(HAT_EF_DIGITAL_SPACE,true);
+    UnEquipScript: |
+      hateffect(HAT_EF_DIGITAL_SPACE,false);
+  - Id: 20530
+    AegisName: C_Wings_of_Gabriel
+    Name: Costume Wings of Gabriel
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 37
+  - Id: 20525
+    AegisName: C_Bloody_Wing
+    Name: Costume Crimson Wings
+    Type: Armor
+    View: 33
+    Jobs:
+      All: true
+      Novice: false
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+  - Id: 20526
+    AegisName: C_BlueAngeling_Wing
+    Name: Costume Brilliant Blue Angel Wings
+    Type: Armor
+    View: 34
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+  - Id: 20618
+    AegisName: C_Big_B_Rabbit
+    Name: Costume Big Black Rabbit    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 133
+  - Id: 20762
+    AegisName: C_GreatDevilWing
+    Name: Costume Great Devil Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 10
+  - Id: 20763
+    AegisName: C_Amistr_Bag
+    Name: Costume Amistr Bag
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 4
+  - Id: 20764
+    AegisName: C_Fallen_Angel_Wing
+    Name: Costume Fallen Angel Wing
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3
+  - Id: 20765
+    AegisName: C_Archangel_Wing
+    Name: Costume Archangel Wing
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1
+  - Id: 20541
+    AegisName: C_AngelRibbonWing_TW
+    Name: Costume Angel's Ribboned Wings
+    Type: Armor
+    View: 42
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1  
+  - Id: 20727
+    AegisName: Brilliant_Golden_Wings
+    Name: Brilliant Golden Wings
+    Type: Armor
+    Buy: 10
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    View: 5
+    Trade:
+      NoDrop: true
+  - Id: 20728
+    AegisName: Water_Dragon_Coat
+    Name: Water Dragon Coat
+    Type: Armor
+    Buy: 10
+    Weight: 300
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 30
+    Refineable: true
+    Script: |
+      bonus bMaxHPrate,5;
+      bonus2 bMagicAtkEle,Ele_Water,2;
+      if (getrefine()>=7) {
+         bonus2 bMagicAtkEle,Ele_Water,3;
+      }
+      bonus2 bMagicAtkEle,Ele_Wind,-10;
+  - Id: 20729
+    AegisName: Wind_Dragon_Coat
+    Name: Wind Dragon Coat
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 30
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bUnbreakableGarment;
+      bonus bMaxHPrate,5;
+      bonus2 bMagicAtkEle,Ele_Wind,2;
+      bonus2 bMagicAtkEle,Ele_Earth,-10;
+      if (.@r>=7)
+         bonus2 bMagicAtkEle,Ele_Wind,3;
+
   - Id: 6010
     AegisName: Pickaxe
     Name: Hoe
@@ -105,6 +6084,110 @@ Body:
     EquipLevelMin: 1
     Refineable: true
     View: 103
+  - Id: 480205
+    AegisName: C_Astra_Blessing
+    Name: Costume Astra's Protection    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    Script: |
+      hateffect(HAT_EF_C_Astra_Blessing,true);
+    UnEquipScript: |
+      hateffect(HAT_EF_C_Astra_Blessing,false);
+  - Id: 480206
+    AegisName: Comp_Anti_Manteau_TH
+    Name: "[Not For Sale] Anti Magic Manteau"
+    Type: Armor
+    Weight: 750
+    Defense: 23
+    Slots: 1
+    Locations:
+      Garment: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    ArmorLevel: 1
+    EquipLevelMin: 99
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHP,(300+(100*(.@r/2)));
+      bonus bMaxHPrate,(2*(.@r/3));
+      if (.@r >= 7)
+         bonus bAtkRate,7;
+      if (.@r >= 9)
+         bonus bVariableCastrate,-10;
+  - Id: 480207
+    AegisName: aegis_480207
+    Name: Costume Traveler's Universal Bag    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 137
+  - Id: 480215
+    AegisName: Hs_Manteau
+    Name: Heroria Cloak    # !todo check english name
+    Type: Armor
+    Weight: 1600
+    Defense: 50
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      bonus2 bSubRace,RC_Player_Human,5;
+      bonus2 bSubRace,RC_Player_Doram,5;
+      bonus bMaxHPrate,3;
+      bonus2 bMagicAtkEle,Ele_All,-5;
+      bonus bLongAtkRate,-5;
+      bonus bShortAtkRate,3;
+  - Id: 480216
+    AegisName: Hs_Muffler
+    Name: Heroria Scarf    # !todo check english name
+    Type: Armor
+    Weight: 1000
+    Defense: 30
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      bonus bMdef,2;
+      bonus2 bSubRace,RC_Player_Human,4;
+      bonus2 bSubRace,RC_Player_Doram,4;
+      bonus bHit,10;
+      bonus2 bMagicAtkEle,Ele_All,-5;
+      bonus bShortAtkRate,-5;
+      bonus bLongAtkRate,3;
+  - Id: 480217
+    AegisName: aegis_480217
+    Name: Heroria Clock    # !todo check english name
+    Type: Armor
+    Weight: 1200
+    Defense: 10
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 200
+    Refineable: true
+    Script: |
+      bonus bMdef,3;
+      bonus2 bSubRace,RC_Player_Human,4;
+      bonus2 bSubRace,RC_Player_Doram,4;
+      bonus bFlee,20;
+      bonus2 bMagicAtkEle,Ele_All,-5;
+      bonus bLongAtkRate,-5;
+      bonus bShortAtkRate,3;
+
+
   - Id: 40001
     AegisName: AAttack
     Name: Assistive Device
