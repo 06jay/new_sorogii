@@ -46,8 +46,6 @@ Body:
     Name: Player
     Level: 0
     Commands:
-      changedress: true
-      resurrect: true
       mobinfo: true
       iteminfo: true
       rates: true
@@ -60,8 +58,6 @@ Body:
       autotrade: true
       request: true
       breakguild: true
-
-
     Permissions:
       # without this basic permissions regular players could not trade or party
       can_trade: true
