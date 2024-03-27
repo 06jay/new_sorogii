@@ -571,6 +571,18 @@ public:
 	int langtype;
 	struct mmo_charstatus status;
 
+	unsigned block_ : 1;
+	int block_chat;
+	int block_emotion;
+	int block_item;
+	int block_attack;
+	int block_buff;
+	int block_status;
+	int block_target_spell;
+	int block_aoe_spell;
+	int block_music;
+	int block_direction;
+
 	// Item Storages
 	struct s_storage storage, premiumStorage;
 	struct s_storage inventory;
