@@ -2792,9 +2792,6 @@ int mob_dead(struct mob_data *md, struct block_list *src, int type)
 				if(zeny) // zeny from mobs [Valaris]
 					pc_getzeny(tmpsd[i], zeny, LOG_TYPE_PICKDROP_MONSTER);
 			}
-
-			if( md->get_bosstype() == BOSSTYPE_MVP )
-				pc_damage_log_clear(tmpsd[i],md->bl.id);
 		}
 
 		for( i = 0; i < pnum; i++ ) //Party share.
@@ -3151,6 +3148,12 @@ int mob_dead(struct mob_data *md, struct block_list *src, int type)
 			pc_setparam(mvp_sd, SP_KILLEDRID, md->mob_id);
 			npc_script_event(mvp_sd, NPCE_KILLNPC); // PCKillNPC [Lance]
 		}
+	}
+
+	for(i = 0; i < DAMAGELOG_SIZE && md->dmglog[i].id; i++) {
+		if (!tmpsd[i]) continue;
+		if( md->get_bosstype() == BOSSTYPE_MVP )
+			pc_damage_log_clear(tmpsd[i],md->bl.id);
 	}
 
 	if(md->deletetimer != INVALID_TIMER) {
