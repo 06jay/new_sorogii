@@ -13193,6 +13193,22 @@ int status_change_end(struct block_list* bl, enum sc_type type, int tid)
 	std::bitset<SCB_MAX> calc_flag = scdb->calc_flag;
 
 	switch(type) {
+		case SC_PCCAFE_PLAY_TIME:
+            status_change_end(bl, SC_PCCAFE_PLAY_TIME);
+					if (sd->state.active) {
+                               if (battle_config.feature_goldpc_vip)
+                               {
+                                       if (sd->group_id == 5)
+                                               sd->goldPCPoints = cap_value((sd->goldPCPoints + 2 * battle_config.feature_goldpc_value), 0, battle_config.feature_goldpc_maxpoints);
+                                       else
+                                               sd->goldPCPoints = cap_value((sd->goldPCPoints + 1 * battle_config.feature_goldpc_value), 0, battle_config.feature_goldpc_maxpoints);
+                               }
+                               else
+                                       sd->goldPCPoints = cap_value((sd->goldPCPoints + 1 * battle_config.feature_goldpc_value), 0, battle_config.feature_goldpc_maxpoints);
+					}
+        pc_setaccountreg(sd, add_str(GOLDPC_POINTS_VAR), sd->goldPCPoints);
+                   clif_goldpc_points(sd);
+            break;
 		case SC_AUTOATTACK:
 			sd->state.autoattack = 0;
 			break;

@@ -1226,6 +1226,10 @@ void clif_summon_hp_bar(struct mob_data& md);
 void clif_laphine_synthesis_open( map_session_data *sd, std::shared_ptr<s_laphine_synthesis> synthesis );
 void clif_laphine_upgrade_open( map_session_data* sd, std::shared_ptr<s_laphine_upgrade> upgrade );
 
+// GoldPC Timer
+void clif_goldpc_points( struct map_session_data* sd );
+void clif_goldpc_npc_request( int fd, struct map_session_data* sd );
+
 // Reputation System
 void clif_reputation_type( map_session_data& sd, int64 type, int64 points );
 void clif_reputation_list( map_session_data& sd );

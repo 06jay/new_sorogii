@@ -1,0 +1,13 @@
+-	script	ClickHourlyUIScriptHere	-1,{
+OnClick:
+	mes "[^0000FF Hourly Shop ^000000]";
+	mes "What do you want to purchase?";
+	mes "--";
+	mes "You currenlty have:";
+	mes "^FF0000"+#HOURLYPOINTS+" Hourly Points^000000";
+	next;
+    callshop "PlaytimeSupplies", 4;
+    end;
+}
+
+-	pointshop	PlaytimeSupplies	FAKE_NPC,#HOURLYPOINTS,501:1,502:2,503:3,504:4,505:5

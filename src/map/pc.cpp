@@ -2534,6 +2534,9 @@ void pc_reg_received(map_session_data *sd)
 	sd->cashPoints = static_cast<int>(pc_readaccountreg(sd, add_str(CASHPOINT_VAR)));
 	sd->kafraPoints = static_cast<int>(pc_readaccountreg(sd, add_str(KAFRAPOINT_VAR)));
 
+	// GoldPC Timer
+    sd->goldPCPoints = static_cast<int>(pc_readaccountreg(sd, add_str(GOLDPC_POINTS_VAR)));
+
 	// Cooking Exp
 	sd->cook_mastery = static_cast<short>(pc_readglobalreg(sd, add_str(COOKMASTERY_VAR)));
 
@@ -10394,6 +10397,7 @@ int64 pc_readparam(map_session_data* sd,int64 type)
 		case SP_BANK_VAULT:      val = sd->bank_vault; break;
 		case SP_CASHPOINTS:      val = sd->cashPoints; break;
 		case SP_KAFRAPOINTS:     val = sd->kafraPoints; break;
+		case SP_GOLDPCPOINTS:    val = sd->goldPCPoints; break;
 		case SP_ROULETTE_BRONZE: val = sd->roulette_point.bronze; break;
 		case SP_ROULETTE_SILVER: val = sd->roulette_point.silver; break;
 		case SP_ROULETTE_GOLD:   val = sd->roulette_point.gold; break;
@@ -10759,6 +10763,12 @@ bool pc_setparam(map_session_data *sd,int64 type,int64 val_tmp)
 			log_cash(sd, LOG_TYPE_SCRIPT, LOG_CASH_TYPE_KAFRA, -(sd->kafraPoints - cap_value(val, 0, MAX_KAFRAPOINT)));
 		sd->kafraPoints = cap_value(val, 0, MAX_KAFRAPOINT);
 		pc_setaccountreg(sd, add_str(KAFRAPOINT_VAR), sd->kafraPoints);
+		return true;
+	case SP_GOLDPCPOINTS:
+		if (val < 0)
+				return false;
+		sd->goldPCPoints = cap_value(val, 0, battle_config.feature_goldpc_maxpoints);
+		pc_setaccountreg(sd, add_str(GOLDPC_POINTS_VAR), sd->goldPCPoints);
 		return true;
 	case SP_PCDIECOUNTER:
 		if (val < 0)
@@ -16266,6 +16276,7 @@ void do_init_pc(void) {
 	pc_sc_display_ers = ers_new(sizeof(struct sc_display_entry), "pc.cpp:pc_sc_display_ers", ERS_OPT_FLEX_CHUNK);
 	num_reg_ers = ers_new(sizeof(struct script_reg_num), "pc.cpp:num_reg_ers", (ERSOptions)(ERS_OPT_CLEAN|ERS_OPT_FLEX_CHUNK));
 	str_reg_ers = ers_new(sizeof(struct script_reg_str), "pc.cpp:str_reg_ers", (ERSOptions)(ERS_OPT_CLEAN|ERS_OPT_FLEX_CHUNK));
+
 
 	ers_chunk_size(pc_sc_display_ers, 150);
 	ers_chunk_size(num_reg_ers, 300);

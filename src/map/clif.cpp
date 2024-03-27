@@ -10497,6 +10497,7 @@ void clif_refresh(map_session_data *sd)
 		pc_disguise(sd, disguise);
 	}
 	clif_refresh_storagewindow(sd);
+	clif_goldpc_points(sd);
 }
 
 
@@ -11508,6 +11509,7 @@ void clif_parse_LoadEndAck(int fd,map_session_data *sd)
 		clif_updatestatus(sd,SP_NEXTJOBEXP);
 		clif_updatestatus(sd,SP_SKILLPOINT);
 		clif_initialstatus(sd);
+		clif_goldpc_points(sd);
 
 		if (sd->sc.option&OPTION_FALCON)
 			clif_status_load(&sd->bl, EFST_FALCON, 1);
@@ -23387,6 +23389,38 @@ void clif_parse_inventory_expansion_reject( int fd, map_session_data* sd ){
 	sd->state.inventory_expansion_confirmation = 0;
 	sd->state.inventory_expansion_amount = 0;
 #endif
+}
+
+void clif_goldpc_points(struct map_session_data* sd) {
+       nullpo_retv(sd);
+       struct PACKET_ZC_GOLDPCCAFE_POINT p;
+
+       // If system disabled then remove status
+       if (!battle_config.feature_goldpc_timer)
+               status_change_end(&sd->bl, SC_PCCAFE_PLAY_TIME, INVALID_TIMER);
+       else if(!sd->sc.getSCE(SC_PCCAFE_PLAY_TIME))
+               sc_start(&sd->bl, &sd->bl, SC_PCCAFE_PLAY_TIME, 100, 0, battle_config.feature_goldpc_ticks);
+
+       p.PacketType = HEADER_ZC_GOLDPCCAFE_POINT;
+       p.isActive = battle_config.feature_goldpc_timer ? 1 : 0;
+          if (battle_config.feature_goldpc_vip) {
+                  if (sd->group_id == 5)
+                          p.mode = 2;
+                  else
+                          p.mode = 1;
+          }
+          else
+                  p.mode = 1;
+
+       p.point = sd->goldPCPoints;
+       p.playedTime = sd->sc.getSCE(SC_PCCAFE_PLAY_TIME) ? (3600 - static_cast<int32>(DIFF_TICK(get_timer(sd->sc.getSCE(SC_PCCAFE_PLAY_TIME)->timer)->tick, gettick()) / 1000)) : 0;
+       clif_send(&p, sizeof(p), &sd->bl, SELF);
+}
+
+void clif_goldpc_npc_request(int fd, struct map_session_data* sd) {
+       nullpo_retv(sd);
+       const struct PACKET_CZ_DYNAMICNPC_CREATE_REQUEST* p = (struct PACKET_CZ_DYNAMICNPC_CREATE_REQUEST*)RFIFOP(fd, 0);
+       npc_event_do_id("ClickHourlyUIScriptHere::OnClick", sd->status.account_id);
 }
 
 void clif_barter_open( map_session_data& sd, struct npc_data& nd ){

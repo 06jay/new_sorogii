@@ -2113,6 +2113,10 @@
 	packet(0x09DA,-1);
 #endif
 
+#if PACKETVER >= 20140430
+    parseable_packet(HEADER_CZ_DYNAMICNPC_CREATE_REQUEST, sizeof(struct PACKET_CZ_DYNAMICNPC_CREATE_REQUEST), clif_goldpc_npc_request, 2);
+#endif
+
 // 2014-10-08Ragexe
 #if PACKETVER >= 20141008
 	parseable_packet(0x9FB, -1, clif_parse_pet_evolution, 2, 4); // CZ_PET_EVOLUTION

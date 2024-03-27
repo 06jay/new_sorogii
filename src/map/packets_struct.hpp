@@ -4821,6 +4821,26 @@ struct PACKET_ZC_NOTIFY_SKILL_POSITION {
 
 DEFINE_PACKET_HEADER(ZC_NOTIFY_SKILL_POSITION, 0x0115);
 
+#if PACKETVER >= 20140611
+struct PACKET_ZC_GOLDPCCAFE_POINT {
+	// Note: 2014-04-30 has 1 byte less, but those packets are only functional after 2014-06-11Ragexe
+	uint16 PacketType;
+	int8 isActive; //< 1 = yes, 0 = no
+	int8 mode;
+	int32 point;
+	int32 playedTime;
+} __attribute__((packed));
+DEFINE_PACKET_HEADER(ZC_GOLDPCCAFE_POINT , 0x0a15);
+#endif // PACKETVER >= 20140611
+
+#if PACKETVER >= 20140430
+struct PACKET_CZ_DYNAMICNPC_CREATE_REQUEST {
+	uint16 PacketType;
+	char name[NAME_LENGTH];
+} __attribute__((packed));
+DEFINE_PACKET_HEADER(CZ_DYNAMICNPC_CREATE_REQUEST, 0x0a16);
+#endif // PACKETVER >= 20140430
+
 #if PACKETVER_MAIN_NUM >= 20130731 || PACKETVER_RE_NUM >= 20130707 || defined(PACKETVER_ZERO)
 struct PACKET_ZC_C_MARKERINFO {
 	int16 PacketType;

@@ -51,6 +51,7 @@ class MapGuild;
 #define LANGTYPE_VAR "#langtype"
 #define CASHPOINT_VAR "#CASHPOINTS"
 #define KAFRAPOINT_VAR "#KAFRAPOINTS"
+#define GOLDPC_POINTS_VAR "#HOURLYPOINTS"
 #define BANK_VAULT_VAR "#BANKVAULT"
 #define ROULETTE_BRONZE_VAR "RouletteBronze"
 #define ROULETTE_SILVER_VAR "RouletteSilver"
@@ -881,7 +882,7 @@ public:
 
 	int killerrid, killedrid, killedgid;
 
-	int cashPoints, kafraPoints;
+	int cashPoints, kafraPoints, goldPCPoints;
 	int rental_timer;
 
 	// Auction System [Zephyrus]

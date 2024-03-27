@@ -617,7 +617,7 @@
 	export_parameter(KAFRAPOINT_VAR, SP_KAFRAPOINTS);
 	export_parameter(PCDIECOUNTER_VAR, SP_PCDIECOUNTER);
 	export_parameter(COOKMASTERY_VAR, SP_COOKMASTERY);
-	export_parameter(ACHIEVEMENTLEVEL, SP_ACHIEVEMENT_LEVEL);
+	export_parameter(GOLDPC_POINTS_VAR, SP_GOLDPCPOINTS);
 
 	export_constant2("bMaxHP",SP_MAXHP);
 	export_constant2("bMaxSP",SP_MAXSP);
@@ -1899,6 +1899,7 @@
 	export_constant(SC_RUSH_QUAKE1);
 	export_constant(SC_RUSH_QUAKE2);
 	export_constant(SC_G_LIFEPOTION);
+	export_constant(SC_PCCAFE_PLAY_TIME);
 
 #ifdef RENEWAL
 	export_constant(SC_EXTREMITYFIST2);

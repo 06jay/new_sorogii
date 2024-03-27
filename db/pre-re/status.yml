@@ -7056,3 +7056,6 @@ Body:
       NoBanishingBuster: true
       NoClearance: true
       NoRemoveOnDead: true
+  - Status: PCCAFE_PLAY_TIME
+    Flags:
+      NoWarning: true

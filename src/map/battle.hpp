@@ -764,6 +764,13 @@ struct Battle_Config
 	int chat_clone_zenycost;
 	int chat_msg_color;
 
+	int feature_goldpc_timer;
+    int feature_goldpc_timer_rates;
+    int feature_goldpc_value;
+    int feature_goldpc_ticks;
+    int feature_goldpc_vip;
+    int feature_goldpc_maxpoints;
+
 #include <custom/battle_config_struct.inc>
 };
 

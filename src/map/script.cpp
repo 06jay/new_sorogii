@@ -27841,6 +27841,38 @@ BUILDIN_FUNC(macro_detector) {
 	return SCRIPT_CMD_SUCCESS;
 }
 
+BUILDIN_FUNC(delgoldpoints) {
+       TBL_PC* sd;
+       if (!script_rid2sd(sd))
+               return SCRIPT_CMD_SUCCESS;
+
+       int val = script_getnum(st, 2);
+
+       if (val > sd->goldPCPoints)
+               ShowError("delgoldpoints: Player don't have enough gold points, remove all point that he have.\n");
+
+       sd->goldPCPoints = cap_value((sd->goldPCPoints - val), 0, battle_config.feature_goldpc_maxpoints);
+       pc_setaccountreg(sd, add_str(GOLDPC_POINTS_VAR), sd->goldPCPoints);
+       clif_goldpc_points(sd);
+       return SCRIPT_CMD_SUCCESS;
+}
+
+BUILDIN_FUNC(addgoldpoints) {
+       TBL_PC* sd;
+       if (!script_rid2sd(sd))
+               return SCRIPT_CMD_SUCCESS;
+
+       int val = script_getnum(st, 2);
+
+       if ((val + sd->goldPCPoints) > battle_config.feature_goldpc_maxpoints)
+               ShowError("addgoldpoints: Gold points already max.\n");
+       sd->goldPCPoints = cap_value((sd->goldPCPoints + val), 0, battle_config.feature_goldpc_maxpoints);
+
+       pc_setaccountreg(sd, add_str(GOLDPC_POINTS_VAR), sd->goldPCPoints);
+       clif_goldpc_points(sd);
+       return SCRIPT_CMD_SUCCESS;
+}
+
 #include <custom/script.inc>
 
 // declarations that were supposed to be exported from npc_chat.cpp
@@ -28678,6 +28710,10 @@ struct script_function buildin_func[] = {
 	BUILDIN_DEF(getbaseexp_ratio, "i??"),
 	BUILDIN_DEF(getjobexp_ratio, "i??"),
 	BUILDIN_DEF(enchantgradeui, "?" ),
+
+	// GoldPC Timer
+    BUILDIN_DEF(delgoldpoints, "i"),
+    BUILDIN_DEF(addgoldpoints, "i"),
 
 	BUILDIN_DEF(set_reputation_points, "ii?"),
 	BUILDIN_DEF(get_reputation_points, "i?"),

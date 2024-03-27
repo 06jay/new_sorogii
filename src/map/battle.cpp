@@ -10690,6 +10690,13 @@ static const struct _battle_data {
 	{ "feature.autoattack_mdetection",		&battle_config.feature_autoattack_mdetection,	15,     1,      30,      		},
 	{ "feature.autoattack_move",			&battle_config.feature_autoattack_move,			7,      1,      20,      		},
 	{ "feature.autoattack_movetype",		&battle_config.feature_autoattack_movetype,		0,		0,		1,				},
+
+	{ "feature.goldpc_timer",               &battle_config.feature_goldpc_timer,            1,      0,      1,              },
+    { "feature.goldpc_timer_rates",         &battle_config.feature_goldpc_timer_rates,      1,      1,      2,              },
+    { "feature.goldpc_value",				&battle_config.feature_goldpc_value,            1,      1,      300,            },
+    { "feature.goldpc_ticks",               &battle_config.feature_goldpc_ticks,            1000,   1000,   3600000,        },
+    { "feature.goldpc_vip",					&battle_config.feature_goldpc_vip,              1,      0,      1,              },
+    { "feature.goldpc_maxpoints",			&battle_config.feature_goldpc_maxpoints,        9999,    9999,    100000,       },
 #ifdef RENEWAL
 	{ "feature.instance_allow_reconnect",   &battle_config.instance_allow_reconnect,        1,      0,      1,              },
 #else
