@@ -5,13 +5,6 @@ setcell "prontera",201,171,172,135,cell_pvp, 1;
 end;
 }
 
--	script	test_cellpvp#2	-1,{
-end;
-OnInit:
-setcell "geffen",101,137,139,137,cell_pvp, 1;
-end;
-}
-
 function	script	F_Autobuff	{
  
 specialeffect2 EF_INCAGILITY;
