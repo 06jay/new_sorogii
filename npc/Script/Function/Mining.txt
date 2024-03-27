@@ -64,6 +64,6 @@
 }
 
 //Duplicate where you would like the stone to be.
-prontera,150,175,4	duplicate(pedra_main)	#rock-prt01	25104
-prontera,151,177,4	duplicate(pedra_main)	#rock-prt02	25104
-prontera,153,174,4	duplicate(pedra_main)	#rock-prt03	25104
+brasilis,178,240,4	duplicate(pedra_main)	#rock-prt01	25104
+brasilis,174,240,4	duplicate(pedra_main)	#rock-prt02	25104
+brasilis,170,240,4	duplicate(pedra_main)	#rock-prt03	25104
