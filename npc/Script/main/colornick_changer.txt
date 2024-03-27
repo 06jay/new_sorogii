@@ -1,4 +1,4 @@
-prontera,155,168,3	script	Nick Color Changer	123,{
+brasilis,183,246,3	script	Nick Color Changer	123,{
 	.@n$ = "[ Nick Color Changer ]";
     mes .@n$;
     mes "Which color nick you want to use?";
