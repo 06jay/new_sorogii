@@ -1,6 +1,12 @@
 function	script	bot_at	{
 
 OnDo:
+	if(getcharid(1))  {
+       mes "[Auto Attack Configuration]";
+       mes "Assistive Device configuration is disabled. Please leave the party before you can configure it again.";
+       close;
+  	 }
+
 	sc_end SC_AUTOATTACK;
 	.@duration = 86400000; // 1000 = 1s -- 60000 = 1m -- 3600000 = 1h, 86400000 = 1d etc...
 

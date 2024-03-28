@@ -13843,6 +13843,12 @@ TIMER_FUNC(status_change_timer){
 	
 	switch(type) {
 		case SC_AUTOATTACK:
+		// Player is in a party already now
+		if( sd->status.party_id != 0 ){
+			status_change_end(&sd->bl, SC_AUTOATTACK);
+			clif_displaymessage(sd->fd, "The Assistive Device is de-activated because you're tricking me. Leave the party to re-activate it again.");
+			return 0;
+		}
 		if (--(sce->val4) > 0) {
 			if( pc_isdead(sd) || pc_search_inventory(sd,40001)<=1 || pc_is90overweight(sd) ){
 				status_change_end(&sd->bl, SC_AUTOATTACK);

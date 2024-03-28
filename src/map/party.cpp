@@ -170,6 +170,11 @@ void party_created(uint32 account_id,uint32 char_id,int fail,int party_id,char *
 
 	sd = map_id2sd(account_id);
 
+	if(sd->sc.getSCE(SC_AUTOATTACK)){
+		clif_displaymessage(sd->fd, "Failed to create party. Please de-activate the Assistive Device to be able to create a party.");
+		return;
+	}
+
 	if (!sd || sd->status.char_id != char_id || !sd->party_creating ) { // Character logged off before creation ack?
 		if (!fail) // break up party since player could not be added to it.
 			intif_party_leave(party_id,account_id,char_id,"",PARTY_MEMBER_WITHDRAW_LEAVE);
@@ -446,6 +451,11 @@ int party_invite(map_session_data *sd,map_session_data *tsd)
 		return 0;
 	}
 
+	if(sd->sc.getSCE(SC_AUTOATTACK)){
+		clif_displaymessage(sd->fd, "Failed to invite to the party. Please de-activate the Assistive Device in order to be able to invite you to the party.");
+		return 0;
+	}
+
 	tsd->party_invite=sd->status.party_id;
 	tsd->party_invite_account=sd->status.account_id;
 
@@ -573,6 +583,11 @@ int party_reply_invite(map_session_data *sd,int party_id,int flag)
 
 	tsd = map_id2sd(sd->party_invite_account);
 
+	if(sd->sc.getSCE(SC_AUTOATTACK)){
+		clif_displaymessage(sd->fd, "Failed to join the party because your Assistive Device is activated. Please de-activate it and relog to join the party again.");
+		return 0;
+	}
+
 	if( flag == 1 && !sd->party_creating && !sd->party_joining ) { // accepted and allowed
 		sd->party_joining = true;
 		party_fill_member(&member, sd, 0);
@@ -642,6 +657,8 @@ int party_member_added(int party_id,uint32 account_id,uint32 char_id, int flag)
 			clif_party_invite_reply( *sd2, sd->status.name, PARTY_REPLY_FULL );
 		return 0;
 	}
+
+	
 
 	sd->status.party_id = party_id;
 
