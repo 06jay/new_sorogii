@@ -2,7 +2,7 @@ function	script	bot_at	{
 
 OnDo:
 	if(getcharid(1))  {
-       mes "[Auto Attack Configuration]";
+       mes "[ Assistive Device ]";
        mes "Assistive Device configuration is disabled. Please leave the party before you can configure it again.";
        close;
   	 }
@@ -15,10 +15,10 @@ OnDo:
 
 main_menu:
 	cutin "kafra_06",2;
-	.@menu$ = "[Auto Attack Configuration]";
+	.@menu$ = "[ Assistive Device ]";
 	mes .@menu$;
 	
-	.@main_menu = select("[Start autoattack]","[Configuration]","[Cancel]");
+	.@main_menu = select("[ Activate Device ]","[ Setup Config ]","[-] Return");
 	if( .@main_menu == 1 ){
 		sc_start4 SC_AUTOATTACK,.@duration,1,0,0,0;
 	}
@@ -30,12 +30,12 @@ main_menu:
 
 config_menu:
 	clear;
-	.@menu$ = "[Auto Attack Configuration]";
+	.@menu$ = "[ Assistive Device ]";
 	mes .@menu$;
 
 	// To disable an option, comment the line
 	menu	"Return",main_menu,
-			" ~ Melee attack",melee_attack,
+			" ~ Melee Attack",melee_attack,
 			" ~ Regeneration",regeneration_menu,
 			" ~ Attack Skills",attackskills_menu,
 			" ~ Buff Skills",buffskills_menu,
@@ -53,7 +53,7 @@ pickupitems_menu:
 	mes "--- Current configuration ---";
 	mes getautoattackstring(9,0);
 
-	.@pickupitems_menu = select("Pick up configuration","Add an item","Remove an item","Clear the list","[Cancel]");
+	.@pickupitems_menu = select("Pick up configuration","Add an item","Remove an item","Clear the list","[-] Return");
 
 	switch(.@pickupitems_menu){
 		case 1:
@@ -63,7 +63,7 @@ pickupitems_menu:
 			// no item = 2
 			switch(getautoattackint(9,2)){
 				case 0:
-					.@pickupitems_config_menu  = select("Pick up only items on the list","Don't pick up any item","[Cancel]");
+					.@pickupitems_config_menu  = select("Pick up only items on the list","Don't pick up any item","[-] Return");
 					switch(.@pickupitems_config_menu){
 						case 1:
 							.@pickup_config_choice = 1;
@@ -78,7 +78,7 @@ pickupitems_menu:
 						
 					break;
 				case 1:
-					.@pickupitems_config_menu  = select("Pick up every items","Don't pick up any item","[Cancel]");
+					.@pickupitems_config_menu  = select("Pick up every items","Don't pick up any item","[-] Return");
 					switch(.@pickupitems_config_menu){
 						case 1:
 							.@pickup_config_choice = 0;
@@ -92,7 +92,7 @@ pickupitems_menu:
 					}
 					break;
 				case 2:
-					.@pickupitems_config_menu  = select("Pick up every items","Pick up only items on the list","[Cancel]");
+					.@pickupitems_config_menu  = select("Pick up every items","Pick up only items on the list","[-] Return");
 					switch(.@pickupitems_config_menu){
 						case 1:
 							.@pickup_config_choice = 0;
@@ -155,7 +155,7 @@ monsters_menu:
 	mes "--- Current configuration ---";
 	mes getautoattackstring(8,0);
 
-	.@monsters_menu = select("Add a monster","Remove a monster","Clear the list",getautoattackint(8,0)?"Attack aggressive monsters":"Ignore aggressive monsters","[Cancel]");
+	.@monsters_menu = select("Add a monster","Remove a monster","Clear the list",getautoattackint(8,0)?"Attack aggressive monsters":"Ignore aggressive monsters","[-] Return");
 
 	switch(.@monsters_menu){
 		case 1:
@@ -223,7 +223,7 @@ teleport_menu:
 	else
 		.@teleport_menu_txt$ += ":Disable Fly Wing";
 		
-	.@teleport_menu_txt$ += ":Set / Modify Min Hp:Set / Modify TP delay:[Cancel]";
+	.@teleport_menu_txt$ += ":Set / Modify Min Hp:Set / Modify TP delay:[-] Return";
 
 	.@teleport_menu = select(.@teleport_menu_txt$);
 
@@ -276,7 +276,7 @@ melee_attack:
 	mes "--- Current configuration ---";
 	mes getautoattackstring(6,0);
 
-	.@melee_menu = select(getautoattackint(6,0)?"Enable":"Disable","[Cancel]");
+	.@melee_menu = select(getautoattackint(6,0)?"Enable":"Disable","[-] Return");
 
 	if( .@melee_menu == 1 ){
 		if(getautoattackint(6,0))
@@ -318,7 +318,7 @@ heal_menu:
 	mes "--- Current configuration ---";
 	mes getautoattackstring(0,0);
 
-	.@heal_menu = select("Add / Modify skills","Disable a skill","[Cancel]");
+	.@heal_menu = select("Add / Modify skills","Disable a skill","[-] Return");
 	if( .@heal_menu == 1 ){
 		clear;
 		mes .@menu$;
@@ -402,36 +402,66 @@ potion_menu:
 	mes "--- Current configuration ---";
 	mes getautoattackstring(1,0);
 
-	.@potion_menu = select("Add / Modify Potions","Disable a potion","[Cancel]");
-	if( .@potion_menu == 1 ){
-		clear;
-		mes .@menu$;
-		mes getautoattackstring(1,-1);
-		mes "Enter the id of the consumable choosen";
-
-		input .@potion_id;
-
-		do {
+		.@potion_menu = select("Add / Modify Potions","Disable a potion","[-] Return");
+		if( .@potion_menu == 1 ){
 			clear;
 			mes .@menu$;
-			mes "Choose the value of HP % to use the consumable (ex : 10 to use it if hp are below 10%)";
-			mes "Min value is 5, Max value is 90 (0 to disable it)";
-			input .@potion_minhpvalue;
-		} while(.@potion_minhpvalue != 0 && (.@potion_minhpvalue < 5 || .@potion_minhpvalue > 90));
+			mes "Select ^ff0000HP^000000 or ^0000ffSP^000000?";
+			.@hpsp_menu = select("Select ^ff0000HP^000000 Potion Item","Select ^0000ffSP^000000 Potion","[-] Return");
+			if( .@hpsp_menu == 1){
+				clear;
+				mes .@menu$;
+				mes getautoattackstring(1,-1);
+				mes "Enter the id of the healing potion choosen";
 
-		do {
-			clear;
-			mes .@menu$;
-			mes "Choose the value of SP % to use the consumable (ex : 10 to use it if sp are below 10%)";
-			mes "Min value is 5, Max value is 90 (0 to disable it)";
-			input .@potion_minspvalue;
-		} while(.@potion_minspvalue != 0 && (.@potion_minspvalue < 5 || .@potion_minspvalue > 90));
+				input .@potion_id;
 
-		setautoattack("1;1;"+ .@potion_id + ";" + .@potion_minhpvalue + ";" + .@potion_minspvalue);
-		clear;
+				do {
+					clear;
+					mes .@menu$;
+					mes "^FF0000How many % of your HP is needed for the autopots to activate^000000";
+					mes "^ffffff_^000000";
+					mes "^FF7700Example: 10 when your HP is only 10% below, it will automatically activate the autopots^000000";
+					mes "^ffffff_^000000";
+					mes "^660000Min value is 5, Max value is 90 (0 to disable it)^000000";
+					input .@potion_minhpvalue;
+				} while(.@potion_minhpvalue != 0 && (.@potion_minhpvalue < 5 || .@potion_minhpvalue > 90));
 
-		goto(potion_menu);
-	}
+				setautoattack("1;1;"+ .@potion_id + ";" + .@potion_minhpvalue + ";0");
+				clear;
+
+				goto(potion_menu);
+				
+			}
+			if( .@hpsp_menu == 2){
+				clear;
+				mes .@menu$;
+				mes getautoattackstring(1,-1);
+				mes "Enter the id of the sp potion choosen";
+
+				input .@potion_id;
+
+				do {
+					clear;
+					mes .@menu$;
+					mes "^FF0000How many % of your HP is needed for the autopots to activate^000000";
+					mes "^ffffff_^000000";
+					mes "^FF7700Example: 10 when your HP is only 10% below, it will automatically activate the autopots^000000";
+					mes "^ffffff_^000000";
+					mes "^660000Min value is 5, Max value is 90 (0 to disable it)^000000";
+					input .@potion_minhpvalue;
+				} while(.@potion_minspvalue != 0 && (.@potion_minspvalue < 5 || .@potion_minspvalue > 90));
+
+				setautoattack("1;1;"+ .@potion_id + ";" + .@potion_minspvalue + ";"+ .@potion_minhpvalue);
+				clear;
+
+				goto(potion_menu);
+				
+			}
+
+				goto(potion_menu);
+				end;
+		}
 	if( .@potion_menu == 2 ){
 		if(getautoattackint(1,0) == 0){
 			clear;
@@ -460,7 +490,7 @@ sit_regen_menu:
 	mes getautoattackstring(2,1); // hp
 	mes getautoattackstring(2,2); // sp
 
-	.@sit_regen_menu = select(getautoattackint(2,0)?"Disable:Modify":"Enable","[Cancel]");
+	.@sit_regen_menu = select(getautoattackint(2,0)?"Disable:Modify":"Enable","[-] Return");
 	if( (.@sit_regen_menu == 1 && !getautoattackint(2,0))
 		|| (.@sit_regen_menu == 2 && getautoattackint(2,0))){
 		clear;
@@ -526,7 +556,7 @@ buffskills_menu:
 	mes "--- Current configuration ---";
 	mes getautoattackstring(3,0);
 	
-	.@buffskills_menu = select("Add skills","Modify skills","Disable a skill","[Cancel]");
+	.@buffskills_menu = select("Add skills","Modify skills","Disable a skill","[-] Return");
 
 	if( .@buffskills_menu < 3 ){
 		if( .@buffskills_menu == 1 ){
@@ -605,7 +635,7 @@ attackskills_menu:
 	mes "--- Current configuration ---";
 	mes getautoattackstring(4,0);
 	
-	.@attackskills_menu = select("Add skills","Modify skills","Disable a skill","[Cancel]");
+	.@attackskills_menu = select("Add skills","Modify skills","Disable a skill","[-] Return");
 	if( .@attackskills_menu < 3 ){
 		if( .@attackskills_menu == 1 ){
 			clear;
@@ -692,7 +722,7 @@ buffitems_menu:
 	mes getautoattackstring(5,645);
 	mes getautoattackstring(5,657);
 
-	.@buffitems_menu = select("Add / Modify buff item","Disable a buff item","[Cancel]");
+	.@buffitems_menu = select("Add / Modify buff item","Disable a buff item","[-] Return");
 	if( .@buffitems_menu == 1 ){
 		mes "Enter the id of the consumable choosen";
 

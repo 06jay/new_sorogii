@@ -80,6 +80,11 @@ int chat_createpcchat(map_session_data* sd, const char* title, const char* pass,
 
 	nullpo_ret(sd);
 
+	if(sd->sc.getSCE(SC_AUTOATTACK)){
+		clif_displaymessage(sd->fd, "Failed to create chat room. Please de-activate the Assistive Device in order to be able to create a chat room.");
+		return 0;
+	}
+
 	if( sd->chatID )
 		return 0; //Prevent people abusing the chat system by creating multiple chats, as pointed out by End of Exam. [Skotlex]
 

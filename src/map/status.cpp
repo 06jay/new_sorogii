@@ -13843,17 +13843,36 @@ TIMER_FUNC(status_change_timer){
 	
 	switch(type) {
 		case SC_AUTOATTACK:
-		// Player is in a party already now
-		if( sd->status.party_id != 0 ){
-			status_change_end(&sd->bl, SC_AUTOATTACK);
-			clif_displaymessage(sd->fd, "The Assistive Device is de-activated because you're tricking me. Leave the party to re-activate it again.");
-			return 0;
-		}
 		if (--(sce->val4) > 0) {
-			if( pc_isdead(sd) || pc_search_inventory(sd,40001)<=1 || pc_is90overweight(sd) ){
+			if( sd->status.party_id != 0 ){
 				status_change_end(&sd->bl, SC_AUTOATTACK);
-				break;
+				clif_displaymessage(sd->fd, "The Assistive Device is de-activated because you're tricking me. Leave the party to re-activate it again.");
+				return 0;
 			}
+			// if( type == SC_NOCHAT ) {
+			// 	status_change_end(&sd->bl, SC_AUTOATTACK);
+			// 	clif_displaymessage(sd->fd, "The Assistive Device is de-activated because you're open a chat room. Close the chat room to re-activate it again");
+			// 	return 0;
+			// }
+			if( pc_isdead(sd)) {
+				status_change_end(&sd->bl, SC_AUTOATTACK);
+				clif_displaymessage(sd->fd, "The Assistive Device is de-activated because your character is dead.");
+				return 0;
+			}
+			if( pc_search_inventory(sd,40001)<=1) {
+				status_change_end(&sd->bl, SC_AUTOATTACK);
+				clif_displaymessage(sd->fd, "The Assistive Device is de-activated because i cannot find the Assistive Device item in your inventory");
+				return 0;
+			}
+			if( pc_is90overweight(sd)) {
+				status_change_end(&sd->bl, SC_AUTOATTACK);
+				clif_displaymessage(sd->fd, "The Assistive Device is de-activated because you are 90% overweight");
+				return 0;
+			}
+			// if( pc_isdead(sd) || pc_search_inventory(sd,40001)<=1 || pc_is90overweight(sd) ){
+			// 	status_change_end(&sd->bl, SC_AUTOATTACK);
+			// 	break;
+			// }
 
 			int i_ = 0;
 			struct status_data *status = status_get_status_data(&sd->bl);
@@ -14027,6 +14046,7 @@ TIMER_FUNC(status_change_timer){
 			}
 
 			{//Attack skills
+				
 				if (!skip && !pc_issit(sd) && sd->aa.target_id > 0 && !sd->aa.itempick_id){//Attack
 					sd->aa.last_teleport = last_tick; // set it to 0 as we found target
 
