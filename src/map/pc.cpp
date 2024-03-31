@@ -12961,11 +12961,11 @@ int pc_calc_pvprank(map_session_data *sd)
 	sd->pvp_rank=1;
 	map_foreachinmap(pc_calc_pvprank_sub,sd->bl.m,BL_PC,sd);
 
-	if( (old!=sd->pvp_rank || sd->pvp_lastusers!=mapdata->cell_pvpuser) || sd->state.pvp ) 
-	{
-		clif_pvpset( sd, sd->pvp_rank, sd->pvp_lastusers = mapdata->cell_pvpuser, 0);
-		return sd->pvp_rank;
-	}
+	// if( (old!=sd->pvp_rank || sd->pvp_lastusers!=mapdata->cell_pvpuser) || sd->state.pvp ) 
+	// {
+	// 	clif_pvpset( sd, sd->pvp_rank, sd->pvp_lastusers = mapdata->cell_pvpuser, 0);
+	// 	return sd->pvp_rank;
+	// }
 
 	if(old!=sd->pvp_rank || sd->pvp_lastusers!=mapdata->users_pvp)
 		clif_pvpset(sd,sd->pvp_rank,sd->pvp_lastusers=mapdata->users_pvp,0);
