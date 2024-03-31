@@ -1,0 +1,239 @@
+prontera,157,172,5	script	Party VS Manager::pvsp	683,{
+
+	callsub OnDoCheckCreate;
+	mes .name$;
+	mes "I'm the Party vs Party Manager!";
+	mes "What can i do for you?";
+	next;
+	switch(select("> ^0055FFSelect Match^000000:> ^FF5500Create Game^000000:> Cancel")){
+		case 1:
+			mes .name$;
+			if(.Start){
+				mes "A match is currently being held";
+				end;
+			}
+			if(!is_party_leader(getcharid(1)) || !getcharid(1)){
+				mes "Only the party leader can register";
+				end;
+			}
+			.@pid = getcharid(1);
+			getpartymember .@pid,1,.@cid;
+			.@count = $@partymembercount;
+			mes "Please select a match up.";
+			.@menu$ = "";
+			for(.@i=0;.@i<getarraysize(.Create);.@i++)
+				.@menu$ = .@menu$ + getpartyname(.Create[.@i]) +" [^FF5500"+.No[.@i]+"^000000 vs ^FF5500"+.No[.@i]+"^000000]:";
+			next;
+			.@opt = select(.@menu$)-1;
+			if(.Create[.@opt]==getcharid(1)){
+				mes .name$;
+				mes "You cannot select your own party.";
+				end;
+			}
+			mes .name$;
+			mes "You selected : "+getpartyname(.Create[.@opt])+" [^FF5500"+.No[.@opt]+"^000000 vs ^FF5500"+.No[.@opt]+"^000000]";
+			mes "Confirm Match up?";
+			next;
+			if(select("> ^FF5500Confirm^000000:> Cancel")==2) end;
+			getpartymember .Create[.@opt],1,.@cid;
+			.@ecount = $@partymembercount;
+			if(.No[.@opt]!=.@ecount){
+				mes .name$;
+				mes "The opponent party member count is not "+.No[.@opt];
+				mes "Their Party Matchup is Removed.";
+				deletearray .Create[.@opt],1;
+				deletearray .No[.@opt],1;
+				end;
+			}
+			if(.No[.@opt]!=.@count){
+				mes .name$;
+				mes "This match is for [^FF5500"+.No[.@opt]+"^000000 vs ^FF5500"+.No[.@opt]+"^000000]";
+				mes "Your party count is ^FF5500"+.@count+"^000000.";
+				end;
+			}
+			if(.Start){
+				mes .name$;
+				mes "A match is currently being held";
+				end;
+			}
+			callsub OnDoMatchup,.@opt,.@pid;
+			break;
+		case 2:
+			mes .name$;
+			if(!is_party_leader(getcharid(1)) || !getcharid(1)){
+				mes "Only the party leader can register";
+				end;
+			}
+			if(inarray(.Create,getcharid(1))>=0){
+				mes "Your party is registered.";
+				end;
+			}
+			.@pid = getcharid(1);
+			getpartymember .@pid,1,.@cid;
+			.@count = $@partymembercount;
+			if(.@count < .Min){
+				mes "Minimum Member to register is "+.Min;
+				end;
+			}
+			if(.@count > .Max){
+				mes "Maximum Member to register is "+.Max;
+				end;
+			}
+			mes "Confirm to create a [ ^FF5500"+.@count+"^000000 vs ^FF5500"+.@count+"^000000 ] Match up?";
+			next;
+			if(select("> ^FF5500Confirm^000000:> Cancel")==2) end;
+			.Create[getarraysize(.Create)] = .@pid;
+			.No[getarraysize(.No)] = .@count;
+			mes .name$;
+			mes "Register Success!";
+			announce "Party VS Manager: The party [ "+getpartyname(.@pid)+" ] has created a [ "+.@count+"vs."+.@count+"] match up~",bc_all;
+			break;
+		case 3:
+			mes .name$;
+			mes "Okay, Goodbye!~";
+	}
+end;
+
+OnDoMatchup:
+	.Start = 1;
+	.RT = .TimeOut*12;
+	.PartyID[1] = .Create[getarg(0)];
+	.PartyID[2] = getarg(1);
+	warpparty .Map$,.Team1XY[0],.Team1XY[1],.PartyID[1];
+	warpparty .Map$,.Team2XY[0],.Team2XY[1],.PartyID[2];
+	deletearray .Create[getarg(0)],1;
+	deletearray .No[getarg(0)],1;
+	callsub OnStartMatch;
+end;
+
+OnDoCheckCreate:
+	for(.@i=0;.@i<getarraysize(.Create);.@i++)
+		if(getpartyname(.Create[.@i])=="null"){
+			deletearray .Create[.@i],1;
+			deletearray .No[.@i],1;
+		}
+return;
+
+OnStartMatch:
+	setcell .Map$,.Team1Walkable[0],.Team1Walkable[1],.Team1Walkable[2],.Team1Walkable[3],cell_walkable,0;
+	setcell .Map$,.Team2Walkable[0],.Team2Walkable[1],.Team2Walkable[2],.Team2Walkable[3],cell_walkable,0;
+	sleep 2500;
+	mapannounce .Map$,"Party vs Party: You have 20 Seconds to get ready~",bc_map;
+	sleep 10000;
+	mapannounce .Map$,"Party vs Party: Last 10 Seconds..",bc_map;
+	sleep 5000;
+	mapannounce .Map$,"Party vs Party: 5",bc_map;
+	sleep 1250;
+	mapannounce .Map$,"Party vs Party: 4",bc_map;
+	sleep 1250;
+	mapannounce .Map$,"Party vs Party: 3",bc_map;
+	sleep 1250;
+	mapannounce .Map$,"Party vs Party: 2",bc_map;
+	sleep 1250;
+	mapannounce .Map$,"Party vs Party: 1",bc_map;
+	sleep 1250;
+	mapannounce .Map$,"Party vs Party: GOOOOO!..",bc_map;
+	setcell .Map$,.Team1Walkable[0],.Team1Walkable[1],.Team1Walkable[2],.Team1Walkable[3],cell_walkable,1;
+	setcell .Map$,.Team2Walkable[0],.Team2Walkable[1],.Team2Walkable[2],.Team2Walkable[3],cell_walkable,1;
+	initnpctimer;
+end;
+
+OnTimer5000:
+	initnpctimer;
+	if(!getmapusers(.Map$)){
+		stopnpctimer;
+		.Start = 0;
+	}
+	callsub OnCheckMatch;
+	.RT--;
+	if(.RT <= 0){
+		stopnpctimer;
+		.@num = getmapunits(BL_PC,.Map$,.@name$[0]);
+		for(.@i=0;.@i<.@num;.@i++){
+			if(getcharid(1,.@name$[.@i]) == .PartyID[1]) .@pid1++;
+			if(getcharid(1,.@name$[.@i]) == .PartyID[2]) .@pid2++;
+		}
+		if(.@pid1 > .@pid2){
+			.@win = 1;
+			.@lose = 2;
+		}
+		else if(.@pid2 > .@pid1){
+			.@win = 2;
+			.@lose = 1;
+		} else {
+			mapwarp .Map$,"welgaia",156,230;
+			.Start = 0;
+			stopnpctimer;
+			end;
+		}
+		callsub OnEndMatch,.@win,.@lose;
+	}
+end;
+
+OnCheckMatch:
+	.@num = getmapunits(BL_PC,.Map$,.@name$[0]);
+	for(.@i=0;.@i<.@num;.@i++){
+			if(getcharid(1,.@name$[.@i]) == .PartyID[1]) .@pid1++;
+			if(getcharid(1,.@name$[.@i]) == .PartyID[2]) .@pid2++;
+	}
+	if(.@pid1 <= 0){
+		.@win = 2;
+		.@lose = 1;
+	}
+	else if(.@pid2 <= 0){
+		.@win = 1;
+		.@lose = 2;
+	}
+	if(.@pid1 <=0 && .@pid2 <= 0){
+		.Start = 0;
+		stopnpctimer;
+		end;
+	}
+	if(.@win)
+		callsub OnEndMatch,.@win,.@lose;
+return;
+
+OnEndMatch:
+	stopnpctimer;
+	mapannounce .Map$,"Party vs Party: The [ "+getpartyname(.PartyID[getarg(0)])+" ] party won the match!",bc_map;
+	sleep 1250;
+	getpartymember .PartyID[getarg(0)],2,.@aid;
+	.@count = $@partymembercount;
+	for( .@i=0; .@i < .@count; .@i++ ){
+		if(isloggedin(.@aid[.@i])){
+			attachrid .@aid[.@i];
+			for(.@j=0;.@j<getarraysize(.Team1_Rewards);.@j+=2)
+				getitem .Team1_Rewards[.@j],.Team1_Rewards[.@j+1];
+			detachrid;
+		}
+	}
+	getpartymember .PartyID[getarg(1)],2,.@aid;
+	.@count = $@partymembercount;
+	for( .@i=0; .@i < .@count; .@i++ ){
+		if(isloggedin(.@aid[.@i])){
+			attachrid .@aid[.@i];
+			for(.@j=0;.@j<getarraysize(.Team2_Rewards);.@j+=2)
+				getitem .Team2_Rewards[.@j],.Team2_Rewards[.@j+1];
+			detachrid;
+		}
+	}
+	//warpparty "SavePointAll",0,0,.PartyID[getarg(0)],.Map$,100,100;
+	mapwarp .Map$,"welgaia",156,230;
+	.Start = 0;
+end;
+
+OnInit:
+	.name$ = "[ ^FF5500Party VS Manager^000000 ]";
+	.Map$ = "guild_vs3";
+	setarray .Team1XY[0],15,50;
+	setarray .Team2XY[0],84,50;
+	setarray .Team1Walkable[0],18,55,19,44;
+	setarray .Team2Walkable[0],80,55,81,44;
+	
+	.Min = 1;
+	.Max = 12;
+	.TimeOut = 10; //Minutes
+	setarray .Team1_Rewards[0],501,5,502,5;	//Winner Rewards
+	setarray .Team2_Rewards[0],501,1,502,1;	//Loser Rewards
+end;
+}
