@@ -2042,7 +2042,7 @@ Body:
     AegisName: Siege_White_Potion
     Name: WoE White Potion
     Type: Healing
-    Weight: 5
+    Weight: 30
     Trade:
       NoDrop: true
       NoTrade: true
@@ -2057,7 +2057,7 @@ Body:
     AegisName: Siege_Blue_Potion
     Name: WoE Blue Potion
     Type: Healing
-    Weight: 5
+    Weight: 30
     Trade:
       NoDrop: true
       NoTrade: true
@@ -4791,7 +4791,7 @@ Body:
     Name: Bubble Gum
     Type: Usable
     Buy: 2
-    Weight: 10
+    Weight: 30
     Delay:
       Duration: 60000
       Status: Reuse_Limit_D
@@ -4804,7 +4804,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      sc_start SC_ITEMBOOST,1800000,100;
+      sc_start SC_ITEMBOOST,1800000,40;
   - Id: 12211
     AegisName: Kafra_Card
     Name: Kafra Card
@@ -5425,7 +5425,7 @@ Body:
     Name: Bubble Gum
     Type: Usable
     Buy: 2
-    Weight: 10
+    Weight: 30
     Trade:
       NoDrop: true
       NoTrade: true
@@ -15827,10 +15827,10 @@ Body:
       getitem 756,50;
   - Id: 13989
     AegisName: Acidbomb_10_Box
-    Name: Acid Bomb 10 Box
+    Name: Acid Bomb 30 Box
     Type: Cash
     Buy: 20
-    Weight: 10
+    Weight: 500
     Trade:
       NoDrop: true
       NoTrade: true
@@ -16057,7 +16057,7 @@ Body:
     Name: Elite Siege Supply Box
     Type: Cash
     Buy: 20
-    Weight: 10
+    Weight: 50
     Trade:
       NoDrop: true
       NoTrade: true
@@ -16074,7 +16074,7 @@ Body:
     Name: Poison Bottle 10 Box
     Type: Cash
     Buy: 20
-    Weight: 10
+    Weight: 100
     Trade:
       NoDrop: true
       NoTrade: true
@@ -18746,7 +18746,7 @@ Body:
     Name: Blessing 10 Scroll Box
     Type: Cash
     Buy: 20
-    Weight: 10
+    Weight: 100
     Trade:
       NoDrop: true
       NoTrade: true
@@ -18762,7 +18762,7 @@ Body:
     Name: Increase AGI 10 scroll Box
     Type: Cash
     Buy: 20
-    Weight: 10
+    Weight: 100
     Trade:
       NoDrop: true
       NoTrade: true
@@ -20891,20 +20891,28 @@ Body:
       sc_start SC_HITFOOD,1800000,30;
   - Id: 14532
     AegisName: Battle_Manual25
-    Name: Field Manual 25%
+    Name: Field Manual 40%
     Type: Usable
     Buy: 2
-    Weight: 10
+    Weight: 50
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
     NoUse:
       Sitting: true
     Script: |
-      sc_start SC_EXPBOOST,1800000,25;
+      sc_start SC_EXPBOOST,1800000,40;
   - Id: 14533
     AegisName: Battle_Manual100
     Name: Field Manual 100%
     Type: Usable
     Buy: 2
-    Weight: 10
+    Weight: 30
     Trade:
       NoDrop: true
       NoTrade: true
@@ -21561,7 +21569,7 @@ Body:
     AegisName: Job_Manual50
     Name: JOB Battle Manual
     Type: Usable
-    Weight: 10
+    Weight: 40
     NoUse:
       Sitting: true
     Trade:
