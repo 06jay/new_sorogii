@@ -2,33 +2,33 @@
 function	script	ADControl30	{
 
 if(#AD30 > gettimetick(2)){
-    mes "[ Assistive Device ]";
+    mes "[ Important Notice ]";
     mes "^ff0000Note^000000:";
     mes "Item: ^0000ffAssistive Device(30MIN)^000000";
     mes "You need to wait "+Time2Str(#AD30)+" before open again.";
     close;
 }
 
-    mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
     mes "Item: ^0000ffAssistive Device(30MIN)^000000";
     mes "Warning! You can use this device, but you cannot use them together as they do not stack.";
-    mes "It's best to finish using your first Assistive Device before opening another one when it's finished.";
+    mes "It's best to finish using your first Assistive Device before opening another one.";
 
     next;
-    mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
     mes "Item: ^0000ffAssistive Device(30MIN)^000000";
     mes "Would you like to open this box?";
     next;
 switch(select("No:Yes")){
     case 1:
-        mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
         mes "Item: ^0000ffAssistive Device(30MIN)^000000";
         mes "Okay have a nice day";
         close;
 
     case 2:
     if(countitem(40011) < 1 ){
-        mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
         mes "Item: ^0000ffAssistive Device(30MIN)^000000";
         mes "Wait a second...";
         mes "Do you think I'm stupid?!";
@@ -49,32 +49,32 @@ switch(select("No:Yes")){
 function	script	ADControl1h	{
 
 if(#AD1H > gettimetick(2)){
-    mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
     mes "^ff0000Note^000000:";
     mes "Item: ^0000ffAssistive Device(1HR)^000000";
     mes "You need to wait "+Time2Str(#AD1H)+" before open again.";
     close;
 }
 
-    mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
     mes "Item: ^0000ffAssistive Device(1HR)^000000";
     mes "Warning! You can use this device, but you cannot use them together as they do not stack.";
-    mes "It's best to finish using your first Assistive Device before opening another one when it's finished.";
+    mes "It's best to finish using your first Assistive Device before opening another one.";
     next;
-    mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
     mes "Item: ^0000ffAssistive Device(1HR)^000000";
     mes "Would you like to open this box?";
     next;
 switch(select("No:Yes")){
     case 1:
-        mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
         mes "Item: ^0000ffAssistive Device(1HR)^000000";
         mes "Okay have a nice day";
         close;
 
     case 2:
     if(countitem(40012) < 1 ){
-        mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
         mes "Item: ^0000ffAssistive Device(1HR)^000000";
         mes "Wait a second...";
         mes "Do you think I'm stupid?!";
@@ -94,32 +94,32 @@ switch(select("No:Yes")){
 function	script	ADControl3h	{
 
 if(#AD3H > gettimetick(2)){
-    mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
     mes "^ff0000Note^000000:";
     mes "Item: ^0000ffAssistive Device(3HRS)^000000";
     mes "You need to wait "+Time2Str(#AD3H)+" before open again.";
     close;
 }
 
-    mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
     mes "Item: ^0000ffAssistive Device(3HRS)^000000";
     mes "Warning! You can use this device, but you cannot use them together as they do not stack.";
-    mes "It's best to finish using your first Assistive Device before opening another one when it's finished.";
+    mes "It's best to finish using your first Assistive Device before opening another one.";
     next;
-    mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
     mes "Item: ^0000ffAssistive Device(3HRS)^000000";
     mes "Would you like to open this box?";
     next;
 switch(select("No:Yes")){
     case 1:
-        mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
         mes "Item: ^0000ffAssistive Device(3HRS)^000000";
         mes "Okay have a nice day";
         close;
 
     case 2:
     if(countitem(40013) < 1 ){
-        mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";;
         mes "Item: ^0000ffAssistive Device(3HRS)^000000";
         mes "Wait a second...";
         mes "Do you think I'm stupid?!";
@@ -139,31 +139,32 @@ switch(select("No:Yes")){
 function	script	ADControl5h	{
 
 if(#AD5H > gettimetick(2)){
-    mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
     mes "^ff0000Note^000000:";
     mes "Item: ^0000ffAssistive Device(5HRS)^000000";
     mes "You need to wait "+Time2Str(#AD5H)+" before open again.";
     close;
 }
 
-    mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
     mes "Item: ^0000ffAssistive Device(5HRS)^000000";
-    mes "LAGAY MO NALANG YUNG NOTE MO DITO PARA SAKANILA";
+    mes "Warning! You can use this device, but you cannot use them together as they do not stack.";
+    mes "It's best to finish using your first Assistive Device before opening another one.";
     next;
-    mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
     mes "Item: ^0000ffAssistive Device(5HRS)^000000";
     mes "Would you like to open this box?";
     next;
 switch(select("No:Yes")){
     case 1:
-        mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
         mes "Item: ^0000ffAssistive Device(5HRS)^000000";
         mes "Okay have a nice day";
         close;
 
     case 2:
     if(countitem(40014) < 1 ){
-        mes "[ Assistive Device ]";
+    mes "[ ^FF0000Important Notice^000000 ]";
         mes "Item: ^0000ffAssistive Device(5HRS)^000000";
         mes "Wait a second...";
         mes "Do you think I'm stupid?!";

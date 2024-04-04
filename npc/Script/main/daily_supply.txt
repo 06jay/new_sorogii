@@ -1,4 +1,5 @@
-prontera,167,199,6	script	Yol	757,{
+prontera,167,199,3	script	Yol	4_ep17_cleaner,{
+cutin "rg2.png",2;
 
 
 
@@ -8,28 +9,37 @@ set @rewardamount,1;
 if(gettimetick(2) > #lastTimeTalked) {
 
 mes .@rewname$;
-mes "Hello "+strcharinfo(0)+",I";
-mes "am here to give you a daily";
-mes "Reward. Do you want to claim it now?";
+mes "Hello "+strcharinfo(0)+"";
+mes "I am here to give you a daily";
+mes "^FF0000Just make sure your not over weight, okay?^000000";
+mes "Do you want to claim it now?";
 next;
-switch(select("Yes:No:Cancel")) {
+switch(select("Yes:No")) {
 case 1:
 mes .@rewname$;
 mes "Okay going to give you the supplies!";
 next;
-mes "Welcome...this is the token from our Server.";
-mes "Happy Grinding. And  Remember "+ strcharinfo(0) +" ^FF0000Keep grinding!!!^000000";
+mes "Welcome...this is your daily supplies from our Server.";
+mes "And Remember "+ strcharinfo(0) +" ^FF0000Keep grinding!!!^000000^_^";
 
-getitem 11503,250;
-getitem 11504,125;
+getitem 11503,200;
+getitem 11504,100;
 getitem 12210,2;
+getitem 12216,5;
+getitem 12215,5;
+getitem 40008,2;
+getitem 40011,1;
+getitem 14532,2;
 set #lastTimeTalked,gettimetick(2)+43200;
-close;
+	close2;
+	cutin "",255;
+	end;
 case 2:
 mes .@rewname$;
 mes "Okay goodbye!";
-close;
-case 3:
+	close2;
+	cutin "",255;
+	end;
 close;
 }
 }
@@ -39,7 +49,10 @@ close;
      .@minutes = (.@delay - (.@hours*60*60)) / 60;
      .@seconds = (.@delay - (.@hours*60*60) - (.@minutes*60));
      mes "Sorry, you have to wait "+.@hours+" hour"+(.@hours>1?"s":"")+" "+.@minutes+" minute"+(.@minutes>1?"s":"")+" "+.@seconds+" second"+(.@seconds>1?"s":"")+" to claim your free supplies again.";
-close;
+	close2;
+	cutin "",255;
+	end;
+
 }
 
 // Duplicates

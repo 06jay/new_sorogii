@@ -17,7 +17,7 @@
 //============================================================
 
 -	script	Warper	-1,{
-		cutin "thana3.png",2;
+		cutin "AB1.png",2;
 function Go; function Disp; function Pick; function Restrict;
 
 // --------------------------------------------------
@@ -1364,7 +1364,7 @@ nameless_n,259,213,4	duplicate(Warper)	Warper#nam	1708
 niflheim,205,179,4	duplicate(Warper)	Warper#nif	1708
 pay_arche,42,134,4	duplicate(Warper)	Warper#arc	1708
 payon,182,108,4	duplicate(Warper)	Warper#pay	1708
-prontera,160,192,4	duplicate(Warper)	Warper#prt	1708 
+prontera,160,192,3	duplicate(Warper)	Warper#prt	4_ep17_morning
 prt_fild05,279,223,6	duplicate(Warper)	Warper#cul	1708
 rachel,135,116,4	duplicate(Warper)	Warper#rac	1708
 splendide,205,153,4	duplicate(Warper)	Warper#spl	1708

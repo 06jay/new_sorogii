@@ -29,8 +29,8 @@
 //============================================================
 prontera,119,188,6	script	Hourly Manager#0121	833,{ callfunc "weshop",1,4; }
 prontera,119,198,6	script	PVP Master#0121	733,{ callfunc "weshop",2; }
-prontera,145,184,4	script	Loki#012q1xs	416,{ callfunc "weshop",3; }
-prontera,119,193,6	script	Supplies Shop	512,{ callfunc "weshop",8,9; }
+//prontera,145,184,4	script	Loki#012q1xs	416,{ callfunc "weshop",3; }
+prontera,170,179,3	script	Supplies Shop	512,{ callfunc "weshop",8,9; }
 //prontera,119,191,6	script	Supplies Shop#001	512,{ callfunc "weshop",9; }
 
 
@@ -98,14 +98,16 @@ OnInit:
 
 // Shop 1 itemmall
 	Add(8,14003,1,0,0,0,7179,3);//esb nt
-	Add(8,12210,1,0,0,0,7179,5);//bbg
-	Add(8,12622,1,0,0,0,7179,2000);//bman nt
-	Add(8,14533,1,0,0,0,7179,5);//bman nt
-	Add(8,14545,1,0,0,0,7179,5);//bmx3 nt
-	Add(8,14592,1,0,0,0,7179,5);//jman nt
+	Add(8,12264,1,0,0,0,7179,3);//bbg 100%
+	Add(8,14533,1,0,0,0,7179,4);//bman 100%
+	Add(8,14592,1,0,0,0,7179,4);//jman nt 50%
 	Add(8,7776 ,1,0,0,0,7179,20);//gymnt
-	Add(8,12211 ,1,0,0,0,7179,5);//kafra
+	Add(8,12211 ,1,0,0,0,7179,2);//kafra
 	Add(8,12221 ,1,0,0,0,7179,3);//mic nt
+	Add(8,14004,1,0,0,0,7179,20);//poison
+	Add(8,13989,1,0,0,0,7179,50);//acidbomb
+	Add(8,14169 ,1,0,0,0,7179,10);//bless
+	Add(8,14170 ,1,0,0,0,7179,10);//agi
 	Add(8,12207,1,0,0,0,7179,10);//vit
 	Add(8,12206,1,0,0,0,7179,10);//dex
 	Add(8,12205,1,0,0,0,7179,10);//luk
@@ -113,11 +115,9 @@ OnInit:
 	Add(8,12203,1,0,0,0,7179,10);//agi
 	Add(8,12202,1,0,0,0,7179,10);//str
 	Add(8,6316 ,1,0,0,0,7179,10);//token nt
-	Add(8,14004,1,0,0,0,7179,30);//poison
-	Add(8,13989,1,0,0,0,7179,30);//acidbomb
-	Add(8,14169 ,1,0,0,0,7179,20);//bless
-	Add(8,14170 ,1,0,0,0,7179,20);//agi
 //	Add(8,13953,1,0,0,0,7179,100);//convex
+//	Add(8,12622,1,0,0,0,7179,2000);//bman nt
+//	Add(8,14545,1,0,0,0,7179,4);//bmx3 nt
 
 
 // Shop 1 hourly

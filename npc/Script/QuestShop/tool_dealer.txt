@@ -1,7 +1,7 @@
 izlude,151,143,2	script	Tool Dealer#0112	10301 ,{
 
 
-cutin "ep171_elyumina03.png",2;
+cutin "sn1.png",2;
 	
 
 	switch(select("Sell Items:Tools:Ammunition:Gemstone")) {
@@ -53,7 +53,7 @@ niflheim,212,182,5	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12123z	10301
 payon,164,99,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12dzx	10301 
 payon,169,233,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12eeq	10301 
 
-prontera,145,197,5	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1222q	10301 
+prontera,145,197,5	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1222q	4_ep17_brokenbeta
 rachel,123,121,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12eqeq	10301 
 splendide,201,153,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12dq	10301 
 thor_camp,249,74,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12z2	10301 

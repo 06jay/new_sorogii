@@ -15,8 +15,8 @@
 //= 1.9 Migrate/Integrate to Global Functions Platinum Skills. [mazvi]//jobmaster sprite 10154
 //============================================================
 
-prontera,151,192,5	script	Job Master	403   ,{
-	cutin "valk1.png",2;
+prontera,151,192,5	script	Job Master	4_ep17_master_a,{
+	cutin "rg1.png",2;
 function Get_Job_Equip;
 // Checks if the Player has the required level.
 // closes if not, returns if yes
@@ -269,7 +269,7 @@ mes "Let's go for adventure sometimes?";
 			mes "Second Class = ^ff0000"+.cost[1]+"^000000";
 			mes "Rebirth = ^ff0000"+.cost[2]+"^000000";
 			mes "Transcended =^ff0000"+.cost[3]+"^000000.";
-			mes "And ofcourse with ^FF00CCPLATINUM SKILLS^000000 included.";
+			mes "And ofcourse with ^FF00CCPlatinum Skills Included^000000 included.";
 			next;
 	Check_Riding();
 	Check_SkillPoints();
@@ -525,7 +525,7 @@ OnInit:
 	.BabySummoner = false;			// Enable Baby Summoner?
 	.LastJob = true;			// Enforce linear class changes?
 	.SkillPointCheck = true;		// Force player to use up all skill points?
-	.Platinum = false;			// Get platinum skills automatically?
+	.Platinum = true;			// Get platinum skills automatically?
 	.GetJobEquip = true;			// Get job equipment (mostly weapons) on job change?
 
 	// Level Requirements
@@ -535,12 +535,12 @@ OnInit:
 	setarray .Req_Third[0],99,50;		// Minimum base level, job level to change to third class
 	setarray .Req_Exp_NJ_GS[0],99,70; 	// Minimum base level, job level to turn into Expanded Ninja and Gunslinger
 	setarray .Req_Exp_SNOVI[0],99,99; 	// Minimum base level, job level to turn into Expanded Super Novice
-	.SNovice = 45;				// Minimum base level to turn into Super Novice
+	.SNovice = 70;				// Minimum base level to turn into Super Novice
 	setarray .cost,				// Cost for Jobchange
 	0,					// To First Job
 	0,					// To Second Job
 	0,				// To Transcendent Job
-	999999;				// To Rebirth
+	1000000;				// To Rebirth
 //	setarray .rebirthRequiredItemId[0],7825,7825,7825,7825,7825,7825,7825,7825,7825,7825,7825,7825,7825,7825; // Item Requeriment for Rebirth.
 	
 	// Setting adjustments by PACKETVER

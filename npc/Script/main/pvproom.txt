@@ -1,8 +1,8 @@
-prontera,164,195,4	script	Akio::pvp	10298,{
+prontera,164,195,3	script	Akio::pvp	4_ep17_guard_b,{
 
 	while(1) {
 		mes "["+strnpcinfo(0)+"]";
-cutin "ex_se_star03.png",2;
+cutin "ch1.png",2;
 		.@menu$ = "";
 		for (.@i = 0; .@i < .map_size; .@i++)
 			.@menu$ = .@menu$ + sprintf("%s [ %d / %d ]", .map_name$[.@i], getmapusers(.map$[.@i]), .map_max_player[.@i]) + ":";
