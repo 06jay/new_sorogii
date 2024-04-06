@@ -730,7 +730,7 @@ Body:
     Name: Saber
     Type: Weapon
     SubType: 1hSword
-    Buy: 49000
+    Buy: 24500
     Weight: 1000
     Attack: 115
     Range: 1
@@ -755,7 +755,7 @@ Body:
     Name: Saber
     Type: Weapon
     SubType: 1hSword
-    Buy: 49000
+    Buy: 24500
     Weight: 1000
     Attack: 115
     Range: 1
@@ -1355,7 +1355,7 @@ Body:
     Name: Slayer
     Type: Weapon
     SubType: 2hSword
-    Buy: 15000
+    Buy: 7500
     Weight: 1300
     Attack: 90
     Range: 1
@@ -1467,7 +1467,7 @@ Body:
     Name: Two-Handed Sword
     Type: Weapon
     SubType: 2hSword
-    Buy: 60000
+    Buy: 30000
     Weight: 2200
     Attack: 160
     Range: 1
@@ -2784,7 +2784,7 @@ Body:
     Name: Stiletto
     Type: Weapon
     SubType: Dagger
-    Buy: 19500
+    Buy: 9750
     Weight: 700
     Attack: 87
     Range: 1
@@ -2819,7 +2819,7 @@ Body:
     Name: Stiletto
     Type: Weapon
     SubType: Dagger
-    Buy: 19500
+    Buy: 9750
     Weight: 700
     Attack: 87
     Range: 1
@@ -2888,7 +2888,7 @@ Body:
     Name: Gladius
     Type: Weapon
     SubType: Dagger
-    Buy: 43000
+    Buy: 21500
     Weight: 700
     Attack: 105
     Range: 1
@@ -2921,7 +2921,7 @@ Body:
     Name: Gladius
     Type: Weapon
     SubType: Dagger
-    Buy: 43000
+    Buy: 21500
     Weight: 700
     Attack: 105
     Range: 1
@@ -5234,7 +5234,7 @@ Body:
     Name: Buster
     Type: Weapon
     SubType: 2hAxe
-    Buy: 34000
+    Buy: 17000
     Weight: 2200
     Attack: 155
     Range: 1
@@ -7960,7 +7960,7 @@ Body:
     Name: Flail
     Type: Weapon
     SubType: Mace
-    Buy: 16000
+    Buy: 8000
     Weight: 900
     Attack: 69
     Range: 1
@@ -7985,7 +7985,7 @@ Body:
     Name: Flail
     Type: Weapon
     SubType: Mace
-    Buy: 16000
+    Buy: 8000
     Weight: 900
     Attack: 69
     Range: 1
@@ -8060,7 +8060,7 @@ Body:
     Name: Morning Star
     Type: Weapon
     SubType: Mace
-    Buy: 41000
+    Buy: 20500
     Weight: 1500
     Attack: 110
     Range: 1
@@ -8134,7 +8134,7 @@ Body:
     Name: Sword Mace
     Type: Weapon
     SubType: Mace
-    Buy: 50000
+    Buy: 25000
     Weight: 1200
     Attack: 130
     Range: 1
@@ -12994,7 +12994,7 @@ Body:
     Name: Harp
     Type: Weapon
     SubType: Musical
-    Buy: 62000
+    Buy: 31000
     Weight: 900
     Attack: 114
     Range: 1
@@ -13014,7 +13014,7 @@ Body:
     Name: Harp
     Type: Weapon
     SubType: Musical
-    Buy: 62000
+    Buy: 31000
     Weight: 900
     Attack: 114
     Range: 1
@@ -16948,7 +16948,7 @@ Body:
     AegisName: Padded_Armor_
     Name: Padded Armor
     Type: Armor
-    Buy: 48000
+    Buy: 24000
     Weight: 2800
     Defense: 7
     Slots: 1
@@ -16991,7 +16991,7 @@ Body:
     AegisName: Chain_Mail_
     Name: Chain Mail
     Type: Armor
-    Buy: 65000
+    Buy: 32500
     Weight: 3300
     Defense: 8
     Slots: 1
@@ -17013,7 +17013,7 @@ Body:
     AegisName: Plate_Armor
     Name: Full Plate
     Type: Armor
-    Buy: 80000
+    Buy: 40000
     Weight: 4500
     Defense: 10
     Jobs:
@@ -19886,7 +19886,7 @@ Body:
     AegisName: Ragamuffin_Cape
     Name: Ragamuffin Manteau
     Type: Armor
-    Buy: 56000
+    Buy: 28000
     Weight: 500
     Defense: 1
     Jobs:
@@ -20150,7 +20150,7 @@ Body:
     AegisName: Undershirt
     Name: Undershirt
     Type: Armor
-    Buy: 20000
+    Buy: 10000
     Weight: 150
     Defense: 2
     Locations:
@@ -21031,7 +21031,7 @@ Body:
     AegisName: Gold_Ring
     Name: Gold Ring
     Type: Armor
-    Buy: 30000
+    Buy: 15000
     Weight: 100
     Locations:
       Both_Accessory: true
@@ -21040,7 +21040,7 @@ Body:
     AegisName: Silver_Ring
     Name: Silver Ring
     Type: Armor
-    Buy: 20000
+    Buy: 10000
     Weight: 100
     Locations:
       Both_Accessory: true
@@ -21058,7 +21058,7 @@ Body:
     AegisName: Diamond_Ring
     Name: Diamond Ring
     Type: Armor
-    Buy: 45000
+    Buy: 22500
     Weight: 100
     Locations:
       Both_Accessory: true
@@ -37108,7 +37108,7 @@ Body:
     Name: Cowardice Blade
     Type: Weapon
     SubType: Dagger
-    Buy: 52000
+    Buy: 26000
     Weight: 700
     Attack: 80
     Range: 1
@@ -37148,7 +37148,7 @@ Body:
     Name: Khukri
     Type: Weapon
     SubType: Dagger
-    Buy: 240000
+    Buy: 120000
     Weight: 600
     Attack: 150
     Range: 1

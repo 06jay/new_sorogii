@@ -125,7 +125,7 @@ Body:
     AegisName: Blue_Potion
     Name: Blue Potion
     Type: Healing
-    Buy: 5000
+    Buy: 2500
     Weight: 150
     Script: |
       itemheal 0,rand(40,60);
@@ -295,7 +295,7 @@ Body:
     AegisName: Fruit_Of_Mastela
     Name: Mastela Fruit
     Type: Healing
-    Buy: 8500
+    Buy: 4250
     Weight: 30
     Flags:
       BuyingStore: true
@@ -330,7 +330,7 @@ Body:
     AegisName: Royal_Jelly
     Name: Royal Jelly
     Type: Healing
-    Buy: 7000
+    Buy: 3500
     Weight: 150
     Flags:
       BuyingStore: true
@@ -457,7 +457,7 @@ Body:
     AegisName: Piece_Of_Cake
     Name: Piece of Cake
     Type: Healing
-    Buy: 3000
+    Buy: 1500
     Weight: 100
     Flags:
       BuyingStore: true
@@ -517,7 +517,7 @@ Body:
     AegisName: Cheese
     Name: Cheese
     Type: Healing
-    Buy: 2800
+    Buy: 1400
     Weight: 50
     Flags:
       BuyingStore: true
@@ -1055,7 +1055,7 @@ Body:
     AegisName: Old_Blue_Box
     Name: Old Blue Box
     Type: Usable
-    Buy: 10000
+    Buy: 5000
     Weight: 200
     Flags:
       BuyingStore: true
@@ -1099,7 +1099,7 @@ Body:
     AegisName: Yggdrasilberry
     Name: Yggdrasil Berry
     Type: Healing
-    Buy: 5000
+    Buy: 2500
     Weight: 300
     Flags:
       BuyingStore: true
@@ -1112,7 +1112,7 @@ Body:
     AegisName: Seed_Of_Yggdrasil
     Name: Yggdrasil Seed
     Type: Healing
-    Buy: 5000
+    Buy: 2500
     Weight: 300
     Flags:
       BuyingStore: true
@@ -1133,7 +1133,7 @@ Body:
     AegisName: Leaf_Of_Yggdrasil
     Name: Yggdrasil Leaf
     Type: Delayconsume
-    Buy: 4000
+    Buy: 2000
     Weight: 100
     Flags:
       BuyingStore: true
@@ -1648,7 +1648,7 @@ Body:
     AegisName: Inspector_Certificate
     Name: Authoritative Badge
     Type: Usable
-    Buy: 1450
+    Buy: 725
     Weight: 30
     Flags:
       BuyingStore: true
@@ -2833,7 +2833,7 @@ Body:
     AegisName: Stone_Of_Intelligence_
     Name: Stone of Sage
     Type: Usable
-    Buy: 100000
+    Buy: 50000
     Weight: 300
     Flags:
       BuyingStore: true
