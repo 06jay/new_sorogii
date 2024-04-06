@@ -1,8 +1,8 @@
 -	script	arriving	-1,{
 OnPCLoginEvent:
 if ( !#new_account ) {
-announce "Attention, citizens of Midgard: "+strcharinfo(0)+" is here to Play! Welcome to Promise Ragnarok WORLD!!!",bc;
-dispbottom "Welcome to Promise Server! Lets have some fun!!";
+announce "Attention, citizens of Midgard: "+strcharinfo(0)+" is here to Play! Welcome to Promise Server!!",bc;
+dispbottom "Welcome to Promise Server. GLHF! Play Wise,Play Nice! Choose PromiseRO";
 #new_account = 1;
 }
 else

@@ -7,12 +7,12 @@
 			"Reporting bugs and errors will result in immediate compensation.",
 			"Don't forget to claim your daily supplies, guys. Happy grinding!",
 			"Visit our official Facebook page for more news and updates!",
-			"Thank you for participating our BETA TEST Phase! Have a great day ahead. Love you all!";
+			"Thank you so much playing with us! Have a great day ahead. Love you all!";
 		.news_list_size = getarraysize(.news_list$);
 		initnpctimer;
 		
 	OnTimer3000000: // announce every 60 seconds.
-		announce .news_list$[rand(.news_list_size)],bc_all,0xCCFF00;
+		announce .news_list$[rand(.news_list_size)],bc_all,0x00FFFF;
 		initnpctimer;
 		end;
 }

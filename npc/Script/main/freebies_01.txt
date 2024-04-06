@@ -1,0 +1,106 @@
+//===== rAthena Script =======================================
+//= Freebies (Account Base)
+//===== By: ==================================================
+//= Meroy of Immortals-RO (http://immortalsro.com)
+//===== Current Version: =====================================
+//= 1.1
+//===== Compatible With: =====================================
+//= rAthena Project
+//===== Description: =========================================
+//= Self explanatory as the titled says.
+//===== Changelogs: ==========================================
+//= 1.1 Second Version
+//===== Additional Comments: =================================
+//= 1.0 Initial Release - [Meroy] 
+//= 1.1 Fixed `@eac` will resolves to 0 (Novice) if no other script assigns it. [secretdataz]
+//============================================================
+new_1-1,46,111,6	script	Starter Kit	467 ,{
+
+	set @header$,"[^3399FFStarter Kit^000000]";
+	if(#NOVICE_Q == 1){
+		mes @header$;
+		mes "You already claimed your Starter kit.";
+		close2;
+		end;
+	}
+	
+	mes @header$;
+	mes "Hello and welcome to Promise Server.";
+	mes "To kickstart your journey, here are some basic supplies.";
+	mes "Thank you so much playing with us! Good luck and have fun!";
+	next;
+			mes @header$;
+			/*Promise Headgears*/
+			getitembound 30007,1,Bound_Account;
+			getitembound 30002,1,Bound_Account;
+			getitembound 30003,1,Bound_Account;
+			getitembound 30004,1,Bound_Account;
+
+			/*Usables*/
+			getitembound 14003,20,Bound_Account;//esb
+			getitembound 14533,10,Bound_Account;//b manual
+			getitembound 13990,1,Bound_Account;//j manual
+			getitembound 14169,1,Bound_Account;//bless scroll
+			getitembound 14170,1,Bound_Account;//agi scroll
+			getitembound 12210,10,Bound_Account;//bbg 40%
+//			getitembound 12221,20,Bound_Account;//mega phone
+			getitembound 12211,10,Bound_Account;//kafra card
+			getitembound 7059,20,Bound_Account;//kafra storage
+			getitembound 7060,20,Bound_Account;//kafra tele
+			getitembound 7060,20,Bound_Account;//kafra tele
+
+			set #NOVICE_Q, 1;
+			close2;
+			announce strcharinfo(0) +"claimed the Start Kit! GLHF! PlayWise,PlayNice!Choose PromiseRO!",0,0xFFFF90;
+			end;
+OnInit: // Script Configuration
+	waitingroom "Freebies",0;
+	end;
+
+}
+
+new_1-1,60,122,5	script	Freebies Costume	10183,{
+
+	set @header$,"[^FF8000Freebies^000000]";
+	if(#NOVICE_Costume == 1){
+		mes @header$;
+		mes "It seems you're already claimed your costumes!";
+		close2;
+		end;
+	}
+	
+	mes @header$;
+	mes "Welcome to Foo Ragnarok Online.";
+	mes "Select your Foo Adventurer Backpack.";
+	next;
+		switch(select("Wing Backpack:Black School Backpack:Red School Backpack"))
+		{
+			case 1:
+				setarray .@FooCostume[0],30008;
+				break;
+			case 2:
+				setarray .@FooCostume[0],30009;
+				break;
+			case 3:
+				setarray .@FooCostume[0],30010;
+				break;
+		}
+		
+		
+			mes @header$;
+			/*Foo Costumes*/
+			rentitem2 .@FooCostume,(24*60*60*7),1,0,0,0,0,0,0,getcharid(3);
+			set #NOVICE_Costume, 1;
+			close2;
+			end;
+OnInit: // Script Configuration
+	waitingroom "Freebies Costume",0;
+	end;
+
+}
+
+
+new_1-1	mapflag	nowarpto
+new_1-1	mapflag	nowarp
+new_1-1	mapflag	noteleport
+
