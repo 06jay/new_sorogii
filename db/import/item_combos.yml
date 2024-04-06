@@ -32,3 +32,75 @@
 Header:
   Type: COMBO_DB
   Version: 1
+# This file is a part of rAthena.
+#   Copyright(C) 2022 rAthena Development Team
+#   https://rathena.org - https://github.com/rathena
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+###########################################################################
+# Item Combo Database
+###########################################################################
+#
+# Settings
+#
+###########################################################################
+# - Combos:                 List of combo sets.
+#    - Combo:               Sequence of items to define a combo (minimum of 2 items).
+#       - <item name>       AEGIS name of the item
+#   Script                  Script to execute when one of the combos is equipped. (Default: null)
+#   Clear                   Remove the defined combos from database. (Default: false)
+###########################################################################
+
+Header:
+  Type: COMBO_DB
+  Version: 1
+
+Body:
+  - Combos:
+      - Combo:
+          - C_Wings_of_Michael
+          - Costume AWKINSTINCT_WHT
+          - Costume PROTECTCLOTH
+          - Costume AURAOVERFLOWING_WHT
+    Script: |
+      skill "AL_TELEPORT",1;
+  - Combos:
+      - Combo:
+          - Costume BLAZMYSTICDRAHELM_BLK
+          - Angelic_Valkyrie_Wing
+          - Costume PROTECTCLOTH_BLK
+          - Costume AURAOVERFLOWING_BLK
+    Script: |
+      skill "TF_HIDING",1;
+    UnEquipScript: |
+      sc_end SC_HIDING;
+    - Combos:
+      - Combo:
+          - Angelic_Valkyrie_Wings_Ice
+          - Costume BLAZSKULLDRAHELM_BLU
+          - Costume PROTECTCLOTH_BLU
+          - Costume AURAOVERFLOWING_CYN
+    Script: |
+      skill "BS_GREED",1;
+  - Combos:
+      - Combo:
+          - Angelic_Valkyrie_Wing_Sway
+          - Costume AWKOBLIVION_RED
+          - Costume PROTECTCLOTH_RED
+          - Costume AURAOVERFLOWING_RED
+    Script: |
+      skill "MG_SIGHT",1;
+    UnEquipScript: |
+      sc_end SC_SIGHT;

@@ -90,7 +90,7 @@ Header:
 
 Body:
   - Id: 31589
-    AegisName: C_Gold_Magestic_Goat
+    AegisName: GOLD_MAJESTIC_GOUT
     Name: C Golden Majestic Goat
     Type: Armor
     Locations:
@@ -98,15 +98,219 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1800
-  - Id: 31590
-    AegisName: C_Der_Meisterpinsel
-    Name: C Designer's Brush
+  - Id: 480110
+    AegisName: C_Adventure_Cat_Bag
+    Name: Costume Adventure Bag
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 107
+    View: 3784
+    Script: |
+      bonus bAddMaxWeight,5000;
+      bonus2 bExpAddRace,RC_All,5;
+      bonus2 bDropAddRace,RC_All,5;
+  - Id: 19256
+    AegisName: Mobile_BeginnerMark
+    Name: Beginner Mark
+    Type: Armor
+    View: 1348
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMax: 99
+    Refineable: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus2 bExpAddRace,RC_All,10;
+      bonus2 bDropAddRace,RC_All,10;
+  - Id: 18858
+    AegisName: Pink_Angeling_Bubble
+    Name: Pink Angeling Bubble
+    Type: Armor
+    Buy: 10
+    Weight: 50
+    Defense: 5
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 975
+    Script: |
+      bonus bAspd,1;
+      bonus bMaxHP,200;
+  - Id: 410082
+    AegisName: C_BirthDay_Balloon_TW
+    Name: Costume Happy Birthday Balloon    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2137
+
+
+
+
+
+##########################Garment V2##################################
+  - Id: 20727
+    AegisName: Brilliant_Golden_Wings
+    Name: Brilliant Golden Wings
+    Type: Armor
+    Buy: 10
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    View: 5
+    Trade:
+      NoDrop: true
+  - Id: 20618
+    AegisName: C_Big_B_Rabbit
+    Name: Costume Big Black Rabbit
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 133
+  - Id: 20525
+    AegisName: C_Bloody_Wing
+    Name: Costume Crimson Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 33
+  - Id: 20535
+    AegisName: C_Digital_Space
+    Name: Costume Digital Space
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Script: |
+      hateffect(HAT_EF_DIGITAL_SPACE,true);
+    UnEquipScript: |
+      hateffect(HAT_EF_DIGITAL_SPACE,false);
+  - Id: 20762
+    AegisName: C_GreatDevilWing
+    Name: Costume Great Devil Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 10
+  - Id: 20763
+    AegisName: C_Amistr_Bag
+    Name: Costume Amistr Bag
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 4
+  - Id: 20764
+    AegisName: C_Fallen_Angel_Wing
+    Name: Costume Fallen Angel Wing
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3
+  - Id: 20761
+    AegisName: C_Wing_Of_Happiness
+    Name: Costume Happiness Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 9
+  - Id: 31737
+    AegisName: C_Wings_Of_Lucifer
+    Name: Costume Lucifer's Wings
+    Type: Armor
+    View: 55
+  - Id: 20578
+    AegisName: wings_of_raguel
+    Name: Costume Raguel's Wings
+    Type: Armor
+    View: 56
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+  - Id: 20579
+    AegisName: C_Wings_Of_Raphael
+    Name: Costume Raphael's Wings
+    Type: Armor
+    View: 57
+  - Id: 20530
+    AegisName: C_Wings_of_Gabriel
+    Name: Costume Wings of Gabriel
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 37
+  - Id: 20516
+    AegisName: C_Wings_of_Michael
+    Name: Costume Wings of Michael
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 24
+  - Id: 20517
+    AegisName: C_GiantCatBag_TW
+    Name: Costume Giant Cat Bag
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 25
+  - Id: 20509
+    AegisName: C_Wings_of_Uriel
+    Name: Costume Wings of Uriel
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 17
+  - Id: 31395
+    AegisName: C_Book_Of_Magic
+    Name: C Book of Magic
     Type: Armor
     Locations:
       Costume_Head_Low: true
     ArmorLevel: 1
     EquipLevelMin: 1
-    View: 1291
+    View: 1691
+  - Id: 31178
+    AegisName: C_Flame_Muffler
+    Name: C Fire Muffler
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1579
 
 #################################Garment####################
 
@@ -4428,9 +4632,9 @@ Body:
     ArmorLevel: 1
     View: 3986
     Script: |
-      bonus bAddMaxWeight,10000;
-      bonus2 bExpAddRace,RC_All,10;
-      bonus2 bDropAddRace,RC_All,10;
+      bonus bAddMaxWeight,2000;
+      bonus2 bExpAddRace,RC_All,3;
+      bonus2 bDropAddRace,RC_All,2;
   - Id: 80303
     AegisName: Costume AURANATURE_GRN
     Name: Costume AURANATURE_GRN
@@ -5876,7 +6080,7 @@ Body:
     Name: Costume AURASTREAMER_BLU
     Type: Armor
     Locations:
-      Costume_Head_Low: true
+      Costume_Head_Mid: true
     ArmorLevel: 1
     View: 4107
     Script: |
@@ -5888,7 +6092,7 @@ Body:
     Name: Costume AURASTREAMER_GRN
     Type: Armor
     Locations:
-      Costume_Head_Low: true
+      Costume_Head_Mid: true
     ArmorLevel: 1
     View: 4108
     Script: |
@@ -18547,9 +18751,9 @@ Body:
     ArmorLevel: 1
     View: 2682
     Script: |
-      bonus bAddMaxWeight,5000;
-      bonus2 bExpAddRace,RC_All,5;
-      bonus2 bDropAddRace,RC_All,5;
+      bonus bAddMaxWeight,1000;
+      bonus2 bExpAddRace,RC_All,2;
+      bonus2 bDropAddRace,RC_All,2;
   - Id: 62328
     AegisName: Costume costume_15
     Name: Costume costume_15
@@ -25366,7 +25570,7 @@ Body:
       bonus bAddMaxWeight,5000;
       bonus2 bExpAddRace,RC_All,5;
       bonus2 bDropAddRace,RC_All,5;
-  - Id: 62896
+  - Id: 43914
     AegisName: Costume VAMPIRESIDEHAT_PRP
     Name: Costume VAMPIRESIDEHAT_PRP
     Type: Armor

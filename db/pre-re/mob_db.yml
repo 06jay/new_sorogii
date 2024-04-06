@@ -822,8 +822,6 @@ Body:
         Rate: 500
       - Item: Wind_Scroll_1_3
         Rate: 100
-      - Item: Creamy_Card
-        Rate: 1
         StealProtected: true
   - Id: 1019
     AegisName: PECOPECO
