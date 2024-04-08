@@ -98,6 +98,10 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1800
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;
+      bonus2 bDropAddRace,RC_All,3;
+
   - Id: 480110
     AegisName: C_Adventure_Cat_Bag
     Name: Costume Adventure Bag
@@ -156,6 +160,24 @@ Body:
       Costume_Head_Mid: true
     ArmorLevel: 1
     View: 2137
+  - Id: 18730
+    AegisName: Cryptura_Academy_Hat
+    Name: Cryptura Academy Hat
+    Type: Armor
+    Weight: 200
+    Defense: 2
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    Refineable: true
+    View: 872
+    Script: |
+      bonus bMaxHP,150;
+      bonus bMaxSP,50;
+      bonus bAddMaxWeight,1000;
+      bonus2 bExpAddRace,RC_All,5;
+      bonus2 bDropAddRace,RC_All,2;
+
 
 
 
@@ -201,6 +223,9 @@ Body:
     EquipLevelMin: 1
     Script: |
       hateffect(HAT_EF_DIGITAL_SPACE,true);
+      bonus bAddMaxWeight,5000;
+      bonus2 bExpAddRace,RC_All,5;
+      bonus2 bDropAddRace,RC_All,5;
     UnEquipScript: |
       hateffect(HAT_EF_DIGITAL_SPACE,false);
   - Id: 20762
@@ -323,6 +348,10 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 23
+    Script: |
+      bonus bAddMaxWeight,10000;
+      bonus2 bExpAddRace,RC_All,10;
+      bonus2 bDropAddRace,RC_All,10;
   - Id: 20765
     AegisName: C_Archangel_Wing
     Name: Costume Archangel Wing
@@ -342,7 +371,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 193
-
   - Id: 51001
     AegisName: PURPLELIGHTNINGRACHEL_WING
     Name: Costume PURPLELIGHTNINGRACHEL_WING
@@ -352,7 +380,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 194
-
   - Id: 51002
     AegisName: Angelic_Valkyrie_Wing
     Name: Costume Angelic_Valkyrie_Wing
@@ -362,7 +389,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 195
-
   - Id: 51003
     AegisName: Angelic_Valkyrie_Wing_Sway
     Name: Costume Angelic_Valkyrie_Wing_Sway
@@ -372,7 +398,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 196
-
   - Id: 51004
     AegisName: Angelic_Valkyrie_Wings_Blue
     Name: Costume Angelic_Valkyrie_Wings_Blue
@@ -6084,7 +6109,7 @@ Body:
     ArmorLevel: 1
     View: 4107
     Script: |
-      bonus bAddMaxWeight,10000;
+      bonus bAddMaxWeight,2000;
       bonus2 bExpAddRace,RC_All,10;
       bonus2 bDropAddRace,RC_All,10;
   - Id: 80424
@@ -6096,7 +6121,7 @@ Body:
     ArmorLevel: 1
     View: 4108
     Script: |
-      bonus bAddMaxWeight,10000;
+      bonus bAddMaxWeight,2000;
       bonus2 bExpAddRace,RC_All,10;
       bonus2 bDropAddRace,RC_All,10;
   - Id: 80425
@@ -18955,9 +18980,8 @@ Body:
     ArmorLevel: 1
     View: 2699
     Script: |
-      bonus bAddMaxWeight,5000;
-      bonus2 bExpAddRace,RC_All,5;
-      bonus2 bDropAddRace,RC_All,5;
+      bonus2 bExpAddRace,RC_All,3;
+      bonus2 bDropAddRace,RC_All,3;
   - Id: 62345
     AegisName: Costume costume_32
     Name: Costume costume_32
@@ -25387,9 +25411,9 @@ Body:
     ArmorLevel: 1
     View: 3235
     Script: |
-      bonus bAddMaxWeight,5000;
-      bonus2 bExpAddRace,RC_All,5;
-      bonus2 bDropAddRace,RC_All,5;
+      bonus bAddMaxWeight,15000;
+      bonus2 bExpAddRace,RC_All,15;
+      bonus2 bDropAddRace,RC_All,15;
   - Id: 62881
     AegisName: Costume VALKYRIEHELM_BRN
     Name: Costume VALKYRIEHELM_BRN

@@ -213,6 +213,7 @@ Body:
       jail: true
       jailfor: true
       mute: true
+      afk: true
       storagelist: true
       cartlist: true
       itemlist: true

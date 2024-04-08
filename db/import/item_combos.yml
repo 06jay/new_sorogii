@@ -78,29 +78,9 @@ Body:
       skill "AL_TELEPORT",1;
   - Combos:
       - Combo:
-          - Costume BLAZMYSTICDRAHELM_BLK
-          - Angelic_Valkyrie_Wing
+          - Costume AWKINSTINCT_BLK
+          - C_Thanatos_Sword
           - Costume PROTECTCLOTH_BLK
           - Costume AURAOVERFLOWING_BLK
     Script: |
-      skill "TF_HIDING",1;
-    UnEquipScript: |
-      sc_end SC_HIDING;
-    - Combos:
-      - Combo:
-          - Angelic_Valkyrie_Wings_Ice
-          - Costume BLAZSKULLDRAHELM_BLU
-          - Costume PROTECTCLOTH_BLU
-          - Costume AURAOVERFLOWING_CYN
-    Script: |
       skill "BS_GREED",1;
-  - Combos:
-      - Combo:
-          - Angelic_Valkyrie_Wing_Sway
-          - Costume AWKOBLIVION_RED
-          - Costume PROTECTCLOTH_RED
-          - Costume AURAOVERFLOWING_RED
-    Script: |
-      skill "MG_SIGHT",1;
-    UnEquipScript: |
-      sc_end SC_SIGHT;
