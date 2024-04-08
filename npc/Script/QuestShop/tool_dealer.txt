@@ -17,7 +17,7 @@ cutin "sn1.png",2;
 }
 
 //shops
--	shop	Arrowz	,1766:50,1755:20,1750:10,1754:20,1761:20,1752:20,1760:20,1759:20,1772:100,1757:30,1770:20,1769:30,1765:40,1763:30,1762:30,1767:30,1764:30,1751:20,1768:30,1753:30,1756:30,1758:30,1771:1000,13200:50,13202:100,13201:300,13206:500,13203:500,13207:500,13204:500,13205:500,13252:50,13254:500,13251:100,13253:300,13250:50,13256:50,13259:50,13258:50,13255:50,13257:50
+-	shop	Arrowz	,1752:3,1751:3,1750:1,1771:1000,13200:50,13202:100,13201:300,13206:500,13203:500,13207:500,13204:500,13205:500,13252:50,13254:500,13251:100,13253:300,13250:50,13256:50,13259:50,13258:50,13255:50,13257:50
 
 -	shop	StreetDealer	-,601:-1,602:-1,506:-1,656:-1,645:-1,657:-1,1065:-1,610:-1,611:-1
 -	shop	AlchemistS	-,715:600,716:600,717:600
@@ -30,36 +30,36 @@ cutin "sn1.png",2;
 
 
 
-aldebaran,147,122,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12na	10301 
-alberta,33,240,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#122kaw	10301 
-amatsu,204,92,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#112sao	10301
-ayothaya,203,172,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#120ewq	10301 
-comodo,195,154,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1200233	10301 
-einbech,67,32,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12000	10301 
-einbroch,57,207,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#122221	10301 
-geffen,130,60,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12	10301 
-gonryun,155,127,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12011	10301 
-hugel,91,157,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1203	10301 
+aldebaran,147,122,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12na	4_ep17_brokenbeta
+alberta,33,240,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#122kaw	4_ep17_brokenbeta
+amatsu,204,92,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#112sao	4_ep17_brokenbeta
+ayothaya,203,172,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#120ewq	4_ep17_brokenbeta
+comodo,195,154,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1200233	4_ep17_brokenbeta
+einbech,67,32,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12000	4_ep17_brokenbeta
+einbroch,57,207,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#122221	4_ep17_brokenbeta
+geffen,130,60,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12	4_ep17_brokenbeta
+gonryun,155,127,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12011	4_ep17_brokenbeta
+hugel,91,157,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1203	4_ep17_brokenbeta
 //izlude,131,149,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1202	10301 	//Pre-RE: (125,118)
-jawaii,245,143,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1201	10301 
-lighthalzen,153,106,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1200	10301 
-louyang,206,99,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12ddee	10301 
-manuk,272,144,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12213c	10301 
-mid_camp,203,289,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12xcv	10301 
-moc_ruins,72,164,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12ddd	10301 
-morocc,148,102,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12714sss	10301 
-moscovia,216,198,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12eee	10301 
-niflheim,212,182,5	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12123z	10301 
-payon,164,99,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12dzx	10301 
-payon,169,233,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12eeq	10301 
+jawaii,245,143,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1201	4_ep17_brokenbeta
+lighthalzen,153,106,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1200	4_ep17_brokenbeta
+louyang,206,99,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12ddee	4_ep17_brokenbeta
+manuk,272,144,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12213c	4_ep17_brokenbeta
+mid_camp,203,289,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12xcv	4_ep17_brokenbeta
+moc_ruins,72,164,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12ddd	4_ep17_brokenbeta
+morocc,148,102,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12714sss	4_ep17_brokenbeta
+moscovia,216,198,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12eee	4_ep17_brokenbeta
+niflheim,212,182,5	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12123z	4_ep17_brokenbeta
+payon,164,99,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12dzx	4_ep17_brokenbeta
+payon,169,233,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12eeq	4_ep17_brokenbeta 
 
 prontera,145,197,5	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1222q	4_ep17_brokenbeta
-rachel,123,121,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12eqeq	10301 
-splendide,201,153,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12dq	10301 
-thor_camp,249,74,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12z2	10301 
-umbala,98,159,3	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12125	10301 
-veins,211,119,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1234	10301 
-xmas,141,138,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1222	10301 
-yuno,150,44,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#122	10301 
+rachel,123,121,6	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12eqeq	4_ep17_brokenbeta 
+splendide,201,153,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12dq	4_ep17_brokenbeta 
+thor_camp,249,74,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12z2	4_ep17_brokenbeta
+umbala,98,159,3	duplicate(Tool Dealer#0112)	Tool Dealer#tool#12125	4_ep17_brokenbeta
+veins,211,119,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1234	4_ep17_brokenbeta
+xmas,141,138,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#1222	4_ep17_brokenbeta 
+yuno,150,44,4	duplicate(Tool Dealer#0112)	Tool Dealer#tool#122	4_ep17_brokenbeta 
 
 

@@ -1,4 +1,4 @@
-prontera,167,199,3	script	Yol	4_ep17_cleaner,{
+prontera,167,199,3	script	Daily Supply	4_ep17_cleaner,{
 cutin "rg2.png",2;
 
 
@@ -52,6 +52,20 @@ close;
 	close2;
 	cutin "",255;
 	end;
+OnPCLoadMapEvent:
+	if(strcharinfo(3) == strnpcinfo(4)) {
+		showevent QTYPE_EVENT3;
+	}
+end;
+
+OnInit:
+	while(1) {
+		showscript "Daily Supply", getnpcid(0);
+		sleep 1000;
+	}
+end;
+}
+
 
 }
 

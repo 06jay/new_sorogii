@@ -13,7 +13,7 @@ cutin "ch1.png",2;
 		}
 		else {
 			// Check for level 89+ and transcendent job
-	cutin "ex_se_star04.png",2;
+cutin "ch1.png",2;
 if (BaseLevel >= 89 && JobLevel >= 50 && Class >= 4000 && Class <= 4022)
 
 			{
@@ -30,7 +30,7 @@ if (BaseLevel >= 89 && JobLevel >= 50 && Class >= 4000 && Class <= 4022)
 				end;
 			}
 			else {
-mes "^3300CCYou want to join? Dont make me laugh! MAHINA KAPA SIR.";
+mes "^3300CCYou want to join?";
 mes " ";
 				mes "You must be level 89 or higher and transcendent job to enter.^000000";
 				next;

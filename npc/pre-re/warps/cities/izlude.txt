@@ -14,7 +14,7 @@
 //============================================================
 
 //= Izlude City ==============================================
-//izlude,109,151,0	warp	iz01	3,3,izlude_in,65,87
+izlude,112,180,0	warp	iz01	3,3,izlude_in,65,87
 //izlude,148,148,0	warp	iz02	2,2,izlude_in,116,49
 izlude,216,129,0	warp	iz03	3,2,izlude_in,151,127
 izlude,30,78,0	warp	iz001	3,3,prt_fild08,367,212

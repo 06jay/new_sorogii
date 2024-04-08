@@ -243,7 +243,7 @@ F10: Restrict("RE");
 	 setarray @c[2],378,223,223,18,365,241,140,280;
 	 Disp("Frozen Scale Hill:Frozen Scale Plains:Frozen Scale Glacier:Frozen Tail"); Pick("","jor_back1","jor_back2","jor_back3","jor_tail");
 F11: Restrict("Pre-RE",13,15);
-	 setarray @c[0],46,199,195,212,257,192,188,171,166,263,248,158,195,191,186,183,178,218,136,328,240,181;
+	 setarray @c[0],46,199,195,212,257,192,188,171,166,263,248,158,195,191,186,183,224,30,136,328,240,181;
 	 Disp("Geffen Field 1:Geffen Field 3:Geffen Field 4:Geffen Field 5:Geffen Field 6:Geffen Field 7:Geffen Field 8:Geffen Field 9:Geffen Field 11:Geffen Field 12:Geffen Field 13"); 
 	 Pick("","gef_fild01","gef_fild03","gef_fild04","gef_fild05","gef_fild06","gef_fild07","gef_fild08","gef_fild09","gef_fild11","gef_fild12","gef_fild13");
 F12: Restrict("RE");
@@ -1336,52 +1336,52 @@ OnInit:
 // --------------------------------------------------
 //	Duplicates:
 // --------------------------------------------------
-alb2trea,57,70,6	duplicate(Warper)	Warper#tre	1708
-alberta,28,240,4	duplicate(Warper)	Warper#alb	1708
-aldebaran,145,118,4	duplicate(Warper)	Warper#alde	1708
-amatsu,203,87,4	duplicate(Warper)	Warper#ama	1708
-ayothaya,209,169,6	duplicate(Warper)	Warper#ayo	1708
-comodo,194,158,4	duplicate(Warper)	Warper#com	1708
-einbech,59,38,6	duplicate(Warper)	Warper#einbe	1708
-einbroch,69,202,4	duplicate(Warper)	Warper#einbr	1708
-gef_fild10,71,339,4	duplicate(Warper)	Warper#orc	1708
-geffen,124,72,4	duplicate(Warper)	Warper#gef	1708
-glast_01,372,308,4	duplicate(Warper)	Warper#glh	1708
-gonryun,162,122,4	duplicate(Warper)	Warper#gon	1708
-hugel,101,151,4	duplicate(Warper)	Warper#hug	1708
-izlu2dun,110,92,4	duplicate(Warper)	Warper#izd	1708
-izlude,134,150,4	duplicate(Warper)	Warper#izl	1708	//Pre-RE: (132,120)
-jawaii,253,138,4	duplicate(Warper)	Warper#jaw	1708
-lighthalzen,162,102,4	duplicate(Warper)	Warper#lhz	1708
-louyang,208,103,6	duplicate(Warper)	Warper#lou	1708
-manuk,274,146,6	duplicate(Warper)	Warper#man	1708
-mid_camp,216,288,4	duplicate(Warper)	Warper#mid	1708
-mjolnir_02,85,364,4	duplicate(Warper)	Warper#mjo	1708
-moc_ruins,64,164,4	duplicate(Warper)	Warper#moc	1708
-morocc,159,97,4	duplicate(Warper)	Warper#mor	1708
-moscovia,229,191,4	duplicate(Warper)	Warper#mos	1708
-nameless_n,259,213,4	duplicate(Warper)	Warper#nam	1708
-niflheim,205,179,4	duplicate(Warper)	Warper#nif	1708
-pay_arche,42,134,4	duplicate(Warper)	Warper#arc	1708
-payon,182,108,4	duplicate(Warper)	Warper#pay	1708
+alb2trea,57,70,6	duplicate(Warper)	Warper#tre	4_ep17_morning
+alberta,28,240,4	duplicate(Warper)	Warper#alb	4_ep17_morning
+aldebaran,145,118,4	duplicate(Warper)	Warper#alde	4_ep17_morning
+amatsu,203,87,4	duplicate(Warper)	Warper#ama	4_ep17_morning
+ayothaya,209,169,6	duplicate(Warper)	Warper#ayo	4_ep17_morning
+comodo,194,158,4	duplicate(Warper)	Warper#com	4_ep17_morning
+einbech,59,38,6	duplicate(Warper)	Warper#einbe	4_ep17_morning
+einbroch,69,202,4	duplicate(Warper)	Warper#einbr	4_ep17_morning
+gef_fild10,71,339,4	duplicate(Warper)	Warper#orc	4_ep17_morning
+geffen,124,72,4	duplicate(Warper)	Warper#gef	4_ep17_morning
+glast_01,372,308,4	duplicate(Warper)	Warper#glh	4_ep17_morning
+gonryun,162,122,4	duplicate(Warper)	Warper#gon	4_ep17_morning
+hugel,101,151,4	duplicate(Warper)	Warper#hug	4_ep17_morning
+izlu2dun,110,92,4	duplicate(Warper)	Warper#izd	4_ep17_morning
+izlude,134,150,4	duplicate(Warper)	Warper#izl	4_ep17_morning	//Pre-RE: (132,120)
+jawaii,253,138,4	duplicate(Warper)	Warper#jaw	4_ep17_morning
+lighthalzen,162,102,4	duplicate(Warper)	Warper#lhz	4_ep17_morning
+louyang,208,103,6	duplicate(Warper)	Warper#lou	4_ep17_morning
+manuk,274,146,6	duplicate(Warper)	Warper#man	4_ep17_morning
+mid_camp,216,288,4	duplicate(Warper)	Warper#mid	4_ep17_morning
+mjolnir_02,85,364,4	duplicate(Warper)	Warper#mjo	4_ep17_morning
+moc_ruins,64,164,4	duplicate(Warper)	Warper#moc	4_ep17_morning
+morocc,159,97,4	duplicate(Warper)	Warper#mor	4_ep17_morning
+moscovia,229,191,4	duplicate(Warper)	Warper#mos	4_ep17_morning
+nameless_n,259,213,4	duplicate(Warper)	Warper#nam	4_ep17_morning
+niflheim,205,179,4	duplicate(Warper)	Warper#nif	4_ep17_morning
+pay_arche,42,134,4	duplicate(Warper)	Warper#arc	4_ep17_morning
+payon,182,108,4	duplicate(Warper)	Warper#pay	4_ep17_morning
 prontera,160,192,3	duplicate(Warper)	Warper#prt	4_ep17_morning
-prt_fild05,279,223,6	duplicate(Warper)	Warper#cul	1708
-rachel,135,116,4	duplicate(Warper)	Warper#rac	1708
-splendide,205,153,4	duplicate(Warper)	Warper#spl	1708
-thor_camp,249,76,4	duplicate(Warper)	Warper#thor	1708
-umbala,106,150,3	duplicate(Warper)	Warper#umb	1708
-veins,214,123,4	duplicate(Warper)	Warper#ve	1708
-xmas,150,136,6	duplicate(Warper)	Warper#xmas	1708
-yuno,162,47,4	duplicate(Warper)	Warper#yuno	1708
+prt_fild05,279,223,6	duplicate(Warper)	Warper#cul	4_ep17_morning
+rachel,135,116,4	duplicate(Warper)	Warper#rac	4_ep17_morning
+splendide,205,153,4	duplicate(Warper)	Warper#spl	4_ep17_morning
+thor_camp,249,76,4	duplicate(Warper)	Warper#thor	4_ep17_morning
+umbala,106,150,3	duplicate(Warper)	Warper#umb	4_ep17_morning
+veins,214,123,4	duplicate(Warper)	Warper#ve	4_ep17_morning
+xmas,150,136,6	duplicate(Warper)	Warper#xmas	4_ep17_morning
+yuno,162,47,4	duplicate(Warper)	Warper#yuno	4_ep17_morning
 
 // --------------------------------------------------
 //	Duplicates (Renewal):
 // --------------------------------------------------
-brasilis,201,222,4	duplicate(Warper)	Warper#bra	1708
-dewata,204,186,6	duplicate(Warper)	Warper#dew	1708
-dicastes01,194,194,6	duplicate(Warper)	Warper#dic	1708
-ecl_in01,51,60,4	duplicate(Warper)	Warper#ecl	1708
-lasagna,196,187,4	duplicate(Warper)	Warper#las	1708
-malangdo,134,117,6	duplicate(Warper)	Warper#mal	1708
-malaya,231,204,4	duplicate(Warper)	Warper#ma	1708
-mora,57,152,4	duplicate(Warper)	Warper#mora	1708
+brasilis,201,222,4	duplicate(Warper)	Warper#bra	4_ep17_morning
+dewata,204,186,6	duplicate(Warper)	Warper#dew	4_ep17_morning
+dicastes01,194,194,6	duplicate(Warper)	Warper#dic	4_ep17_morning
+ecl_in01,51,60,4	duplicate(Warper)	Warper#ecl	4_ep17_morning
+lasagna,196,187,4	duplicate(Warper)	Warper#las	4_ep17_morning
+malangdo,134,117,6	duplicate(Warper)	Warper#mal	4_ep17_morning
+malaya,231,204,4	duplicate(Warper)	Warper#ma	4_ep17_morning
+mora,57,152,4	duplicate(Warper)	Warper#mora	4_ep17_morning

@@ -27,7 +27,7 @@
 //	callfunc "zshop"{,<shop ID>{,<shop ID>{,...}}};
 //  ADD YOUR NPC HERE
 //============================================================
-prontera,161,178,4	script	Quest Headgear#1202	4_vr_book_green	,{ callfunc "zshop"; }
+mora,57,147,4	script	Quest Headgear#1202	4_vr_book_green	,{ callfunc "zshop"; }
 // prontera,165,203,6	script	Quest Shop#2	998,{ callfunc "qshop",1,2; }	// call the shop 1 and 2 defined below
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
 //============================================================

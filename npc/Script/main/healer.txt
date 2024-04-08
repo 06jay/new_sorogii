@@ -46,7 +46,7 @@
 		sc_start SC_BLESSING,240000,10;			///////////////
 												////////// EXAMPLE KO DITO GLORIA SKILL
 		SPECIALEFFECT2 EF_GLORIA;				/////////////// ITO YUNG ANIMATION NYA 
-		sc_start SC_GLORIA,1440000,10;			/////////////// ITO NAMAN YUNG "sc_start SC_SKILL,24HOURS,LEVEL10;" 60000 = 1Minutes
+//		sc_start SC_GLORIA,1440000,10;			/////////////// ITO NAMAN YUNG "sc_start SC_SKILL,24HOURS,LEVEL10;" 60000 = 1Minutes
 	}
 	if(getgroupid() < 5) {
 	if (.@Delay)

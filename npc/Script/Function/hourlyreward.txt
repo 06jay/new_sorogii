@@ -10,4 +10,5 @@ OnClick:
     end;
 }
 
--	pointshop	PlaytimeSupplies	FAKE_NPC,#HOURLYPOINTS,501:1,502:2,503:3,504:4,505:5
+-	pointshop	PlaytimeSupplies	FAKE_NPC,#HOURLYPOINTS,14003:3,12210:2,40012:5,12264:5,12221:1,14533:4,14592:4,12211:2,14169:5,14170:5
+

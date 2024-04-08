@@ -1,0 +1,71 @@
+prontera,146,172,4	script	Randgris#0212	403 ,{
+cutin "valk1.png",2;
+    if (Class == Job_Ninja || Class == Job_Taekwon || Class == Job_Star_Gladiator || Class == Job_SuperNovice || Class == Job_Gunslinger) {
+        mes "^FF3300[Randgris]^000000";
+        mes "I'm sorry, but I'm not interested in talking to your kind.";
+        mes "Come back when you have a more suitable job.";
+		close2;
+		cutin "", 255;
+		end;
+    }
+if (BaseLevel < 99 || JobLevel < 70 || Class == Job_Gunslinger || Class == Job_Super_Novice || Class == Job_Ninja) {
+		mes "^FF3300[Randgris]^000000";
+		mes "What? You're still weak for the ^3300FFREWARD^000000. Go slay more monsters.";
+		mes "Come back to me when you're ^3300FFTrans Job and 99/70^000000.";
+		mes "And I'll give you the reward.";
+		close2;
+		cutin "", 255;
+		end;
+	}
+	
+	if ($ItemGive == 3) {
+		mes "^FF3300[Randgris]^000000";
+		mes "Sorry to say, but you're too late.";
+		mes "All the rewards have been claimed already.";
+		close2;
+		cutin "", 255;
+		end;
+	}
+	
+	if (getreward) {
+		mes "^FF3300[Randgris]^000000";
+		mes "You again?! What do you think of me, eh?";
+		mes "Now scram!!!";
+		mes "So annoying~!";
+		close2;
+		cutin "", 255;
+		end;
+	}
+	
+	mes "^FF3300[Randgris]^000000";
+	mes "Congratulations! You made it this far.";
+	close2;
+	cutin "", 255;
+	
+    getitem 40014, 2; // Reward 2: ad
+    getitem 7179, 500; // 500pods
+    getitem 31589, 1; // 1 glbh
+
+	++$ItemGive;
+	getreward = 1;
+	announce "Congratulations! "+strcharinfo(0)+" has claimed the reward for the Race to 99/70 Event.", bc_all;
+	sleep 2000;
+	announce "There are "+(3 - $ItemGive)+" rewards left to give!", bc_all;
+	end;
+
+
+OnPCLoadMapEvent:
+	if(strcharinfo(3) == strnpcinfo(4)) {
+		showevent QTYPE_EVENT3;
+	}
+end;
+
+OnInit:
+	while(1) {
+		showscript "Race to 99/70 Event", getnpcid(0);
+		sleep 1000;
+	}
+end;
+}
+prontera	mapflag	loadevent
+new_1-1	mapflag	loadevent

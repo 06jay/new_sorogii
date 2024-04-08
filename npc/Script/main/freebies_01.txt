@@ -14,14 +14,15 @@
 //= 1.0 Initial Release - [Meroy] 
 //= 1.1 Fixed `@eac` will resolves to 0 (Novice) if no other script assigns it. [secretdataz]
 //============================================================
-new_1-1,46,111,6	script	Starter Kit	467 ,{
-
+new_1-1,46,111,6	script	Starter Kit	4_ep17_buckets,{
+cutin "rk1.png",2;
 	set @header$,"[^3399FFStarter Kit^000000]";
 	if(#NOVICE_Q == 1){
 		mes @header$;
 		mes "You already claimed your Starter kit.";
-		close2;
-		end;
+	close2;
+	cutin "",255;
+	end;
 	}
 	
 	mes @header$;
@@ -31,10 +32,7 @@ new_1-1,46,111,6	script	Starter Kit	467 ,{
 	next;
 			mes @header$;
 			/*Promise Headgears*/
-			getitembound 30007,1,Bound_Account;
-			getitembound 30002,1,Bound_Account;
-			getitembound 30003,1,Bound_Account;
-			getitembound 30004,1,Bound_Account;
+			getitembound 18730,1,Bound_Account;
 
 			/*Usables*/
 			getitembound 14003,20,Bound_Account;//esb
@@ -47,58 +45,30 @@ new_1-1,46,111,6	script	Starter Kit	467 ,{
 			getitembound 12211,10,Bound_Account;//kafra card
 			getitembound 7059,20,Bound_Account;//kafra storage
 			getitembound 7060,20,Bound_Account;//kafra tele
-			getitembound 7060,20,Bound_Account;//kafra tele
+			getitembound 601,50,Bound_Account;//flywing
+			getitembound 602,10,Bound_Account;//Bflywing
+			getitembound 12936,1,Bound_Account;//bag
 
 			set #NOVICE_Q, 1;
-			close2;
+	close2;
+	cutin "",255;
+	end;
+
 			announce strcharinfo(0) +"claimed the Start Kit! GLHF! PlayWise,PlayNice!Choose PromiseRO!",0,0xFFFF90;
 			end;
-OnInit: // Script Configuration
-	waitingroom "Freebies",0;
-	end;
-
-}
-
-new_1-1,60,122,5	script	Freebies Costume	10183,{
-
-	set @header$,"[^FF8000Freebies^000000]";
-	if(#NOVICE_Costume == 1){
-		mes @header$;
-		mes "It seems you're already claimed your costumes!";
-		close2;
-		end;
+OnPCLoadMapEvent:
+	if(strcharinfo(3) == strnpcinfo(4)) {
+		showevent QTYPE_WARG;
 	}
-	
-	mes @header$;
-	mes "Welcome to Foo Ragnarok Online.";
-	mes "Select your Foo Adventurer Backpack.";
-	next;
-		switch(select("Wing Backpack:Black School Backpack:Red School Backpack"))
-		{
-			case 1:
-				setarray .@FooCostume[0],30008;
-				break;
-			case 2:
-				setarray .@FooCostume[0],30009;
-				break;
-			case 3:
-				setarray .@FooCostume[0],30010;
-				break;
-		}
-		
-		
-			mes @header$;
-			/*Foo Costumes*/
-			rentitem2 .@FooCostume,(24*60*60*7),1,0,0,0,0,0,0,getcharid(3);
-			set #NOVICE_Costume, 1;
-			close2;
-			end;
-OnInit: // Script Configuration
-	waitingroom "Freebies Costume",0;
-	end;
+end;
 
+OnInit:
+	while(1) {
+		showscript "Player's Stater Kit", getnpcid(0);
+		sleep 1000;
+	}
+end;
 }
-
 
 new_1-1	mapflag	nowarpto
 new_1-1	mapflag	nowarp

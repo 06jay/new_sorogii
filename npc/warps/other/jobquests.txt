@@ -29,7 +29,7 @@
 //==============================================================================
 //Novice
 //==============================================================================
-//new_1-1,148,112,0	warp	newwarp6001a	2,2,new_1-2,100,9//warp papasok sa entrace need change sa official
+new_1-1,148,112,0	warp	newwarp6001a	2,2,new_1-2,100,9//warp papasok sa entrace need change sa official
 new_2-1,148,112,0	warp	newwarp6001b	2,2,new_2-2,100,9
 new_3-1,148,112,0	warp	newwarp6001c	2,2,new_3-2,100,9
 new_4-1,148,112,0	warp	newwarp6001d	2,2,new_4-2,100,9
@@ -59,6 +59,9 @@ new_2-2,46,172,0	warp	newwarp6006b	2,2,new_2-2,78,106
 new_3-2,46,172,0	warp	newwarp6006c	2,2,new_3-2,78,106
 new_4-2,46,172,0	warp	newwarp6006d	2,2,new_4-2,78,106
 new_5-2,46,172,0	warp	newwarp6006e	2,2,new_5-2,78,106
+izlude_in,73,160,0	warp	newwarp6006e	2,2,prontera,155,185,6
+izlude_in,110,169,0	warp	newwarp6006e	2,2,prontera,155,185,6
+
 
 //==============================================================================
 //Thief
