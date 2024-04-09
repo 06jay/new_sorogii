@@ -15,7 +15,7 @@
 
 //Geffen City
 geffen,119,213,0	warp	gef001	3,2,gef_fild04,187,42
-geffen,65,100,0	warp	gef002	3,1,gef_tower,52,177 //gef dun ent
+geffen,119,112,0	warp	gef002	3,1,gef_tower,52,177 //gef dun ent
 geffen,217,119,0	warp	gef003	2,4,gef_fild00,46,199
 geffen,26,119,0	warp	gef004	2,3,gef_fild07,336,187
 geffen,142,141,0	warp	gef01	1,1,geffen_in,28,110

@@ -1,4 +1,4 @@
-prontera,108,189,4	script	Main Town#105	852,{
+prontera,106,191,4	script	Main Town#105	852,{
 	    mes "[Main Town]";
     mes "Hello, adventurer! Would you like to go mid prontera?";
     next;

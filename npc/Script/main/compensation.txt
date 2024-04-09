@@ -1,4 +1,4 @@
-prontera,169,179,4	script	Peak Reward	803,{
+prontera,0,0,4	script	Peak Reward	803,{
 
 set .@menu$, "Claim Reward";
 if (getgmlevel() == 99) { set .@menu$, .@menu$ + ":Enable Claim Reward:Disable Claim Reward"; }
@@ -22,7 +22,7 @@ if (getgmlevel() == 99) { set .@menu$, .@menu$ + ":Enable Claim Reward:Disable C
 switch(select(.@menu$)) {
 	case 1:
 		if(.ClaimRewardCompensation1013rd== 1){
-			if(#Compensation10133rd== 1) {
+			if(#Compensation10133rdz== 1) {
 				mes "[ Promise Peak Reward ]";
 				mes "You already got your reward!";
         			close;
@@ -35,8 +35,8 @@ switch(select(.@menu$)) {
 				getitembound 62344,1,Bound_Account; // <-- should be bound if you don't want this to be abused.
 				mes "[ Promise Peak Reward ]";
 				mes "Here's your reward!";
-				set #Compensation10133rd,1;
-				announce "Thank you "+strcharinfo(0)+" for Supporting Promise Server and we reached 200+ Peak! Hoooray!!","0x33FF66";
+				set #Compensation10133rdz,1;
+				announce "Thank you "+strcharinfo(0)+" for Supporting Promise Server and here is your compensation reward!!","0x33FF66";
 				close; 
 			}
 		}else if(.ClaimRewardCompensation1013rd== 0){
