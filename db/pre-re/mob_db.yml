@@ -37764,9 +37764,6 @@ Body:
     Class: Boss
     Modes:
       Mvp: true
-    MvpDrops:
-      - Item: Pickaxe
-        Rate: 10000
     Drops:
       - Item: Iron
         Rate: 270
