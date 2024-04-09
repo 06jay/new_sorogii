@@ -89,6 +89,13 @@ Header:
   Version: 3
 
 Body:
+  - Id: 30000
+    AegisName: Zenny
+    Name: Zeny
+    Type: Etc
+    Buy: 100000
+    Weight: 400
+
   - Id: 31589
     AegisName: GOLD_MAJESTIC_GOUT
     Name: C Golden Majestic Goat
@@ -18764,9 +18771,9 @@ Body:
     ArmorLevel: 1
     View: 2681
     Script: |
-      bonus bAddMaxWeight,5000;
-      bonus2 bExpAddRace,RC_All,5;
-      bonus2 bDropAddRace,RC_All,5;
+      bonus bAddMaxWeight,15000;
+      bonus2 bExpAddRace,RC_All,15;
+      bonus2 bDropAddRace,RC_All,15;
   - Id: 62327
     AegisName: Costume costume_14
     Name: Costume costume_14
