@@ -15896,7 +15896,7 @@ bool aa_check_item_pickup(map_session_data *sd, struct block_list *bl)
 
 unsigned int aa_check_item_pickup_onfloor(map_session_data *sd){
 	struct block_list *bl = map_id2bl(sd->aa.itempick_id);
-	if (!sd->aa.target_id && !aa_check_item_pickup(sd, bl)){
+	if (!aa_check_item_pickup(sd, bl)){
 		int i_, itempick_id_ = 0;
 		bool itempick_found = false;
 		sd->aa.itempick_id = 0;
