@@ -27,10 +27,10 @@
 //	callfunc "qshop"{,<shop ID>{,<shop ID>{,...}}};
 //  ADD YOUR NPC HERE
 //============================================================
-//prontera,119,188,6	script	Hourly Manager#0121	833,{ callfunc "weshop",1,4; }
-prontera,119,198,6	script	PVP Master#0121	733,{ callfunc "weshop",2; }
+//prontera,119,188,6	script	Hourly Manager#0121	10183 ,{ callfunc "weshop",1,4; }
+//prontera,119,198,6	script	PVP Master#0121	733,{ callfunc "weshop",2; }
 //prontera,145,184,4	script	Loki#012q1xs	416,{ callfunc "weshop",3; }
-prontera,119,191,6	script	Supplies Shop	512,{ callfunc "weshop",8,9; }
+prontera,119,190,6	script	Supplies Shop	10183 ,{ callfunc "weshop",8,9,1; }
 //prontera,119,191,6	script	Supplies Shop#001	512,{ callfunc "weshop",9; }
 
 
@@ -76,7 +76,7 @@ OnInit:
 // -----------------------------------------------------------
 
 	setarray .Shops$[1],
-		"Hourly","PVP SHOP","Freebies","Event","Head Gear","Mid Gear","Lower Gear","Consumable Item","Usable Tool";
+		"^FF0000[>]^000000Hourly Shop","PVP SHOP","Freebies","Event","Head Gear","Mid Gear","Lower Gear","^FF0000[>]^000000Consumable Item","^FF0000[>]^000000Usable Tool";
 			// Shop Named 1
 // -----------------------------------------------------------
 //  Quest items -- do NOT use a reward item more than once!
@@ -87,17 +87,20 @@ OnInit:
 
 
 // Shop 1 hourly
-	Add(9,40012,1,0,0,0,7179,20);//AA 1
-	Add(9,40013,1,0,0,0,7179,40);//AA 3
-	Add(9,40014,1,0,0,0,7179,50);//AA 5
+	Add(9,40012,1,0,0,0,7179,5);//AA 1
+	Add(9,40013,1,0,0,0,7179,10);//AA 3
+	Add(9,40014,1,0,0,0,7179,15);//AA 5
+	Add(9,40016,1,0,0,0,7179,10);//AA 3
+	Add(9,40015,1,0,0,0,7179,15);//AA 5
 	Add(9,13953,1,0,0,0,7179,100);//allinone ring
 	Add(9,7622 ,1,0,0,0,7179,100);//hair
 	Add(9,6046 ,1,0,0,0,7179,150);//cloth
 	Add(9,6320,1,0,0,0,7179,100);//reset
 
 
+
 // Shop 1 itemmall
-	Add(8,14003,1,0,0,0,7179,3);//esb nt
+	Add(8,14003,1,0,0,0,7179,2);//esb nt
 	Add(8,12264,1,0,0,0,7179,3);//candy 100%
 	Add(8,14533,1,0,0,0,7179,4);//bman 100%
 	Add(8,14592,1,0,0,0,7179,4);//jman nt 50%
@@ -121,16 +124,14 @@ OnInit:
 
 
 // Shop 1 hourly
-	Add(1,14003,1,0,0,0,7517,2);//esb nt
-	Add(1,12210,1,0,0,0,7517,4);//bb
-	Add(1,14533,1,0,0,0,7517,4);//fm nt
-	Add(1,7776 ,1,0,0,0,7517,24);//gymnt
-	Add(1,6316 ,1,0,0,0,7517,5);//token nt
-	Add(1,12221 ,1,0,0,0,7517,2);//mic nt
-	Add(1,14592,1,0,0,0,7517,5);//agi nt
-	Add(1,14169 ,1,0,0,0,7517,5);//bless
-	Add(1,14170 ,1,0,0,0,7517,3);//poring coin
-	Add(1,40012,1,0,0,0,7517,5);//AA 1
+	Add(1,40012,1,0,0,0,6380,4);//AA 1
+	Add(1,14003,1,0,0,0,6380,5);//esb nt
+	Add(1,12264,1,0,0,0,6380,4);//bb
+	Add(1,14533,1,0,0,0,6380,4);//fm nt
+	Add(1,14592,1,0,0,0,6380,4);//agi nt
+	Add(1,14169 ,1,0,0,0,6380,5);//bless
+	Add(1,14170 ,1,0,0,0,6380,5);//poring coin
+	Add(1,12221 ,1,0,0,0,6380,2);//mic nt
 
 
 
@@ -259,6 +260,7 @@ OnMenu:
 	dispbottom "Select one item at a time.";
 	callshop "weshop"+@shop_index,1;
 	npcshopattach "weshop"+@shop_index;
+		cutin "ep162_est01.png",2;
 	end;
 
 OnBuyItem:
@@ -323,7 +325,10 @@ close;
 			else if ((@qe[1] & 4) || (@qe[1] & 8192)) changelook LOOK_ROBE, @qe[2];
 			break;
 		case 3:
-			close;
+close2;
+cutin "", 255;
+end;
+
 		}
 	}
 
@@ -360,7 +365,7 @@ function Chk {
 		set @qe[0],1;
 		return "^FF0000";
 	} else
-		return "^9900CC";
+		return "^3399CC";
 }
 
 function Slot {
@@ -400,20 +405,14 @@ function	script	weshop	{
 
 
 
-new_2-1,65,118,4	script	Loki#q2302	111,{
-end;
-
+prontera,119,190,6	script	 #Rental NPC#220122ee3eqwe	111,{
 OnInit:
-setarray .alphabets$,"    ","F","R","E","E","B","I","E","S";
-set .alphabets_size,getarraysize( .alphabets$ );
-while( 1 ){
-	set .@title$,.@title$ + .alphabets$[.@i%.alphabets_size];
-	set .@i,.@i + 1;
-	delwaitingroom;
-	waitingroom ""+.@title$,0;
-	sleep 300;
-	if( .@i % .alphabets_size == 0 ) set .@title$,"";
-}
+	initnpctimer;
+	end;
+OnTimer1000:
+	showscript("Item and Hourly Shop");
+	setnpctimer 0;
+	end;
 }
 
 

@@ -1,11 +1,11 @@
 //// ------------------------------------ 30MINUTES RENTAL 
 function	script	ADControl30	{
 
-if(#AD30 > gettimetick(2)){
+if(#AAD30 > gettimetick(2)){
     mes "[ Important Notice ]";
     mes "^ff0000Note^000000:";
     mes "Item: ^0000ffAssistive Device(30MIN)^000000";
-    mes "You need to wait "+Time2Str(#AD30)+" before open again.";
+    mes "You need to wait "+Time2Str(#AAD30)+" before open again.";
     close;
 }
 
@@ -35,11 +35,11 @@ switch(select("No:Yes")){
         mes "You remove the item while I wasn't looking! Get out of here!";
         close;
     }
-        set #AD30,0;
+        set #AAD30,0;
         delitem 40011,1;
         rentitem 40001,1800;
-        .ftime$ = gettimetick(2)+86400; // 24hours
-        set #AD30, #AD30 + .ftime$;
+        .ftime$ = gettimetick(2)+43200; // 12hours
+        set #AAD30, #AAD30 + .ftime$;
         end;
     }
     close;
@@ -48,11 +48,11 @@ switch(select("No:Yes")){
 //// ------------------------------------ 1HOUR RENTAL 
 function	script	ADControl1h	{
 
-if(#AD1H > gettimetick(2)){
+if(#AAD1H > gettimetick(2)){
     mes "[ ^FF0000Important Notice^000000 ]";
     mes "^ff0000Note^000000:";
     mes "Item: ^0000ffAssistive Device(1HR)^000000";
-    mes "You need to wait "+Time2Str(#AD1H)+" before open again.";
+    mes "You need to wait "+Time2Str(#AAD1H)+" before open again.";
     close;
 }
 
@@ -81,11 +81,11 @@ switch(select("No:Yes")){
         mes "You remove the item while I wasn't looking! Get out of here!";
         close;
     }
-        set #AD1H,0;
+        set #AAD1H,0;
         delitem 40012,1;
         rentitem 40001,3600;
-        .ftime$ = gettimetick(2)+86400; // 24hours
-        set #AD1H, #AD1H + .ftime$;
+        .ftime$ = gettimetick(2)+43200; // 12hours
+        set #AAD1H, #AAD1H + .ftime$;
         end;
     }
 }
@@ -93,11 +93,11 @@ switch(select("No:Yes")){
 //// ------------------------------------ 3HOURS RENTAL 
 function	script	ADControl3h	{
 
-if(#AD3H > gettimetick(2)){
+if(#AAD3H > gettimetick(2)){
     mes "[ ^FF0000Important Notice^000000 ]";
     mes "^ff0000Note^000000:";
     mes "Item: ^0000ffAssistive Device(3HRS)^000000";
-    mes "You need to wait "+Time2Str(#AD3H)+" before open again.";
+    mes "You need to wait "+Time2Str(#AAD3H)+" before open again.";
     close;
 }
 
@@ -126,11 +126,11 @@ switch(select("No:Yes")){
         mes "You remove the item while I wasn't looking! Get out of here!";
         close;
     }
-        set #AD3H,0;
+        set #AAD3H,0;
         delitem 40013,1;
         rentitem 40001,10800;
-        .ftime$ = gettimetick(2)+86400; // 24hours
-        set #AD3H, #AD3H + .ftime$;
+        .ftime$ = gettimetick(2)+43200; // 12hours
+        set #AAD3H, #AAD3H + .ftime$;
         end;
     }
 }
@@ -138,11 +138,11 @@ switch(select("No:Yes")){
 //// ------------------------------------ 5HOURS RENTAL 
 function	script	ADControl5h	{
 
-if(#AD5H > gettimetick(2)){
+if(#AAD5H > gettimetick(2)){
     mes "[ ^FF0000Important Notice^000000 ]";
     mes "^ff0000Note^000000:";
     mes "Item: ^0000ffAssistive Device(5HRS)^000000";
-    mes "You need to wait "+Time2Str(#AD5H)+" before open again.";
+    mes "You need to wait "+Time2Str(#AAD5H)+" before open again.";
     close;
 }
 
@@ -171,11 +171,11 @@ switch(select("No:Yes")){
         mes "You remove the item while I wasn't looking! Get out of here!";
         close;
     }
-        set #AD5H,0;
+        set #AAD5H,0;
         delitem 40014,1;
         rentitem 40001,18000;
-        .ftime$ = gettimetick(2)+86400; // 24hours
-        set #AD5H, #AD5H + .ftime$;
+        .ftime$ = gettimetick(2)+43200; // 12hours
+        set #AAD5H, #AAD5H + .ftime$;
         end;
     }
 }

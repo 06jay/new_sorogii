@@ -1,4 +1,4 @@
-prontera,0,0,4	script	Peak Reward	803,{
+prontera,0,0,6	script	Promise Reward	803,{
 
 set .@menu$, "Claim Reward";
 if (getgmlevel() == 99) { set .@menu$, .@menu$ + ":Enable Claim Reward:Disable Claim Reward"; }
@@ -11,7 +11,7 @@ if (getgmlevel() == 99) { set .@menu$, .@menu$ + ":Enable Claim Reward:Disable C
 		mes "You have 70 different items in your inventory.";
 		close;
 	}else if((.@weight) > 70){
-		mes "[ Promise Peak Reward ]";
+		mes "[ Promise Compensation ]";
 		mes "^FF0000You must atleast have 50 percent extra weight to receive reward.^000000";
 		mes " ";
 		mes "You are currently at " + .@weight + " percent of your maximum weight.";
@@ -23,17 +23,18 @@ switch(select(.@menu$)) {
 	case 1:
 		if(.ClaimRewardCompensation1013rd== 1){
 			if(#Compensation10133rdz== 1) {
-				mes "[ Promise Peak Reward ]";
+				mes "[ Promise Compensation ]";
 				mes "You already got your reward!";
         			close;
 			}else{
-				getitembound 14533,5,Bound_Account; // <-- should be bound if you don't want this to be abused.
-				getitembound 14592,5,Bound_Account; // <-- should be bound if you don't want this to be abused.
-				getitembound 12264,5,Bound_Account; // <-- should be bound if you don't want this to be abused.
-				getitembound 6320,1,Bound_Account; // <-- should be bound if you don't want this to be abused.
-				getitembound 14003,10,Bound_Account; // <-- should be bound if you don't want this to be abused.
-				getitembound 62344,1,Bound_Account; // <-- should be bound if you don't want this to be abused.
-				mes "[ Promise Peak Reward ]";
+				getitembound 14533,15,Bound_Account; // bm100%
+				getitembound 14592,15,Bound_Account; // jm 50%
+				getitembound 12264,15,Bound_Account; // bbg
+				getitembound 14003,30,Bound_Account; // esb12264
+				getitembound 12215,30,Bound_Account; // bless
+				getitembound 12216,30,Bound_Account; // agi
+				getitembound 31160,1,Bound_Account; // agi
+				mes "[ Promise Compensation ]";
 				mes "Here's your reward!";
 				set #Compensation10133rdz,1;
 				announce "Thank you "+strcharinfo(0)+" for Supporting Promise Server and here is your compensation reward!!","0x33FF66";
@@ -63,11 +64,11 @@ switch(select(.@menu$)) {
 
 	case 3:
 		if(.ClaimRewardCompensation1013rd== 0){
-			mes "[ Promise Peak Reward]";
+			mes "[ Promise Compensation ]";
 			mes "Claim reward for players already disabled.";
 			close;
 		}else{
-			mes "[ Promise Peak Reward ]";
+			mes "[ Promise Compensation ]";
 			mes "Sure master as you wish.";
 			.ClaimRewardCompensation1013rd= 0;
 			close;
@@ -76,7 +77,7 @@ switch(select(.@menu$)) {
 	
 
 OnDeny:
-mes "[ Promise Peak Reward ]";
+mes "[ Promise Compensation ]";
 mes "You don't have the required level for 1st Monthsary Reward.";
 mes "Come back when you reached it - Base Level 255!";
 close;
@@ -84,7 +85,7 @@ close;
 
 OnInit:
 	.ClaimRewardCompensation1013rd= 0;
-	waitingroom "200+ Peak NPC <3",0;
+	waitingroom "Promise Compensation",0;
 	end;
 }
 

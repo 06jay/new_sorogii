@@ -1,0 +1,18 @@
+
+new_2-1,55,124,0	script	dawdeawd	123,{
+	mes "levelup npc";
+switch(selecT("Yes:No")){
+	case 1:
+		atcommand "@job 5";
+		atcommand "@blvl 60";
+		atcommand "@jlvl 50";
+		atcommand "@skillall";
+		setcart;
+        setcart;
+		mes "Done";
+		close;
+		
+	case 2:
+		close;
+	}
+}
