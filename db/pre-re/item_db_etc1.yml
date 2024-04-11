@@ -13858,7 +13858,7 @@ Body:
       NoAuction: true
   - Id: 7179
     AegisName: Donation_Card
-    Name: Promise Ticket
+    Name: Proof of Donation
     Type: Etc
     Weight: 0
   - Id: 7180
@@ -16489,7 +16489,7 @@ Body:
       NoAuction: true
   - Id: 7517
     AegisName: Gold_Coin_
-    Name: Promise Coin
+    Name: Gold Coin
     Type: Etc
     Trade:
       NoDrop: true

@@ -218,6 +218,12 @@ Body:
       cartlist: true
       itemlist: true
       stats: true
+      blvl: true
+      jlvl: true
+      jump: true
+      autotrade: true
+      broadcast: true
+      kami: true
     LogCommands: true
     Permissions:
       join_chat: true

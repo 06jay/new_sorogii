@@ -822,6 +822,8 @@ Body:
         Rate: 500
       - Item: Wind_Scroll_1_3
         Rate: 100
+      - Item: Creamy_Card
+        Rate: 1
         StealProtected: true
   - Id: 1019
     AegisName: PECOPECO
@@ -35635,13 +35637,13 @@ Body:
         Rate: 5000
     Drops:
       - Item: Diabolus_Helmet
-        Rate: 1000
+        Rate: 715
       - Item: Diabolus_Robe
-        Rate: 5000
+        Rate: 715
       - Item: Diabolus_Armor
-        Rate: 5000
+        Rate: 715
       - Item: Diabolus_Boots
-        Rate: 5000
+        Rate: 715
       - Item: Dark_Crystal
         Rate: 9000
       - Item: Dark_Debris

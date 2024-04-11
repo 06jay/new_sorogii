@@ -1036,7 +1036,7 @@ Body:
     Name: Fly Wing
     Type: Delayconsume
     Buy: 60
-    Weight: 50
+    Weight: 30
     Flags:
       BuyingStore: true
     Script: |
@@ -4886,7 +4886,7 @@ Body:
       NoAuction: true
     Script: |
       skilleffect "AL_BLESSING",0;
-      sc_start SC_BLESSING,240000,10;
+      sc_start SC_BLESSING,360000,10;
   - Id: 12216
     AegisName: Inc_Agi_10_Scroll
     Name: LV10 Agil Scroll
@@ -4906,7 +4906,7 @@ Body:
     Script: |
       if (Hp>15) {
          skilleffect "AL_INCAGI",0;
-         sc_start SC_INCREASEAGI,240000,10;
+         sc_start SC_INCREASEAGI,360000,10;
          heal -15,0;
       }
   - Id: 12217
@@ -16054,7 +16054,7 @@ Body:
   - Id: 14003
     AegisName: Elite_Siege_Supply_Box
     Name: Elite Siege Supply Box
-    Type: Cash
+    Type: Usable
     Buy: 20
     Weight: 50
     Trade:

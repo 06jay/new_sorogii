@@ -89,6 +89,30 @@ Header:
   Version: 3
 
 Body:
+  - Id: 40015
+    AegisName: HalfBatteryPack
+    Name: Half Battery Pack
+    Type: Healing
+    Flags:
+      NoConsume: true
+    Weight: 0
+    Script: |
+      delitem 40015,1; 
+      set #AAD30,0;
+      set #AAD1H,0;
+  - Id: 40016
+    AegisName: FullBatteryPack
+    Name: Full Battery Pack
+    Type: Healing
+    Flags:
+      NoConsume: true
+    Weight: 0
+    Script: |
+      delitem 40016,1; 
+      set #AAD30,0;
+      set #AAD1H,0;
+      set #AAD3H,0;
+      set #AAD5H,0;
   - Id: 30000
     AegisName: Zenny
     Name: Zeny
@@ -106,8 +130,9 @@ Body:
     EquipLevelMin: 1
     View: 1800
     Script: |
-      bonus2 bExpAddRace,RC_All,5;
-      bonus2 bDropAddRace,RC_All,3;
+      bonus bAddMaxWeight,2000;
+      bonus2 bExpAddRace,RC_All,7;
+      bonus2 bDropAddRace,RC_All,7;
 
   - Id: 480110
     AegisName: C_Adventure_Cat_Bag
@@ -185,11 +210,95 @@ Body:
       bonus2 bExpAddRace,RC_All,5;
       bonus2 bDropAddRace,RC_All,2;
 
+##############################################
+  - Id: 19871
+    AegisName: C_Music_Decoration
+    Name: Costume Decoration of Music
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 1074
+    Trade:
+      NoDrop: true
+    EquipScript: |
+      sc_start SC_DECORATION_OF_MUSIC,INFINITE_TICK,0;
+    UnEquipScript: |
+      sc_end SC_DECORATION_OF_MUSIC;
+  - Id: 31600
+    AegisName: C_Kishu_Inu
+    Name: C Kishu Dog
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1804
+  - Id: 18742
+    AegisName: C_MoonStar_Accessory
+    Name: Costume Moon and Stars
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 881
 
+  - Id: 31160
+    AegisName: C_Rune_Helm
+    Name: Costume Rune Helm
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1361
+    Script: |
+      bonus2 bExpAddRace,RC_All,3;
+      bonus2 bDropAddRace,RC_All,3;
 
-
-
-
+###########
+  - Id: 20036
+    AegisName: C_Sword_Master_Crown
+    Name: Costume Sword Master Crown
+    Type: Armor
+    Buy: 10
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 981
+    Script: |
+      bonus bAddMaxWeight,5000;
+      bonus2 bExpAddRace,RC_All,5;
+      bonus2 bDropAddRace,RC_All,5;
+  - Id: 20249
+    AegisName: C_Red_Strong_Hair
+    Name: Costume Red Strong Hair
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1316
+    Script: |
+      bonus bAddMaxWeight,5000;
+      bonus2 bExpAddRace,RC_All,5;
+      bonus2 bDropAddRace,RC_All,5;
+  - Id: 18740
+    AegisName: C_Hair_Of_The_Strong
+    Name: RMSC2012 Special Costume
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 879
+    Script: |
+      bonus bAddMaxWeight,5000;
+      bonus2 bExpAddRace,RC_All,5;
+      bonus2 bDropAddRace,RC_All,5;
 ##########################Garment V2##################################
   - Id: 20727
     AegisName: Brilliant_Golden_Wings
@@ -273,12 +382,15 @@ Body:
     View: 9
   - Id: 31737
     AegisName: C_Wings_Of_Lucifer
-    Name: Costume Lucifer's Wings
+    Name: Costume Lucifers Wings
     Type: Armor
     View: 55
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
   - Id: 20578
     AegisName: wings_of_raguel
-    Name: Costume Raguel's Wings
+    Name: Costume Raguels Wings
     Type: Armor
     View: 56
     Locations:
@@ -286,9 +398,12 @@ Body:
     ArmorLevel: 1
   - Id: 20579
     AegisName: C_Wings_Of_Raphael
-    Name: Costume Raphael's Wings
+    Name: Costume Raphaels Wings
     Type: Armor
     View: 57
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
   - Id: 20530
     AegisName: C_Wings_of_Gabriel
     Name: Costume Wings of Gabriel
@@ -325,25 +440,78 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 17
+###########
   - Id: 31395
     AegisName: C_Book_Of_Magic
     Name: C Book of Magic
     Type: Armor
     Locations:
-      Costume_Head_Low: true
+      Costume_Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1691
+    Script: |
+      bonus bAddMaxWeight,5000;
+      bonus2 bExpAddRace,RC_All,5;
+      bonus2 bDropAddRace,RC_All,5;
   - Id: 31178
     AegisName: C_Flame_Muffler
     Name: C Fire Muffler
     Type: Armor
     Locations:
-      Costume_Head_Low: true
+      Costume_Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 1
     View: 1579
-
+    Script: |
+      bonus bAddMaxWeight,5000;
+      bonus2 bExpAddRace,RC_All,5;
+      bonus2 bDropAddRace,RC_All,5;
+  - Id: 19871
+    AegisName: C_Music_Decoration
+    Name: Costume Decoration of Music
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 1074
+    Script: |
+      bonus bAddMaxWeight,5000;
+      bonus2 bExpAddRace,RC_All,5;
+      bonus2 bDropAddRace,RC_All,5;
+    Trade:
+      NoDrop: true
+    EquipScript: |
+      sc_start SC_DECORATION_OF_MUSIC,INFINITE_TICK,0;
+    UnEquipScript: |
+      sc_end SC_DECORATION_OF_MUSIC;
+  - Id: 31600
+    AegisName: C_Kishu_Inu
+    Name: C Kishu Dog
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1804
+    Script: |
+      bonus bAddMaxWeight,5000;
+      bonus2 bExpAddRace,RC_All,5;
+      bonus2 bDropAddRace,RC_All,5;
+  - Id: 18742
+    AegisName: C_MoonStar_Accessory
+    Name: Costume Moon and Stars
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 881
+    Script: |
+      bonus bAddMaxWeight,5000;
+      bonus2 bExpAddRace,RC_All,5;
+      bonus2 bDropAddRace,RC_All,5;
 #################################Garment####################
 
   - Id: 20514
@@ -25673,34 +25841,6 @@ Body:
       bonus bAddMaxWeight,5000;
       bonus2 bExpAddRace,RC_All,5;
       bonus2 bDropAddRace,RC_All,5;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   - Id: 40001
     AegisName: AAttack
     Name: Assistive Device
@@ -25731,8 +25871,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAddMaxWeight,5000;
-      if (BaseJob == Job_Knight)
-        if ( checkriding() ) { setoption Option_Dragon1; } changebase Job_Rune_Knight;
+      if (BaseJob == Job_Knight){ if (checkriding()) { { setoption Option_Dragon1; } changebase 4060; end; } changebase 4060; end;}
       if (BaseJob == Job_Priest)
          changebase JOB_ARCH_BISHOP;
       if (BaseJob == Job_Wizard)
@@ -25768,8 +25907,7 @@ Body:
     EquipLevelMin: 1
     Refineable: true
     Script: |
-      if (BaseJob == Job_Knight)
-          if ( checkriding() ) { setoption Option_Dragon1; } changebase 4096;
+      if (BaseJob == Job_Knight){ if (checkriding()) { { setoption Option_Dragon1; } changebase 4096; end; } changebase 4096; end; }
       if (BaseJob == Job_Priest)
          changebase 4099;
       if (BaseJob == Job_Wizard)
