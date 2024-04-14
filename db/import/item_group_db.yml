@@ -43,5 +43,79 @@
 ###########################################################################
 
 Header:
+
   Type: ITEM_GROUP_DB
   Version: 3
+
+Body:
+  - Group: BUDDAH_SCROLL
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Index: 0
+            Item: Mental_Potion
+            Amount: 3
+      - SubGroup: 1
+        List:
+          - Index: 0
+            Item: Bubble_Gum_Box
+            Rate: 14000
+          - Index: 1
+            Item: Str_Dish_Box
+            Rate: 1400
+          - Index: 2
+            Item: Megaphone_Box
+            Rate: 1400
+          - Index: 3
+            Item: Battle_Manual_Box
+            Rate: 1352
+          - Index: 4
+            Item: Token_Of_Siegfried_Box
+            Rate: 1250
+          - Index: 5
+            Item: Shadow_Armor_S_Box10
+            Rate: 1400
+          - Index: 6
+            Item: Guyak_Pudding
+            Rate: 1400
+            Amount: 10
+          - Index: 7
+            Item: Poker_Card_In_Mouth
+            Rate: 30
+            Announced: true
+          - Index: 8
+            Item: Sleeping_Kitty_Cat
+            Rate: 100
+            Announced: true
+          - Index: 9
+            Item: Cat_Ears_Beret
+            Rate: 10
+            Announced: true
+          - Index: 10
+            Item: Guarantee_Weapon_5Up
+            Rate: 70
+            Announced: true
+          - Index: 11
+            Item: Red_Hood
+            Rate: 100
+            Announced: true
+          - Index: 12
+            Item: C_Spirit_Of_Chung_E
+            Rate: 20
+            Announced: true
+          - Index: 13
+            Item: Guarantee_Weapon_9Up
+            Rate: 5
+            Announced: true
+          - Index: 14
+            Item: Sealed_Samurai_Card
+            Rate: 3
+            Announced: true
+          - Index: 15
+            Item: Kirin_Wing
+            Rate: 10
+            Announced: true
+          - Index: 16
+            Item: Unbreak_Weap_Box
+            Rate: 50
+            Announced: true

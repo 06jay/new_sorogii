@@ -1,0 +1,170 @@
+prontera,127,187,5	script	Promise Gacha	10394 ,{
+
+	.@name$ = strcharinfo(0);
+	.@i = 0;
+
+	cutin "GACHALOOP_01",2;
+	mes "[ ^FF0000 Promise Gacha^000000 ]";
+	mes "Hello!, "+strcharinfo(0);
+	mes "This is Promise Gatcha Pull! Wanna try your luck and win the ^FF0000Exclusive:^000000";
+		for(set .@k,0;.@k < getarraysize(.itemID);.@k += 3) {
+		mes "<ITEM>"+getitemname(.itemID[.@k])+"<INFO>"+.itemID[.@k]+"</INFO></ITEM>";
+		
+	}
+	next;
+	mes "[ ^FF0000 Promise Gacha^000000 ]";
+	mes "^0033FFRequirements^000000:";
+	mes "You need ^FF0000 "+ F_InsertComma(.costFee)+" Zeny^000000 to pull some prizes.";
+	next;
+	mes "[ ^FF0000 Promise Gacha^000000 ]";
+				mes "You will also have a random usable item as compensation?";
+	mes "So....";
+	mes "Do you want to try?";
+	.@i = select("^FF0000[>]^000000Lets Pull!","^FF0000[>]^000000Wait! Let me think about it.");
+
+	switch(.@i) {
+		case 1:goto OnGameOn;
+		case 2:close;end;
+	}
+OnNoItems:
+
+end;
+OnGameOn:
+	next;
+	mes "[ ^FF0000 Promise Gacha^000000 ]";
+	mes "------------------------------";
+
+	if (Zeny < .costFee){
+		mes "Sorry, you don't have the things I need:";
+		mes " - ^FF0000 "+ F_InsertComma(.costFee)+" Zeny^000000";
+		cutin "",255;
+		close;
+	}
+
+	clear;
+
+	mes "[ ^FF0000 Promise Gacha^000000 ]";
+	mes "It has been turned on...";
+	
+	for (.@j = 1; .@j <= 3; .@j++){
+		for(.@i = 1; .@i < 8; .@i++){
+			cutin "GACHALOOP_0" + .@i,2;
+			sleep2 100;
+		}
+	}
+	
+	mes "It's shuffling the prizes...";
+	
+	for (.@j = 1; .@j <= 3; .@j++){
+		for(.@i = 1; .@i <= 16; .@i++){
+			cutin "GACHASHUFFLE_" + ((.@i < 10)?"0":"") + .@i,2;
+			sleep2 100;
+		}
+	}
+	
+	mes "It's preparing the reward...";
+	
+	.@i = 3; //0
+	while(.@i < 3){
+		cutin "GACHAWIN_01",2;
+		sleep2 100;
+		cutin "GACHAWIN_02",2;
+		sleep2 100;
+		cutin "GACHAWIN_03",2;
+		sleep2 100;
+		cutin "GACHAWIN_02",2;
+		sleep2 100;
+		cutin "GACHAWIN_01",2;
+		sleep2 100;
+		.@i++;
+	}
+
+	for(.@i = 1; .@i <= 9; .@i++){
+		cutin "GACHAPRIZE_0" + .@i,2;
+		sleep2 100;
+	}
+
+	.@percent = rand(1,100);
+	setarray .itemRaffle[0],0;
+	//1% - 7%
+	setpcblock PCBLOCK_MOVE, true;
+	setpcblock PCBLOCK_COMMANDS, true;
+
+	freeloop(1);
+
+	if(.@percent >= 1 && .@percent <= .mainRewardChance) {
+		for(set .@k,1;.@k < getarraysize(.itemID);.@k += 3) {
+			// dispbottom(getitemname(.itemID[.@k - 1]) + " | " + .itemID[.@k] + "%");
+			if(.itemID[.@k] <= .@percent) {
+				 // dispbottom("Item: " + .itemID[.@k - 1]);
+				.itemRaffle[getarraysize(.itemRaffle)] = .itemID[.@k - 1];
+			}
+		}	
+	}
+
+	freeloop(0);
+	setpcblock PCBLOCK_MOVE, false;
+	setpcblock PCBLOCK_COMMANDS, false;
+
+	if (Zeny < .costFee){
+		clear;
+		mes "[ ^FF0000 Promise Gacha^000000 ]";
+		mes "Sorry, you have to bring the items I need.";
+		cutin "",255;
+		close;
+		end;
+	}
+
+	if(.@percent > .mainRewardChance) {
+		// no items.
+		.@consoSize = getarraysize(.conso);
+		.@consoRandom = rand(.@consoSize);
+		.@consoItem = .conso[.@consoRandom];
+		getitem .@consoItem,rand(1,1);
+		message strcharinfo(0),"Sorry you didn't get the premium prize. Better luck next time.";
+		Zeny = Zeny - .costFee;
+		close2;
+		cutin "",255;
+		end;
+	}
+
+	.@rewardSize = getarraysize(.itemIDS);
+	.@rewardRandom = rand(.@rewardSize);
+	.@rewardItem = .itemIDS[.@rewardRandom];
+
+
+	if(getitemname(.@rewardItem) == "null") {
+		message strcharinfo(0),"Ooops.. Sorry you didn't get the premium prize. Better luck next time.";
+		Zeny = Zeny - .costFee;
+		close2;
+		cutin "",255;
+		end;
+	}
+	
+	getitem .@rewardItem,1;
+	Zeny = Zeny - .costFee;
+	announce "[ Promise Gacha ]: Congratulation!!! Player "+ .@name$ +" pulled  " + getitemname(.@rewardItem) +" on Gacha!",0,0xFFCCFF;
+	message strcharinfo(0),"Wow!!! Congrats for getting the Exclusive Costume!";
+	cutin "",255;
+end;
+OnPCLoadMapEvent:
+	showevent 6,0;
+end;
+OnFreePoints:
+OnInit:
+	.costFee = 150000; //50m zeny
+	.mainRewardChance = 3;
+
+	setarray .conso[0],14003,12264,14592,7776,12424,12425,12216,12215,12221,607,608,12211,40012,40011;
+	setarray .itemIDS,480107,480107;
+	setarray .itemID,
+        480107,.mainRewardChance,1;
+
+
+
+	while(1) {
+		showscript "Promise Gacha", getnpcid(0);
+		sleep 1000;
+	}
+	end;
+}

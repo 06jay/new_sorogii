@@ -89,6 +89,19 @@ Header:
   Version: 3
 
 Body:
+
+  - Id: 16257
+    AegisName: Buddah_Scroll
+    Name: Buddah Scroll
+    Type: Usable
+    Buy: 20
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getgroupitem(IG_Buddah_Scroll);
+
+
   - Id: 40015
     AegisName: HalfBatteryPack
     Name: Half Battery Pack
@@ -209,6 +222,456 @@ Body:
       bonus bAddMaxWeight,1000;
       bonus2 bExpAddRace,RC_All,5;
       bonus2 bDropAddRace,RC_All,2;
+#################################NEW ITEMS V2#############################################
+  - Id: 31249
+    AegisName: C_Rabbit_Hopping
+    Name: C Hopping Rabbit
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1635
+  - Id: 31299
+    AegisName: C_White_Rabbit
+    Name: C White Rabbit
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1656
+
+  - Id: 400214
+    AegisName: C_Faith_Of_Yggdrasil
+    Name: "Costume: Faith of Yggdrasl"
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2198
+  - Id: 19884
+    AegisName: C_Vanargandr_Helm
+    Name: Costume Vanargand Helm
+    Type: Armor
+    Buy: 10
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 804
+  - Id: 20463
+    AegisName: C_Two_Tone_Beret
+    Name: Costume Two Tone Beret
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1465
+  - Id: 19292
+    AegisName: C_Wildcat_Knit_Cap
+    Name: Costume Smokie Knit Cap
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 1671
+  - Id: 20316
+    AegisName: C_Seraph_Wing_Helm
+    Name: Costume Seraph Wing Helm
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1352
+  - Id: 20171
+    AegisName: C_Sepia_Cap
+    Name: Costume Sepia Cap
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1280
+  - Id: 31849
+    AegisName: C_Runaway_Accelerator
+    Name: Costume Runaway Accelerator
+    Type: Armor
+    View: 1947
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+  - Id: 20489
+    AegisName: C_Pope_Crown
+    Name: Costume Pope Crown
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1475
+  - Id: 19883
+    AegisName: C_Piamette_Hood
+    Name: Costume Piamette Hood
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1087
+  - Id: 20174
+    AegisName: C_Halloween_Hat_Orange
+    Name: Costume Orange Halloween Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1283
+  - Id: 20398
+    AegisName: C_Niflheim_Bunny_Hat
+    Name: Costume Niffleheim Bunny Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1285
+    AegisName: C_Majestic_Helmet
+    Name: Costume Majestihelm
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1047
+  - Id: 31123
+    AegisName: C_Ghostring_Tall_Hat
+    Name: Costume Ghostring Tall Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1551
+  - Id: 20089
+    AegisName: C_DragonCintamani_Hat4
+    Name: Costume Dragon Cintamani Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1248
+  - Id: 20175
+    AegisName: C_Diabolic_Headphone
+    Name: Costume Diabolic Headphone
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1284
+  - Id: 19294
+    AegisName: C_CatEars_Cyber_HeadP_R
+    Name: Costume Cyber Cat Ear Headphones (Red)
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 1668
+  - Id: 31907
+    AegisName: C_PGstone_Knit_Hat_BW
+    Name: Costume Cat Paw Knitted Hat (Brown)
+    Type: Armor
+    View: 1985
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+  - Id: 20191
+    AegisName: C_Black_Cat_Ears_Beret
+    Name: Costume Black Cat Ears Beret
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1071
+  - Id: 20395
+    AegisName: C_Black_Witch_Hat
+    Name: Costume Black Witch Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 1006
+  - Id: 31180
+    AegisName: C_Shura_King_Pledge
+    Name: C King Sura Headband
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1581
+
+  - Id: 20430
+    AegisName: C_Morocc_Kid_Servant
+    Name: Costume Loyal Servant of Devil Morocc
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1440
+  - Id: 410160
+    AegisName: aegis_410160
+    Name: Costume Magic Orb    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2265
+  - Id: 31620
+    AegisName: C_Snow_Fox_TW
+    Name: Costume Magic Successor
+    Type: Armor
+    View: 1818
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+  - Id: 410169
+    AegisName: aegis_410169
+    Name: Costume Lovely Fox    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    View: 2178
+  - Id: 31568
+    AegisName: C_Floating_Ball_TW
+    Name: Costume Floating Ball
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1760
+  - Id: 20399
+    AegisName: C_Crow_Tengu_Mask
+    Name: Costume Crow Tengu Mask
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1287
+  - Id: 31186
+    AegisName: C_Black_Cat
+    Name: Costume Black Cat
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1582
+  - Id: 31514
+    AegisName: C_American_S_hair
+    Name: Costume American Short hair    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1756
+  - Id: 31452
+    AegisName: C_White_Cat
+    Name: C White Cat
+    Type: Armor
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1715
+  - Id: 31803
+    AegisName: C_Cons_Of_Wind
+    Name: C Master of Wind
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1924
+  - Id: 31719
+    AegisName: C_Cons_Of_Fire
+    Name: C Master Of Flames
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1890
+  - Id: 31720
+    AegisName: C_VesperHeadGear
+    Name: C Vesper Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1827
+  - Id: 31816
+    AegisName: C_Rabbit_Winged_Robe
+    Name: C Moon Messenger Robe
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1926
+  - Id: 31735
+    AegisName: C_FortunetellinSealed
+    Name: C Yawata Seal
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1901
+  - Id: 31885
+    AegisName: Cons_Of_Earth
+    Name: Costume Earth Master
+    Type: Armor
+    View: 1982
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+  - Id: 20448
+    AegisName: C_Cons_Of_Water
+    Name: Costume Water Spellcaster
+    Type: Armor
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 1451
+#############################NEW ITEMS#################################################
+  - Id: 480107
+    AegisName: C_Kings_Twin_Sword
+    Name: Costume Kings Twin Sword
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 104
+
+  - Id: 20597
+    AegisName: C_Evil_Scythe
+    Name: "Costume: Evil Scythe"
+    Type: Armor
+    View: 79
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+
+
+  - Id: 20607
+    AegisName: C_Baldr_Wing_TW
+    Name: Costume Baldr Wing
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 91
+  - Id: 20590
+    AegisName: C_Evil_Druid_Cross
+    Name: Costume Evil Druid Cross
+    Type: Armor
+    View: 67
+  - Id: 20598
+    AegisName: C_GiantCatBag_JP_BL
+    Name: Costume Giant Cat Bag
+    Type: Armor
+    View: 80
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+  - Id: 480095
+    AegisName: C_Giant_White_Rabbit
+    Name: Costume Giant White Rabbit
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 98
+  - Id: 20528
+    AegisName: C_GoldButterfly_Wing
+    Name: Costume Golden Butterfly Wings
+    Type: Armor
+    View: 36
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+  - Id: 20533
+    AegisName: C_PinkButterfly_Wing_T
+    Name: Costume Pink Butterfly Wing
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 38
+  - Id: 20602
+    AegisName: C_Seraphim_Wing_TW
+    Name: "Costume: Ace of Angel Wing (Sweet)"
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 84
+  - Id: 20586
+    AegisName: C_Loli_Ruri_Moon
+    Name: "Costume: Loli Ruri's Crescent"
+    Type: Armor
+    View: 64
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+  - Id: 480069
+    AegisName: C_Wing_Of_Angel_Move
+    Name: Costume Heavenly Angel Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 61
+  - Id: 480056
+    AegisName: C_Wing_Of_Angel_Move_BK
+    Name: Costume Heavenly Fallen Angel Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 73
+  - Id: 480058
+    AegisName: C_Wing_Of_Angel_Move_GD
+    Name: Costume Wavy Golden Angel Wings
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 75
+  - Id: 480055
+    AegisName: C_Wing_Of_Angel_Move_RD
+    Name: Costume Sky and Sky Red Angel Wings    # !todo check english name
+    Type: Armor
+    Locations:
+      Costume_Garment: true
+    ArmorLevel: 1
+    View: 72
+
 
 ##############################################
   - Id: 19871
@@ -25814,9 +26277,9 @@ Body:
     ArmorLevel: 1
     View: 3254
     Script: |
-      bonus bAddMaxWeight,5000;
-      bonus2 bExpAddRace,RC_All,5;
-      bonus2 bDropAddRace,RC_All,5;
+      bonus bAddMaxWeight,15000;
+      bonus2 bExpAddRace,RC_All,15;
+      bonus2 bDropAddRace,RC_All,15;
   - Id: 62900
     AegisName: Costume YCPIRATEMEOWHAT
     Name: Costume YCPIRATEMEOWHAT

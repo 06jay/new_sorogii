@@ -84,3 +84,11 @@ Body:
           - Costume AURAOVERFLOWING_BLK
     Script: |
       skill "BS_GREED",1;
+  - Combos:
+      - Combo:
+          - Costume VALKYRIEHELM_BLK
+          - C_Thanatos_Sword
+          - Costume PROTECTCLOTH_BLK
+          - Costume AURAOVERFLOWING_BLK
+    Script: |
+      skill "AL_TELEPORT",1;

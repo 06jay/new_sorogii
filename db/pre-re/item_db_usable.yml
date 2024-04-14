@@ -8350,6 +8350,11 @@ Body:
     Weight: 100
     Flags:
       BuyingStore: true
+    Script: |
+      getitem 12264,4;
+      getitem 14003,8;
+      getitem 14592,4;
+      getitem 14533,4;
   - Id: 12540
     AegisName: GM_Warp_Box
     Name: GM Warp Box
